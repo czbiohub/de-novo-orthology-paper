@@ -19,9 +19,9 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/79c6d4072285b1a167d9b6b273b0adbe1eca6208/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/4864d1443e78de81a70b87ae8e6f44bf2a962758/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@79c6d40](https://github.com/czbiohub/primate-brain-organoid-paper/tree/79c6d4072285b1a167d9b6b273b0adbe1eca6208)
+from [czbiohub/primate-brain-organoid-paper@4864d14](https://github.com/czbiohub/primate-brain-organoid-paper/tree/4864d1443e78de81a70b87ae8e6f44bf2a962758)
 on November 1, 2019.
 </em></small>
 
@@ -69,6 +69,9 @@ Many approaches exist [@LkrS4xXB].
 Determining common ancestry of cell types ("orthologous cell types") [@ogAGO9KH @wdzgXUGy] is an additional difficult problem.
 Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space.
 Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell "alignment" packages], others use clusters of orthologous groups [@1tMQTfnh], others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes [@y7xGipW5] and re-annotate using a tool such as Comparative Annotation Toolkit [@1BnfHjbCA].
+
+$k$-mers have been proposed for comparing single cells [@wtk13QGK] as they are a fast, simple way to create cell-cell similarities.
+However, the work so far has focused on using annotated organisms and not cross-species analyses.
 
 
 ## Methods

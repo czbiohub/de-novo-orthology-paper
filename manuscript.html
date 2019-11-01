@@ -22,7 +22,7 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/79c6d4072285b1a167d9b6b273b0adbe1eca6208/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/79c6d4072285b1a167d9b6b273b0adbe1eca6208">czbiohub/primate-brain-organoid-paper@79c6d40</a> on November 1, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/4864d1443e78de81a70b87ae8e6f44bf2a962758/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/4864d1443e78de81a70b87ae8e6f44bf2a962758">czbiohub/primate-brain-organoid-paper@4864d14</a> on November 1, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></li>
@@ -34,11 +34,12 @@
 <p>Novel organizations of existing cell states can also define cell types. For example, the development of genitalia in amniotes, while using similar cell types, ultimately uses a different physical organization of cell types to generate genitalia in mammals compared to reptiles <span class="citation" data-cites="rn7vCWvt">[<a href="#ref-rn7vCWvt" role="doc-biblioref">4</a>]</span></p>
 <p>Determining common gene ancestry (“orthology”) is a difficult problem. Many approaches exist <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>]</span>.</p>
 <p>Determining common ancestry of cell types (“orthologous cell types”) <span class="citation" data-cites="ogAGO9KH">[<a href="#ref-ogAGO9KH" role="doc-biblioref">6</a>]</span> is an additional difficult problem. Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space. Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell “alignment” packages], others use clusters of orthologous groups <span class="citation" data-cites="1tMQTfnh">[<a href="#ref-1tMQTfnh" role="doc-biblioref">8</a>]</span>, others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes <span class="citation" data-cites="y7xGipW5">[<a href="#ref-y7xGipW5" role="doc-biblioref">9</a>]</span> and re-annotate using a tool such as Comparative Annotation Toolkit <span class="citation" data-cites="1BnfHjbCA">[<a href="#ref-1BnfHjbCA" role="doc-biblioref">10</a>]</span>.</p>
+<p><span class="math inline">\(k\)</span>-mers have been proposed for comparing single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">11</a>]</span> as they are a fast, simple way to create cell-cell similarities. However, the work so far has focused on using annotated organisms and not cross-species analyses.</p>
 <h2 id="methods">Methods</h2>
 <p>Methods go here.</p>
 <p>We used ENSEMBL version 97.</p>
 <h2 id="results">Results</h2>
-<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">11</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">12</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">13</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">14</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">15</a>]</span>, show in Table~.</p>
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">12</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">13</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">14</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">15</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">16</a>]</span>, show in Table~.</p>
 <div id="tbl:example-id" class="tablenos">
 <table>
 <caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid alphabet allowing for permissive cross-species sequence comparisons. For example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </caption>
@@ -169,31 +170,37 @@ Ian T. Fiddes, Joel Armstrong, Mark Diekhans, Stefanie Nachtweide, Zev N. Kronen
 <em>Genome Research</em> (2018-06-08) <a href="https://doi.org/gdpg7n">https://doi.org/gdpg7n</a><br />
 DOI: <a href="https://doi.org/10.1101/gr.233460.117">10.1101/gr.233460.117</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29884752">29884752</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6028123">PMC6028123</a></p>
 </div>
+<div id="ref-wtk13QGK">
+<p>11. <strong>K-mer counting with low memory consumption enables fast clustering of single-cell sequencing data without read alignment</strong><br />
+Christina Huan Shi, Kevin Y. Yip<br />
+<em>bioRxiv</em> (2019-08-02) <a href="https://www.biorxiv.org/content/10.1101/723833v1">https://www.biorxiv.org/content/10.1101/723833v1</a><br />
+DOI: <a href="https://doi.org/10.1101/723833">10.1101/723833</a></p>
+</div>
 <div id="ref-lBlqrqAO">
-<p>11. <strong>Ensembl 2018</strong><br />
+<p>12. <strong>Ensembl 2018</strong><br />
 Daniel R Zerbino, Premanand Achuthan, Wasiu Akanni, M Ridwan Amode, Daniel Barrell, Jyothish Bhai, Konstantinos Billis, Carla Cummins, Astrid Gall, Carlos García Girón, … Paul Flicek<br />
 <em>Nucleic Acids Research</em> (2017-11-16) <a href="https://doi.org/gcwg6r">https://doi.org/gcwg6r</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx1098">10.1093/nar/gkx1098</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29155950">29155950</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753206">PMC5753206</a></p>
 </div>
 <div id="ref-j0y6s0kf">
-<p>12. <strong>Ensembl comparative genomics resources</strong><br />
+<p>13. <strong>Ensembl comparative genomics resources</strong><br />
 Javier Herrero, Matthieu Muffato, Kathryn Beal, Stephen Fitzgerald, Leo Gordon, Miguel Pignatelli, Albert J. Vilella, Stephen M. J. Searle, Ridwan Amode, Simon Brent, … Paul Flicek<br />
 <em>Database</em> (2016) <a href="https://doi.org/ggb9tv">https://doi.org/ggb9tv</a><br />
 DOI: <a href="https://doi.org/10.1093/database/bav096">10.1093/database/bav096</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26896847">26896847</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4761110">PMC4761110</a></p>
 </div>
 <div id="ref-fBCZ87Cf">
-<p>13. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
+<p>14. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
 David Brawand, Magali Soumillon, Anamaria Necsulea, Philippe Julien, Gábor Csárdi, Patrick Harrigan, Manuela Weier, Angélica Liechti, Ayinuer Aximu-Petri, Martin Kircher, … Henrik Kaessmann<br />
 <em>Nature</em> (2011-10) <a href="https://doi.org/fcvk54">https://doi.org/fcvk54</a><br />
 DOI: <a href="https://doi.org/10.1038/nature10532">10.1038/nature10532</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22012392">22012392</a></p>
 </div>
 <div id="ref-66KDHtpG">
-<p>14. <strong>Atlas of protein sequence and structure</strong><br />
+<p>15. <strong>Atlas of protein sequence and structure</strong><br />
 Margaret O Dayhoff<br />
 <em>National Biomedical Research Foundation.</em> (1969)</p>
 </div>
 <div id="ref-1GiMcbPLs">
-<p>15. <strong>Physical biology of the cell</strong><br />
+<p>16. <strong>Physical biology of the cell</strong><br />
 Rob Phillips, Julie Theriot, Jane Kondev, Hernan Garcia<br />
 <em>Garland Science</em> (2012)</p>
 </div>
