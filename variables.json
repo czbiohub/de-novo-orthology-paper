@@ -2,44 +2,24 @@
   "date": "November 1, 2019",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "github": "olgabot",
+      "name": "Olga Borisovna Botvinnik",
+      "initials": "OBB",
+      "orcid": "0000-0003-4412-7970",
+      "twitter": "olgabot",
+      "email": "olga.botvinnik@czbiohub.org",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "Data Sciences Platform, Chan Zuckerberg Biohub"
       ],
-      "funders": "Grant XXXXXXXX",
       "affiliation_numbers": [
         1
-      ]
-    },
-    {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
-      "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
-      ],
-      "affiliation_numbers": [
-        1,
-        2
       ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Data Sciences Platform, Chan Zuckerberg Biohub",
       "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Whatever, University of Something",
-      "affiliation_number": 2
     }
   ],
   "ci_source": {
@@ -47,16 +27,19 @@
     "repo_slug": "czbiohub/primate-brain-organoid-paper",
     "repo_owner": "czbiohub",
     "repo_name": "primate-brain-organoid-paper",
-    "commit": "44343767ea7781a90af0d7838c43144c046aba99",
-    "triggering_commit": "44343767ea7781a90af0d7838c43144c046aba99",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/134607217",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/251936654",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/44343767ea7781a90af0d7838c43144c046aba99/"
+    "commit": "79c6d4072285b1a167d9b6b273b0adbe1eca6208",
+    "triggering_commit": "79c6d4072285b1a167d9b6b273b0adbe1eca6208",
+    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/134629232",
+    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/251988497",
+    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/79c6d4072285b1a167d9b6b273b0adbe1eca6208/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "total": 0
+      "doi": 11,
+      "raw": 2,
+      "url": 2,
+      "total": 15
     },
-    "word_count": 236
+    "word_count": 891
   }
 }
