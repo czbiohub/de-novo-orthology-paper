@@ -1,27 +1,19 @@
 ---
-title: "Manuscript Title"
+title: "Smashing single cells into $k$-mer sketches"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - comparative transcriptomics
+  - single-cell RNA-seq
+  - k-mer
+  - hashing
+  - MinHash
 lang: en-US
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    github: olgabot
+    name: Olga Borisovna Botvinnik
+    initials: OBB
+    orcid: 0000-0003-4412-7970
+    twitter: olgabot
+    email: olga.botvinnik@czbiohub.org
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Data Sciences Platform, Chan Zuckerberg Biohub
