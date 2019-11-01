@@ -1,22 +1,53 @@
 [
-{
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
-  "issued": {
-    "date-parts": [
-      [
-        2019
+  {
+    "author": [
+      {
+        "family": "Dayhoff",
+        "given": "Margaret O"
+      }
+    ],
+    "id": "raw:dayhoff1969atlas",
+    "issued": {
+      "date-parts": [
+        [
+          1969
+        ]
       ]
-    ]
+    },
+    "publisher": "National Biomedical Research Foundation.",
+    "title": "Atlas of protein sequence and structure",
+    "type": "book",
+    "volume": "4"
   },
-  "author": [
-    {
-      "given": "Daniel",
-      "family": "Himmelstein"
-    }
-  ]
- }
+  {
+    "author": [
+      {
+        "family": "Phillips",
+        "given": "Rob"
+      },
+      {
+        "family": "Theriot",
+        "given": "Julie"
+      },
+      {
+        "family": "Kondev",
+        "given": "Jane"
+      },
+      {
+        "family": "Garcia",
+        "given": "Hernan"
+      }
+    ],
+    "id": "raw:phillips2012physical",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "publisher": "Garland Science",
+    "title": "Physical biology of the cell",
+    "type": "book"
+  }
 ]
