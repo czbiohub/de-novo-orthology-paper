@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Olga Borisovna Botvinnik" />
   <meta name="dcterms.date" content="2019-11-01" />
-  <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
+  <title>Smashing single cells into k-mer sketches</title>
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -21,19 +20,183 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/44343767ea7781a90af0d7838c43144c046aba99/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/44343767ea7781a90af0d7838c43144c046aba99">czbiohub/primate-brain-organoid-paper@4434376</a> on November 1, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/79c6d4072285b1a167d9b6b273b0adbe1eca6208/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/79c6d4072285b1a167d9b6b273b0adbe1eca6208">czbiohub/primate-brain-organoid-paper@79c6d40</a> on November 1, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>John Doe</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/johndoe">johndoe</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/johndoe">johndoe</a><br> <small> Department of Something, University of Whatever · Funded by Grant XXXXXXXX </small></p></li>
-<li><p><strong>Jane Roe</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/janeroe">janeroe</a><br> <small> Department of Something, University of Whatever; Department of Whatever, University of Something </small></p></li>
+<li><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></li>
 </ul>
-<h2 id="abstract" class="page_break_before">Abstract</h2>
+<h2 id="abstract">Abstract</h2>
+<p>Single-cell RNA-sequencing is a powerful technology for identifying novel and known cell types, however its power is limited to organisms with well-annotated genomes. We demonstrate the utility of using annotation-agnostic methods which quantify cell-cell similarity using <span class="math inline">\(k\)</span>-mer profiles. We benchmark a few methods and demonstrate the utility of converting cell types from mouse to human and back, and compare to using purely 1:1 mapped orthologous genes.</p>
+<h2 id="introduction" class="page_break_before">Introduction</h2>
+<p>There are a predicted 8.7 million Eukaryotic species on earth <span class="citation" data-cites="OkFljXKC">[<a href="#ref-OkFljXKC" role="doc-biblioref">1</a>]</span>, yet only 14% (1,233,500) have been catalogued and 0.001% (9,449) have genomes deposited in the National Center for Biotechnology Information Genome Assembly <span class="citation" data-cites="16wL4sfFU">[<a href="#ref-16wL4sfFU" role="doc-biblioref">2</a>]</span>. And yet, the genome sequence is not enough. To truly understand the diversity of life on this planet, we need to determine not just the DNA blueprints of life, but understand the instantiation of the DNA, the cell types of the species. While sequencing DNA gives a quantitative measure of the nucleotide differences, it does not inform the functional strategies that change with DNA sequence. As new species can be defined by a new cell type. For example, the existence of a single cell type, the Cnidocyte <span class="citation" data-cites="18WcUBCuN">[<a href="#ref-18WcUBCuN" role="doc-biblioref">3</a>]</span>, a stinging cell of a single-celled biological weapon, defines the phylum Cnidaria. Thus, entire clades, not only species, can be defined by the introduction of an additional cell type or state.</p>
+<p>Novel organizations of existing cell states can also define cell types. For example, the development of genitalia in amniotes, while using similar cell types, ultimately uses a different physical organization of cell types to generate genitalia in mammals compared to reptiles <span class="citation" data-cites="rn7vCWvt">[<a href="#ref-rn7vCWvt" role="doc-biblioref">4</a>]</span></p>
+<p>Determining common gene ancestry (“orthology”) is a difficult problem. Many approaches exist <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>]</span>.</p>
+<p>Determining common ancestry of cell types (“orthologous cell types”) <span class="citation" data-cites="ogAGO9KH">[<a href="#ref-ogAGO9KH" role="doc-biblioref">6</a>]</span> is an additional difficult problem. Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space. Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell “alignment” packages], others use clusters of orthologous groups <span class="citation" data-cites="1tMQTfnh">[<a href="#ref-1tMQTfnh" role="doc-biblioref">8</a>]</span>, others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes <span class="citation" data-cites="y7xGipW5">[<a href="#ref-y7xGipW5" role="doc-biblioref">9</a>]</span> and re-annotate using a tool such as Comparative Annotation Toolkit <span class="citation" data-cites="1BnfHjbCA">[<a href="#ref-1BnfHjbCA" role="doc-biblioref">10</a>]</span>.</p>
+<h2 id="methods">Methods</h2>
+<p>Methods go here.</p>
+<p>We used ENSEMBL version 97.</p>
+<h2 id="results">Results</h2>
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">11</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">12</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">13</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">14</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">15</a>]</span>, show in Table~.</p>
+<div id="tbl:example-id" class="tablenos">
+<table>
+<caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid alphabet allowing for permissive cross-species sequence comparisons. For example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Amino acid</th>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Dayhoff</th>
+<th style="text-align: left;">Hydrophobic-polar (HP)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">Sulfur polymerization</td>
+<td style="text-align: left;">a</td>
+<td style="text-align: left;">p</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A, G, P, S, T</td>
+<td style="text-align: left;">Small</td>
+<td style="text-align: left;">b</td>
+<td style="text-align: left;">A, G, P: h</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">S,T: p</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D, E, N, Q</td>
+<td style="text-align: left;">Acid and amide</td>
+<td style="text-align: left;">c</td>
+<td style="text-align: left;">p</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">H, K, R</td>
+<td style="text-align: left;">Basic</td>
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">p</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I, L, M, V</td>
+<td style="text-align: left;">Hydrophobic</td>
+<td style="text-align: left;">e</td>
+<td style="text-align: left;">h</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F, W, Y</td>
+<td style="text-align: left;">Aromatic</td>
+<td style="text-align: left;">f</td>
+<td style="text-align: left;">h</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="fig:fig1" class="fignos">
+<figure>
+<img src="images/figure1.svg" alt="" /><figcaption><span>Figure 1:</span> Figure 1.</figcaption>
+</figure>
+</div>
+<p>We found that, consistent with previous knowledge, that 1:1 orthologues had higher <span class="math inline">\(k\)</span>-mer similarities as determined by the Jaccard Index.</p>
+<p>Additionally, more recently diverged genes had higher <span class="math inline">\(k\)</span>-mer similarity as well.</p>
+<div id="fig:fig2" class="fignos">
+<figure>
+<img src="images/figure2.svg" alt="" /><figcaption><span>Figure 2:</span> Figure 2.</figcaption>
+</figure>
+</div>
+<h2 id="discussion">Discussion</h2>
+<p>Conclusions and future directions go here.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
-
+<div id="ref-OkFljXKC">
+<p>1. <strong>How Many Species Are There on Earth and in the Ocean?</strong><br />
+Camilo Mora, Derek P. Tittensor, Sina Adl, Alastair G. B. Simpson, Boris Worm<br />
+<em>PLoS Biology</em> (2011-08-23) <a href="https://doi.org/fpr4z8">https://doi.org/fpr4z8</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pbio.1001127">10.1371/journal.pbio.1001127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21886479">21886479</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160336">PMC3160336</a></p>
+</div>
+<div id="ref-16wL4sfFU">
+<p>2. <strong>Genome List - Genome - NCBI</strong><a href="https://www.ncbi.nlm.nih.gov/genome/browse/">https://www.ncbi.nlm.nih.gov/genome/browse/</a></p>
+</div>
+<div id="ref-18WcUBCuN">
+<p>3. <strong>Cnidocyte</strong><br />
+Wikipedia<br />
+(2019-10-20) <a href="https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=922123291">https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=922123291</a></p>
+</div>
+<div id="ref-rn7vCWvt">
+<p>4. <strong>A relative shift in cloacal location repositions external genitalia in amniote evolution</strong><br />
+Patrick Tschopp, Emma Sherratt, Thomas J. Sanger, Anna C. Groner, Ariel C. Aspiras, Jimmy K. Hu, Olivier Pourquié, Jérôme Gros, Clifford J. Tabin<br />
+<em>Nature</em> (2014-11-05) <a href="https://doi.org/f6sg74">https://doi.org/f6sg74</a><br />
+DOI: <a href="https://doi.org/10.1038/nature13819">10.1038/nature13819</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25383527">25383527</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4294627">PMC4294627</a></p>
+</div>
+<div id="ref-LkrS4xXB">
+<p>5. <strong>Standardized benchmarking in the quest for orthologs</strong><br />
+Adrian M AltenhoffBrigitte Boeckmann, Salvador Capella-Gutierrez, Daniel A Dalquen, Todd DeLuca, Kristoffer Forslund, Jaime Huerta-Cepas, Benjamin Linard, Cécile Pereira, … Christophe Dessimoz<br />
+<em>Nature Methods</em> (2016-04-04) <a href="https://doi.org/f3rpzx">https://doi.org/f3rpzx</a><br />
+DOI: <a href="https://doi.org/10.1038/nmeth.3830">10.1038/nmeth.3830</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27043882">27043882</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4827703">PMC4827703</a></p>
+</div>
+<div id="ref-ogAGO9KH">
+<p>6. <strong>The origin and evolution of cell types</strong><br />
+Detlev Arendt, Jacob M. Musser, Clare V. H. Baker, Aviv Bergman, Connie Cepko, Douglas H. Erwin, Mihaela Pavlicev, Gerhard Schlosser, Stefanie Widder, Manfred D. Laubichler, Günter P. Wagner<br />
+<em>Nature Reviews Genetics</em> (2016-11-07) <a href="https://doi.org/f9b62x">https://doi.org/f9b62x</a><br />
+DOI: <a href="https://doi.org/10.1038/nrg.2016.127">10.1038/nrg.2016.127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27818507">27818507</a></p>
+</div>
+<div id="ref-wdzgXUGy">
+<p>7. <strong>How Single-Cell Genomics Is Changing Evolutionary and Developmental Biology</strong><br />
+John C. Marioni, Detlev Arendt<br />
+<em>Annual Review of Cell and Developmental Biology</em> (2017-10-06) <a href="https://doi.org/ggb632">https://doi.org/ggb632</a><br />
+DOI: <a href="https://doi.org/10.1146/annurev-cellbio-100616-060818">10.1146/annurev-cellbio-100616-060818</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28813177">28813177</a></p>
+</div>
+<div id="ref-1tMQTfnh">
+<p>8. <strong>The COG database: a tool for genome-scale analysis of protein functions and evolution</strong><br />
+R. L. Tatusov<br />
+<em>Nucleic Acids Research</em> (2000-01-01) <a href="https://doi.org/fr3gqz">https://doi.org/fr3gqz</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/28.1.33">10.1093/nar/28.1.33</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/10592175">10592175</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102395">PMC102395</a></p>
+</div>
+<div id="ref-y7xGipW5">
+<p>9. <strong>Establishing Cerebral Organoids as Models of Human-Specific Brain Evolution</strong><br />
+Alex A. Pollen, Aparna Bhaduri, Madeline G. Andrews, Tomasz J. Nowakowski, Olivia S. Meyerson, Mohammed A. Mostajo-Radji, Elizabeth Di Lullo, Beatriz Alvarado, Melanie Bedolli, Max L. Dougherty, … Arnold R. Kriegstein<br />
+<em>Cell</em> (2019-02) <a href="https://doi.org/gfvgzr">https://doi.org/gfvgzr</a><br />
+DOI: <a href="https://doi.org/10.1016/j.cell.2019.01.017">10.1016/j.cell.2019.01.017</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30735633">30735633</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6544371">PMC6544371</a></p>
+</div>
+<div id="ref-1BnfHjbCA">
+<p>10. <strong>Comparative Annotation Toolkit (CAT)—simultaneous clade and personal genome annotation</strong><br />
+Ian T. Fiddes, Joel Armstrong, Mark Diekhans, Stefanie Nachtweide, Zev N. Kronenberg, Jason G. Underwood, David Gordon, Dent Earl, Thomas Keane, Evan E. Eichler, … Benedict Paten<br />
+<em>Genome Research</em> (2018-06-08) <a href="https://doi.org/gdpg7n">https://doi.org/gdpg7n</a><br />
+DOI: <a href="https://doi.org/10.1101/gr.233460.117">10.1101/gr.233460.117</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29884752">29884752</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6028123">PMC6028123</a></p>
+</div>
+<div id="ref-lBlqrqAO">
+<p>11. <strong>Ensembl 2018</strong><br />
+Daniel R Zerbino, Premanand Achuthan, Wasiu Akanni, M Ridwan Amode, Daniel Barrell, Jyothish Bhai, Konstantinos Billis, Carla Cummins, Astrid Gall, Carlos García Girón, … Paul Flicek<br />
+<em>Nucleic Acids Research</em> (2017-11-16) <a href="https://doi.org/gcwg6r">https://doi.org/gcwg6r</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkx1098">10.1093/nar/gkx1098</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29155950">29155950</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753206">PMC5753206</a></p>
+</div>
+<div id="ref-j0y6s0kf">
+<p>12. <strong>Ensembl comparative genomics resources</strong><br />
+Javier Herrero, Matthieu Muffato, Kathryn Beal, Stephen Fitzgerald, Leo Gordon, Miguel Pignatelli, Albert J. Vilella, Stephen M. J. Searle, Ridwan Amode, Simon Brent, … Paul Flicek<br />
+<em>Database</em> (2016) <a href="https://doi.org/ggb9tv">https://doi.org/ggb9tv</a><br />
+DOI: <a href="https://doi.org/10.1093/database/bav096">10.1093/database/bav096</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26896847">26896847</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4761110">PMC4761110</a></p>
+</div>
+<div id="ref-fBCZ87Cf">
+<p>13. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
+David Brawand, Magali Soumillon, Anamaria Necsulea, Philippe Julien, Gábor Csárdi, Patrick Harrigan, Manuela Weier, Angélica Liechti, Ayinuer Aximu-Petri, Martin Kircher, … Henrik Kaessmann<br />
+<em>Nature</em> (2011-10) <a href="https://doi.org/fcvk54">https://doi.org/fcvk54</a><br />
+DOI: <a href="https://doi.org/10.1038/nature10532">10.1038/nature10532</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22012392">22012392</a></p>
+</div>
+<div id="ref-66KDHtpG">
+<p>14. <strong>Atlas of protein sequence and structure</strong><br />
+Margaret O Dayhoff<br />
+<em>National Biomedical Research Foundation.</em> (1969)</p>
+</div>
+<div id="ref-1GiMcbPLs">
+<p>15. <strong>Physical biology of the cell</strong><br />
+Rob Phillips, Julie Theriot, Jane Kondev, Hernan Garcia<br />
+<em>Garland Science</em> (2012)</p>
+</div>
 </div>
 <!-- default theme -->
 
