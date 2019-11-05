@@ -19,9 +19,9 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/e74a513b0de1d280ba92ca0ae411a92423e5a6f6/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/19f0fbc915033a9d76ba5df25c8a1942197a5367/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@e74a513](https://github.com/czbiohub/primate-brain-organoid-paper/tree/e74a513b0de1d280ba92ca0ae411a92423e5a6f6)
+from [czbiohub/primate-brain-organoid-paper@19f0fbc](https://github.com/czbiohub/primate-brain-organoid-paper/tree/19f0fbc915033a9d76ba5df25c8a1942197a5367)
 on November 5, 2019.
 </em></small>
 
@@ -64,9 +64,9 @@ Novel organizations of existing cell states can also define cell types.
 For example, the development of genitalia in amniotes, while using similar cell types, ultimately uses a different physical organization of cell types to generate genitalia in mammals compared to reptiles [@rn7vCWvt]
 
 Determining common gene ancestry ("orthology") is a difficult problem.
-Many approaches exist [@LkrS4xXB].
+Many approaches exist [@LkrS4xXB; @46R7aU4N].
 
-Determining common ancestry of cell types ("orthologous cell types") [@ogAGO9KH @wdzgXUGy] is an additional difficult problem.
+Determining common ancestry of cell types ("orthologous cell types") [@ogAGO9KH; @wdzgXUGy] is an additional difficult problem.
 Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space.
 Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell "alignment" packages], others use clusters of orthologous groups [@1tMQTfnh], others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes [@y7xGipW5] and re-annotate using a tool such as Comparative Annotation Toolkit [@1BnfHjbCA].
 
@@ -106,6 +106,7 @@ example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
 to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:example-id}
 
 
+
 ![Figure 1.](images/figure1.svg){#fig:fig1}
 
 
@@ -116,6 +117,94 @@ Additionally, more recently diverged genes had higher $k$-mer similarity as well
 
 
 ![Figure 2.](images/figure2.svg){#fig:fig2}
+
+
+### Outlines
+
+#### Figure 1 outline
+
+- Kmers can approximate orthologies
+  - Jaccard similarity of orthologues is higher than non-orthologues
+  - Benchmarking using https://orthology.benchmarkservice.org/cgi-bin/gateway.pl
+  - Finding orthologues
+    - Gold standard
+      - ENSEMBL COMPARA
+      - Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 [@LkrS4xXB]
+    - Orthologous groups/Conserved Domain Database [@bkF0801R]
+- Kmers can find correct reading from of RNA-seq reads
+  - Human peptides → human RNAseq
+  - Human peptides → chimp RNAseq
+  - Human peptides → mouse RNAseq
+- Kmers can find only transcription factor reads of TFs from RNA-seq reads
+  - Human TFs → human RNAseq
+  - Human TFs → chimp RNAseq
+  - Human TFs → mouse RNAseq
+- Overview of kmermaid pipeline
+  - Comparison of tissue across species
+    - Partition reads to coding/noncoding bins
+    - MinHash the Dayhoff-encoded coding sequences
+    - Jaccard similarity on the MinHashes
+
+
+#### Figure 2 outline
+
+References for Primate Brain development
+
+- Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 [@nbBjh1sL]
+- Mazin, P. V., Jiang, X., Fu, N., Han, D., Guo, M., Gelfand, M. S., & Khaitovich, P. (2018). Conservation, evolution, and regulation of splicing during prefrontal cortex development in humans, chimpanzees, and macaques. Rna, 24(4), 585–596. http://doi.org/10.1261/rna.064931.117 [@G7TPi9Sb]
+- Xiong, J., Jiang, X., Ditsiou, A., Gao, Y., Sun, J., Lowenstein, E. D., et al. (2018). Predominant patterns of splicing evolution on human, chimpanzee and macaque evolutionary lineages. Human Molecular Genetics, 27(8), 1474–1485. http://doi.org/10.1093/hmg/ddy058 [@n7a1Lgjf]
+
+##### No need for 1:1 orthology
+
+Gene expression evolution through duplications
+
+- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@1DcTxE8Z3]
+- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@uQLS9NYU]
+- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@1DcTxE8Z3]
+
+Taxa-restricted genes
+
+- Human-specific genes in fetal neocortex
+Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 [@nbBjh1sL]
+- Insects -- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@lJHQuvIH]
+
+Don't need to normalize gene expression counts since we just have presence/absence
+
+Full transcript analyses
+
+- Brain Organoid -- Droplet + PacBio data
+
+Correlated evolution of celltypes?
+
+- Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., & Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 [@FTv2KYrZ]
+
+Cell type homology
+
+- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@uQLS9NYU]
+- Tschopp, P., & Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 [@hdRo8a7z]
+- Hejnol, A., & Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 [@1GRtpoh49]
+- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@lJHQuvIH]
+- Mammalian decidual cell
+
+Cell type evolution
+
+- Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., & Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 [@8cGr6TE]
+
+#### Figure 3 -- long evolutionary distances with HP encoding?
+
+Metazoan body plan formation
+
+- Early development in Cnidarians/Hydra [@17wCcfFdm; @ 10.1016/j.cell.2018.05.019]
+- sponges and others [@w8ZV4B95]
+- planaria [@EtU319GV; doi:10.1126/science.aaq1723],
+- drosophila [@1EawBz4WT]
+- zebrafish [@JWLQWOpG; @4frea8Pi; @yrCPHI0k],
+- mouse [@kTAtFDTa]
+
+#### Figure 4 -- What features are k-mers able to pick up that mapping doesn't?
+
+- Which reads are found to have coding features but didn’t map to the genome?
+- Do these features map to novel genes or gene fusions?
 
 
 ## Discussion
