@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 367.6 475.4" style="enable-background:new 0 0 367.6 475.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E6E7E8;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'Helvetica-Light';}
+	.st2{font-size:12px;}
+	.st3{fill:none;}
+	.st4{font-family:'Helvetica-Bold';}
+</style>
+<g>
+	<rect x="2.2" y="19.5" class="st0" width="363.2" height="137.2"/>
+	<text transform="matrix(1 0 0 1 53.3979 73.4512)"><tspan x="0" y="0" class="st1 st2">Extract coding sequence using human proteins,  </tspan><tspan x="7.3" y="14.4" class="st1 st2">k-merize coding sequence and minhash, com </tspan><tspan x="29.4" y="28.8" class="st1 st2">pare samples/cells across minhashes</tspan></text>
+</g>
+<g>
+	<rect x="0.5" y="181.1" class="st0" width="172.6" height="137.2"/>
+	<text transform="matrix(1 0 0 1 49.1099 238.3417)"><tspan x="0" y="0" class="st1 st2">kNN graph of  </tspan><tspan x="0.3" y="14.4" class="st1 st2">Brawand2011</tspan><tspan x="7.7" y="28.8" class="st1 st2">MinHashes</tspan></text>
+</g>
+<g>
+	<rect x="0.5" y="337.7" class="st0" width="172.6" height="137.2"/>
+	<rect x="38.9" y="385.1" class="st3" width="95.7" height="42.5"/>
+	<text transform="matrix(1 0 0 1 47.4536 395.3879)"><tspan x="0" y="0" class="st1 st2">K-mers driving </tspan><tspan x="9.7" y="14.4" class="st1 st2">similarity in </tspan><tspan x="2.3" y="28.8" class="st1 st2">brawand2011</tspan></text>
+</g>
+<text transform="matrix(1 0 0 1 5.7568 10.3185)" class="st4 st2">A</text>
+<text transform="matrix(1 0 0 1 0.5001 171.2175)" class="st4 st2">B</text>
+<text transform="matrix(1 0 0 1 0.5 335.4799)" class="st4 st2">D</text>
+<g>
+	<rect x="192.8" y="336.3" class="st0" width="172.6" height="137.2"/>
+	<text transform="matrix(1 0 0 1 224.3992 393.5549)"><tspan x="0" y="0" class="st1 st2">Are the k-mers from  </tspan><tspan x="-0.3" y="14.4" class="st1 st2">unmapped reads or  </tspan><tspan x="-0.4" y="28.8" class="st1 st2">unannotated genes?</tspan></text>
+</g>
+<g>
+	<rect x="194.5" y="181.1" class="st0" width="172.6" height="137.2"/>
+	<text transform="matrix(1 0 0 1 243.1091 238.3417)"><tspan x="0" y="0" class="st1 st2">kNN graph of  </tspan><tspan x="0.3" y="14.4" class="st1 st2">Brawand2011</tspan><tspan x="-8" y="28.8" class="st1 st2">Gene expression</tspan></text>
+</g>
+<text transform="matrix(1 0 0 1 194.5 175.0886)" class="st4 st2">C</text>
+<text transform="matrix(1 0 0 1 194.4999 332.2543)" class="st4 st2">E</text>
+</svg>

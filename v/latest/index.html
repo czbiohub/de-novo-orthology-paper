@@ -22,7 +22,7 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/e74a513b0de1d280ba92ca0ae411a92423e5a6f6/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/e74a513b0de1d280ba92ca0ae411a92423e5a6f6">czbiohub/primate-brain-organoid-paper@e74a513</a> on November 5, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/19f0fbc915033a9d76ba5df25c8a1942197a5367/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/19f0fbc915033a9d76ba5df25c8a1942197a5367">czbiohub/primate-brain-organoid-paper@19f0fbc</a> on November 5, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Venkata Naga Pranathi Vemuri</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0002-5748-9594">0000-0002-5748-9594</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/pranathivemuri">pranathivemuri</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/pranuvemuri">pranuvemuri</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></li>
@@ -32,14 +32,14 @@
 <h2 id="introduction" class="page_break_before">Introduction</h2>
 <p>There are a predicted 8.7 million Eukaryotic species on earth <span class="citation" data-cites="OkFljXKC">[<a href="#ref-OkFljXKC" role="doc-biblioref">1</a>]</span>, yet only 14% (1,233,500) have been catalogued and 0.001% (9,449) have genomes deposited in the National Center for Biotechnology Information Genome Assembly <span class="citation" data-cites="16wL4sfFU">[<a href="#ref-16wL4sfFU" role="doc-biblioref">2</a>]</span>. And yet, the genome sequence is not enough. To truly understand the diversity of life on this planet, we need to determine not just the DNA blueprints of life, but understand the instantiation of the DNA, the cell types of the species. While sequencing DNA gives a quantitative measure of the nucleotide differences, it does not inform the functional strategies that change with DNA sequence. As new species can be defined by a new cell type. For example, the existence of a single cell type, the Cnidocyte <span class="citation" data-cites="18WcUBCuN">[<a href="#ref-18WcUBCuN" role="doc-biblioref">3</a>]</span>, a stinging cell of a single-celled biological weapon, defines the phylum Cnidaria. Thus, entire clades, not only species, can be defined by the introduction of an additional cell type or state.</p>
 <p>Novel organizations of existing cell states can also define cell types. For example, the development of genitalia in amniotes, while using similar cell types, ultimately uses a different physical organization of cell types to generate genitalia in mammals compared to reptiles <span class="citation" data-cites="rn7vCWvt">[<a href="#ref-rn7vCWvt" role="doc-biblioref">4</a>]</span></p>
-<p>Determining common gene ancestry (“orthology”) is a difficult problem. Many approaches exist <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>]</span>.</p>
-<p>Determining common ancestry of cell types (“orthologous cell types”) <span class="citation" data-cites="ogAGO9KH">[<a href="#ref-ogAGO9KH" role="doc-biblioref">6</a>]</span> is an additional difficult problem. Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space. Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell “alignment” packages], others use clusters of orthologous groups <span class="citation" data-cites="1tMQTfnh">[<a href="#ref-1tMQTfnh" role="doc-biblioref">8</a>]</span>, others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes <span class="citation" data-cites="y7xGipW5">[<a href="#ref-y7xGipW5" role="doc-biblioref">9</a>]</span> and re-annotate using a tool such as Comparative Annotation Toolkit <span class="citation" data-cites="1BnfHjbCA">[<a href="#ref-1BnfHjbCA" role="doc-biblioref">10</a>]</span>.</p>
-<p><span class="math inline">\(k\)</span>-mers have been proposed for comparing single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">11</a>]</span> as they are a fast, simple way to create cell-cell similarities. However, the work so far has focused on using annotated organisms and not cross-species analyses.</p>
+<p>Determining common gene ancestry (“orthology”) is a difficult problem. Many approaches exist <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">6</a>]</span>.</p>
+<p>Determining common ancestry of cell types (“orthologous cell types”) <span class="citation" data-cites="ogAGO9KH wdzgXUGy">[<a href="#ref-ogAGO9KH" role="doc-biblioref">7</a>,<a href="#ref-wdzgXUGy" role="doc-biblioref">8</a>]</span> is an additional difficult problem. Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space. Many researchers take the approach of using one-to-one orthologous genes [Cite: brawand2011, CCA, LIGER, Scanorama, basically all the single cell “alignment” packages], others use clusters of orthologous groups <span class="citation" data-cites="1tMQTfnh">[<a href="#ref-1tMQTfnh" role="doc-biblioref">9</a>]</span>, others map reads onto a common genome derived from whole-genome alignment [cite: recent primate brain paper from Barbara Treutlein], or map onto native genomes <span class="citation" data-cites="y7xGipW5">[<a href="#ref-y7xGipW5" role="doc-biblioref">10</a>]</span> and re-annotate using a tool such as Comparative Annotation Toolkit <span class="citation" data-cites="1BnfHjbCA">[<a href="#ref-1BnfHjbCA" role="doc-biblioref">11</a>]</span>.</p>
+<p><span class="math inline">\(k\)</span>-mers have been proposed for comparing single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">12</a>]</span> as they are a fast, simple way to create cell-cell similarities. However, the work so far has focused on using annotated organisms and not cross-species analyses.</p>
 <h2 id="methods">Methods</h2>
 <p>Methods go here.</p>
 <p>We used ENSEMBL version 97.</p>
 <h2 id="results">Results</h2>
-<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">12</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">13</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">14</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">15</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">16</a>]</span>, show in Table~.</p>
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">13</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">14</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">15</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">16</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">17</a>]</span>, show in Table~.</p>
 <div id="tbl:example-id" class="tablenos">
 <table>
 <caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid alphabet allowing for permissive cross-species sequence comparisons. For example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </caption>
@@ -109,6 +109,100 @@
 <img src="images/figure2.svg" alt="" /><figcaption><span>Figure 2:</span> Figure 2.</figcaption>
 </figure>
 </div>
+<h3 id="outlines">Outlines</h3>
+<h4 id="figure-1-outline">Figure 1 outline</h4>
+<ul>
+<li>Kmers can approximate orthologies
+<ul>
+<li>Jaccard similarity of orthologues is higher than non-orthologues</li>
+<li>Benchmarking using https://orthology.benchmarkservice.org/cgi-bin/gateway.pl</li>
+<li>Finding orthologues
+<ul>
+<li>Gold standard
+<ul>
+<li>ENSEMBL COMPARA</li>
+<li>Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>]</span></li>
+</ul></li>
+<li>Orthologous groups/Conserved Domain Database <span class="citation" data-cites="bkF0801R">[<a href="#ref-bkF0801R" role="doc-biblioref">18</a>]</span></li>
+</ul></li>
+</ul></li>
+<li>Kmers can find correct reading from of RNA-seq reads
+<ul>
+<li>Human peptides → human RNAseq</li>
+<li>Human peptides → chimp RNAseq</li>
+<li>Human peptides → mouse RNAseq</li>
+</ul></li>
+<li>Kmers can find only transcription factor reads of TFs from RNA-seq reads
+<ul>
+<li>Human TFs → human RNAseq</li>
+<li>Human TFs → chimp RNAseq</li>
+<li>Human TFs → mouse RNAseq</li>
+</ul></li>
+<li>Overview of kmermaid pipeline
+<ul>
+<li>Comparison of tissue across species
+<ul>
+<li>Partition reads to coding/noncoding bins</li>
+<li>MinHash the Dayhoff-encoded coding sequences</li>
+<li>Jaccard similarity on the MinHashes</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="figure-2-outline">Figure 2 outline</h4>
+<p>References for Primate Brain development</p>
+<ul>
+<li>Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 <span class="citation" data-cites="nbBjh1sL">[<a href="#ref-nbBjh1sL" role="doc-biblioref">19</a>]</span></li>
+<li>Mazin, P. V., Jiang, X., Fu, N., Han, D., Guo, M., Gelfand, M. S., &amp; Khaitovich, P. (2018). Conservation, evolution, and regulation of splicing during prefrontal cortex development in humans, chimpanzees, and macaques. Rna, 24(4), 585–596. http://doi.org/10.1261/rna.064931.117 <span class="citation" data-cites="G7TPi9Sb">[<a href="#ref-G7TPi9Sb" role="doc-biblioref">20</a>]</span></li>
+<li>Xiong, J., Jiang, X., Ditsiou, A., Gao, Y., Sun, J., Lowenstein, E. D., et al. (2018). Predominant patterns of splicing evolution on human, chimpanzee and macaque evolutionary lineages. Human Molecular Genetics, 27(8), 1474–1485. http://doi.org/10.1093/hmg/ddy058 <span class="citation" data-cites="n7a1Lgjf">[<a href="#ref-n7a1Lgjf" role="doc-biblioref">21</a>]</span></li>
+</ul>
+<h5 id="no-need-for-11-orthology">No need for 1:1 orthology</h5>
+<p>Gene expression evolution through duplications</p>
+<ul>
+<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">22</a>]</span></li>
+<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">23</a>]</span></li>
+<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">22</a>]</span></li>
+</ul>
+<p>Taxa-restricted genes</p>
+<ul>
+<li>Human-specific genes in fetal neocortex Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 <span class="citation" data-cites="nbBjh1sL">[<a href="#ref-nbBjh1sL" role="doc-biblioref">19</a>]</span></li>
+<li>Insects – Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">24</a>]</span></li>
+</ul>
+<p>Don’t need to normalize gene expression counts since we just have presence/absence</p>
+<p>Full transcript analyses</p>
+<ul>
+<li>Brain Organoid – Droplet + PacBio data</li>
+</ul>
+<p>Correlated evolution of celltypes?</p>
+<ul>
+<li>Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., &amp; Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 <span class="citation" data-cites="FTv2KYrZ">[<a href="#ref-FTv2KYrZ" role="doc-biblioref">25</a>]</span></li>
+</ul>
+<p>Cell type homology</p>
+<ul>
+<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">23</a>]</span></li>
+<li>Tschopp, P., &amp; Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 <span class="citation" data-cites="hdRo8a7z">[<a href="#ref-hdRo8a7z" role="doc-biblioref">26</a>]</span></li>
+<li>Hejnol, A., &amp; Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 <span class="citation" data-cites="1GRtpoh49">[<a href="#ref-1GRtpoh49" role="doc-biblioref">27</a>]</span></li>
+<li>Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">24</a>]</span></li>
+<li>Mammalian decidual cell</li>
+</ul>
+<p>Cell type evolution</p>
+<ul>
+<li>Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., &amp; Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 <span class="citation" data-cites="8cGr6TE">[<a href="#ref-8cGr6TE" role="doc-biblioref">28</a>]</span></li>
+</ul>
+<h4 id="figure-3-long-evolutionary-distances-with-hp-encoding">Figure 3 – long evolutionary distances with HP encoding?</h4>
+<p>Metazoan body plan formation</p>
+<ul>
+<li>Early development in Cnidarians/Hydra [<span class="citation" data-cites="17wCcfFdm"><a href="#ref-17wCcfFdm" role="doc-biblioref">29</a></span>; @ 10.1016/j.cell.2018.05.019]</li>
+<li>sponges and others <span class="citation" data-cites="w8ZV4B95">[<a href="#ref-w8ZV4B95" role="doc-biblioref">30</a>]</span></li>
+<li>planaria [<span class="citation" data-cites="EtU319GV"><a href="#ref-EtU319GV" role="doc-biblioref">31</a></span>; doi:10.1126/science.aaq1723],</li>
+<li>drosophila <span class="citation" data-cites="1EawBz4WT">[<a href="#ref-1EawBz4WT" role="doc-biblioref">32</a>]</span></li>
+<li>zebrafish <span class="citation" data-cites="JWLQWOpG 4frea8Pi yrCPHI0k">[<a href="#ref-JWLQWOpG" role="doc-biblioref">33</a>,<a href="#ref-4frea8Pi" role="doc-biblioref">34</a>,<a href="#ref-yrCPHI0k" role="doc-biblioref">35</a>]</span>,</li>
+<li>mouse <span class="citation" data-cites="kTAtFDTa">[<a href="#ref-kTAtFDTa" role="doc-biblioref">36</a>]</span></li>
+</ul>
+<h4 id="figure-4-what-features-are-k-mers-able-to-pick-up-that-mapping-doesnt">Figure 4 – What features are k-mers able to pick up that mapping doesn’t?</h4>
+<ul>
+<li>Which reads are found to have coding features but didn’t map to the genome?</li>
+<li>Do these features map to novel genes or gene fusions?</li>
+</ul>
 <h2 id="discussion">Discussion</h2>
 <p>Conclusions and future directions go here.</p>
 <h2 id="references" class="page_break_before">References</h2>
@@ -140,69 +234,186 @@ Adrian M AltenhoffBrigitte Boeckmann, Salvador Capella-Gutierrez, Daniel A Dalqu
 <em>Nature Methods</em> (2016-04-04) <a href="https://doi.org/f3rpzx">https://doi.org/f3rpzx</a><br />
 DOI: <a href="https://doi.org/10.1038/nmeth.3830">10.1038/nmeth.3830</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27043882">27043882</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4827703">PMC4827703</a></p>
 </div>
+<div id="ref-46R7aU4N">
+<p>6. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong><br />
+David M. Emms, Steven Kelly<br />
+<em>bioRxiv</em> (2019-04-24) <a href="https://www.biorxiv.org/content/10.1101/466201v2">https://www.biorxiv.org/content/10.1101/466201v2</a><br />
+DOI: <a href="https://doi.org/10.1101/466201">10.1101/466201</a></p>
+</div>
 <div id="ref-ogAGO9KH">
-<p>6. <strong>The origin and evolution of cell types</strong><br />
+<p>7. <strong>The origin and evolution of cell types</strong><br />
 Detlev Arendt, Jacob M. Musser, Clare V. H. Baker, Aviv Bergman, Connie Cepko, Douglas H. Erwin, Mihaela Pavlicev, Gerhard Schlosser, Stefanie Widder, Manfred D. Laubichler, Günter P. Wagner<br />
 <em>Nature Reviews Genetics</em> (2016-11-07) <a href="https://doi.org/f9b62x">https://doi.org/f9b62x</a><br />
 DOI: <a href="https://doi.org/10.1038/nrg.2016.127">10.1038/nrg.2016.127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27818507">27818507</a></p>
 </div>
 <div id="ref-wdzgXUGy">
-<p>7. <strong>How Single-Cell Genomics Is Changing Evolutionary and Developmental Biology</strong><br />
+<p>8. <strong>How Single-Cell Genomics Is Changing Evolutionary and Developmental Biology</strong><br />
 John C. Marioni, Detlev Arendt<br />
 <em>Annual Review of Cell and Developmental Biology</em> (2017-10-06) <a href="https://doi.org/ggb632">https://doi.org/ggb632</a><br />
 DOI: <a href="https://doi.org/10.1146/annurev-cellbio-100616-060818">10.1146/annurev-cellbio-100616-060818</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28813177">28813177</a></p>
 </div>
 <div id="ref-1tMQTfnh">
-<p>8. <strong>The COG database: a tool for genome-scale analysis of protein functions and evolution</strong><br />
+<p>9. <strong>The COG database: a tool for genome-scale analysis of protein functions and evolution</strong><br />
 R. L. Tatusov<br />
 <em>Nucleic Acids Research</em> (2000-01-01) <a href="https://doi.org/fr3gqz">https://doi.org/fr3gqz</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/28.1.33">10.1093/nar/28.1.33</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/10592175">10592175</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102395">PMC102395</a></p>
 </div>
 <div id="ref-y7xGipW5">
-<p>9. <strong>Establishing Cerebral Organoids as Models of Human-Specific Brain Evolution</strong><br />
+<p>10. <strong>Establishing Cerebral Organoids as Models of Human-Specific Brain Evolution</strong><br />
 Alex A. Pollen, Aparna Bhaduri, Madeline G. Andrews, Tomasz J. Nowakowski, Olivia S. Meyerson, Mohammed A. Mostajo-Radji, Elizabeth Di Lullo, Beatriz Alvarado, Melanie Bedolli, Max L. Dougherty, … Arnold R. Kriegstein<br />
 <em>Cell</em> (2019-02) <a href="https://doi.org/gfvgzr">https://doi.org/gfvgzr</a><br />
 DOI: <a href="https://doi.org/10.1016/j.cell.2019.01.017">10.1016/j.cell.2019.01.017</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30735633">30735633</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6544371">PMC6544371</a></p>
 </div>
 <div id="ref-1BnfHjbCA">
-<p>10. <strong>Comparative Annotation Toolkit (CAT)—simultaneous clade and personal genome annotation</strong><br />
+<p>11. <strong>Comparative Annotation Toolkit (CAT)—simultaneous clade and personal genome annotation</strong><br />
 Ian T. Fiddes, Joel Armstrong, Mark Diekhans, Stefanie Nachtweide, Zev N. Kronenberg, Jason G. Underwood, David Gordon, Dent Earl, Thomas Keane, Evan E. Eichler, … Benedict Paten<br />
 <em>Genome Research</em> (2018-06-08) <a href="https://doi.org/gdpg7n">https://doi.org/gdpg7n</a><br />
 DOI: <a href="https://doi.org/10.1101/gr.233460.117">10.1101/gr.233460.117</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29884752">29884752</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6028123">PMC6028123</a></p>
 </div>
 <div id="ref-wtk13QGK">
-<p>11. <strong>K-mer counting with low memory consumption enables fast clustering of single-cell sequencing data without read alignment</strong><br />
+<p>12. <strong>K-mer counting with low memory consumption enables fast clustering of single-cell sequencing data without read alignment</strong><br />
 Christina Huan Shi, Kevin Y. Yip<br />
 <em>bioRxiv</em> (2019-08-02) <a href="https://www.biorxiv.org/content/10.1101/723833v1">https://www.biorxiv.org/content/10.1101/723833v1</a><br />
 DOI: <a href="https://doi.org/10.1101/723833">10.1101/723833</a></p>
 </div>
 <div id="ref-lBlqrqAO">
-<p>12. <strong>Ensembl 2018</strong><br />
+<p>13. <strong>Ensembl 2018</strong><br />
 Daniel R Zerbino, Premanand Achuthan, Wasiu Akanni, M Ridwan Amode, Daniel Barrell, Jyothish Bhai, Konstantinos Billis, Carla Cummins, Astrid Gall, Carlos García Girón, … Paul Flicek<br />
 <em>Nucleic Acids Research</em> (2017-11-16) <a href="https://doi.org/gcwg6r">https://doi.org/gcwg6r</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx1098">10.1093/nar/gkx1098</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29155950">29155950</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753206">PMC5753206</a></p>
 </div>
 <div id="ref-j0y6s0kf">
-<p>13. <strong>Ensembl comparative genomics resources</strong><br />
+<p>14. <strong>Ensembl comparative genomics resources</strong><br />
 Javier Herrero, Matthieu Muffato, Kathryn Beal, Stephen Fitzgerald, Leo Gordon, Miguel Pignatelli, Albert J. Vilella, Stephen M. J. Searle, Ridwan Amode, Simon Brent, … Paul Flicek<br />
 <em>Database</em> (2016) <a href="https://doi.org/ggb9tv">https://doi.org/ggb9tv</a><br />
 DOI: <a href="https://doi.org/10.1093/database/bav096">10.1093/database/bav096</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26896847">26896847</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4761110">PMC4761110</a></p>
 </div>
 <div id="ref-fBCZ87Cf">
-<p>14. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
+<p>15. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
 David Brawand, Magali Soumillon, Anamaria Necsulea, Philippe Julien, Gábor Csárdi, Patrick Harrigan, Manuela Weier, Angélica Liechti, Ayinuer Aximu-Petri, Martin Kircher, … Henrik Kaessmann<br />
 <em>Nature</em> (2011-10) <a href="https://doi.org/fcvk54">https://doi.org/fcvk54</a><br />
 DOI: <a href="https://doi.org/10.1038/nature10532">10.1038/nature10532</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22012392">22012392</a></p>
 </div>
 <div id="ref-66KDHtpG">
-<p>15. <strong>Atlas of protein sequence and structure</strong><br />
+<p>16. <strong>Atlas of protein sequence and structure</strong><br />
 Margaret O Dayhoff<br />
 <em>National Biomedical Research Foundation.</em> (1969)</p>
 </div>
 <div id="ref-1GiMcbPLs">
-<p>16. <strong>Physical biology of the cell</strong><br />
+<p>17. <strong>Physical biology of the cell</strong><br />
 Rob Phillips, Julie Theriot, Jane Kondev, Hernan Garcia<br />
 <em>Garland Science</em> (2012)</p>
+</div>
+<div id="ref-bkF0801R">
+<p>18. <strong>Identifiers.org &lt; EMBL-EBI</strong><a href="https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119">https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119</a></p>
+</div>
+<div id="ref-nbBjh1sL">
+<p>19. <strong>Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex</strong><br />
+Marta Florio, Michael Heide, Anneline Pinson, Holger Brandl, Mareike Albert, Sylke Winkler, Pauline Wimberger, Wieland B Huttner, Michael Hiller<br />
+<em>eLife</em> (2018-03-21) <a href="https://doi.org/gc678k">https://doi.org/gc678k</a><br />
+DOI: <a href="https://doi.org/10.7554/elife.32332">10.7554/elife.32332</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29561261">29561261</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5898914">PMC5898914</a></p>
+</div>
+<div id="ref-G7TPi9Sb">
+<p>20. <strong>Conservation, evolution, and regulation of splicing during prefrontal cortex development in humans, chimpanzees, and macaques</strong><br />
+Pavel V. Mazin, Xi Jiang, Ning Fu, Dingding Han, Meng Guo, Mikhail S. Gelfand, Philipp Khaitovich<br />
+<em>RNA</em> (2018-01-23) <a href="https://doi.org/gctq4n">https://doi.org/gctq4n</a><br />
+DOI: <a href="https://doi.org/10.1261/rna.064931.117">10.1261/rna.064931.117</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29363555">29363555</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5855957">PMC5855957</a></p>
+</div>
+<div id="ref-n7a1Lgjf">
+<p>21. <strong>Predominant patterns of splicing evolution on human, chimpanzee and macaque evolutionary lineages</strong><br />
+Jieyi Xiong, Xi Jiang, Angeliki Ditsiou, Yang Gao, Jing Sun, Elijah D Lowenstein, Shuyun Huang, Philipp Khaitovich<br />
+<em>Human Molecular Genetics</em> (2018-02-14) <a href="https://doi.org/gc2v79">https://doi.org/gc2v79</a><br />
+DOI: <a href="https://doi.org/10.1093/hmg/ddy058">10.1093/hmg/ddy058</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29452398">29452398</a></p>
+</div>
+<div id="ref-1DcTxE8Z3">
+<p>22. <strong>Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates</strong><br />
+D. Farre, M. M. Alba<br />
+<em>Molecular Biology and Evolution</em> (2009-10-12) <a href="https://doi.org/dxrtmd">https://doi.org/dxrtmd</a><br />
+DOI: <a href="https://doi.org/10.1093/molbev/msp242">10.1093/molbev/msp242</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19822635">19822635</a></p>
+</div>
+<div id="ref-uQLS9NYU">
+<p>23. <strong>GENEFAMILYEVOLUTION ANDHOMOLOGY: Genomics Meets Phylogenetics</strong><br />
+Joseph W. Thornton, Rob DeSalle<br />
+<em>Annual Review of Genomics and Human Genetics</em> (2000-09) <a href="https://doi.org/bjp5pm">https://doi.org/bjp5pm</a><br />
+DOI: <a href="https://doi.org/10.1146/annurev.genom.1.1.41">10.1146/annurev.genom.1.1.41</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/11701624">11701624</a></p>
+</div>
+<div id="ref-lJHQuvIH">
+<p>24. <strong>Taxon-restricted genes at the origin of a novel trait allowing access to a new environment</strong><br />
+M. Emília Santos, Augustin Le Bouquin, Antonin J. J. Crumière, Abderrahman Khila<br />
+<em>Science</em> (2017-10-19) <a href="https://doi.org/gcgjbs">https://doi.org/gcgjbs</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aan2748">10.1126/science.aan2748</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29051384">29051384</a></p>
+</div>
+<div id="ref-FTv2KYrZ">
+<p>25. <strong>Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes</strong><br />
+Cong Liang, Jacob M Musser, Alison Cloutier, Richard O Prum, Günter P Wagner<br />
+<em>Genome Biology and Evolution</em> (2018-01-23) <a href="https://doi.org/gc69v9">https://doi.org/gc69v9</a><br />
+DOI: <a href="https://doi.org/10.1093/gbe/evy016">10.1093/gbe/evy016</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29373668">29373668</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800078">PMC5800078</a></p>
+</div>
+<div id="ref-hdRo8a7z">
+<p>26. <strong>Deep homology in the age of next-generation sequencing</strong><br />
+Patrick Tschopp, Clifford J. Tabin<br />
+<em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2017-02-05) <a href="https://doi.org/gfzpbg">https://doi.org/gfzpbg</a><br />
+DOI: <a href="https://doi.org/10.1098/rstb.2015.0475">10.1098/rstb.2015.0475</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27994118">27994118</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5182409">PMC5182409</a></p>
+</div>
+<div id="ref-1GRtpoh49">
+<p>27. <strong>Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution</strong><br />
+Andreas Hejnol, Christopher J. Lowe<br />
+<em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2015-12-19) <a href="https://doi.org/ggcd2m">https://doi.org/ggcd2m</a><br />
+DOI: <a href="https://doi.org/10.1098/rstb.2015.0045">10.1098/rstb.2015.0045</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26554039">26554039</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4650123">PMC4650123</a></p>
+</div>
+<div id="ref-8cGr6TE">
+<p>28. <strong>The mammalian decidual cell evolved from a cellular stress response</strong><br />
+Eric M. Erkenbrack, Jamie D. Maziarz, Oliver W. Griffith, Cong Liang, Arun R. Chavan, Mauris C. Nnamani, Günter P. Wagner<br />
+<em>PLOS Biology</em> (2018-08-24) <a href="https://doi.org/gd5b9s">https://doi.org/gd5b9s</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pbio.2005594">10.1371/journal.pbio.2005594</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30142145">30142145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6108454">PMC6108454</a></p>
+</div>
+<div id="ref-17wCcfFdm">
+<p>29. <strong>Stem cell differentiation trajectories in Hydra resolved at single-cell resolution</strong><br />
+Stefan Siebert, Jeffrey A. Farrell, Jack F. Cazet, Yashodara Abeykoon, Abby S. Primack, Christine E. Schnitzler, Celina E. Juliano<br />
+<em>Science</em> (2019-07-25) <a href="https://doi.org/ggcd2p">https://doi.org/ggcd2p</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aav9314">10.1126/science.aav9314</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31346039">31346039</a></p>
+</div>
+<div id="ref-w8ZV4B95">
+<p>30. <strong>Cnidarian Cell Type Diversity and Regulation Revealed by Whole-Organism Single-Cell RNA-Seq</strong><br />
+Arnau Sebé-Pedrós, Baptiste Saudemont, Elad Chomsky, Flora Plessier, Marie-Pierre Mailhé, Justine Renno, Yann Loe-Mie, Aviezer Lifshitz, Zohar Mukamel, Sandrine Schmutz, … Heather Marlow<br />
+<em>Cell</em> (2018-05) <a href="https://doi.org/gdkxf5">https://doi.org/gdkxf5</a><br />
+DOI: <a href="https://doi.org/10.1016/j.cell.2018.05.019">10.1016/j.cell.2018.05.019</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29856957">29856957</a></p>
+</div>
+<div id="ref-EtU319GV">
+<p>31. <strong>Cell type transcriptome atlas for the planarianSchmidtea mediterranea</strong><br />
+Christopher T. Fincher, Omri Wurtzel, Thom de Hoog, Kellie M. Kravarik, Peter W. Reddien<br />
+<em>Science</em> (2018-04-19) <a href="https://doi.org/ggcd2n">https://doi.org/ggcd2n</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aaq1736">10.1126/science.aaq1736</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29674431">29674431</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6563842">PMC6563842</a></p>
+</div>
+<div id="ref-1EawBz4WT">
+<p>32. <strong>TheDrosophilaembryo at single-cell transcriptome resolution</strong><br />
+Nikos Karaiskos, Philipp Wahle, Jonathan Alles, Anastasiya Boltengagen, Salah Ayoub, Claudia Kipar, Christine Kocks, Nikolaus Rajewsky, Robert P. Zinzen<br />
+<em>Science</em> (2017-08-31) <a href="https://doi.org/gbvp2z">https://doi.org/gbvp2z</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aan3235">10.1126/science.aan3235</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28860209">28860209</a></p>
+</div>
+<div id="ref-JWLQWOpG">
+<p>33. <strong>Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis</strong><br />
+Jeffrey A. Farrell, Yiqun Wang, Samantha J. Riesenfeld, Karthik Shekhar, Aviv Regev, Alexander F. Schier<br />
+<em>Science</em> (2018-04-26) <a href="https://doi.org/gdgqtf">https://doi.org/gdgqtf</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aar3131">10.1126/science.aar3131</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700225">29700225</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6247916">PMC6247916</a></p>
+</div>
+<div id="ref-4frea8Pi">
+<p>34. <strong>The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution</strong><br />
+James A. Briggs, Caleb Weinreb, Daniel E. Wagner, Sean Megason, Leonid Peshkin, Marc W. Kirschner, Allon M. Klein<br />
+<em>Science</em> (2018-04-26) <a href="https://doi.org/gdgq4d">https://doi.org/gdgq4d</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aar5780">10.1126/science.aar5780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700227">29700227</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6038144">PMC6038144</a></p>
+</div>
+<div id="ref-yrCPHI0k">
+<p>35. <strong>Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo</strong><br />
+Daniel E. Wagner, Caleb Weinreb, Zach M. Collins, James A. Briggs, Sean G. Megason, Allon M. Klein<br />
+<em>Science</em> (2018-04-26) <a href="https://doi.org/gdgqs3">https://doi.org/gdgqs3</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aar4362">10.1126/science.aar4362</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700229">29700229</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6083445">PMC6083445</a></p>
+</div>
+<div id="ref-kTAtFDTa">
+<p>36. <strong>The single-cell transcriptional landscape of mammalian organogenesis</strong><br />
+Junyue Cao, Malte Spielmann, Xiaojie Qiu, Xingfan Huang, Daniel M. Ibrahim, Andrew J. Hill, Fan Zhang, Stefan Mundlos, Lena Christiansen, Frank J. Steemers, … Jay Shendure<br />
+<em>Nature</em> (2019-02) <a href="https://doi.org/gfvqww">https://doi.org/gfvqww</a><br />
+DOI: <a href="https://doi.org/10.1038/s41586-019-0969-x">10.1038/s41586-019-0969-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30787437">30787437</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6434952">PMC6434952</a></p>
 </div>
 </div>
 <!-- default theme -->
