@@ -2,6 +2,20 @@
   "date": "November 5, 2019",
   "authors": [
     {
+      "github": "olgabot",
+      "name": "Olga Borisovna Botvinnik",
+      "initials": "OBB",
+      "orcid": "0000-0003-4412-7970",
+      "twitter": "olgabot",
+      "email": "olga.botvinnik@czbiohub.org",
+      "affiliations": [
+        "Data Sciences Platform, Chan Zuckerberg Biohub"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
+    },
+    {
       "github": "pranathivemuri",
       "name": "Venkata Naga Pranathi Vemuri",
       "initials": "VNPV",
@@ -27,11 +41,11 @@
     "repo_slug": "czbiohub/primate-brain-organoid-paper",
     "repo_owner": "czbiohub",
     "repo_name": "primate-brain-organoid-paper",
-    "commit": "19f0fbc915033a9d76ba5df25c8a1942197a5367",
-    "triggering_commit": "19f0fbc915033a9d76ba5df25c8a1942197a5367",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135098256",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253172783",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/19f0fbc915033a9d76ba5df25c8a1942197a5367/"
+    "commit": "a9d42648cfd392f6d3baf4313c1b3a6592deab24",
+    "triggering_commit": "a9d42648cfd392f6d3baf4313c1b3a6592deab24",
+    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135109977",
+    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253203704",
+    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/a9d42648cfd392f6d3baf4313c1b3a6592deab24/"
   },
   "manuscript_stats": {
     "reference_counts": {

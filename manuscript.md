@@ -1,5 +1,6 @@
 ---
 author-meta:
+- Olga Borisovna Botvinnik
 - Venkata Naga Pranathi Vemuri
 date-meta: '2019-11-05'
 keywords:
@@ -19,15 +20,26 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/19f0fbc915033a9d76ba5df25c8a1942197a5367/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/a9d42648cfd392f6d3baf4313c1b3a6592deab24/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@19f0fbc](https://github.com/czbiohub/primate-brain-organoid-paper/tree/19f0fbc915033a9d76ba5df25c8a1942197a5367)
+from [czbiohub/primate-brain-organoid-paper@a9d4264](https://github.com/czbiohub/primate-brain-organoid-paper/tree/a9d42648cfd392f6d3baf4313c1b3a6592deab24)
 on November 5, 2019.
 </em></small>
 
 ## Authors
 
 
+
++ **Olga Borisovna Botvinnik**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-4412-7970](https://orcid.org/0000-0003-4412-7970)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [olgabot](https://github.com/olgabot)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [olgabot](https://twitter.com/olgabot)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub
+  </small>
 
 + **Venkata Naga Pranathi Vemuri**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
