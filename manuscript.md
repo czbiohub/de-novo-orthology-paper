@@ -1,7 +1,7 @@
 ---
 author-meta:
-- Olga Borisovna Botvinnik
-date-meta: '2019-11-01'
+- Venkata Naga Pranathi Vemuri
+date-meta: '2019-11-05'
 keywords:
 - comparative transcriptomics
 - single-cell RNA-seq
@@ -19,23 +19,23 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/4864d1443e78de81a70b87ae8e6f44bf2a962758/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/e74a513b0de1d280ba92ca0ae411a92423e5a6f6/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@4864d14](https://github.com/czbiohub/primate-brain-organoid-paper/tree/4864d1443e78de81a70b87ae8e6f44bf2a962758)
-on November 1, 2019.
+from [czbiohub/primate-brain-organoid-paper@e74a513](https://github.com/czbiohub/primate-brain-organoid-paper/tree/e74a513b0de1d280ba92ca0ae411a92423e5a6f6)
+on November 5, 2019.
 </em></small>
 
 ## Authors
 
 
 
-+ **Olga Borisovna Botvinnik**<br>
++ **Venkata Naga Pranathi Vemuri**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0003-4412-7970](https://orcid.org/0000-0003-4412-7970)
+    [0000-0002-5748-9594](https://orcid.org/0000-0002-5748-9594)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [olgabot](https://github.com/olgabot)
+    [pranathivemuri](https://github.com/pranathivemuri)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [olgabot](https://twitter.com/olgabot)<br>
+    [pranuvemuri](https://twitter.com/pranuvemuri)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub
   </small>
