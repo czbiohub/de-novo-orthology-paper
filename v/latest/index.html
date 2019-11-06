@@ -24,7 +24,7 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/c3acb19785f124bafefa777b605390758d1126fd/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/c3acb19785f124bafefa777b605390758d1126fd">czbiohub/primate-brain-organoid-paper@c3acb19</a> on November 6, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/c63031fc789a259653239e961c3e565817c099fe/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/c63031fc789a259653239e961c3e565817c099fe">czbiohub/primate-brain-organoid-paper@c63031f</a> on November 6, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
@@ -41,7 +41,16 @@
 <p><span class="math inline">\(k\)</span>-mers have been proposed for comparing single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">12</a>]</span> as they are a fast, simple way to create cell-cell similarities. However, the work so far has focused on using annotated organisms and not cross-species analyses.</p>
 <h2 id="methods">Methods</h2>
 <p>Methods go here.</p>
+<h3 id="experimental">Experimental</h3>
+<h4 id="single-cell-capture-of-primate-brain-organoids">Single-cell capture of primate brain organoids</h4>
+<h4 id="long-read-library-prep">Long read library prep</h4>
+<h4 id="short-read-library-prep">Short read library prep</h4>
+<h4 id="sequencing">Sequencing</h4>
+<h3 id="computational">Computational</h3>
+<h4 id="k-mer-comparison-of-orthologous-genes"><span class="math inline">\(k\)</span>-mer comparison of orthologous genes</h4>
 <p>We used ENSEMBL version 97.</p>
+<h4 id="extraction-of-putative-coding-reads-from-rna-seq">Extraction of putative coding reads from RNA-seq</h4>
+<h4 id="bam2fasta-conversion"><code>bam2fasta</code> conversion</h4>
 <h2 id="results">Results</h2>
 <p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">13</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">14</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">15</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">16</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">17</a>]</span>, show in Table~.</p>
 <div id="tbl:example-id" class="tablenos">
