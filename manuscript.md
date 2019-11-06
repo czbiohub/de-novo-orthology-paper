@@ -21,9 +21,9 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/c63031fc789a259653239e961c3e565817c099fe/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/90b5689f24f330e806391fe899d0955adfc7c5d5/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@c63031f](https://github.com/czbiohub/primate-brain-organoid-paper/tree/c63031fc789a259653239e961c3e565817c099fe)
+from [czbiohub/primate-brain-organoid-paper@90b5689](https://github.com/czbiohub/primate-brain-organoid-paper/tree/90b5689f24f330e806391fe899d0955adfc7c5d5)
 on November 6, 2019.
 </em></small>
 
@@ -104,24 +104,81 @@ Methods go here.
 
 ### Experimental
 
+#### Primate brain organoid protocols
+
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+
 #### Single-cell capture of primate brain organoids
+
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 #### Long read library prep
 
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+
+
 #### Short read library prep
+
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 #### Sequencing
 
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 ### Computational
 
 #### $k$-mer comparison of orthologous genes
 
 We used ENSEMBL version 97.
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 #### Extraction of putative coding reads from RNA-seq
 
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+
 #### `bam2fasta` conversion
+
+We did things.
+One sentence per line.
+Prefer DOI for references, but for Biorxiv use the URL.
+DOI example: [@LkrS4xXB].
+Biorxiv example: [@46R7aU4N].
+Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 
 ## Results
