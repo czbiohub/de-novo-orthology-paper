@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Olga Borisovna Botvinnik" />
   <meta name="author" content="Venkata Naga Pranathi Vemuri" />
-  <meta name="dcterms.date" content="2019-11-05" />
+  <meta name="author" content="Phoenix Aja Logan" />
+  <meta name="dcterms.date" content="2019-11-06" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
   <title>Smashing single cells into k-mer sketches</title>
   <style>
@@ -23,11 +24,12 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/a9d42648cfd392f6d3baf4313c1b3a6592deab24/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/a9d42648cfd392f6d3baf4313c1b3a6592deab24">czbiohub/primate-brain-organoid-paper@a9d4264</a> on November 5, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/c3acb19785f124bafefa777b605390758d1126fd/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/c3acb19785f124bafefa777b605390758d1126fd">czbiohub/primate-brain-organoid-paper@c3acb19</a> on November 6, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
 <li><p><strong>Venkata Naga Pranathi Vemuri</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0002-5748-9594">0000-0002-5748-9594</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/pranathivemuri">pranathivemuri</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/pranuvemuri">pranuvemuri</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
+<li><p><strong>Phoenix Aja Logan</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4581-0552">0000-0003-4581-0552</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/phoenixAja">phoenixAja</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/phoenixlogan">phoenixlogan</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
 <p>Single-cell RNA-sequencing is a powerful technology for identifying novel and known cell types, however its power is limited to organisms with well-annotated genomes. We demonstrate the utility of using annotation-agnostic methods which quantify cell-cell similarity using <span class="math inline">\(k\)</span>-mer profiles. We benchmark a few methods and demonstrate the utility of converting cell types from mouse to human and back, and compare to using purely 1:1 mapped orthologous genes.</p>

@@ -1,5 +1,5 @@
 {
-  "date": "November 5, 2019",
+  "date": "November 6, 2019",
   "authors": [
     {
       "github": "olgabot",
@@ -28,6 +28,20 @@
       "affiliation_numbers": [
         1
       ]
+    },
+    {
+      "github": "phoenixAja",
+      "name": "Phoenix Aja Logan",
+      "initials": "PAL",
+      "orcid": "0000-0003-4581-0552",
+      "twitter": "phoenixlogan",
+      "email": "phoenix.logan@czbiohub.org",
+      "affiliations": [
+        "Data Sciences Platform, Chan Zuckerberg Biohub"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
     }
   ],
   "affiliations": [
@@ -41,11 +55,11 @@
     "repo_slug": "czbiohub/primate-brain-organoid-paper",
     "repo_owner": "czbiohub",
     "repo_name": "primate-brain-organoid-paper",
-    "commit": "a9d42648cfd392f6d3baf4313c1b3a6592deab24",
-    "triggering_commit": "a9d42648cfd392f6d3baf4313c1b3a6592deab24",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135109977",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253203704",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/a9d42648cfd392f6d3baf4313c1b3a6592deab24/"
+    "commit": "c3acb19785f124bafefa777b605390758d1126fd",
+    "triggering_commit": "c3acb19785f124bafefa777b605390758d1126fd",
+    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135151085",
+    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253302174",
+    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/c3acb19785f124bafefa777b605390758d1126fd/"
   },
   "manuscript_stats": {
     "reference_counts": {
