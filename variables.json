@@ -55,11 +55,11 @@
     "repo_slug": "czbiohub/primate-brain-organoid-paper",
     "repo_owner": "czbiohub",
     "repo_name": "primate-brain-organoid-paper",
-    "commit": "c3acb19785f124bafefa777b605390758d1126fd",
-    "triggering_commit": "c3acb19785f124bafefa777b605390758d1126fd",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135151085",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253302174",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/c3acb19785f124bafefa777b605390758d1126fd/"
+    "commit": "c63031fc789a259653239e961c3e565817c099fe",
+    "triggering_commit": "c63031fc789a259653239e961c3e565817c099fe",
+    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135301504",
+    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253713437",
+    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/c63031fc789a259653239e961c3e565817c099fe/"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -68,6 +68,6 @@
       "url": 5,
       "total": 36
     },
-    "word_count": 1698
+    "word_count": 1738
   }
 }

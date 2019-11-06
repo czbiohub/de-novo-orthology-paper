@@ -21,9 +21,9 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/c3acb19785f124bafefa777b605390758d1126fd/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/c63031fc789a259653239e961c3e565817c099fe/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@c3acb19](https://github.com/czbiohub/primate-brain-organoid-paper/tree/c3acb19785f124bafefa777b605390758d1126fd)
+from [czbiohub/primate-brain-organoid-paper@c63031f](https://github.com/czbiohub/primate-brain-organoid-paper/tree/c63031fc789a259653239e961c3e565817c099fe)
 on November 6, 2019.
 </em></small>
 
@@ -102,8 +102,26 @@ However, the work so far has focused on using annotated organisms and not cross-
 
 Methods go here.
 
+### Experimental
+
+#### Single-cell capture of primate brain organoids
+
+#### Long read library prep
+
+#### Short read library prep
+
+#### Sequencing
+
+
+### Computational
+
+#### $k$-mer comparison of orthologous genes
 
 We used ENSEMBL version 97.
+
+#### Extraction of putative coding reads from RNA-seq
+
+#### `bam2fasta` conversion
 
 
 ## Results
