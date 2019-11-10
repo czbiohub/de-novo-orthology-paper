@@ -7,7 +7,7 @@
   <meta name="author" content="Olga Borisovna Botvinnik" />
   <meta name="author" content="Venkata Naga Pranathi Vemuri" />
   <meta name="author" content="Phoenix Aja Logan" />
-  <meta name="dcterms.date" content="2019-11-06" />
+  <meta name="dcterms.date" content="2019-11-10" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
   <title>Smashing single cells into k-mer sketches</title>
   <style>
@@ -24,7 +24,7 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/90b5689f24f330e806391fe899d0955adfc7c5d5/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/90b5689f24f330e806391fe899d0955adfc7c5d5">czbiohub/primate-brain-organoid-paper@90b5689</a> on November 6, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/241265f1b06eeea2eec67286c4b5286ceef3c37e/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/241265f1b06eeea2eec67286c4b5286ceef3c37e">czbiohub/primate-brain-organoid-paper@241265f</a> on November 10, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
@@ -60,8 +60,8 @@
 <h4 id="bam2fasta-conversion"><code>bam2fasta</code> conversion</h4>
 <p>We did things. One sentence per line. Prefer DOI for references, but for Biorxiv use the URL. DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>]</span>. Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">6</a>]</span>. Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">5</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">6</a>]</span>.</p>
 <h2 id="results">Results</h2>
-<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">13</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">14</a>]</span> (Fig.~). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">15</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">16</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">17</a>]</span>, show in Table~.</p>
-<div id="tbl:example-id" class="tablenos">
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">13</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">14</a>]</span> (Figure [<a href="#fig:fig1">1</a>]). We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">15</a>]</span>. As a background, we randomly chose 10 non-orthologous genes relative to the human gene. In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">16</a>]</span> and hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">17</a>]</span>, show in Table [<a href="#tbl:sequence-encodings">1</a>].</p>
+<div id="tbl:sequence-encodings" class="tablenos">
 <table>
 <caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid alphabet allowing for permissive cross-species sequence comparisons. For example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </caption>
 <thead>
@@ -212,12 +212,12 @@
 <h4 id="figure-3-long-evolutionary-distances-with-hp-encoding">Figure 3 – long evolutionary distances with HP encoding?</h4>
 <p>Metazoan body plan formation</p>
 <ul>
-<li>Early development in Cnidarians/Hydra [<span class="citation" data-cites="17wCcfFdm"><a href="#ref-17wCcfFdm" role="doc-biblioref">29</a></span>; @ 10.1016/j.cell.2018.05.019]</li>
+<li>Early development in Cnidarians/Hydra <span class="citation" data-cites="17wCcfFdm w8ZV4B95">[<a href="#ref-17wCcfFdm" role="doc-biblioref">29</a>,<a href="#ref-w8ZV4B95" role="doc-biblioref">30</a>]</span></li>
 <li>sponges and others <span class="citation" data-cites="w8ZV4B95">[<a href="#ref-w8ZV4B95" role="doc-biblioref">30</a>]</span></li>
-<li>planaria [<span class="citation" data-cites="EtU319GV"><a href="#ref-EtU319GV" role="doc-biblioref">31</a></span>; doi:10.1126/science.aaq1723],</li>
-<li>drosophila <span class="citation" data-cites="1EawBz4WT">[<a href="#ref-1EawBz4WT" role="doc-biblioref">32</a>]</span></li>
-<li>zebrafish <span class="citation" data-cites="JWLQWOpG 4frea8Pi yrCPHI0k">[<a href="#ref-JWLQWOpG" role="doc-biblioref">33</a>,<a href="#ref-4frea8Pi" role="doc-biblioref">34</a>,<a href="#ref-yrCPHI0k" role="doc-biblioref">35</a>]</span>,</li>
-<li>mouse <span class="citation" data-cites="kTAtFDTa">[<a href="#ref-kTAtFDTa" role="doc-biblioref">36</a>]</span></li>
+<li>planaria <span class="citation" data-cites="EtU319GV 1FnDb3m4L">[<a href="#ref-EtU319GV" role="doc-biblioref">31</a>,<a href="#ref-1FnDb3m4L" role="doc-biblioref">32</a>]</span>,</li>
+<li>drosophila <span class="citation" data-cites="1EawBz4WT">[<a href="#ref-1EawBz4WT" role="doc-biblioref">33</a>]</span></li>
+<li>zebrafish <span class="citation" data-cites="JWLQWOpG 4frea8Pi yrCPHI0k">[<a href="#ref-JWLQWOpG" role="doc-biblioref">34</a>,<a href="#ref-4frea8Pi" role="doc-biblioref">35</a>,<a href="#ref-yrCPHI0k" role="doc-biblioref">36</a>]</span>,</li>
+<li>mouse <span class="citation" data-cites="kTAtFDTa">[<a href="#ref-kTAtFDTa" role="doc-biblioref">37</a>]</span></li>
 </ul>
 <h4 id="figure-4-what-features-are-k-mers-able-to-pick-up-that-mapping-doesnt">Figure 4 – What features are k-mers able to pick up that mapping doesn’t?</h4>
 <ul>
@@ -406,32 +406,38 @@ Christopher T. Fincher, Omri Wurtzel, Thom de Hoog, Kellie M. Kravarik, Peter W.
 <em>Science</em> (2018-04-19) <a href="https://doi.org/ggcd2n">https://doi.org/ggcd2n</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aaq1736">10.1126/science.aaq1736</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29674431">29674431</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6563842">PMC6563842</a></p>
 </div>
+<div id="ref-1FnDb3m4L">
+<p>32. <strong>Cell type atlas and lineage tree of a whole complex animal by single-cell transcriptomics</strong><br />
+Mireya Plass, Jordi Solana, F. Alexander Wolf, Salah Ayoub, Aristotelis Misios, Petar Glažar, Benedikt Obermayer, Fabian J. Theis, Christine Kocks, Nikolaus Rajewsky<br />
+<em>Science</em> (2018-04-19) <a href="https://doi.org/gfgtbt">https://doi.org/gfgtbt</a><br />
+DOI: <a href="https://doi.org/10.1126/science.aaq1723">10.1126/science.aaq1723</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29674432">29674432</a></p>
+</div>
 <div id="ref-1EawBz4WT">
-<p>32. <strong>TheDrosophilaembryo at single-cell transcriptome resolution</strong><br />
+<p>33. <strong>TheDrosophilaembryo at single-cell transcriptome resolution</strong><br />
 Nikos Karaiskos, Philipp Wahle, Jonathan Alles, Anastasiya Boltengagen, Salah Ayoub, Claudia Kipar, Christine Kocks, Nikolaus Rajewsky, Robert P. Zinzen<br />
 <em>Science</em> (2017-08-31) <a href="https://doi.org/gbvp2z">https://doi.org/gbvp2z</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aan3235">10.1126/science.aan3235</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28860209">28860209</a></p>
 </div>
 <div id="ref-JWLQWOpG">
-<p>33. <strong>Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis</strong><br />
+<p>34. <strong>Single-cell reconstruction of developmental trajectories during zebrafish embryogenesis</strong><br />
 Jeffrey A. Farrell, Yiqun Wang, Samantha J. Riesenfeld, Karthik Shekhar, Aviv Regev, Alexander F. Schier<br />
 <em>Science</em> (2018-04-26) <a href="https://doi.org/gdgqtf">https://doi.org/gdgqtf</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aar3131">10.1126/science.aar3131</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700225">29700225</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6247916">PMC6247916</a></p>
 </div>
 <div id="ref-4frea8Pi">
-<p>34. <strong>The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution</strong><br />
+<p>35. <strong>The dynamics of gene expression in vertebrate embryogenesis at single-cell resolution</strong><br />
 James A. Briggs, Caleb Weinreb, Daniel E. Wagner, Sean Megason, Leonid Peshkin, Marc W. Kirschner, Allon M. Klein<br />
 <em>Science</em> (2018-04-26) <a href="https://doi.org/gdgq4d">https://doi.org/gdgq4d</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aar5780">10.1126/science.aar5780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700227">29700227</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6038144">PMC6038144</a></p>
 </div>
 <div id="ref-yrCPHI0k">
-<p>35. <strong>Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo</strong><br />
+<p>36. <strong>Single-cell mapping of gene expression landscapes and lineage in the zebrafish embryo</strong><br />
 Daniel E. Wagner, Caleb Weinreb, Zach M. Collins, James A. Briggs, Sean G. Megason, Allon M. Klein<br />
 <em>Science</em> (2018-04-26) <a href="https://doi.org/gdgqs3">https://doi.org/gdgqs3</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aar4362">10.1126/science.aar4362</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29700229">29700229</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6083445">PMC6083445</a></p>
 </div>
 <div id="ref-kTAtFDTa">
-<p>36. <strong>The single-cell transcriptional landscape of mammalian organogenesis</strong><br />
+<p>37. <strong>The single-cell transcriptional landscape of mammalian organogenesis</strong><br />
 Junyue Cao, Malte Spielmann, Xiaojie Qiu, Xingfan Huang, Daniel M. Ibrahim, Andrew J. Hill, Fan Zhang, Stefan Mundlos, Lena Christiansen, Frank J. Steemers, … Jay Shendure<br />
 <em>Nature</em> (2019-02) <a href="https://doi.org/gfvqww">https://doi.org/gfvqww</a><br />
 DOI: <a href="https://doi.org/10.1038/s41586-019-0969-x">10.1038/s41586-019-0969-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30787437">30787437</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6434952">PMC6434952</a></p>
