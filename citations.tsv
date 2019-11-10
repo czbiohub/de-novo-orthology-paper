@@ -1,4 +1,5 @@
 manuscript_citekey	detagged_citekey	standard_citekey	short_citekey
+doi:10.1016/j.cell.2015.05.002	doi:10.1016/j.cell.2015.05.002	doi:10.1016/j.cell.2015.05.002	11pOKbwng
 doi:10.1016/j.cell.2018.05.019	doi:10.1016/j.cell.2018.05.019	doi:10.1016/j.cell.2018.05.019	w8ZV4B95
 doi:10.1016/j.cell.2019.01.017	doi:10.1016/j.cell.2019.01.017	doi:10.1016/j.cell.2019.01.017	y7xGipW5
 doi:10.1038/nature10532	doi:10.1038/nature10532	doi:10.1038/nature10532	fBCZ87Cf
@@ -6,6 +7,7 @@ doi:10.1038/nature13819	doi:10.1038/nature13819	doi:10.1038/nature13819	rn7vCWvt
 doi:10.1038/nmeth.3830	doi:10.1038/nmeth.3830	doi:10.1038/nmeth.3830	LkrS4xXB
 doi:10.1038/nrg.2016.127	doi:10.1038/nrg.2016.127	doi:10.1038/nrg.2016.127	ogAGO9KH
 doi:10.1038/s41586-019-0969-x	doi:10.1038/s41586-019-0969-x	doi:10.1038/s41586-019-0969-x	kTAtFDTa
+doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	IPc8cy7s
 doi:10.1093/database/bav096	doi:10.1093/database/bav096	doi:10.1093/database/bav096	j0y6s0kf
 doi:10.1093/gbe/evy016	doi:10.1093/gbe/evy016	doi:10.1093/gbe/evy016	FTv2KYrZ
 doi:10.1093/hmg/ddy058	doi:10.1093/hmg/ddy058	doi:10.1093/hmg/ddy058	n7a1Lgjf
@@ -23,6 +25,7 @@ doi:10.1126/science.aar3131	doi:10.1126/science.aar3131	doi:10.1126/science.aar3
 doi:10.1126/science.aar4362	doi:10.1126/science.aar4362	doi:10.1126/science.aar4362	yrCPHI0k
 doi:10.1126/science.aar5780	doi:10.1126/science.aar5780	doi:10.1126/science.aar5780	4frea8Pi
 doi:10.1126/science.aav9314	doi:10.1126/science.aav9314	doi:10.1126/science.aav9314	17wCcfFdm
+doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	xE3EYmck
 doi:10.1146/annurev-cellbio-100616-060818	doi:10.1146/annurev-cellbio-100616-060818	doi:10.1146/annurev-cellbio-100616-060818	wdzgXUGy
 doi:10.1146/annurev.genom.1.1.41	doi:10.1146/annurev.genom.1.1.41	doi:10.1146/annurev.genom.1.1.41	uQLS9NYU
 doi:10.1261/rna.064931.117	doi:10.1261/rna.064931.117	doi:10.1261/rna.064931.117	G7TPi9Sb
@@ -34,5 +37,6 @@ raw:phillips2012physical	raw:phillips2012physical	raw:phillips2012physical	1GiMc
 url:https://doi.org/10.1101/466201	url:https://doi.org/10.1101/466201	url:https://doi.org/10.1101/466201	46R7aU4N
 url:https://doi.org/10.1101/723833	url:https://doi.org/10.1101/723833	url:https://doi.org/10.1101/723833	wtk13QGK
 url:https://en.wikipedia.org/wiki/Cnidocyte	url:https://en.wikipedia.org/wiki/Cnidocyte	url:https://en.wikipedia.org/wiki/Cnidocyte	18WcUBCuN
+url:https://pypi.org/project/bam2fasta/	url:https://pypi.org/project/bam2fasta/	url:https://pypi.org/project/bam2fasta/	1EPeNLOEg
 url:https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119	url:https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119	url:https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119	bkF0801R
 url:https://www.ncbi.nlm.nih.gov/genome/browse/	url:https://www.ncbi.nlm.nih.gov/genome/browse/	url:https://www.ncbi.nlm.nih.gov/genome/browse/	16wL4sfFU
