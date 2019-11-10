@@ -3,7 +3,7 @@ author-meta:
 - Olga Borisovna Botvinnik
 - Venkata Naga Pranathi Vemuri
 - Phoenix Aja Logan
-date-meta: '2019-11-06'
+date-meta: '2019-11-10'
 keywords:
 - comparative transcriptomics
 - single-cell RNA-seq
@@ -21,10 +21,10 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/90b5689f24f330e806391fe899d0955adfc7c5d5/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/241265f1b06eeea2eec67286c4b5286ceef3c37e/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@90b5689](https://github.com/czbiohub/primate-brain-organoid-paper/tree/90b5689f24f330e806391fe899d0955adfc7c5d5)
-on November 6, 2019.
+from [czbiohub/primate-brain-organoid-paper@241265f](https://github.com/czbiohub/primate-brain-organoid-paper/tree/241265f1b06eeea2eec67286c4b5286ceef3c37e)
+on November 10, 2019.
 </em></small>
 
 ## Authors
@@ -183,10 +183,10 @@ Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 
 ## Results
 
-To determine whether short segments of sequences could detect gene orthologues, we $k$-merized orthologous genes derived from the ENSEMBL version 97 [@lBlqrqAO] COMPARA database [@j0y6s0kf] (Fig.~\ref{fig:fig1}).
+To determine whether short segments of sequences could detect gene orthologues, we $k$-merized orthologous genes derived from the ENSEMBL version 97 [@lBlqrqAO] COMPARA database [@j0y6s0kf] (Figure [@fig:fig1]).
 We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in [@fBCZ87Cf].
 As a background, we randomly chose 10 non-orthologous genes relative to the human gene.
-In addition to $k$-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff [@66KDHtpG] and hydrophobic-polar encodings [@1GiMcbPLs], show in Table~\ref{tab:encodings}.
+In addition to $k$-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into Dayhoff [@66KDHtpG] and hydrophobic-polar encodings [@1GiMcbPLs], show in Table [@tbl:sequence-encodings].
 
 
 |  Amino acid                    | Property              | Dayhoff | Hydrophobic-polar (HP) |
@@ -202,7 +202,7 @@ In addition to $k$-merizing the protein-coding sequence, we also re-encoded the 
 Table: Dayhoff and hydrophobic-polar encodings are a reduced amino acid
 alphabet allowing for permissive cross-species sequence comparisons. For
 example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
-to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:example-id}
+to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:sequence-encodings}
 
 
 
@@ -293,9 +293,9 @@ Cell type evolution
 
 Metazoan body plan formation
 
-- Early development in Cnidarians/Hydra [@17wCcfFdm; @ 10.1016/j.cell.2018.05.019]
+- Early development in Cnidarians/Hydra [@17wCcfFdm; @w8ZV4B95]
 - sponges and others [@w8ZV4B95]
-- planaria [@EtU319GV; doi:10.1126/science.aaq1723],
+- planaria [@EtU319GV; @1FnDb3m4L],
 - drosophila [@1EawBz4WT]
 - zebrafish [@JWLQWOpG; @4frea8Pi; @yrCPHI0k],
 - mouse [@kTAtFDTa]

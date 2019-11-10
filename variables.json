@@ -1,5 +1,5 @@
 {
-  "date": "November 6, 2019",
+  "date": "November 10, 2019",
   "authors": [
     {
       "github": "olgabot",
@@ -55,19 +55,19 @@
     "repo_slug": "czbiohub/primate-brain-organoid-paper",
     "repo_owner": "czbiohub",
     "repo_name": "primate-brain-organoid-paper",
-    "commit": "90b5689f24f330e806391fe899d0955adfc7c5d5",
-    "triggering_commit": "90b5689f24f330e806391fe899d0955adfc7c5d5",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135309294",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/253731010",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/90b5689f24f330e806391fe899d0955adfc7c5d5/"
+    "commit": "241265f1b06eeea2eec67286c4b5286ceef3c37e",
+    "triggering_commit": "241265f1b06eeea2eec67286c4b5286ceef3c37e",
+    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/135804312",
+    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/254858243",
+    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/241265f1b06eeea2eec67286c4b5286ceef3c37e/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 29,
+      "doi": 30,
       "raw": 2,
       "url": 5,
-      "total": 36
+      "total": 37
     },
-    "word_count": 1983
+    "word_count": 1984
   }
 }
