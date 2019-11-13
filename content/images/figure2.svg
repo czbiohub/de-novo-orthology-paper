@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 367.6 475.4" style="enable-background:new 0 0 367.6 475.4;" xml:space="preserve">
+	 viewBox="0 0 367.6 288" style="enable-background:new 0 0 367.6 288;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#E6E7E8;stroke:#000000;stroke-miterlimit:10;}
-	.st1{font-family:'Helvetica-Light';}
+	.st1{font-family:'Helvetica-Bold';}
 	.st2{font-size:12px;}
 	.st3{fill:none;}
-	.st4{font-family:'Helvetica-Bold';}
+	.st4{enable-background:new    ;}
+	.st5{font-family:'Helvetica-Light';}
 </style>
 <g>
-	<rect x="2.2" y="19.5" class="st0" width="363.2" height="137.2"/>
-	<text transform="matrix(1 0 0 1 53.3979 73.4512)"><tspan x="0" y="0" class="st1 st2">Extract coding sequence using human proteins,  </tspan><tspan x="7.3" y="14.4" class="st1 st2">k-merize coding sequence and minhash, com </tspan><tspan x="29.4" y="28.8" class="st1 st2">pare samples/cells across minhashes</tspan></text>
+	<rect x="391.2" y="-58.3" class="st0" width="363.2" height="137.2"/>
+	<text transform="matrix(1 0 0 1 442.3979 -4.3303)" class="st5 st2">Extract coding sequence using human proteins,  </text>
+	<text transform="matrix(1 0 0 1 449.6979 10.0697)" class="st5 st2">k-merize coding sequence and minhash, com </text>
+	<text transform="matrix(1 0 0 1 471.7979 24.4697)" class="st5 st2">pare samples/cells across minhashes</text>
+</g>
+<text transform="matrix(1 0 0 1 5.7568 10.3185)" class="st1 st2">A</text>
+<text transform="matrix(1 0 0 1 0.5001 161.2095)" class="st1 st2">B</text>
+<text transform="matrix(1 0 0 1 194.5 161.2095)" class="st1 st2">C</text>
+<image style="overflow:visible;" width="397" height="268" xlink:href="../../../../Downloads/image (2) (2).png"  transform="matrix(0.4353 0 0 0.4353 0.35 171.3979)">
+</image>
+<g id="ZY0Snd.tif">
+	
+		<image style="overflow:visible;" width="1875" height="686" id="Layer_0_1_" xlink:href="D0AC1F3D50732ED1.png"  transform="matrix(0.192 0 0 0.192 3.8 19.144)">
+	</image>
+</g>
+<g id="HbhbUE.tif">
+	
+		<image style="overflow:visible;" width="484" height="321" id="Layer_0_2_" xlink:href="D0AC1F3D50732ED6.png"  transform="matrix(0.357 0 0 0.357 192.7 172.4208)">
+	</image>
 </g>
 <g>
-	<rect x="0.5" y="181.1" class="st0" width="172.6" height="137.2"/>
-	<text transform="matrix(1 0 0 1 49.1099 238.3417)"><tspan x="0" y="0" class="st1 st2">kNN graph of  </tspan><tspan x="0.3" y="14.4" class="st1 st2">Brawand2011</tspan><tspan x="7.7" y="28.8" class="st1 st2">MinHashes</tspan></text>
+	<rect x="40.9" y="163.7" class="st0" width="98" height="54"/>
+	<rect x="50.9" y="170" class="st3" width="78" height="41.5"/>
+	<text transform="matrix(1 0 0 1 56.2327 180.2939)" class="st4"><tspan x="0" y="0" class="st5 st2">More ksizes, </tspan><tspan x="-1" y="14.4" class="st5 st2">sanitize pep</tspan><tspan x="64.3" y="14.4" class="st5 st2">-</tspan><tspan x="9" y="28.8" class="st5 st2">tide seqs</tspan></text>
 </g>
 <g>
-	<rect x="0.5" y="337.7" class="st0" width="172.6" height="137.2"/>
-	<rect x="38.9" y="385.1" class="st3" width="95.7" height="42.5"/>
-	<text transform="matrix(1 0 0 1 47.4536 395.3879)"><tspan x="0" y="0" class="st1 st2">K-mers driving </tspan><tspan x="9.7" y="14.4" class="st1 st2">similarity in </tspan><tspan x="2.3" y="28.8" class="st1 st2">brawand2011</tspan></text>
+	<rect x="240.1" y="187.7" class="st0" width="98" height="54"/>
+	<rect x="248.3" y="193.9" class="st3" width="81.7" height="41.5"/>
+	<text transform="matrix(1 0 0 1 270.7531 204.2542)" class="st4"><tspan x="0" y="0" class="st5 st2">Use all </tspan><tspan x="-19" y="14.4" class="st5 st2">Brawand2011 </tspan><tspan x="-2.7" y="28.8" class="st5 st2">species</tspan></text>
 </g>
-<text transform="matrix(1 0 0 1 5.7568 10.3185)" class="st4 st2">A</text>
-<text transform="matrix(1 0 0 1 0.5001 171.2175)" class="st4 st2">B</text>
-<text transform="matrix(1 0 0 1 0.5 335.4799)" class="st4 st2">D</text>
-<g>
-	<rect x="192.8" y="336.3" class="st0" width="172.6" height="137.2"/>
-	<text transform="matrix(1 0 0 1 224.3992 393.5549)"><tspan x="0" y="0" class="st1 st2">Are the k-mers from  </tspan><tspan x="-0.3" y="14.4" class="st1 st2">unmapped reads or  </tspan><tspan x="-0.4" y="28.8" class="st1 st2">unannotated genes?</tspan></text>
-</g>
-<g>
-	<rect x="194.5" y="181.1" class="st0" width="172.6" height="137.2"/>
-	<text transform="matrix(1 0 0 1 243.1091 238.3417)"><tspan x="0" y="0" class="st1 st2">kNN graph of  </tspan><tspan x="0.3" y="14.4" class="st1 st2">Brawand2011</tspan><tspan x="-8" y="28.8" class="st1 st2">Gene expression</tspan></text>
-</g>
-<text transform="matrix(1 0 0 1 194.5 175.0886)" class="st4 st2">C</text>
-<text transform="matrix(1 0 0 1 194.4999 332.2543)" class="st4 st2">E</text>
 </svg>
