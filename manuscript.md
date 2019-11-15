@@ -3,7 +3,8 @@ author-meta:
 - Olga Borisovna Botvinnik
 - Venkata Naga Pranathi Vemuri
 - Phoenix Aja Logan
-date-meta: '2019-11-10'
+- Saba Nafees
+date-meta: '2019-11-15'
 keywords:
 - comparative transcriptomics
 - single-cell RNA-seq
@@ -21,10 +22,10 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/7f4a9ad793349dc6a218ce149b3a6bc68ce73890/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/a0887d79ae75d913c826ffe915493caf0746d045/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@7f4a9ad](https://github.com/czbiohub/primate-brain-organoid-paper/tree/7f4a9ad793349dc6a218ce149b3a6bc68ce73890)
-on November 10, 2019.
+from [czbiohub/primate-brain-organoid-paper@a0887d7](https://github.com/czbiohub/primate-brain-organoid-paper/tree/a0887d79ae75d913c826ffe915493caf0746d045)
+on November 15, 2019.
 </em></small>
 
 ## Authors
@@ -62,6 +63,17 @@ on November 10, 2019.
     [phoenixlogan](https://twitter.com/phoenixlogan)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub
+  </small>
+
++ **Saba Nafees**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-3292-7703](https://orcid.org/0000-0002-3292-7703)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [snafees](https://github.com/snafees)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [sabanafeesTTU](https://twitter.com/sabanafeesTTU)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics & Statistics, Texas Tech University
   </small>
 
 
