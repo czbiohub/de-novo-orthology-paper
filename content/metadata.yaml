@@ -1,5 +1,5 @@
 ---
-title: "Smashing single cells into $k$-mer sketches"
+title: "INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches"
 keywords:
   - comparative transcriptomics
   - single-cell RNA-seq
@@ -35,4 +35,3 @@ author_info:
     email: phoenix.logan@czbiohub.org
     affiliations:
       - Data Sciences Platform, Chan Zuckerberg Biohub
-      
