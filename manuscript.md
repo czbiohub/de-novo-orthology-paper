@@ -4,7 +4,8 @@ author-meta:
 - Venkata Naga Pranathi Vemuri
 - Phoenix Aja Logan
 - Saba Nafees
-date-meta: '2019-11-15'
+- Zebinisa Mirvoxid qizi Mirakbarova
+date-meta: '2019-12-17'
 keywords:
 - comparative transcriptomics
 - single-cell RNA-seq
@@ -22,10 +23,10 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/a0887d79ae75d913c826ffe915493caf0746d045/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/43554c51d67db533a353f2f343f9897aecf55a93/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@a0887d7](https://github.com/czbiohub/primate-brain-organoid-paper/tree/a0887d79ae75d913c826ffe915493caf0746d045)
-on November 15, 2019.
+from [czbiohub/primate-brain-organoid-paper@43554c5](https://github.com/czbiohub/primate-brain-organoid-paper/tree/43554c51d67db533a353f2f343f9897aecf55a93)
+on December 17, 2019.
 </em></small>
 
 ## Authors
@@ -74,6 +75,17 @@ on November 15, 2019.
     [sabanafeesTTU](https://twitter.com/sabanafeesTTU)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics & Statistics, Texas Tech University
+  </small>
+
++ **Zebinisa Mirvoxid qizi Mirakbarova**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-1164-7814](https://orcid.org/0000-0003-1164-7814)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [mzebinisa](https://github.com/mzebinisa)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [ZebinisaM](https://twitter.com/ZebinisaM)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub; Laboratory of Biotechnology. Centre for Advanced Technologies, Ministry of Innovative Development, Republic of Uzbekistan; Institute of Biophysics and Biochemistry, National University of Uzbekistan
   </small>
 
 

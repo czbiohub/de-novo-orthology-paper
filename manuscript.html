@@ -8,7 +8,8 @@
   <meta name="author" content="Venkata Naga Pranathi Vemuri" />
   <meta name="author" content="Phoenix Aja Logan" />
   <meta name="author" content="Saba Nafees" />
-  <meta name="dcterms.date" content="2019-11-15" />
+  <meta name="author" content="Zebinisa Mirvoxid qizi Mirakbarova" />
+  <meta name="dcterms.date" content="2019-12-17" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
   <title>Smashing single cells into k-mer sketches</title>
   <style>
@@ -25,13 +26,14 @@
 <header id="title-block-header">
 <h1 class="title">Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/a0887d79ae75d913c826ffe915493caf0746d045/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/a0887d79ae75d913c826ffe915493caf0746d045">czbiohub/primate-brain-organoid-paper@a0887d7</a> on November 15, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://czbiohub.github.io/primate-brain-organoid-paper/v/43554c51d67db533a353f2f343f9897aecf55a93/">permalink</a>) was automatically generated from <a href="https://github.com/czbiohub/primate-brain-organoid-paper/tree/43554c51d67db533a353f2f343f9897aecf55a93">czbiohub/primate-brain-organoid-paper@43554c5</a> on December 17, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Olga Borisovna Botvinnik</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/olgabot">olgabot</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/olgabot">olgabot</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
 <li><p><strong>Venkata Naga Pranathi Vemuri</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0002-5748-9594">0000-0002-5748-9594</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/pranathivemuri">pranathivemuri</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/pranuvemuri">pranuvemuri</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
 <li><p><strong>Phoenix Aja Logan</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-4581-0552">0000-0003-4581-0552</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/phoenixAja">phoenixAja</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/phoenixlogan">phoenixlogan</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub </small></p></li>
 <li><p><strong>Saba Nafees</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0002-3292-7703">0000-0002-3292-7703</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/snafees">snafees</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/sabanafeesTTU">sabanafeesTTU</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics &amp; Statistics, Texas Tech University </small></p></li>
+<li><p><strong>Zebinisa Mirvoxid qizi Mirakbarova</strong><br> <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" /> <a href="https://orcid.org/0000-0003-1164-7814">0000-0003-1164-7814</a> · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" /> <a href="https://github.com/mzebinisa">mzebinisa</a> · <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" /> <a href="https://twitter.com/ZebinisaM">ZebinisaM</a><br> <small> Data Sciences Platform, Chan Zuckerberg Biohub; Laboratory of Biotechnology. Centre for Advanced Technologies, Ministry of Innovative Development, Republic of Uzbekistan; Institute of Biophysics and Biochemistry, National University of Uzbekistan </small></p></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
 <p>Single-cell RNA-sequencing is a powerful technology for identifying novel and known cell types, however its power is limited to organisms with well-annotated genomes. We demonstrate the utility of using annotation-agnostic methods which quantify cell-cell similarity using <span class="math inline">\(k\)</span>-mer profiles. We benchmark a few methods and demonstrate the utility of converting cell types from mouse to human and back, and compare to using purely 1:1 mapped orthologous genes.</p>
@@ -283,7 +285,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.1001127">10.1371/journal.pbio
 <div id="ref-18WcUBCuN">
 <p>3. <strong>Cnidocyte</strong><br />
 Wikipedia<br />
-(2019-10-20) <a href="https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=922123291">https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=922123291</a></p>
+(2019-12-11) <a href="https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=930220107">https://en.wikipedia.org/w/index.php?title=Cnidocyte&amp;oldid=930220107</a></p>
 </div>
 <div id="ref-rn7vCWvt">
 <p>4. <strong>A relative shift in cloacal location repositions external genitalia in amniote evolution</strong><br />
