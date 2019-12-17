@@ -812,6 +812,366 @@
   },
   {
     "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "DOI": "10.1093/bioinformatics/btx542",
+    "type": "article-journal",
+    "page": "323-329",
+    "source": "Crossref",
+    "title": "Gearing up to handle the mosaic nature of life in the quest for orthologs",
+    "volume": "34",
+    "author": [
+      {
+        "given": "Kristoffer",
+        "family": "Forslund"
+      },
+      {
+        "given": "Cecile",
+        "family": "Pereira"
+      },
+      {
+        "given": "Salvador",
+        "family": "Capella-Gutierrez"
+      },
+      {
+        "given": "Alan Sousa",
+        "family": "da Silva"
+      },
+      {
+        "given": "Adrian",
+        "family": "Altenhoff"
+      },
+      {
+        "given": "Jaime",
+        "family": "Huerta-Cepas"
+      },
+      {
+        "given": "Matthieu",
+        "family": "Muffato"
+      },
+      {
+        "given": "Mateus",
+        "family": "Patricio"
+      },
+      {
+        "given": "Klaas",
+        "family": "Vandepoele"
+      },
+      {
+        "given": "Ingo",
+        "family": "Ebersberger"
+      },
+      {
+        "given": "Judith",
+        "family": "Blake"
+      },
+      {
+        "given": "Jesualdo Tomás",
+        "family": "Fernández Breis"
+      },
+      {
+        "given": "Brigitte",
+        "family": "Boeckmann"
+      },
+      {
+        "given": "Toni",
+        "family": "Gabaldón"
+      },
+      {
+        "given": "Erik",
+        "family": "Sonnhammer"
+      },
+      {
+        "given": "Christophe",
+        "family": "Dessimoz"
+      },
+      {
+        "given": "Suzanna",
+        "family": "Lewis"
+      },
+      {
+        "given": "Adrian",
+        "family": "Altenhoff"
+      },
+      {
+        "given": "Carla",
+        "family": "Bello"
+      },
+      {
+        "given": "Judith",
+        "family": "Blake"
+      },
+      {
+        "given": "Brigitte",
+        "family": "Boeckmann"
+      },
+      {
+        "given": "Sébastien",
+        "family": "Briois"
+      },
+      {
+        "given": "Salvador",
+        "family": "Capella-Gutierrez"
+      },
+      {
+        "given": "Edward",
+        "family": "Chalstrey"
+      },
+      {
+        "given": "Hirokazu",
+        "family": "Chiba"
+      },
+      {
+        "given": "Oscar",
+        "family": "Conchillo-Solé"
+      },
+      {
+        "given": "Vincent",
+        "family": "Daubin"
+      },
+      {
+        "given": "Todd",
+        "family": "DeLuca"
+      },
+      {
+        "given": "Christophe",
+        "family": "Dessimoz"
+      },
+      {
+        "given": "Jean-Francois",
+        "family": "Dufayard"
+      },
+      {
+        "given": "Dannie",
+        "family": "Durand"
+      },
+      {
+        "given": "Ingo",
+        "family": "Ebersberger"
+      },
+      {
+        "given": "Jesualdo Tomás",
+        "family": "Fernández-Breis"
+      },
+      {
+        "given": "Kristoffer",
+        "family": "Forslund"
+      },
+      {
+        "given": "Natasha",
+        "family": "Glover"
+      },
+      {
+        "given": "Alexander",
+        "family": "Hauser"
+      },
+      {
+        "given": "Davide",
+        "family": "Heller"
+      },
+      {
+        "given": "Jaime",
+        "family": "Huerta-Cepas"
+      },
+      {
+        "given": "Mateusz",
+        "family": "Kaduk"
+      },
+      {
+        "given": "Jan",
+        "family": "Koch"
+      },
+      {
+        "given": "Eugene V",
+        "family": "Koonin"
+      },
+      {
+        "given": "Evgenia",
+        "family": "Kriventseva"
+      },
+      {
+        "given": "Shigehiro",
+        "family": "Kuraku"
+      },
+      {
+        "given": "Odile",
+        "family": "Lecompte"
+      },
+      {
+        "given": "Olivier",
+        "family": "Lespinet"
+      },
+      {
+        "given": "Jeremy",
+        "family": "Levy"
+      },
+      {
+        "given": "Suzanna",
+        "family": "Lewis"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Liebeskind"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Linard"
+      },
+      {
+        "given": "Marina",
+        "family": "Marcet-Houben"
+      },
+      {
+        "given": "Maria",
+        "family": "Martin"
+      },
+      {
+        "given": "Claire",
+        "family": "McWhite"
+      },
+      {
+        "given": "Sergei",
+        "family": "Mekhedov"
+      },
+      {
+        "given": "Sebastien",
+        "family": "Moretti"
+      },
+      {
+        "given": "Matthieu",
+        "family": "Muffato"
+      },
+      {
+        "given": "Steven",
+        "family": "Müller"
+      },
+      {
+        "given": "El-Mabrouk",
+        "family": "Nadia"
+      },
+      {
+        "given": "Cédric",
+        "family": "Notredame"
+      },
+      {
+        "given": "Mateus",
+        "family": "Patricio"
+      },
+      {
+        "given": "Simon",
+        "family": "Penel"
+      },
+      {
+        "given": "Cécile",
+        "family": "Pereira"
+      },
+      {
+        "given": "Ivana",
+        "family": "Pilizota"
+      },
+      {
+        "given": "Henning",
+        "family": "Redestig"
+      },
+      {
+        "given": "Marc",
+        "family": "Robinson-Rechavi"
+      },
+      {
+        "given": "Fabian",
+        "family": "Schreiber"
+      },
+      {
+        "given": "Kimmen",
+        "family": "Sjölander"
+      },
+      {
+        "given": "Nives",
+        "family": "Škunca"
+      },
+      {
+        "given": "Erik",
+        "family": "Sonnhammer"
+      },
+      {
+        "given": "Alan Sousa",
+        "family": "da Silva"
+      },
+      {
+        "given": "Martin",
+        "family": "Steinegger"
+      },
+      {
+        "given": "Damian",
+        "family": "Szklarczyk"
+      },
+      {
+        "given": "Paul",
+        "family": "Thomas"
+      },
+      {
+        "given": "Ernst",
+        "family": "Thuer"
+      },
+      {
+        "given": "Clément",
+        "family": "Train"
+      },
+      {
+        "given": "Ikuo",
+        "family": "Uchiyama"
+      },
+      {
+        "given": "Klaas",
+        "family": "Vandepoele"
+      },
+      {
+        "given": "Lucas",
+        "family": "Wittwer"
+      },
+      {
+        "given": "Ioannis",
+        "family": "Xenarios"
+      },
+      {
+        "given": "Bethan",
+        "family": "Yates"
+      },
+      {
+        "given": "Evgeny",
+        "family": "Zdobnov"
+      },
+      {
+        "given": "Robert M",
+        "family": "Waterhouse"
+      },
+      {},
+      {}
+    ],
+    "container-title": "Bioinformatics",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Janet",
+        "family": "Kelso"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          30
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gc2cbq",
+    "PMCID": "PMC5860199",
+    "PMID": "28968857",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1093/bioinformatics/btx542",
+    "id": "4rmQKNc6"
+  },
+  {
+    "publisher": "Oxford University Press (OUP)",
     "DOI": "10.1093/database/bav096",
     "type": "article-journal",
     "page": "bav096",
@@ -1034,6 +1394,97 @@
     "PMID": "19822635",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1093/molbev/msp242",
     "id": "1DcTxE8Z3"
+  },
+  {
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "10",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Gene families evolve by the processes of speciation (creating orthologs), gene duplication (paralogs), and horizontal gene transfer (xenologs), in addition to sequence divergence and gene loss. Orthologs in particular play an essential role in comparative genomics and phylogenomic analyses. With the continued sequencing of organisms across the tree of life, the data are available to reconstruct the unique evolutionary histories of tens of thousands of gene families. Accurate reconstruction of these histories, however, is a challenging computational problem, and the focus of the Quest for Orthologs Consortium. We review the recent advances and outstanding challenges in this field, as revealed at a symposium and meeting held at the University of Southern California in 2017. Key advances have been made both at the level of orthology algorithm development and with respect to coordination across the community of algorithm developers and orthology end-users. Applications spanned a broad range, including gene function prediction, phylostratigraphy, genome evolution, and phylogenomics. The meetings highlighted the increasing use of meta-analyses integrating results from multiple different algorithms, and discussed ongoing challenges in orthology inference as well as the next steps toward improvement and integration of orthology resources.</jats:p>",
+    "DOI": "10.1093/molbev/msz150",
+    "type": "article-journal",
+    "page": "2157-2164",
+    "source": "Crossref",
+    "title": "Advances and Applications in the Quest for Orthologs",
+    "volume": "36",
+    "author": [
+      {
+        "given": "Natasha",
+        "family": "Glover"
+      },
+      {
+        "given": "Christophe",
+        "family": "Dessimoz"
+      },
+      {
+        "given": "Ingo",
+        "family": "Ebersberger"
+      },
+      {
+        "given": "Sofia K",
+        "family": "Forslund"
+      },
+      {
+        "given": "Toni",
+        "family": "Gabaldón"
+      },
+      {
+        "given": "Jaime",
+        "family": "Huerta-Cepas"
+      },
+      {
+        "given": "Maria-Jesus",
+        "family": "Martin"
+      },
+      {
+        "given": "Matthieu",
+        "family": "Muffato"
+      },
+      {
+        "given": "Mateus",
+        "family": "Patricio"
+      },
+      {
+        "given": "Cécile",
+        "family": "Pereira"
+      },
+      {
+        "given": "Alan Sousa",
+        "family": "da Silva"
+      },
+      {
+        "given": "Yan",
+        "family": "Wang"
+      },
+      {
+        "given": "Erik",
+        "family": "Sonnhammer"
+      },
+      {
+        "given": "Paul D",
+        "family": "Thomas"
+      }
+    ],
+    "container-title": "Molecular Biology and Evolution",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Rebekah",
+        "family": "Rogers"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          27
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ggcncc",
+    "PMCID": "PMC6759064",
+    "PMID": "31241141",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1093/molbev/msz150",
+    "id": "4JPXrWM5"
   },
   {
     "publisher": "Oxford University Press (OUP)",
@@ -1999,6 +2450,49 @@
   {
     "publisher": "Annual Reviews",
     "issue": "1",
+    "DOI": "10.1146/annurev-ecolsys-120213-091627",
+    "type": "article-journal",
+    "page": "371-395",
+    "source": "Crossref",
+    "title": "Animal Phylogeny and Its Evolutionary Implications",
+    "volume": "45",
+    "author": [
+      {
+        "given": "Casey W.",
+        "family": "Dunn"
+      },
+      {
+        "given": "Gonzalo",
+        "family": "Giribet"
+      },
+      {
+        "given": "Gregory D.",
+        "family": "Edgecombe"
+      },
+      {
+        "given": "Andreas",
+        "family": "Hejnol"
+      }
+    ],
+    "container-title": "Annual Review of Ecology, Evolution, and Systematics",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          23
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gfkjbd",
+    "container-title-short": "Annu. Rev. Ecol. Evol. Syst.",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1146/annurev-ecolsys-120213-091627",
+    "id": "6KNCoGHt"
+  },
+  {
+    "publisher": "Annual Reviews",
+    "issue": "1",
     "DOI": "10.1146/annurev.genom.1.1.41",
     "type": "article-journal",
     "page": "41-73",
@@ -2030,6 +2524,46 @@
     "PMID": "11701624",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1146/annurev.genom.1.1.41",
     "id": "uQLS9NYU"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "DOI": "10.1186/s12918-015-0192-9",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "The organization of domains in proteins obeys Menzerath-Altmann’s law of language",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Khuram",
+        "family": "Shahzad"
+      },
+      {
+        "given": "Jay E.",
+        "family": "Mittenthal"
+      },
+      {
+        "given": "Gustavo",
+        "family": "Caetano-Anollés"
+      }
+    ],
+    "container-title": "BMC Systems Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          11
+        ]
+      ]
+    },
+    "URL": "https://doi.org/f7s6rb",
+    "container-title-short": "BMC Syst Biol",
+    "PMCID": "PMC4531524",
+    "PMID": "26260760",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1186/s12918-015-0192-9",
+    "id": "1pZXVQ7r"
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
@@ -2205,6 +2739,69 @@
     "PMID": "30142145",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1371/journal.pbio.2005594",
     "id": "8cGr6TE"
+  },
+  {
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "DOI": "10.1371/journal.pone.0004981",
+    "type": "article-journal",
+    "page": "e4981",
+    "source": "Crossref",
+    "title": "Length Variations amongst Protein Domain Superfamilies and Consequences on Structure and Function",
+    "volume": "4",
+    "author": [
+      {
+        "given": "Sankaran",
+        "family": "Sandhya"
+      },
+      {
+        "given": "Saane Sudha",
+        "family": "Rani"
+      },
+      {
+        "given": "Barah",
+        "family": "Pankaj"
+      },
+      {
+        "given": "Madabosse Kande",
+        "family": "Govind"
+      },
+      {
+        "given": "Bernard",
+        "family": "Offmann"
+      },
+      {
+        "given": "Narayanaswamy",
+        "family": "Srinivasan"
+      },
+      {
+        "given": "Ramanathan",
+        "family": "Sowdhamini"
+      }
+    ],
+    "container-title": "PLoS ONE",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Andreas",
+        "family": "Hofmann"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          31
+        ]
+      ]
+    },
+    "URL": "https://doi.org/bz4bqf",
+    "container-title-short": "PLoS ONE",
+    "PMCID": "PMC2659687",
+    "PMID": "19333395",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: doi:10.1371/journal.pone.0004981",
+    "id": "cQaAUgCD"
   },
   {
     "publisher": "eLife Sciences Publications, Ltd",
@@ -2406,35 +3003,6 @@
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://doi.org/10.1101/723833"
   },
   {
-    "id": "18WcUBCuN",
-    "type": "entry-encyclopedia",
-    "title": "Cnidocyte",
-    "container-title": "Wikipedia",
-    "source": "Wikipedia",
-    "abstract": "A cnidocyte (also known as a cnidoblast or nematocyte) is an explosive cell containing one giant secretory organelle or cnida (plural cnidae) that defines the phylum Cnidaria (corals, sea anemones, hydrae, jellyfish, etc.). Cnidae are used for prey capture and defense from predators. Despite being morphologically simple, lacking a skeleton and many species being sessile, cnidarians prey on fish and crustaceans. A cnidocyte fires a structure that contains the toxin, from a characteristic subcellular organelle called a cnidocyst (also known as a cnida or nematocyst).  This is responsible for the stings delivered by a cnidarian.",
-    "URL": "https://en.wikipedia.org/w/index.php?title=Cnidocyte&oldid=930220107",
-    "note": "Page Version ID: 930220107\nThis CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://en.wikipedia.org/wiki/Cnidocyte",
-    "language": "en",
-    "issued": {
-      "date-parts": [
-        [
-          "2019",
-          12,
-          11
-        ]
-      ]
-    },
-    "accessed": {
-      "date-parts": [
-        [
-          "2019",
-          12,
-          17
-        ]
-      ]
-    }
-  },
-  {
     "id": "1EPeNLOEg",
     "type": "book",
     "title": "bam2fasta: tool for converting a bam file to fastas",
@@ -2461,6 +3029,22 @@
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://pypi.org/project/bam2fasta/"
   },
   {
+    "id": "1DzGnZnWP",
+    "type": "webpage",
+    "title": "Archives: Table of assemblies",
+    "URL": "https://uswest.ensembl.org/info/website/archives/assembly.html",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          12,
+          17
+        ]
+      ]
+    },
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://uswest.ensembl.org/info/website/archives/assembly.html"
+  },
+  {
     "id": "bkF0801R",
     "type": "webpage",
     "title": "Identifiers.org < EMBL-EBI",
@@ -2476,21 +3060,5 @@
       ]
     },
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119"
-  },
-  {
-    "id": "16wL4sfFU",
-    "type": "webpage",
-    "title": "Genome List - Genome - NCBI",
-    "URL": "https://www.ncbi.nlm.nih.gov/genome/browse/",
-    "accessed": {
-      "date-parts": [
-        [
-          "2019",
-          12,
-          17
-        ]
-      ]
-    },
-    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.4 using citation-by-identifier.\nstandard_id: url:https://www.ncbi.nlm.nih.gov/genome/browse/"
   }
 ]

@@ -23,9 +23,9 @@ title: Smashing single cells into $k$-mer sketches
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/43554c51d67db533a353f2f343f9897aecf55a93/))
+([permalink](https://czbiohub.github.io/primate-brain-organoid-paper/v/aae4c14b017bd46b9f571d2dead7a166cbde3467/))
 was automatically generated
-from [czbiohub/primate-brain-organoid-paper@43554c5](https://github.com/czbiohub/primate-brain-organoid-paper/tree/43554c51d67db533a353f2f343f9897aecf55a93)
+from [czbiohub/primate-brain-organoid-paper@aae4c14](https://github.com/czbiohub/primate-brain-organoid-paper/tree/aae4c14b017bd46b9f571d2dead7a166cbde3467)
 on December 17, 2019.
 </em></small>
 
@@ -100,19 +100,23 @@ We benchmark a few methods and demonstrate the utility of converting cell types 
 
 ## Introduction  {.page_break_before}
 
-There are a predicted 8.7 million Eukaryotic species on earth [@OkFljXKC], yet only 14% (1,233,500) have been catalogued and 0.001% (9,449) have genomes deposited in the National Center for Biotechnology Information Genome Assembly [@16wL4sfFU#!/overview/].
+There are a predicted 8.7 million Eukaryotic species on earth [@OkFljXKC], yet only 14% (1,233,500) have been catalogued and 0.000002% (200/8,700,000 = 2.3e-08) have genomes present in ENSEMBL Assemblies (as of ENSEMBL 98 -- September 2019 release) [@1DzGnZnWP].
 And yet, the genome sequence is not enough.
 To truly understand the diversity of life on this planet, we need to determine not just the DNA blueprints of life, but understand the instantiation of the DNA, the cell types of the species.
-While sequencing DNA gives a quantitative measure of the nucleotide differences, it does not inform the functional strategies that change with DNA sequence.
+While sequencing DNA gives a quantitative measure of the nucleotide differences, it does not inform the functional strategies that change from DNA modifications due to speciation events .
 As new species can be defined by a new cell type.
-For example, the existence of a single cell type, the Cnidocyte [@18WcUBCuN], a stinging cell of a single-celled biological weapon, defines the phylum Cnidaria.
+For example, the existence of a single cell type, the stinging cell called a "Cnidocyte" [@6KNCoGHt], a single-celled biological weapon, defines the phylum Cnidaria.
 Thus, entire clades, not only species, can be defined by the introduction of an additional cell type or state.
 
-Novel organizations of existing cell states can also define cell types.
-For example, the development of genitalia in amniotes, while using similar cell types, ultimately uses a different physical organization of cell types to generate genitalia in mammals compared to reptiles [@rn7vCWvt]
+Organizations of existing cell states can also define novel organismal structures.
+For example, different physical organizations of similar cell types generate different genitalia in amniotes when comparing mammals to reptiles [@rn7vCWvt]
 
 Determining common gene ancestry ("orthology") is a difficult problem.
-Many approaches exist [@LkrS4xXB; @46R7aU4N].
+Many approaches exist, reviewed by [@LkrS4xXB; @4rmQKNc6; @4JPXrWM5].
+Generally, the approaches are structured in this way: (1) find orthologous groups of genes, (2) build gene trees, (3) build species trees, and (4) assign orthologs, as described in a recent approach (Orthofinder) [@46R7aU4N].
+In this approach, we are not interested in exactly reconstructing the species or gene trees, but rather inferring function based on cell type transcriptomes.
+Instead of exactly building the gene trees, we subset the protein-coding sequences into peptide words, and re-encode to lossy peptide encodings.
+
 
 Determining common ancestry of cell types ("orthologous cell types") [@ogAGO9KH; @wdzgXUGy] is an additional difficult problem.
 Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space.
@@ -120,6 +124,8 @@ Many researchers take the approach of using one-to-one orthologous genes [Cite: 
 
 $k$-mers have been proposed for comparing single cells [@wtk13QGK] as they are a fast, simple way to create cell-cell similarities.
 However, the work so far has focused on using annotated organisms and not cross-species analyses.
+
+We aim to find "orthologous reads" across species' transcriptomes. By representing each species' transcriptome as the set of $k$-mers, we can unbiasedly compare transcriptomes in an orthologous space without the need for knowing the orthologous genes ahead of time, or even the need for a reference genome. Additionally, we do not need to reduce the signal to only the genes with a 1:1 orthologous match.
 
 
 ## Methods
@@ -266,7 +272,7 @@ alphabet allowing for permissive cross-species sequence comparisons. For
 example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
 to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:sequence-encodings}
 
-
+$k$-mer size may be tuned to find an "optimal" length of protein domains across the tree of life. Protein domain lengths follow a power law distribution where proteins with more domains, have shorter domains, whereas proteins with fewer domains, have fewer but longer domains [@1pZXVQ7r; @cQaAUgCD].
 
 ![Figure 1.](images/figure1.svg){#fig:fig1}
 
