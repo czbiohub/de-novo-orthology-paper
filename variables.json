@@ -60,24 +60,6 @@
         2,
         3
       ]
-    },
-    {
-      "github": "mzebinisa",
-      "name": "Zebinisa Mirvoxid qizi Mirakbarova",
-      "initials": "ZM",
-      "orcid": "0000-0003-1164-7814",
-      "twitter": "ZebinisaM",
-      "email": "zebyniso@gmail.com",
-      "affiliations": [
-        "Data Sciences Platform, Chan Zuckerberg Biohub",
-        "Laboratory of Biotechnology. Centre for Advanced Technologies, Ministry of Innovative Development, Republic of Uzbekistan",
-        "Institute of Biophysics and Biochemistry, National University of Uzbekistan"
-      ],
-      "affiliation_numbers": [
-        1,
-        4,
-        5
-      ]
     }
   ],
   "affiliations": [
@@ -92,26 +74,18 @@
     {
       "affiliation": "Department of Mathematics & Statistics, Texas Tech University",
       "affiliation_number": 3
-    },
-    {
-      "affiliation": "Laboratory of Biotechnology. Centre for Advanced Technologies, Ministry of Innovative Development, Republic of Uzbekistan",
-      "affiliation_number": 4
-    },
-    {
-      "affiliation": "Institute of Biophysics and Biochemistry, National University of Uzbekistan",
-      "affiliation_number": 5
     }
   ],
   "ci_source": {
     "provider": "travis",
-    "repo_slug": "czbiohub/primate-brain-organoid-paper",
+    "repo_slug": "czbiohub/orthology-free-comparative-transcriptomics-paper",
     "repo_owner": "czbiohub",
-    "repo_name": "primate-brain-organoid-paper",
-    "commit": "aae4c14b017bd46b9f571d2dead7a166cbde3467",
-    "triggering_commit": "aae4c14b017bd46b9f571d2dead7a166cbde3467",
-    "build_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/builds/141438507",
-    "job_url": "https://travis-ci.com/czbiohub/primate-brain-organoid-paper/jobs/268164076",
-    "manuscript_url": "https://czbiohub.github.io/primate-brain-organoid-paper/v/aae4c14b017bd46b9f571d2dead7a166cbde3467/"
+    "repo_name": "orthology-free-comparative-transcriptomics-paper",
+    "commit": "4a51b18e1891031911fa06c6615cc6c730e95da2",
+    "triggering_commit": "4a51b18e1891031911fa06c6615cc6c730e95da2",
+    "build_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/builds/141508569",
+    "job_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/jobs/268321643",
+    "manuscript_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/4a51b18e1891031911fa06c6615cc6c730e95da2/"
   },
   "manuscript_stats": {
     "reference_counts": {
