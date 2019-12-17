@@ -81,19 +81,19 @@
     "repo_slug": "czbiohub/orthology-free-comparative-transcriptomics-paper",
     "repo_owner": "czbiohub",
     "repo_name": "orthology-free-comparative-transcriptomics-paper",
-    "commit": "4a51b18e1891031911fa06c6615cc6c730e95da2",
-    "triggering_commit": "4a51b18e1891031911fa06c6615cc6c730e95da2",
-    "build_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/builds/141508569",
-    "job_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/jobs/268321643",
-    "manuscript_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/4a51b18e1891031911fa06c6615cc6c730e95da2/"
+    "commit": "9ad7a8b8344a52fc584ff37d4b785e2d38449bf8",
+    "triggering_commit": "9ad7a8b8344a52fc584ff37d4b785e2d38449bf8",
+    "build_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/builds/141514977",
+    "job_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/jobs/268340803",
+    "manuscript_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/9ad7a8b8344a52fc584ff37d4b785e2d38449bf8/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 38,
+      "doi": 46,
       "raw": 2,
-      "url": 5,
-      "total": 45
+      "url": 10,
+      "total": 58
     },
-    "word_count": 2839
+    "word_count": 3582
   }
 }
