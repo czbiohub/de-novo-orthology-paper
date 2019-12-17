@@ -34,4 +34,26 @@ author_info:
     twitter: phoenixlogan
     email: phoenix.logan@czbiohub.org
     affiliations:
-      - Data Sciences Platform, Chan Zuckerberg Biohub
+      - Data Sciences Platform, Chan Zuckerberg Biohub     
+  -
+   github: snafees
+   name: Saba Nafees
+   initials: SN
+   orcid: 0000-0002-3292-7703
+   twitter: sabanafeesTTU
+   email: saba.nafees@czbiohub.org
+   affiliations: 
+    - Data Sciences Platform, Chan Zuckerberg Biohub
+    - Department of Biological Sciences, Texas Tech University
+    - Department of Mathematics & Statistics, Texas Tech University 
+  -
+   github: mzebinisa
+   name: Zebinisa Mirvoxid qizi Mirakbarova
+   initials: ZM
+   orcid: 0000-0003-1164-7814
+   twitter: ZebinisaM
+   email: zebyniso@gmail.com
+   affiliations: 
+    - Data Sciences Platform, Chan Zuckerberg Biohub
+    - Laboratory of Biotechnology. Centre for Advanced Technologies, Ministry of Innovative Development, Republic of Uzbekistan
+    - Institute of Biophysics and Biochemistry, National University of Uzbekistan
