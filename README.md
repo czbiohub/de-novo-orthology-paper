@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/czbiohub/primate-brain-organoid-paper/tree/gh-pages) branch hosts the contents of this directory at https://czbiohub.github.io/primate-brain-organoid-paper/.
-The permalink for this webpage version is https://czbiohub.github.io/primate-brain-organoid-paper/v/43554c51d67db533a353f2f343f9897aecf55a93/.
+The permalink for this webpage version is https://czbiohub.github.io/primate-brain-organoid-paper/v/aae4c14b017bd46b9f571d2dead7a166cbde3467/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://czbiohub.github.io/primate-brain-organoid-paper/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`43554c51d67db533a353f2f343f9897aecf55a93`](https://github.com/czbiohub/primate-brain-organoid-paper/commit/43554c51d67db533a353f2f343f9897aecf55a93).
+[`aae4c14b017bd46b9f571d2dead7a166cbde3467`](https://github.com/czbiohub/primate-brain-organoid-paper/commit/aae4c14b017bd46b9f571d2dead7a166cbde3467).
