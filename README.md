@@ -1,8 +1,8 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/czbiohub/primate-brain-organoid-paper/tree/gh-pages) branch hosts the contents of this directory at https://czbiohub.github.io/primate-brain-organoid-paper/.
-The permalink for this webpage version is https://czbiohub.github.io/primate-brain-organoid-paper/v/aae4c14b017bd46b9f571d2dead7a166cbde3467/.
-To redirect to the permalink for the latest manuscript version at anytime, use the link https://czbiohub.github.io/primate-brain-organoid-paper/v/freeze/.
+The [`gh-pages`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/gh-pages) branch hosts the contents of this directory at https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/.
+The permalink for this webpage version is https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/4a51b18e1891031911fa06c6615cc6c730e95da2/.
+To redirect to the permalink for the latest manuscript version at anytime, use the link https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/freeze/.
 
 ## Files
 
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`aae4c14b017bd46b9f571d2dead7a166cbde3467`](https://github.com/czbiohub/primate-brain-organoid-paper/commit/aae4c14b017bd46b9f571d2dead7a166cbde3467).
+[`4a51b18e1891031911fa06c6615cc6c730e95da2`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/4a51b18e1891031911fa06c6615cc6c730e95da2).
