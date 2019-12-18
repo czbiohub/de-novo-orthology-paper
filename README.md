@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/gh-pages) branch hosts the contents of this directory at https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/.
-The permalink for this webpage version is https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/9ad7a8b8344a52fc584ff37d4b785e2d38449bf8/.
+The permalink for this webpage version is https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/1a7e25adc2204082bff3695b40d3b351fa4f510d/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`9ad7a8b8344a52fc584ff37d4b785e2d38449bf8`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/9ad7a8b8344a52fc584ff37d4b785e2d38449bf8).
+[`1a7e25adc2204082bff3695b40d3b351fa4f510d`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/1a7e25adc2204082bff3695b40d3b351fa4f510d).
