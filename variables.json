@@ -1,5 +1,5 @@
 {
-  "date": "December 17, 2019",
+  "date": "December 18, 2019",
   "authors": [
     {
       "github": "olgabot",
@@ -81,19 +81,19 @@
     "repo_slug": "czbiohub/orthology-free-comparative-transcriptomics-paper",
     "repo_owner": "czbiohub",
     "repo_name": "orthology-free-comparative-transcriptomics-paper",
-    "commit": "9ad7a8b8344a52fc584ff37d4b785e2d38449bf8",
-    "triggering_commit": "9ad7a8b8344a52fc584ff37d4b785e2d38449bf8",
-    "build_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/builds/141514977",
-    "job_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/jobs/268340803",
-    "manuscript_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/9ad7a8b8344a52fc584ff37d4b785e2d38449bf8/"
+    "commit": "1a7e25adc2204082bff3695b40d3b351fa4f510d",
+    "triggering_commit": "1a7e25adc2204082bff3695b40d3b351fa4f510d",
+    "build_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/builds/141524911",
+    "job_url": "https://travis-ci.com/czbiohub/orthology-free-comparative-transcriptomics-paper/jobs/268366087",
+    "manuscript_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/1a7e25adc2204082bff3695b40d3b351fa4f510d/"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 46,
+      "doi": 43,
       "raw": 2,
-      "url": 10,
-      "total": 58
+      "url": 9,
+      "total": 54
     },
-    "word_count": 3582
+    "word_count": 2908
   }
 }
