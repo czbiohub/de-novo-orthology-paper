@@ -4,7 +4,108 @@ author-meta:
 - Venkata Naga Pranathi Vemuri
 - Phoenix Aja Logan
 - Saba Nafees
-date-meta: '2019-12-18'
+bibliography:
+- content/manual-references.json
+date-meta: '2020-02-04'
+header-includes: '<!--
+
+  Manubot generated metadata rendered from header-includes-template.html.
+
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+
+  -->
+
+  <meta name="dc.format" content="text/html" />
+
+  <meta name="dc.title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
+
+  <meta name="citation_title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
+
+  <meta property="og:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
+
+  <meta property="twitter:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
+
+  <meta name="dc.date" content="2020-02-04" />
+
+  <meta name="citation_publication_date" content="2020-02-04" />
+
+  <meta name="dc.language" content="en-US" />
+
+  <meta name="citation_language" content="en-US" />
+
+  <meta name="dc.relation.ispartof" content="Manubot" />
+
+  <meta name="dc.publisher" content="Manubot" />
+
+  <meta name="citation_journal_title" content="Manubot" />
+
+  <meta name="citation_technical_report_institution" content="Manubot" />
+
+  <meta name="citation_author" content="Olga Borisovna Botvinnik" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_orcid" content="0000-0003-4412-7970" />
+
+  <meta name="twitter:creator" content="@olgabot" />
+
+  <meta name="citation_author" content="Venkata Naga Pranathi Vemuri" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_orcid" content="0000-0002-5748-9594" />
+
+  <meta name="twitter:creator" content="@pranuvemuri" />
+
+  <meta name="citation_author" content="Phoenix Aja Logan" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_orcid" content="0000-0003-4581-0552" />
+
+  <meta name="twitter:creator" content="@phoenixlogan" />
+
+  <meta name="citation_author" content="Saba Nafees" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_institution" content="Department of Biological Sciences, Texas Tech University" />
+
+  <meta name="citation_author_institution" content="Department of Mathematics &amp; Statistics, Texas Tech University" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3292-7703" />
+
+  <meta name="twitter:creator" content="@sabanafeesTTU" />
+
+  <link rel="canonical" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+
+  <meta property="og:url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+
+  <meta property="twitter:url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+
+  <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+
+  <meta name="citation_pdf_url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf" />
+
+  <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf" />
+
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/" />
+
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/" />
+
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/manuscript.pdf" />
+
+  <meta property="og:type" content="article" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+
+  <meta name="theme-color" content="#ad1457" />
+
+  <!-- end Manubot generated metadata -->'
 keywords:
 - comparative transcriptomics
 - single-cell RNA-seq
@@ -12,6 +113,10 @@ keywords:
 - hashing
 - MinHash
 lang: en-US
+manubot-clear-requests-cache: false
+manubot-output-bibliography: output/references.json
+manubot-output-citekeys: output/citations.tsv
+manubot-requests-cache-path: ci/cache/requests-cache
 title: 'INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches'
 ...
 
@@ -22,10 +127,10 @@ title: 'INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches'
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/1a7e25adc2204082bff3695b40d3b351fa4f510d/))
+([permalink](https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/))
 was automatically generated
-from [czbiohub/orthology-free-comparative-transcriptomics-paper@1a7e25a](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/1a7e25adc2204082bff3695b40d3b351fa4f510d)
-on December 18, 2019.
+from [czbiohub/orthology-free-comparative-transcriptomics-paper@59ec714](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/59ec714311637729d575a0c46224a6fca9abeccd)
+on February 4, 2020.
 </em></small>
 
 ## Authors
@@ -80,55 +185,115 @@ on December 18, 2019.
 
 ## Abstract
 
-
-Single-cell RNA-sequencing is a powerful technology for identifying novel and known cell types.
-However, the task of identifying new and novel cell types across species is nontrivial, especially when one or more of the species have poorly annotated genomes.
-Thus, there is an unmet need to quantitatively compare single-cell transcriptomes across species, without the need for a reference genome.
-To this end, we have developed a genome-agnostic method to compare molecular profiles using a lossy encoding on $k$-mers from putative protein-coding RNA-seq reads.
-We benchmark the annotation-agnostic methods on a bulk comparative transcriptomic dataset consisting of nine species and six tissues, showing that we can recapitulate the results as using only reads mapping to 1:1 orthologs of protein-coding genes, and we are able to resolve ... which can only be seen by using the reference-free $k$-mer method.
-We then show that $k$-mers can also be used for comparing transcriptomes built from long read sequencing, by comparing the cell-cell similarity nearest neighbor graphs built on $k$-mers from short reads and long reads from the same cells in a primate brain organoid system.
-We find that using $k$-mers on short reads has the advantage of resolving ... in comparison to using read counts from 1:1 gene orthologs, while long reads provide additional information in the form of ...
-Using $k$-mers, we were able to resolve cell types X in the primate brain organoid dataset, which was hidden using read counts alone.
-Thus, we have show the reference-free methods using the $k$-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolution tree of life.
+We introduce `kmermaid`, a lightweight computational method for quantifying similarity between RNA-seq transcriptomes across species.
+As `kmermaid` skips both alignment and gene orthology assignment, it can be applied to transcriptomes from organisms with no or poorly annotated genomes, and can perform the task of quanitfying similarities much faster than current methods without loss of sensitivity.
+By enabling analyses across divergent species' transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, `kmermaid` illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.
 
 
-## Introduction  {.page_break_before}
+Single-cell RNA-sequencing is a powerful technology for identifying cell types in a variety of species.
+However, the task of identifying even known cell types in species with poorly annotated genomes is nontrivial, as orthologous gene mapping remains an unsolved problem [@doi:10.1038/nrg.2016.127; @doi:10.1146/annurev-cellbio-100616-060818] and most of the 8.7 million Eukaryotic species on Earth have no sequenced genome [@doi:10.1371/journal.pbio.1001127].
+Thus, there is an unmet need to quantitatively compare single-cell transcriptomes across species, without the need for orthologous gene mapping, gene annotations, or a reference genome.
+Short, $k$-long sequence substrings, or $k$-mers, have been proposed for comparing single cells [@url:https://doi.org/10.1101/723833] as they are a fast, simple way to create cell-cell similarities.
+Combining $k$-mers from putatitvely translated RNA-seq reads with reduced amino acid alphabets [@doi:10.1093/bioinformatics/btp164 @doi:10.1093/gigascience/giz118 @doi:10.1093/bioinformatics/10.4.453; @10.1186/1471-2105-12-159; @doi:10.1093/protein/13.3.149; @doi:10.1093/bioinformatics/btp164; @doi:10.1093/nar/gkh180] , we developed a method to identify known cell types in a non-model organism using a reference atlas from another organism, without the need for a genome or gene annotation from the non-model organism.
+This method relies solely on divergence time between species, which we show can be estimated from RNA-seq nucleotide $k$-mers (Supplemental Figure [@sfig:sfig1]).
+We benchmark the genome-agnostic method on the Quest for Orthologs Opisthokonta dataset, showing that $k$-mers from reduced amino acid alphabets are sufficient to estimate orthology.
+Using human amino acid sequences, we show that one can extract putative protein-coding reads from 239 Opisthokonta species in ENSEMBL, and present the best $k$-mer size and alphabet for different divergence times.
+We apply this method on a bulk comparative transcriptomic dataset consisting of nine species and six tissues [@doi:10.1038/nature10532], showing that we can recapitulate the results as using only reads mapping to 1:1 orthologs of protein-coding genes, and we are able to resolve ... which can only be seen by using the reference-free $k$-mer method.
 
-There are a predicted 8.7 million Eukaryotic species on earth [@OkFljXKC], yet only 14% (1,233,500) have been catalogued and 0.000002% (200/8,700,000 = 2.3e-08) have genomes present in ENSEMBL Assemblies (as of ENSEMBL 98 -- September 2019 release) [@1DzGnZnWP].
-And yet, the genome sequence is not enough.
-To truly understand the diversity of life on this planet, we need to determine not just the DNA blueprints of life, but understand the instantiation of the DNA, the cell types of the species.
-While sequencing DNA gives a quantitative measure of the nucleotide differences, it does not inform the functional strategies that change from DNA modifications due to speciation events .
-As new species can be defined by a new cell type.
-For example, the existence of a single cell type, the stinging cell called a "Cnidocyte" [@6KNCoGHt], a single-celled biological weapon, defines the phylum Cnidaria.
-Thus, entire clades, not only species, can be defined by the introduction of an additional cell type or state.
-However, it is unclear how many examples there are of this, and how it is possible to find cell types that are unique to one species.
-Thus, we aim to develop a computational method to compare cell types across species that is reference-agnostic and can find cell types that are novel and present in only one organism.
-
-Organizations of existing cell states can also define novel organismal structures.
-For example, different physical organizations of similar cell types generate different genitalia in amniotes when comparing mammals to reptiles [@rn7vCWvt]
-
-Determining common gene ancestry ("orthology") is a difficult problem.
-
-Many approaches exist, reviewed by [@LkrS4xXB; @4rmQKNc6; @4JPXrWM5].
-Generally, the approaches are structured in this way: (1) find orthologous groups of genes, (2) build gene trees, (3) build species trees, and (4) assign orthologs, as described in a recent approach (Orthofinder) [@46R7aU4N].
-In this approach, we are not interested in exactly reconstructing the species or gene trees, but rather inferring function based on cell type transcriptomes.
-Instead of exactly building the gene trees, we subset the protein-coding sequences into peptide words, and re-encode to lossy peptide encodings.
+We then show that reduced amino acid protein $k$-mers can be used for comparing single-cell transcriptomes across mouse, human, and zebrafish hematopoiesis.
+We find that using $k$-mers has the advantage of resolving ... in comparison to using read counts from 1:1 gene orthologs.
+Using $k$-mers, we were able to resolve cell types ... , which was hidden using read counts alone.
+Thus, we have shown the reference-free method using the $k$-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolutionary tree of life.
 
 
-Determining common ancestry of cell types ("orthologous cell types") [@ogAGO9KH; @wdzgXUGy] is an additional difficult problem.
-Comparative transcriptomics begins with finding a common feature set for embedding molecular profiles across divergent species into a common space.
-Many researchers take the approach of using one-to-one orthologous genes [@fBCZ87Cf; @lNBJZodk; @MaZsghuS, @OekvE5up; @3W4a486t; @B45xrKOO; @vxLmcytb, @ZVsAu3NP], others use clusters of orthologous groups [@1tMQTfnh], others map reads onto a common genome derived from whole-genome alignment [@2c3LiMz9; @mtOZyMZw], or map onto native genomes [@y7xGipW5] and re-annotate using a tool such as Comparative Annotation Toolkit [@1BnfHjbCA].
+## Figure 1 -- Overview of `kmermaid` pipeline
 
-Annotating one dataset's cell types from another can be performed using random forest models trained on the original dataset [@dnJT32Dx], using correlation between cell gene expression profiles as in Cell BLAST [@m2Yvtcb8], locality-sensitive hashing of bit vectors of gene expression as in CellFishing.jl [@1CdDldcJr], or using a cell type hierarchy as in Garnett [@szbeiEEU] and OnClass [@dB7c447D].
+![**A.** Overview of the `kmermaid` pipeline. (**a**, **b**, **c**) `kmermaid` consists of a protein-coding prediction phase (**a**) that is invoked by the command `khtools extract_coding`, a k-mer sketch computation phase (**b**) invoked by the command `sourmash sketch`, a signature similarity comparison phase (**c**) invoked by the command `sourmash compare`, and an optional database-creation phase (**d**) invoked by the command `sourmash index`. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent $k$-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide $k$-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide $k$-mers between all pairs of samples.](images/figure1.svg){#fig:fig1 width="100%"}
 
-$k$-mers have been proposed for comparing single cells [@wtk13QGK] as they are a fast, simple way to create cell-cell similarities.
-$k$-mers have also been used for orthologous gene detection [@Rqlso7kk]
-However, the work so far has focused on using annotated organisms and not cross-species analyses.
+To determine whether short segments of sequences could detect gene orthologues, we $k$-merized orthologous genes derived from the ENSEMBL version 97 [@doi:10.1093/nar/gkx1098] COMPARA database [@doi:10.1093/database/bav096] (Figure [@fig:fig1]).
+We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in [@doi:10.1038/nature10532].
+As a background, we randomly chose 10 non-orthologous genes relative to the human gene.
+In addition to $k$-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet [@raw:dayhoff1969atlas], a nine-letter encoding [@doi:10.1093/gigascience/giz118], and a two-letter hydrophobic-polar encodings [@raw:phillips2012physical; @doi:10.1021/bi00327a032], show in Table [@tbl:sequence-encodings].
 
-Reduced amino acid alphabets have been previously used to speed up database searches [@16Kv6RIe3; @sZoryWIB], protein fold prediction [@f5u3dDtc; @Aq7zYbOg], and homology recognition [@QMYjnr6l].
-We aim to find "orthologous reads" across species' transcriptomes. 
-By representing each species' transcriptome as the set of $k$-mers, we can unbiasedly compare transcriptomes in an orthologous space without the need for knowing the orthologous genes ahead of time, or even the need for a reference genome. 
-Additionally, we do not need to reduce the signal to only the genes with a 1:1 orthologous match.
+
+
+
+We found that, consistent with previous knowledge, that 1:1 orthologues had higher $k$-mer similarities as determined by the Jaccard Index. This approach is similar to SwiftOrtho [@doi:10.1093/gigascience/giz118], a k-mer based orthology relationship finder.
+
+Additionally, more recently diverged genes had higher $k$-mer similarity as well.
+
+## Outline
+
+- Kmers can approximate orthologies
+  - Jaccard similarity of orthologues is higher than non-orthologues
+  - Benchmarking using https://orthology.benchmarkservice.org/cgi-bin/gateway.pl
+  - Finding orthologues
+    - Gold standard
+      - ENSEMBL COMPARA
+      - Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 [@doi:10.1038/nmeth.3830]
+    - Orthologous groups/Conserved Domain Database [@url:https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119]
+
+
+## Figure 2 -- $k$-mers from lossily-encoded putative protein-coding reads faithfully pull out reads from protein-coding genes within amniotes
+
+![Figure 2.](images/figure2.svg){#fig:fig2 width="100%"}
+
+- Overview of kmermaid pipeline
+  - Comparison of tissue across species
+    - Partition reads to coding/noncoding bins
+    - MinHash the Dayhoff-encoded coding sequences
+    - Jaccard similarity on the MinHashes
+- Which reads are found to have coding features but didn’t map to the genome?
+- Do these features map to novel genes or gene fusions?
+- Kmers can find correct reading from of RNA-seq reads
+  - Human peptides → human, chimp, bonobo, orangutan, gorilla, macaque, mouse, opossum, playtpus, chicken RNAseq from Brawand2011 data
+- Comparison to other methods: RNASamba [@doi:10.1101/620880]
+
+### Figure 3 -- $k$-mers can pull out only reads from transcription factors and Amniotes can be compared on the MinHashes of their protein-coding sequences
+
+![Figure 3.](images/figure3.svg){#fig:fig3 width="100%"}
+
+- Kmers can find only transcription factor reads of TFs from RNA-seq reads
+  - Human peptides → human, chimp, bonobo, orangutan, gorilla, macaque, mouse, opossum, playtpus, chicken RNAseq from Brawand2011 data
+
+
+
+`kmermaid` implements the concept of lightweight orthology assignment using k-mers to the problem of cross-species RNA-seq analyses and achieves unprecedented speed of analysis. By removing the orthology inference step, `kmermaid` opens up the possibilty of finding shared and divergent tissue and cell types across a broad range of species, paving the way for evolutionary analyses of cell types across species. `kmermaid` can be used in *de novo* setting for non-model organisms, finding similar cell types within an organism, or finding similar cell types relative to a reference organism, without the need for a reference genome or transcriptome. The memory usage of `kmermaid` is quite low, using only 50MB for extracting coding sequences and 50MB for assigning protein k-mer signatures. As the number of RNA-seq datasets, especially single-cell RNA-seq datasets continues to grow, we expect `kmermaid` to be widely used for identifying cell types in non-model organisms.
+
+`kmermaid` is free and open-source software and is available as Supplementary Data and at http://github.com/czbiohub/kmermaid and as a scalable Nextflow workflow at http://github.com/nf-core/nf-kmermaid.
+
+
+
+### Some potential references
+
+Gene expression evolution through duplications
+
+- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@doi:10.1093/molbev/msp242]
+- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@doi:10.1146/annurev.genom.1.1.41]
+- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@doi:10.1093/molbev/msp242]
+
+Taxa-restricted genes
+
+- Human-specific genes in fetal neocortex
+Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 [@doi:10.7554/eLife.32332]
+- Insects -- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@doi:10.1126/science.aan2748]
+
+
+Correlated evolution of celltypes?
+
+- Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., & Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 [@doi:10.1093/gbe/evy016]
+
+Cell type homology
+
+- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@doi:10.1146/annurev.genom.1.1.41]
+- Tschopp, P., & Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 [@doi:10.1098/rstb.2015.0475]
+- Hejnol, A., & Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 [@doi:10.1098/rstb.2015.0045]
+- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@doi:10.1126/science.aan2748]
+- Mammalian decidual cell
+
+Cell type evolution
+
+- Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., & Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 [@doi:10.1371/journal.pbio.2005594]
 
 
 ## Methods
@@ -142,27 +307,27 @@ Methods go here.
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 #### Single-cell capture of primate brain organoids
 
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 #### Long read library prep
 
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 
 #### Short read library prep
@@ -170,20 +335,22 @@ Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 #### Sequencing
 
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 ### Computational
+
+![Caption for Supplemental figure 1](images/supplemental_figure1.svg){#sfig:sfig1 tag="sfig1" width="100%"}
 
 #### $k$-mer comparison of orthologous genes
 
@@ -191,147 +358,21 @@ We used ENSEMBL version 97.
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 #### Extraction of putative coding reads from RNA-seq
 
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
-
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@LkrS4xXB].
-Biorxiv example: [@46R7aU4N].
-Multiple citations per line example: [@LkrS4xXB; @46R7aU4N].
-
-
-## Results
-
-### Figure 1 -- $k$-mers are sufficient to detect orthologous genes
-
-To determine whether short segments of sequences could detect gene orthologues, we $k$-merized orthologous genes derived from the ENSEMBL version 97 [@lBlqrqAO] COMPARA database [@j0y6s0kf] (Figure [@fig:fig1]).
-We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in [@fBCZ87Cf].
-As a background, we randomly chose 10 non-orthologous genes relative to the human gene.
-In addition to $k$-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet [@66KDHtpG], a nine-letter encoding [@Rqlso7kk], and a two-letter hydrophobic-polar encodings [@1GiMcbPLs; @E2Kp7kA0], show in Table [@tbl:sequence-encodings].
-
-|  Amino acid                    | Property              | Dayhoff | Hydrophobic-polar (HP) |
-| :----------------------------- | :-------------------- | :------ | :--------------------- |
-| C                              | Sulfur polymerization | a       | p                      |
-| A, G, P, S, T                  | Small                 | b       | A, G, P: h             |
-|                                |                       |         | S,T: p                 |
-| D, E, N, Q                     | Acid and amide        | c       | p                      |
-| H, K, R                        | Basic                 | d       | p                      |
-| I, L, M, V                     | Hydrophobic           | e       | h                      |
-| F, W, Y                        | Aromatic              | f       | h                      |
-
-Table: Dayhoff and hydrophobic-polar encodings are a reduced amino acid
-alphabet allowing for permissive cross-species sequence comparisons. For
-example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
-to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:sequence-encodings}
-
-$k$-mer size may be tuned to find an "optimal" length of protein domains across the tree of life. Protein domain lengths follow a power law distribution where proteins with more domains, have shorter domains, whereas proteins with fewer domains, have fewer but longer domains [@1pZXVQ7r; @cQaAUgCD].
-
-
-![**A.** Overview of $k$-mer comparison of orthologous genes. The protein-coding sequence of each pair of known orthologs is $k$-merized, potentially encoded as Dayhoff or Hydrophobic polar, and then the Jaccard index (the intersection divided by the union) is computed on the $k$-mers. **B.** Jaccard similarity of orthologous genes in Dayhoff-encoded $k$-mer space relative to humans in eight species. $x$-axis, $k$-mer size; $y$-axis, Jaccard index. **C.** ](images/figure1.svg){#fig:fig1 width="100%"}
-
-We found that, consistent with previous knowledge, that 1:1 orthologues had higher $k$-mer similarities as determined by the Jaccard Index. This approach is similar to SwiftOrtho [@Rqlso7kk], a k-mer based orthology relationship finder.
-
-Additionally, more recently diverged genes had higher $k$-mer similarity as well.
-
-#### Outline
-
-- Kmers can approximate orthologies
-  - Jaccard similarity of orthologues is higher than non-orthologues
-  - Benchmarking using https://orthology.benchmarkservice.org/cgi-bin/gateway.pl
-  - Finding orthologues
-    - Gold standard
-      - ENSEMBL COMPARA
-      - Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 [@LkrS4xXB]
-    - Orthologous groups/Conserved Domain Database [@bkF0801R]
-
-
-### Figure 2 -- $k$-mers from lossily-encoded putative protein-coding reads faithfully pull out reads from protein-coding genes within amniotes
-
-![Figure 2.](images/figure2.svg){#fig:fig2 width="100%"}
-
-- Overview of kmermaid pipeline
-  - Comparison of tissue across species
-    - Partition reads to coding/noncoding bins
-    - MinHash the Dayhoff-encoded coding sequences
-    - Jaccard similarity on the MinHashes
-- Which reads are found to have coding features but didn’t map to the genome?
-- Do these features map to novel genes or gene fusions?
-- Kmers can find correct reading from of RNA-seq reads
-  - Human peptides → human, chimp, bonobo, orangutan, gorilla, macaque, mouse, opossum, playtpus, chicken RNAseq from Brawand2011 data
-- Comparison to other methods: RNASamba [@AtPPptbH]
-
-### Figure 3 -- $k$-mers can pull out only reads from transcription factors and Amniotes can be compared on the MinHashes of their protein-coding sequences
-
-![Figure 3.](images/figure3.svg){#fig:fig3 width="100%"}
-
-- Kmers can find only transcription factor reads of TFs from RNA-seq reads
-  - Human peptides → human, chimp, bonobo, orangutan, gorilla, macaque, mouse, opossum, playtpus, chicken RNAseq from Brawand2011 data
-
-
-### Figure 4 -- $k$-mers can compare short and long read datasets in primate brain organoids
-
-![**A.** Overview of experimental system. Poly-A RNA molecules from single cells from primate brain organoids were captured using the Dolomite system, where molecule received a cell barcode and molecular barcode, was reverse transcribed and primed for full-length cDNA. Then the library was split for sequencing on the Illumina or PacBio platforms. For the Illumina platform, the library was first sheared to be compatible with the platform. **B**. UMAP of short read gene counts from Human (left), Chimp (middle), and Orangutan (right) organoids. **C.** UMAP of short read MinHashes with ksize=33, dayhoff encoding and a log2sketchsize=14. **D**. UMAP of long read MinHashes with ksize=33, dayhoff encoding, andl log2sketchsize=14. **E.** Examples of short reads with ambiguous coding sequence resolved by long reads. **F.** UMAP on short-read gene counts of 1:1 orthologous transcription factor genes across all species. **G.** UMAP on short-read MinHashes of all k-mers that match human transcription factor protein-coding peptide sequences. **H.** UMAP on long-read MinHashes of all k-mers that match human transcription factor protein-coding peptide sequences.](images/figure4.svg){#fig:fig4 width="100%"}
-
-
-References for Primate Brain development
-
-- Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 [@nbBjh1sL]
-- Mazin, P. V., Jiang, X., Fu, N., Han, D., Guo, M., Gelfand, M. S., & Khaitovich, P. (2018). Conservation, evolution, and regulation of splicing during prefrontal cortex development in humans, chimpanzees, and macaques. Rna, 24(4), 585–596. http://doi.org/10.1261/rna.064931.117 [@G7TPi9Sb]
-- Xiong, J., Jiang, X., Ditsiou, A., Gao, Y., Sun, J., Lowenstein, E. D., et al. (2018). Predominant patterns of splicing evolution on human, chimpanzee and macaque evolutionary lineages. Human Molecular Genetics, 27(8), 1474–1485. http://doi.org/10.1093/hmg/ddy058 [@n7a1Lgjf]
-
-
-## Discussion
-
-Conclusions and future directions go here.
-
-
-
-### Some potential references
-
-Gene expression evolution through duplications
-
-- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@1DcTxE8Z3]
-- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@uQLS9NYU]
-- Farre, D., & Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 [@1DcTxE8Z3]
-
-Taxa-restricted genes
-
-- Human-specific genes in fetal neocortex
-Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 [@nbBjh1sL]
-- Insects -- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@lJHQuvIH]
-
-
-Correlated evolution of celltypes?
-
-- Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., & Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 [@FTv2KYrZ]
-
-Cell type homology
-
-- Thornton, J. W., & DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 [@uQLS9NYU]
-- Tschopp, P., & Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 [@hdRo8a7z]
-- Hejnol, A., & Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 [@1GRtpoh49]
-- Santos, M. E., Le Bouquin, A., Crumière, A. J. J., & Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 [@lJHQuvIH]
-- Mammalian decidual cell
-
-Cell type evolution
-
-- Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., & Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 [@8cGr6TE]
+DOI example: [@doi:10.1038/nmeth.3830].
+Biorxiv example: [@url:https://doi.org/10.1101/466201].
+Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 
 ## Supplemental Methods
-
-
-
 
 |  Amino acid                    | Property              | Dayhoff | Hydrophobic-polar (HP) |
 | :----------------------------- | :-------------------- | :------ | :--------------------- |
@@ -353,3 +394,5 @@ to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:sequence-encodings}
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
+
+
