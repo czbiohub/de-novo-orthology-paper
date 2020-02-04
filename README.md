@@ -1,15 +1,14 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/gh-pages) branch hosts the contents of this directory at https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/.
-The permalink for this webpage version is https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/1a7e25adc2204082bff3695b40d3b351fa4f510d/.
-To redirect to the permalink for the latest manuscript version at anytime, use the link https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/freeze/.
+The [`gh-pages`](https://github.com//tree/gh-pages) branch hosts the contents of this directory at <https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/>.
+The permalink for this webpage version is <https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v//>.
+To redirect to the permalink for the latest manuscript version at anytime, use the link <https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/freeze/>.
 
 ## Files
 
 This directory contains the following files, which are mostly ignored on the `master` branch:
 
 + [`index.html`](index.html) is an HTML manuscript.
-+ [`github-pandoc.css`](github-pandoc.css) sets the display style for `index.html`.
 + [`manuscript.pdf`](manuscript.pdf) is a PDF manuscript.
 
 The `v` directory contains directories for each manuscript version.
@@ -25,7 +24,7 @@ Therefore, `.ots` files are initially incomplete and should be upgraded at a lat
 The `manubot webpage` call during continuous deployment identifies files matched by `webpage/v/**/*.ots` and attempts to upgrade them.
 You can also manually upgrade timestamps, by running the following in the `gh-pages` branch:
 
-```sh
+```shell
 ots upgrade v/*/*.ots
 rm v/*/*.ots.bak
 git add v/*/*.ots
@@ -36,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`1a7e25adc2204082bff3695b40d3b351fa4f510d`](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/1a7e25adc2204082bff3695b40d3b351fa4f510d).
+[``](https://github.com//commit/).
