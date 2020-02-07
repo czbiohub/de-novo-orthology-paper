@@ -4,9 +4,10 @@ author-meta:
 - Venkata Naga Pranathi Vemuri
 - Phoenix Aja Logan
 - Saba Nafees
+- Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-02-04'
+date-meta: '2020-02-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
 
-  <meta name="dc.date" content="2020-02-04" />
+  <meta name="dc.date" content="2020-02-07" />
 
-  <meta name="citation_publication_date" content="2020-02-04" />
+  <meta name="citation_publication_date" content="2020-02-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -77,6 +78,14 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@sabanafeesTTU" />
 
+  <meta name="citation_author" content="Jim Karkanias" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_orcid" content="0000-0002-8057-6055" />
+
+  <meta name="twitter:creator" content="@jkarkanias" />
+
   <link rel="canonical" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
 
   <meta property="og:url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
@@ -89,11 +98,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -127,10 +136,10 @@ title: 'INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches'
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/))
+([permalink](https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/))
 was automatically generated
-from [czbiohub/orthology-free-comparative-transcriptomics-paper@59ec714](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/59ec714311637729d575a0c46224a6fca9abeccd)
-on February 4, 2020.
+from [czbiohub/orthology-free-comparative-transcriptomics-paper@2da5c9c](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/2da5c9c577f876108cb9cbf8f5ef341e7937eeca)
+on February 7, 2020.
 </em></small>
 
 ## Authors
@@ -179,6 +188,17 @@ on February 4, 2020.
     [sabanafeesTTU](https://twitter.com/sabanafeesTTU)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics & Statistics, Texas Tech University
+  </small>
+
++ **Jim Karkanias**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-8057-6055](https://orcid.org/0000-0002-8057-6055)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [jkensai](https://github.com/jkensai)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [jkarkanias](https://twitter.com/jkarkanias)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub
   </small>
 
 

@@ -9,14 +9,15 @@
       "MinHash"
     ],
     "lang": "en-US",
-    "date-meta": "2020-02-04",
+    "date-meta": "2020-02-07",
     "author-meta": [
       "Olga Borisovna Botvinnik",
       "Venkata Naga Pranathi Vemuri",
       "Phoenix Aja Logan",
-      "Saba Nafees"
+      "Saba Nafees",
+      "Jim Karkanias"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta name=\"citation_title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta property=\"og:title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta property=\"twitter:title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta name=\"dc.date\" content=\"2020-02-04\" />\n<meta name=\"citation_publication_date\" content=\"2020-02-04\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Olga Borisovna Botvinnik\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4412-7970\" />\n<meta name=\"twitter:creator\" content=\"@olgabot\" />\n<meta name=\"citation_author\" content=\"Venkata Naga Pranathi Vemuri\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5748-9594\" />\n<meta name=\"twitter:creator\" content=\"@pranuvemuri\" />\n<meta name=\"citation_author\" content=\"Phoenix Aja Logan\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4581-0552\" />\n<meta name=\"twitter:creator\" content=\"@phoenixlogan\" />\n<meta name=\"citation_author\" content=\"Saba Nafees\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biological Sciences, Texas Tech University\" />\n<meta name=\"citation_author_institution\" content=\"Department of Mathematics &amp; Statistics, Texas Tech University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3292-7703\" />\n<meta name=\"twitter:creator\" content=\"@sabanafeesTTU\" />\n<link rel=\"canonical\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta property=\"og:url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta property=\"twitter:url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta name=\"citation_title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta property=\"og:title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta property=\"twitter:title\" content=\"INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches\" />\n<meta name=\"dc.date\" content=\"2020-02-07\" />\n<meta name=\"citation_publication_date\" content=\"2020-02-07\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Olga Borisovna Botvinnik\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4412-7970\" />\n<meta name=\"twitter:creator\" content=\"@olgabot\" />\n<meta name=\"citation_author\" content=\"Venkata Naga Pranathi Vemuri\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5748-9594\" />\n<meta name=\"twitter:creator\" content=\"@pranuvemuri\" />\n<meta name=\"citation_author\" content=\"Phoenix Aja Logan\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4581-0552\" />\n<meta name=\"twitter:creator\" content=\"@phoenixlogan\" />\n<meta name=\"citation_author\" content=\"Saba Nafees\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biological Sciences, Texas Tech University\" />\n<meta name=\"citation_author_institution\" content=\"Department of Mathematics &amp; Statistics, Texas Tech University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3292-7703\" />\n<meta name=\"twitter:creator\" content=\"@sabanafeesTTU\" />\n<meta name=\"citation_author\" content=\"Jim Karkanias\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8057-6055\" />\n<meta name=\"twitter:creator\" content=\"@jkarkanias\" />\n<link rel=\"canonical\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta property=\"og:url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta property=\"twitter:url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -26,7 +27,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "February 4, 2020",
+    "date": "February 7, 2020",
     "authors": [
       {
         "github": "olgabot",
@@ -87,6 +88,20 @@
           2,
           3
         ]
+      },
+      {
+        "github": "jkensai",
+        "name": "Jim Karkanias",
+        "initials": "JK",
+        "orcid": "0000-0002-8057-6055",
+        "twitter": "jkarkanias",
+        "email": "jim.karkanias@czbiohub.org",
+        "affiliations": [
+          "Data Sciences Platform, Chan Zuckerberg Biohub"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
       }
     ],
     "affiliations": [
@@ -108,15 +123,15 @@
       "repo_slug": "czbiohub/orthology-free-comparative-transcriptomics-paper",
       "repo_owner": "czbiohub",
       "repo_name": "orthology-free-comparative-transcriptomics-paper",
-      "commit": "59ec714311637729d575a0c46224a6fca9abeccd",
-      "triggering_commit": "59ec714311637729d575a0c46224a6fca9abeccd",
-      "build_url": "https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/59ec714311637729d575a0c46224a6fca9abeccd/checks",
+      "commit": "2da5c9c577f876108cb9cbf8f5ef341e7937eeca",
+      "triggering_commit": "2da5c9c577f876108cb9cbf8f5ef341e7937eeca",
+      "build_url": "https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/commit/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/checks",
       "job_url": "https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/runs/run1"
     },
     "html_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/",
     "pdf_url": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf",
-    "html_url_versioned": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/",
-    "pdf_url_versioned": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/59ec714311637729d575a0c46224a6fca9abeccd/manuscript.pdf",
+    "html_url_versioned": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/",
+    "pdf_url_versioned": "https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/manuscript.pdf",
     "manubot_version": "0.3.0",
     "rootstock_commit": null,
     "manuscript_stats": {
