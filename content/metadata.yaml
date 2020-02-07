@@ -1,5 +1,5 @@
 ---
-title: "INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches"
+title: "INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics"
 keywords:
   - comparative transcriptomics
   - single-cell RNA-seq
@@ -34,7 +34,6 @@ authors:
     twitter: phoenixlogan
     email: phoenix.logan@czbiohub.org
     affiliations:
-      - Data Sciences Platform, Chan Zuckerberg Biohub     
   -
    github: snafees
    name: Saba Nafees
