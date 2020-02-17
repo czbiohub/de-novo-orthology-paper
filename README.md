@@ -2,10 +2,10 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/orthology-free-comparative-transcriptomics-paper/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/manubot/orthology-free-comparative-transcriptomics-paper/workflows/Manubot/badge.svg)](https://github.com/manubot/orthology-free-comparative-transcriptomics-paper/actions)
-[![Travis Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/de-novo-orthology-paper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/de-novo-orthology-paper/manuscript.pdf)
+[![GitHub Actions Status](https://github.com/czbiohub/de-novo-orthology-paper/workflows/Manubot/badge.svg)](https://github.com/czbiohub/de-novo-orthology-paper/actions)
+[![Travis Build Status](https://travis-ci.com/czbiohub/rootstock.svg?branch=master)](https://travis-ci.com/czbiohub/rootstock)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
