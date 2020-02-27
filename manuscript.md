@@ -98,11 +98,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -136,9 +136,9 @@ title: 'INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches'
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@4bf4987](https://github.com/czbiohub/de-novo-orthology-paper/tree/4bf49873df0edcf3e351435ab933a704e288d699)
+from [czbiohub/de-novo-orthology-paper@ab230be](https://github.com/czbiohub/de-novo-orthology-paper/tree/ab230be27f28bfba2fee50b8fb38174321c97139)
 on February 27, 2020.
 </em></small>
 
