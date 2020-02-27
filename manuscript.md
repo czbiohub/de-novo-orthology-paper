@@ -7,7 +7,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-02-07'
+date-meta: '2020-02-27'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
 
-  <meta name="dc.date" content="2020-02-07" />
+  <meta name="dc.date" content="2020-02-27" />
 
-  <meta name="citation_publication_date" content="2020-02-07" />
+  <meta name="citation_publication_date" content="2020-02-27" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -86,23 +86,23 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@jkarkanias" />
 
-  <link rel="canonical" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+  <link rel="canonical" href="https://czbiohub.github.io/de-novo-orthology-paper/" />
 
-  <meta property="og:url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+  <meta property="og:url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
 
-  <meta property="twitter:url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+  <meta property="twitter:url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
 
-  <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/" />
+  <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
 
-  <meta name="citation_pdf_url" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf" />
+  <meta name="citation_pdf_url" content="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -136,10 +136,10 @@ title: 'INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches'
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/orthology-free-comparative-transcriptomics-paper/v/2da5c9c577f876108cb9cbf8f5ef341e7937eeca/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/4bf49873df0edcf3e351435ab933a704e288d699/))
 was automatically generated
-from [czbiohub/orthology-free-comparative-transcriptomics-paper@2da5c9c](https://github.com/czbiohub/orthology-free-comparative-transcriptomics-paper/tree/2da5c9c577f876108cb9cbf8f5ef341e7937eeca)
-on February 7, 2020.
+from [czbiohub/de-novo-orthology-paper@4bf4987](https://github.com/czbiohub/de-novo-orthology-paper/tree/4bf49873df0edcf3e351435ab933a704e288d699)
+on February 27, 2020.
 </em></small>
 
 ## Authors
