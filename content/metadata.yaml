@@ -17,6 +17,7 @@ authors:
     email: olga.botvinnik@czbiohub.org
     affiliations:
       - Data Sciences Platform, Chan Zuckerberg Biohub
+    correspondence: true
   -
     github: pranathivemuri
     name: Venkata Naga Pranathi Vemuri
@@ -45,7 +46,7 @@ authors:
    affiliations:
     - Data Sciences Platform, Chan Zuckerberg Biohub
     - Department of Biological Sciences, Texas Tech University
-    - Department of Mathematics & Statistics, Texas Tech University 
+    - Department of Mathematics & Statistics, Texas Tech University
   -
    github: jkensai
    name: Jim Karkanias
@@ -53,5 +54,5 @@ authors:
    orcid: 0000-0002-8057-6055
    twitter: jkarkanias
    email: jim.karkanias@czbiohub.org
-   affiliations: 
+   affiliations:
     - Data Sciences Platform, Chan Zuckerberg Biohub
