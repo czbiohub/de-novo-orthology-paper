@@ -1,5 +1,5 @@
 ---
-title: "INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches"
+title: "INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics"
 keywords:
   - comparative transcriptomics
   - single-cell RNA-seq
@@ -17,6 +17,7 @@ authors:
     email: olga.botvinnik@czbiohub.org
     affiliations:
       - Data Sciences Platform, Chan Zuckerberg Biohub
+    correspondence: true
   -
     github: pranathivemuri
     name: Venkata Naga Pranathi Vemuri
@@ -34,7 +35,7 @@ authors:
     twitter: phoenixlogan
     email: phoenix.logan@czbiohub.org
     affiliations:
-      - Data Sciences Platform, Chan Zuckerberg Biohub     
+      - Data Sciences Platform, Chan Zuckerberg Biohub
   -
    github: snafees
    name: Saba Nafees
@@ -42,10 +43,10 @@ authors:
    orcid: 0000-0002-3292-7703
    twitter: sabanafeesTTU
    email: saba.nafees@czbiohub.org
-   affiliations: 
+   affiliations:
     - Data Sciences Platform, Chan Zuckerberg Biohub
     - Department of Biological Sciences, Texas Tech University
-    - Department of Mathematics & Statistics, Texas Tech University 
+    - Department of Mathematics & Statistics, Texas Tech University
   -
    github: jkensai
    name: Jim Karkanias
@@ -53,5 +54,5 @@ authors:
    orcid: 0000-0002-8057-6055
    twitter: jkarkanias
    email: jim.karkanias@czbiohub.org
-   affiliations: 
+   affiliations:
     - Data Sciences Platform, Chan Zuckerberg Biohub
