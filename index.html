@@ -9,9 +9,9 @@
   <meta name="author" content="Phoenix Aja Logan" />
   <meta name="author" content="Saba Nafees" />
   <meta name="author" content="Jim Karkanias" />
-  <meta name="dcterms.date" content="2020-02-27" />
+  <meta name="dcterms.date" content="2020-03-05" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
-  <title>INCOMPLETE DRAFT: Smashing single cells into k-mer sketches</title>
+  <title>INCOMPLETE DRAFT: Identification of de novo orthologous genes from comparative single-cell RNA-seq transcriptomics</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,12 +28,12 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
-  <meta name="citation_title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
-  <meta property="og:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
-  <meta property="twitter:title" content="INCOMPLETE DRAFT: Smashing single cells into $k$-mer sketches" />
-  <meta name="dc.date" content="2020-02-27" />
-  <meta name="citation_publication_date" content="2020-02-27" />
+  <meta name="dc.title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta name="citation_title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta property="og:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta name="dc.date" content="2020-03-05" />
+  <meta name="citation_publication_date" content="2020-03-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -68,9 +68,9 @@
   <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
   <meta name="citation_pdf_url" content="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/" />
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/" />
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,18 +80,18 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">INCOMPLETE DRAFT: Smashing single cells into <span class="math inline">\(k\)</span>-mer sketches</h1>
+<h1 class="title">INCOMPLETE DRAFT: Identification of <em>de novo</em> orthologous genes from comparative single-cell RNA-seq transcriptomics</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://czbiohub.github.io/de-novo-orthology-paper/v/ab230be27f28bfba2fee50b8fb38174321c97139/">permalink</a>)
+(<a href="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/czbiohub/de-novo-orthology-paper/tree/ab230be27f28bfba2fee50b8fb38174321c97139">czbiohub/de-novo-orthology-paper@ab230be</a>
-on February 27, 2020.
+from <a href="https://github.com/czbiohub/de-novo-orthology-paper/tree/ebeff6422d8107cbad67bece878de507762ec344">czbiohub/de-novo-orthology-paper@ebeff64</a>
+on March 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>Olga Borisovna Botvinnik</strong><br>
+<li><p><strong>Olga Borisovna Botvinnik</strong> <sup><a href="#correspondence">✉</a></sup><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
 <a href="https://orcid.org/0000-0003-4412-7970">0000-0003-4412-7970</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
@@ -101,7 +101,7 @@ on February 27, 2020.
 <small>
 Data Sciences Platform, Chan Zuckerberg Biohub
 </small></p></li>
-<li><p><strong>Venkata Naga Pranathi Vemuri</strong><br>
+<li><p><strong>Venkata Naga Pranathi Vemuri</strong> <br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
 <a href="https://orcid.org/0000-0002-5748-9594">0000-0002-5748-9594</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
@@ -111,7 +111,7 @@ Data Sciences Platform, Chan Zuckerberg Biohub
 <small>
 Data Sciences Platform, Chan Zuckerberg Biohub
 </small></p></li>
-<li><p><strong>Phoenix Aja Logan</strong><br>
+<li><p><strong>Phoenix Aja Logan</strong> <br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
 <a href="https://orcid.org/0000-0003-4581-0552">0000-0003-4581-0552</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
@@ -121,7 +121,7 @@ Data Sciences Platform, Chan Zuckerberg Biohub
 <small>
 Data Sciences Platform, Chan Zuckerberg Biohub
 </small></p></li>
-<li><p><strong>Saba Nafees</strong><br>
+<li><p><strong>Saba Nafees</strong> <br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
 <a href="https://orcid.org/0000-0002-3292-7703">0000-0002-3292-7703</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
@@ -131,7 +131,7 @@ Data Sciences Platform, Chan Zuckerberg Biohub
 <small>
 Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics &amp; Statistics, Texas Tech University
 </small></p></li>
-<li><p><strong>Jim Karkanias</strong><br>
+<li><p><strong>Jim Karkanias</strong> <br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
 <a href="https://orcid.org/0000-0002-8057-6055">0000-0002-8057-6055</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
@@ -143,34 +143,41 @@ Data Sciences Platform, Chan Zuckerberg Biohub
 </small></p></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
-<p>We introduce <code>kmermaid</code>, a lightweight computational method for quantifying similarity between RNA-seq transcriptomes across species.
-As <code>kmermaid</code> skips both alignment and gene orthology assignment, it can be applied to transcriptomes from organisms with no or poorly annotated genomes, and can perform the task of quanitfying similarities much faster than current methods without loss of sensitivity.
+<p>We introduce <code>kmermaid</code>, a novel computational method for identifying orthologous cell types discovering <em>de novo</em> orthologous genes across species.
+As <code>kmermaid</code> skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, b) predicts protein-coding sequences from raw RNA-seq reads, and c) identify putative functions of protein sequences contributing to shared cell types.
 By enabling analyses across divergent species’ transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, <code>kmermaid</code> illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.</p>
+<p>Identifying orthologous genes across species remains an open problem.
+We show how orthologous genes can be identified directly from RNA-seq reads of tissue and cell types that are shared across species.</p>
 <p>Single-cell RNA-sequencing is a powerful technology for identifying cell types in a variety of species.
-However, the task of identifying even known cell types in species with poorly annotated genomes is nontrivial, as orthologous gene mapping remains an unsolved problem <span class="citation" data-cites="ogAGO9KH wdzgXUGy">[<a href="#ref-ogAGO9KH" role="doc-biblioref">1</a>,<a href="#ref-wdzgXUGy" role="doc-biblioref">2</a>]</span> and most of the 8.7 million Eukaryotic species on Earth have no sequenced genome <span class="citation" data-cites="OkFljXKC">[<a href="#ref-OkFljXKC" role="doc-biblioref">3</a>]</span>.
+However, the task of identifying even known cell types in species with poorly annotated genomes is nontrivial, as 99.999% of the predicted 8.7 million Eukaryotic species on Earth have no submitted genome assembly <span class="citation" data-cites="OkFljXKC xJN8WB5G">[<a href="#ref-OkFljXKC" role="doc-biblioref">1</a>,<a href="#ref-xJN8WB5G" role="doc-biblioref">2</a>]</span> and identifying orthologous genes, which remains an open problem <span class="citation" data-cites="ogAGO9KH wdzgXUGy">[<a href="#ref-ogAGO9KH" role="doc-biblioref">3</a>,<a href="#ref-wdzgXUGy" role="doc-biblioref">4</a>]</span>.
 Thus, there is an unmet need to quantitatively compare single-cell transcriptomes across species, without the need for orthologous gene mapping, gene annotations, or a reference genome.
-Short, <span class="math inline">\(k\)</span>-long sequence substrings, or <span class="math inline">\(k\)</span>-mers, have been proposed for comparing single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">4</a>]</span> as they are a fast, simple way to create cell-cell similarities.
-Combining <span class="math inline">\(k\)</span>-mers from putatitvely translated RNA-seq reads with reduced amino acid alphabets <span class="citation" data-cites="Aq7zYbOg 10.1186/1471-2105-12-159 f5u3dDtc Aq7zYbOg QMYjnr6l">[<span class="citeproc-not-found" data-reference-id="10.1186/1471-2105-12-159"><strong>???</strong></span>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">5</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">5</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">6</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">7</a>]</span> , we developed a method to identify known cell types in a non-model organism using a reference atlas from another organism, without the need for a genome or gene annotation from the non-model organism.
+Short, <span class="math inline">\(k\)</span>-long sequence substrings, or <span class="math inline">\(k\)</span>-mers, have been proposed for clustering single cells <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">5</a>]</span> and here we implemented <span class="math inline">\(k\)</span>-mers from putatitvely translated RNA-seq reads with reduced amino acid alphabets <span class="citation" data-cites="Aq7zYbOg 10.1186/1471-2105-12-159 f5u3dDtc Aq7zYbOg QMYjnr6l">[<span class="citeproc-not-found" data-reference-id="10.1186/1471-2105-12-159"><strong>???</strong></span>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">7</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">8</a>]</span>, to find shared cell types across species, and further identify <em>de novo</em> orthologous genes by querying the predicted protein sequences to a reference database.
 This method relies solely on divergence time between species, which we show can be estimated from RNA-seq nucleotide <span class="math inline">\(k\)</span>-mers (Supplemental Figure <span class="citation" data-cites="sfig:sfig1">[<span class="citeproc-not-found" data-reference-id="sfig:sfig1"><strong>???</strong></span>]</span>).
 We benchmark the genome-agnostic method on the Quest for Orthologs Opisthokonta dataset, showing that <span class="math inline">\(k\)</span>-mers from reduced amino acid alphabets are sufficient to estimate orthology.
 Using human amino acid sequences, we show that one can extract putative protein-coding reads from 239 Opisthokonta species in ENSEMBL, and present the best <span class="math inline">\(k\)</span>-mer size and alphabet for different divergence times.
-We apply this method on a bulk comparative transcriptomic dataset consisting of nine species and six tissues <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">10</a>]</span>, showing that we can recapitulate the results as using only reads mapping to 1:1 orthologs of protein-coding genes, and we are able to resolve … which can only be seen by using the reference-free <span class="math inline">\(k\)</span>-mer method.</p>
-<p>We then show that reduced amino acid protein <span class="math inline">\(k\)</span>-mers can be used for comparing single-cell transcriptomes across mouse, human, and zebrafish hematopoiesis.
+We first apply this method on a bulk comparative transcriptomic dataset consisting of nine amniote species and six tissues <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span>, showing that we achieve similar clustering results as using only reads mapping to 1:1 orthologs or Hierarchical Orthologous Groups (HOGs) <span class="citation" data-cites="137npblqI 5RECVcFl 19AeqN3SK">[<a href="#ref-137npblqI" role="doc-biblioref">12</a>,<a href="#ref-5RECVcFl" role="doc-biblioref">13</a>,<a href="#ref-19AeqN3SK" role="doc-biblioref">14</a>]</span> of protein-coding genes, but are able to resolve … which can only be seen by using the <span class="math inline">\(k\)</span>-mer method.
+We further demonstrate the utility of this method by comparing transcriptomes from organisms diverged by approximately 676 million years <span class="citation" data-cites="1A6CqUMhm">[<a href="#ref-1A6CqUMhm" role="doc-biblioref">15</a>]</span>: a single-cell atlas of a model organism, mouse from <em>Tabula Muris Senis</em> <span class="citation" data-cites="DXegEVg5">[<a href="#ref-DXegEVg5" role="doc-biblioref">16</a>]</span>, and bulk RNA-seq from <em>Botryllus schlosseri</em> <span class="citation" data-cites="YFejwX4f">[<a href="#ref-YFejwX4f" role="doc-biblioref">17</a>]</span>, a colonial tunicate which exhibits cell populations similar to the myeloid immune lineage.
+Across this evolutionary distance, only XX 1:1 orthologous genes exist as found by … and XX HOGs via orthologous matrix (OMA) <span class="citation" data-cites="AlRzKu3c xwCPkKHO">[<a href="#ref-AlRzKu3c" role="doc-biblioref">18</a>,<a href="#ref-xwCPkKHO" role="doc-biblioref">19</a>]</span>
+We show that the myeloid-like cells from <em>B. schlosseri</em> not only cluster with the myeloid immune cells from <em>Tabula Muris Senis</em>, we also find <em>de novo</em> orthologous genes, such as …
 We find that using <span class="math inline">\(k\)</span>-mers has the advantage of resolving … in comparison to using read counts from 1:1 gene orthologs.
 Using <span class="math inline">\(k\)</span>-mers, we were able to resolve cell types … , which was hidden using read counts alone.
 Thus, we have shown the reference-free method using the <span class="math inline">\(k\)</span>-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolutionary tree of life.</p>
-<h2 id="figure-1-overview-of-kmermaid-pipeline">Figure 1 – Overview of <code>kmermaid</code> pipeline</h2>
+<!-- ## Figure 1 -- Overview of `kmermaid` pipeline -->
 <div id="fig:fig1" class="fignos">
 <figure>
-<img src="images/figure1.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>khtools extract_coding</code>, a k-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
+<img src="images/SVG/figure1.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>khtools extract_coding</code>, a k-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
 </figure>
 </div>
-<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">11</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">12</a>]</span> (Figure [<a href="#fig:fig1">1</a>]).
-We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">10</a>]</span>.
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">20</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">21</a>]</span> (Figure [<a href="#fig:fig1">1</a>]).
+We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span>.
 As a background, we randomly chose 10 non-orthologous genes relative to the human gene.
-In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">13</a>]</span>, a nine-letter encoding <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">8</a>]</span>, and a two-letter hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs E2Kp7kA0">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">14</a>,<a href="#ref-E2Kp7kA0" role="doc-biblioref">15</a>]</span>, show in Table [<a href="#tbl:sequence-encodings">1</a>].</p>
-<p>We found that, consistent with previous knowledge, that 1:1 orthologues had higher <span class="math inline">\(k\)</span>-mer similarities as determined by the Jaccard Index. This approach is similar to SwiftOrtho <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">8</a>]</span>, a k-mer based orthology relationship finder.</p>
+In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span>, a nine-letter encoding <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>, and a two-letter hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs E2Kp7kA0">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">23</a>,<a href="#ref-E2Kp7kA0" role="doc-biblioref">24</a>]</span>, show in Table [<a href="#tbl:sequence-encodings">1</a>].</p>
+<p>We found that, consistent with previous knowledge, that 1:1 orthologues had higher <span class="math inline">\(k\)</span>-mer similarities as determined by the Jaccard Index. This approach is similar to SwiftOrtho <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>, a k-mer based orthology relationship finder.</p>
 <p>Additionally, more recently diverged genes had higher <span class="math inline">\(k\)</span>-mer similarity as well.</p>
+<p>Across tissues of the same time from the Brawand 2011 <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span> dataset, we extracted protein-coding sequences, generated dayhoff signatures of k-mer size length 12, extracted hashes and thus k-mers shared by samples from the same tissue, went back to the original protein sequence, and searched NCBI RefSeq NR for potential proteins.
+For each sample, we observed that shared k-mers appeared in 1:1 orthologous genes XX% of the time 1:many orthologs YY% of the time, many:many orthologs ZZ% of the time, in genes not known to be orthologs AA% of the time, in unannotated regions AA% of the time, in multimapped reads BB% of the time, and in unmapped reads CC% of the time.
+Overall, we observed XX de novo orthologs in each tissue.
+We removed genes that were already known to be orthol</p>
 <h2 id="outline">Outline</h2>
 <ul>
 <li>Kmers can approximate orthologies
@@ -182,13 +189,13 @@ In addition to <span class="math inline">\(k\)</span>-merizing the protein-codin
 <li>Gold standard
 <ul>
 <li>ENSEMBL COMPARA</li>
-<li>Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span></li>
+<li>Quest for Orthologs consortium, Altenhoff, A. M., Boeckmann, B., Capella-Gutierrez, S., Dalquen, D. A., DeLuca, T., et al. (2016). Standardized benchmarking in the quest for orthologs. Nature Methods, 13(5), 425–430. http://doi.org/10.1038/nmeth.3830 <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span></li>
 </ul></li>
-<li>Orthologous groups/Conserved Domain Database <span class="citation" data-cites="bkF0801R">[<a href="#ref-bkF0801R" role="doc-biblioref">17</a>]</span></li>
+<li>Orthologous groups/Conserved Domain Database <span class="citation" data-cites="bkF0801R">[<a href="#ref-bkF0801R" role="doc-biblioref">26</a>]</span></li>
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="figure-2-k-mers-from-lossily-encoded-putative-protein-coding-reads-faithfully-pull-out-reads-from-protein-coding-genes-within-amniotes">Figure 2 – <span class="math inline">\(k\)</span>-mers from lossily-encoded putative protein-coding reads faithfully pull out reads from protein-coding genes within amniotes</h2>
+<!-- ## Figure 2 -- $k$-mers from lossily-encoded putative protein-coding reads faithfully pull out reads from protein-coding genes within amniotes -->
 <div id="fig:fig2" class="fignos">
 <figure>
 <img src="images/figure2.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Figure 2.</figcaption>
@@ -210,9 +217,9 @@ In addition to <span class="math inline">\(k\)</span>-merizing the protein-codin
 <ul>
 <li>Human peptides → human, chimp, bonobo, orangutan, gorilla, macaque, mouse, opossum, playtpus, chicken RNAseq from Brawand2011 data</li>
 </ul></li>
-<li>Comparison to other methods: RNASamba <span class="citation" data-cites="AtPPptbH">[<a href="#ref-AtPPptbH" role="doc-biblioref">18</a>]</span></li>
+<li>Comparison to other methods: RNASamba <span class="citation" data-cites="AtPPptbH">[<a href="#ref-AtPPptbH" role="doc-biblioref">27</a>]</span></li>
 </ul>
-<h3 id="figure-3-k-mers-can-pull-out-only-reads-from-transcription-factors-and-amniotes-can-be-compared-on-the-minhashes-of-their-protein-coding-sequences">Figure 3 – <span class="math inline">\(k\)</span>-mers can pull out only reads from transcription factors and Amniotes can be compared on the MinHashes of their protein-coding sequences</h3>
+<!-- ### Figure 3 -- $k$-mers can pull out only reads from transcription factors and Amniotes can be compared on the MinHashes of their protein-coding sequences -->
 <div id="fig:fig3" class="fignos">
 <figure>
 <img src="images/figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> Figure 3.</figcaption>
@@ -229,32 +236,37 @@ In addition to <span class="math inline">\(k\)</span>-merizing the protein-codin
 <h3 id="some-potential-references">Some potential references</h3>
 <p>Gene expression evolution through duplications</p>
 <ul>
-<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">19</a>]</span></li>
-<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">20</a>]</span></li>
-<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">19</a>]</span></li>
+<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">28</a>]</span></li>
+<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">29</a>]</span></li>
+<li>Farre, D., &amp; Alba, M. M. (2010). Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates. Molecular Biology and Evolution, 27(2), 325–335. http://doi.org/10.1093/molbev/msp242 <span class="citation" data-cites="1DcTxE8Z3">[<a href="#ref-1DcTxE8Z3" role="doc-biblioref">28</a>]</span></li>
 </ul>
 <p>Taxa-restricted genes</p>
 <ul>
 <li>Human-specific genes in fetal neocortex
-Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 <span class="citation" data-cites="nbBjh1sL">[<a href="#ref-nbBjh1sL" role="doc-biblioref">21</a>]</span></li>
-<li>Insects – Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">22</a>]</span></li>
+Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. (2018). Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex. eLife, 7, D635. http://doi.org/10.7554/eLife.32332 <span class="citation" data-cites="nbBjh1sL">[<a href="#ref-nbBjh1sL" role="doc-biblioref">30</a>]</span></li>
+<li>Insects – Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">31</a>]</span></li>
 </ul>
 <p>Correlated evolution of celltypes?</p>
 <ul>
-<li>Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., &amp; Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 <span class="citation" data-cites="FTv2KYrZ">[<a href="#ref-FTv2KYrZ" role="doc-biblioref">23</a>]</span></li>
+<li>Liang, C., Musser, J. M., Cloutier, A., Prum, R. O., &amp; Wagner, G. P. (2018). Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes. Genome Biology and Evolution, 10(2), 538–552. http://doi.org/10.1093/gbe/evy016 <span class="citation" data-cites="FTv2KYrZ">[<a href="#ref-FTv2KYrZ" role="doc-biblioref">32</a>]</span></li>
 </ul>
 <p>Cell type homology</p>
 <ul>
-<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">20</a>]</span></li>
-<li>Tschopp, P., &amp; Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 <span class="citation" data-cites="hdRo8a7z">[<a href="#ref-hdRo8a7z" role="doc-biblioref">24</a>]</span></li>
-<li>Hejnol, A., &amp; Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 <span class="citation" data-cites="1GRtpoh49">[<a href="#ref-1GRtpoh49" role="doc-biblioref">25</a>]</span></li>
-<li>Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">22</a>]</span></li>
+<li>Thornton, J. W., &amp; DeSalle, R. (2000). Gene family evolution and homology: genomics meets phylogenetics. Annual Review of Genomics and Human Genetics, 1(1), 41–73. http://doi.org/10.1146/annurev.genom.1.1.41 <span class="citation" data-cites="uQLS9NYU">[<a href="#ref-uQLS9NYU" role="doc-biblioref">29</a>]</span></li>
+<li>Tschopp, P., &amp; Tabin, C. J. (2017). Deep homology in the age of next-generation sequencing. Philosophical Transactions of the Royal Society B: Biological Sciences, 372(1713), 20150475–8. http://doi.org/10.1098/rstb.2015.0475 <span class="citation" data-cites="hdRo8a7z">[<a href="#ref-hdRo8a7z" role="doc-biblioref">33</a>]</span></li>
+<li>Hejnol, A., &amp; Lowe, C. J. (2015). Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 370(1684), 20150045–16. http://doi.org/10.1098/rstb.2015.0045 <span class="citation" data-cites="1GRtpoh49">[<a href="#ref-1GRtpoh49" role="doc-biblioref">34</a>]</span></li>
+<li>Santos, M. E., Le Bouquin, A., Crumière, A. J. J., &amp; Khila, A. (2017). Taxon-restricted genes at the origin of a novel trait allowing access to a new environment. Science, 358(6361), 386–390. http://doi.org/10.1126/science.aan2748 <span class="citation" data-cites="lJHQuvIH">[<a href="#ref-lJHQuvIH" role="doc-biblioref">31</a>]</span></li>
 <li>Mammalian decidual cell</li>
 </ul>
 <p>Cell type evolution</p>
 <ul>
-<li>Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., &amp; Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 <span class="citation" data-cites="8cGr6TE">[<a href="#ref-8cGr6TE" role="doc-biblioref">26</a>]</span></li>
+<li>Erkenbrack, E. M., Maziarz, J. D., Griffith, O. W., Liang, C., Chavan, A. R., Nnamani, M. C., &amp; Wagner, G. P. (2018). The mammalian decidual cell evolved from a cellular stress response. PLOS Biology, 16(8), e2005594–27. http://doi.org/10.1371/journal.pbio.2005594 <span class="citation" data-cites="8cGr6TE">[<a href="#ref-8cGr6TE" role="doc-biblioref">35</a>]</span></li>
 </ul>
+<!-- # Discussion -->
+<p>In summary, we developed a method to identify both known cell types in a non-model organism using a reference atlas from another organism, without the need for a genome or gene annotation from the non-model organism.
+This method can be used to combine single-cell cell atlases from well-annotated, model organisms, with sequencing data from poorly annotated non-model organisms, to directly find homologous cell types and orthologous genes.
+By eliminating read alignment and orthologous gene mapping, <code>kmermaid</code> enables comparison of transcriptomes of the remaining 99.999% Eukaryotic species on Earth without submitted genome assemblies, with the cell atlases of a handful of model organisms to identify shared and novel cell types, and <em>de novo</em> identify orthologous genes.
+By identifying homologous cell types across a broad variety of species, we come closer to an understanding of the evolution of genes, cells, and thus life itself.</p>
 <h2 id="methods">Methods</h2>
 <p>Methods go here.</p>
 <h3 id="experimental">Experimental</h3>
@@ -262,56 +274,56 @@ Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. 
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h4 id="single-cell-capture-of-primate-brain-organoids">Single-cell capture of primate brain organoids</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h4 id="long-read-library-prep">Long read library prep</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h4 id="short-read-library-prep">Short read library prep</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h4 id="sequencing">Sequencing</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h3 id="computational">Computational</h3>
 <figure>
-<img src="images/supplemental_figure1.svg" id="sfig:sfig1" data-tag="sfig1" style="width:100.0%" alt="" /><figcaption>Caption for Supplemental figure 1</figcaption>
+<img src="images/SVG/supplemental_figure1.svg" id="sfig:sfig1" data-tag="sfig1" style="width:100.0%" alt="" /><figcaption><strong>A.</strong> Overview of <code>nf-core/kmermaid</code> pipeline. 1. If input is bam, extract per-cell sequences. 2. Predict amino acid sequence of each RNA-seq read using <code>khtools extract-coding</code>. 3. Randomly subsample amino acid k-mers via MinHash using <code>sourmash sketch</code>. 4. Compare all k-mer sketches to one another using <code>sourmash compare</code> to compute cell-cell Jaccard similarities. 5. Build sequence bloom tree using <code>sourmash index</code>. 6. Build k-nearest neighbor graph using sequence bloom tree. 7. Build UMAP off of KNN. <strong>B.</strong> Overview of <code>czbiohub/nf-predictorthologs</code> pipeline for prediction of homologous genes from sequences. 1. If input is bam, must also have a convert bam reads to raw fastq files using the <code>samtools fastq</code> subcommand (samtools version 1.9). If input is fastqs, go directly to second step. 2. Trim adapters, poly-A, polyG using the <code>fastp</code> tool. 3. Predict protein-coding sequence using khtools extract_coding, using conservative UniProt/SwissProt manually curated database as examples of known protein-coding sequences, for most stringent definition of protein-coding. 4. Query predicted protein in permissive NCBI RefSeq non-redundant protein database for most complete search query. <strong>C.</strong> Example of predicting protein-coding sequence using Brawand2011 RNA-seq data, and human proteome as the reference. x-axis, percentage of reads falling into that category, y-axis, the species which the reads are from.</figcaption>
 </figure>
 <h4 id="k-mer-comparison-of-orthologous-genes"><span class="math inline">\(k\)</span>-mer comparison of orthologous genes</h4>
 <p>We used ENSEMBL version 97.
 We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h4 id="extraction-of-putative-coding-reads-from-rna-seq">Extraction of putative coding reads from RNA-seq</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">16</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">27</a>]</span>.</p>
+DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h2 id="supplemental-methods">Supplemental Methods</h2>
 <div id="tbl:sequence-encodings" class="tablenos">
 <table>
@@ -376,159 +388,207 @@ to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </capti
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-OkFljXKC">
+<p>1. <strong>How Many Species Are There on Earth and in the Ocean?</strong><br />
+Camilo Mora, Derek P. Tittensor, Sina Adl, Alastair G. B. Simpson, Boris Worm<br />
+<em>PLoS Biology</em> (2011-08-23) <a href="https://doi.org/fpr4z8">https://doi.org/fpr4z8</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pbio.1001127">10.1371/journal.pbio.1001127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21886479">21886479</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160336">PMC3160336</a></p>
+</div>
+<div id="ref-xJN8WB5G">
+<p>2. <strong>Genome List - Genome - NCBI</strong><a href="https://www.ncbi.nlm.nih.gov/genome/browse">https://www.ncbi.nlm.nih.gov/genome/browse</a></p>
+</div>
 <div id="ref-ogAGO9KH">
-<p>1. <strong>The origin and evolution of cell types</strong><br />
+<p>3. <strong>The origin and evolution of cell types</strong><br />
 Detlev Arendt, Jacob M. Musser, Clare V. H. Baker, Aviv Bergman, Connie Cepko, Douglas H. Erwin, Mihaela Pavlicev, Gerhard Schlosser, Stefanie Widder, Manfred D. Laubichler, Günter P. Wagner<br />
 <em>Nature Reviews Genetics</em> (2016-11-07) <a href="https://doi.org/f9b62x">https://doi.org/f9b62x</a><br />
 DOI: <a href="https://doi.org/10.1038/nrg.2016.127">10.1038/nrg.2016.127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27818507">27818507</a></p>
 </div>
 <div id="ref-wdzgXUGy">
-<p>2. <strong>How Single-Cell Genomics Is Changing Evolutionary and Developmental Biology</strong><br />
+<p>4. <strong>How Single-Cell Genomics Is Changing Evolutionary and Developmental Biology</strong><br />
 John C. Marioni, Detlev Arendt<br />
 <em>Annual Review of Cell and Developmental Biology</em> (2017-10-06) <a href="https://doi.org/ggb632">https://doi.org/ggb632</a><br />
 DOI: <a href="https://doi.org/10.1146/annurev-cellbio-100616-060818">10.1146/annurev-cellbio-100616-060818</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28813177">28813177</a></p>
 </div>
-<div id="ref-OkFljXKC">
-<p>3. <strong>How Many Species Are There on Earth and in the Ocean?</strong><br />
-Camilo Mora, Derek P. Tittensor, Sina Adl, Alastair G. B. Simpson, Boris Worm<br />
-<em>PLoS Biology</em> (2011-08-23) <a href="https://doi.org/fpr4z8">https://doi.org/fpr4z8</a><br />
-DOI: <a href="https://doi.org/10.1371/journal.pbio.1001127">10.1371/journal.pbio.1001127</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21886479">21886479</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160336">PMC3160336</a></p>
-</div>
 <div id="ref-wtk13QGK">
-<p>4. <strong>K-mer counting with low memory consumption enables fast clustering of single-cell sequencing data without read alignment</strong><br />
+<p>5. <strong>K-mer counting with low memory consumption enables fast clustering of single-cell sequencing data without read alignment</strong><br />
 Christina Huan Shi, Kevin Y. Yip<br />
 <em>bioRxiv</em> (2019-08-02) <a href="https://www.biorxiv.org/content/10.1101/723833v1">https://www.biorxiv.org/content/10.1101/723833v1</a><br />
 DOI: <a href="https://doi.org/10.1101/723833">10.1101/723833</a></p>
 </div>
 <div id="ref-Aq7zYbOg">
-<p>5. <strong>Reduced amino acid alphabets exhibit an improved sensitivity and selectivity in fold assignment</strong><br />
+<p>6. <strong>Reduced amino acid alphabets exhibit an improved sensitivity and selectivity in fold assignment</strong><br />
 Eric L. Peterson, Jané Kondev, Julie A. Theriot, Rob Phillips<br />
 <em>Bioinformatics</em> (2009-04-07) <a href="https://doi.org/btqmnp">https://doi.org/btqmnp</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btp164">10.1093/bioinformatics/btp164</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19351620">19351620</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732308">PMC2732308</a></p>
 </div>
 <div id="ref-f5u3dDtc">
-<p>6. <strong>Simplified amino acid alphabets for protein fold recognition and implications for folding</strong><br />
+<p>7. <strong>Simplified amino acid alphabets for protein fold recognition and implications for folding</strong><br />
 Lynne Reed Murphy, Anders Wallqvist, Ronald M. Levy<br />
 <em>Protein Engineering, Design and Selection</em> (2000-03) <a href="https://doi.org/bdtngh">https://doi.org/bdtngh</a><br />
 DOI: <a href="https://doi.org/10.1093/protein/13.3.149">10.1093/protein/13.3.149</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/10775656">10775656</a></p>
 </div>
 <div id="ref-QMYjnr6l">
-<p>7. <strong>Local homology recognition and distance measures in linear time using compressed amino acid alphabets</strong><br />
+<p>8. <strong>Local homology recognition and distance measures in linear time using compressed amino acid alphabets</strong><br />
 R. C. Edgar<br />
 <em>Nucleic Acids Research</em> (2004-01-02) <a href="https://doi.org/ckg5d4">https://doi.org/ckg5d4</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkh180">10.1093/nar/gkh180</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/14729922">14729922</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC373290">PMC373290</a></p>
 </div>
 <div id="ref-Rqlso7kk">
-<p>8. <strong>SwiftOrtho: A fast, memory-efficient, multiple genome orthology classifier</strong><br />
+<p>9. <strong>SwiftOrtho: A fast, memory-efficient, multiple genome orthology classifier</strong><br />
 Xiao Hu, Iddo Friedberg<br />
 <em>GigaScience</em> (2019-10-01) <a href="https://doi.org/ggcr5x">https://doi.org/ggcr5x</a><br />
 DOI: <a href="https://doi.org/10.1093/gigascience/giz118">10.1093/gigascience/giz118</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31648300">31648300</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6812468">PMC6812468</a></p>
 </div>
 <div id="ref-16Kv6RIe3">
-<p>9. <strong>Fast databank searching with a reduced amino-acid alphabet</strong><br />
+<p>10. <strong>Fast databank searching with a reduced amino-acid alphabet</strong><br />
 Claudine Landès, Jean-Loup Risler<br />
 <em>Bioinformatics</em> (1994) <a href="https://doi.org/cvrjmw">https://doi.org/cvrjmw</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/10.4.453">10.1093/bioinformatics/10.4.453</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/7804879">7804879</a></p>
 </div>
 <div id="ref-fBCZ87Cf">
-<p>10. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
+<p>11. <strong>The evolution of gene expression levels in mammalian organs</strong><br />
 David Brawand, Magali Soumillon, Anamaria Necsulea, Philippe Julien, Gábor Csárdi, Patrick Harrigan, Manuela Weier, Angélica Liechti, Ayinuer Aximu-Petri, Martin Kircher, … Henrik Kaessmann<br />
 <em>Nature</em> (2011-10) <a href="https://doi.org/fcvk54">https://doi.org/fcvk54</a><br />
 DOI: <a href="https://doi.org/10.1038/nature10532">10.1038/nature10532</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22012392">22012392</a></p>
 </div>
+<div id="ref-137npblqI">
+<p>12. <strong>Inferring Hierarchical Orthologous Groups from Orthologous Gene Pairs</strong><br />
+Adrian M. Altenhoff, Manuel Gil, Gaston H. Gonnet, Christophe Dessimoz<br />
+<em>PLoS ONE</em> (2013-01-14) <a href="https://doi.org/ggkv2j">https://doi.org/ggkv2j</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pone.0053786">10.1371/journal.pone.0053786</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23342000">23342000</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3544860">PMC3544860</a></p>
+</div>
+<div id="ref-5RECVcFl">
+<p>13. <strong>Conceptual framework and pilot study to benchmark phylogenomic databases based on reference gene trees</strong><br />
+B. Boeckmann, M. Robinson-Rechavi, I. Xenarios, C. Dessimoz<br />
+<em>Briefings in Bioinformatics</em> (2011-07-07) <a href="https://doi.org/c78rwm">https://doi.org/c78rwm</a><br />
+DOI: <a href="https://doi.org/10.1093/bib/bbr034">10.1093/bib/bbr034</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21737420">21737420</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3178055">PMC3178055</a></p>
+</div>
+<div id="ref-19AeqN3SK">
+<p>14. <strong>Big data and other challenges in the quest for orthologs</strong><br />
+E. L. L. Sonnhammer, T. Gabaldon, A. W. Sousa da Silva, M. Martin, M. Robinson-Rechavi, B. Boeckmann, P. D. Thomas, C. Dessimoz, <br />
+<em>Bioinformatics</em> (2014-07-26) <a href="https://doi.org/f6ntvb">https://doi.org/f6ntvb</a><br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/btu492">10.1093/bioinformatics/btu492</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25064571">25064571</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201156">PMC4201156</a></p>
+</div>
+<div id="ref-1A6CqUMhm">
+<p>15. <strong>TimeTree :: The Timescale of Life</strong><a href="http://timetree.org/">http://timetree.org/</a></p>
+</div>
+<div id="ref-DXegEVg5">
+<p>16. <strong>A Single Cell Transcriptomic Atlas Characterizes Aging Tissues in the Mouse</strong><br />
+The Tabula Muris Consortium, Angela Oliveira Pisco, Aaron McGeever, Nicholas Schaum, Jim Karkanias, Norma F. Neff, Spyros Darmanis, Tony Wyss-Coray, Stephen R. Quake<br />
+<em>bioRxiv</em> (2019-11-18) <a href="https://www.biorxiv.org/content/10.1101/661728v2">https://www.biorxiv.org/content/10.1101/661728v2</a><br />
+DOI: <a href="https://doi.org/10.1101/661728">10.1101/661728</a></p>
+</div>
+<div id="ref-YFejwX4f">
+<p>17. <strong>Complex mammalian-like haematopoietic system found in a colonial chordate</strong><br />
+Benyamin Rosental, Mark Kowarsky, Jun Seita, Daniel M. Corey, Katherine J. Ishizuka, Karla J. Palmeri, Shih-Yu Chen, Rahul Sinha, Jennifer Okamoto, Gary Mantalas, … Ayelet Voskoboynik<br />
+<em>Nature</em> (2018-12) <a href="https://doi.org/gfkzvm">https://doi.org/gfkzvm</a><br />
+DOI: <a href="https://doi.org/10.1038/s41586-018-0783-x">10.1038/s41586-018-0783-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30518860">30518860</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6347970">PMC6347970</a></p>
+</div>
+<div id="ref-AlRzKu3c">
+<p>18. <strong>Assigning confidence scores to homoeologs using fuzzy logic</strong><br />
+Natasha M. Glover, Adrian Altenhoff, Christophe Dessimoz<br />
+<em>PeerJ</em> (2019-01-11) <a href="https://doi.org/ggkv2k">https://doi.org/ggkv2k</a><br />
+DOI: <a href="https://doi.org/10.7717/peerj.6231">10.7717/peerj.6231</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30648004">30648004</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6330999">PMC6330999</a></p>
+</div>
+<div id="ref-xwCPkKHO">
+<p>19. <strong>Orthologous Matrix (OMA) algorithm 2.0: more robust to asymmetric evolutionary rates and more scalable hierarchical orthologous group inference</strong><br />
+Clément-Marie Train, Natasha M Glover, Gaston H Gonnet, Adrian M Altenhoff, Christophe Dessimoz<br />
+<em>Bioinformatics</em> (2017-07-12) <a href="https://doi.org/ggkv2h">https://doi.org/ggkv2h</a><br />
+DOI: <a href="https://doi.org/10.1093/bioinformatics/btx229">10.1093/bioinformatics/btx229</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28881964">28881964</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5870696">PMC5870696</a></p>
+</div>
 <div id="ref-lBlqrqAO">
-<p>11. <strong>Ensembl 2018</strong><br />
+<p>20. <strong>Ensembl 2018</strong><br />
 Daniel R Zerbino, Premanand Achuthan, Wasiu Akanni, M Ridwan Amode, Daniel Barrell, Jyothish Bhai, Konstantinos Billis, Carla Cummins, Astrid Gall, Carlos García Girón, … Paul Flicek<br />
 <em>Nucleic Acids Research</em> (2017-11-16) <a href="https://doi.org/gcwg6r">https://doi.org/gcwg6r</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx1098">10.1093/nar/gkx1098</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29155950">29155950</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753206">PMC5753206</a></p>
 </div>
 <div id="ref-j0y6s0kf">
-<p>12. <strong>Ensembl comparative genomics resources</strong><br />
+<p>21. <strong>Ensembl comparative genomics resources</strong><br />
 Javier Herrero, Matthieu Muffato, Kathryn Beal, Stephen Fitzgerald, Leo Gordon, Miguel Pignatelli, Albert J. Vilella, Stephen M. J. Searle, Ridwan Amode, Simon Brent, … Paul Flicek<br />
 <em>Database</em> (2016) <a href="https://doi.org/ggb9tv">https://doi.org/ggb9tv</a><br />
 DOI: <a href="https://doi.org/10.1093/database/bav096">10.1093/database/bav096</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26896847">26896847</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4761110">PMC4761110</a></p>
 </div>
 <div id="ref-66KDHtpG">
-<p>13. <strong>Atlas of protein sequence and structure</strong><br />
+<p>22. <strong>Atlas of protein sequence and structure</strong><br />
 Margaret O Dayhoff<br />
 <em>National Biomedical Research Foundation.</em> (1969)</p>
 </div>
 <div id="ref-1GiMcbPLs">
-<p>14. <strong>Physical biology of the cell</strong><br />
+<p>23. <strong>Physical biology of the cell</strong><br />
 Rob Phillips, Julie Theriot, Jane Kondev, Hernan Garcia<br />
 <em>Garland Science</em> (2012)</p>
 </div>
 <div id="ref-E2Kp7kA0">
-<p>15. <strong>Theory for the folding and stability of globular proteins</strong><br />
+<p>24. <strong>Theory for the folding and stability of globular proteins</strong><br />
 Ken A. Dill<br />
 <em>Biochemistry</em> (1985-03-12) <a href="https://doi.org/fnj5k7">https://doi.org/fnj5k7</a><br />
 DOI: <a href="https://doi.org/10.1021/bi00327a032">10.1021/bi00327a032</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/3986190">3986190</a></p>
 </div>
 <div id="ref-LkrS4xXB">
-<p>16. <strong>Standardized benchmarking in the quest for orthologs</strong><br />
+<p>25. <strong>Standardized benchmarking in the quest for orthologs</strong><br />
 Adrian M AltenhoffBrigitte Boeckmann, Salvador Capella-Gutierrez, Daniel A Dalquen, Todd DeLuca, Kristoffer Forslund, Jaime Huerta-Cepas, Benjamin Linard, Cécile Pereira, … Christophe Dessimoz<br />
 <em>Nature Methods</em> (2016-04-04) <a href="https://doi.org/f3rpzx">https://doi.org/f3rpzx</a><br />
 DOI: <a href="https://doi.org/10.1038/nmeth.3830">10.1038/nmeth.3830</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27043882">27043882</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4827703">PMC4827703</a></p>
 </div>
 <div id="ref-bkF0801R">
-<p>17. <a href="https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119">https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119</a></p>
+<p>26. <a href="https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119">https://www.ebi.ac.uk/miriam/main/collections/MIR:00000119</a></p>
 </div>
 <div id="ref-AtPPptbH">
-<p>18. <strong>RNAsamba: coding potential assessment using ORF and whole transcript sequence information</strong><br />
+<p>27. <strong>RNAsamba: coding potential assessment using ORF and whole transcript sequence information</strong><br />
 Antonio P. Camargo, Vsevolod Sourkov, Marcelo F. Carazzolle<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-04-28) <a href="https://doi.org/ggdtxk">https://doi.org/ggdtxk</a><br />
 DOI: <a href="https://doi.org/10.1101/620880">10.1101/620880</a></p>
 </div>
 <div id="ref-1DcTxE8Z3">
-<p>19. <strong>Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates</strong><br />
+<p>28. <strong>Heterogeneous Patterns of Gene-Expression Diversification in Mammalian Gene Duplicates</strong><br />
 D. Farre, M. M. Alba<br />
 <em>Molecular Biology and Evolution</em> (2009-10-12) <a href="https://doi.org/dxrtmd">https://doi.org/dxrtmd</a><br />
 DOI: <a href="https://doi.org/10.1093/molbev/msp242">10.1093/molbev/msp242</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19822635">19822635</a></p>
 </div>
 <div id="ref-uQLS9NYU">
-<p>20. <strong>GENEFAMILYEVOLUTION ANDHOMOLOGY: Genomics Meets Phylogenetics</strong><br />
+<p>29. <strong>GENEFAMILYEVOLUTION ANDHOMOLOGY: Genomics Meets Phylogenetics</strong><br />
 Joseph W. Thornton, Rob DeSalle<br />
 <em>Annual Review of Genomics and Human Genetics</em> (2000-09) <a href="https://doi.org/bjp5pm">https://doi.org/bjp5pm</a><br />
 DOI: <a href="https://doi.org/10.1146/annurev.genom.1.1.41">10.1146/annurev.genom.1.1.41</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/11701624">11701624</a></p>
 </div>
 <div id="ref-nbBjh1sL">
-<p>21. <strong>Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex</strong><br />
+<p>30. <strong>Evolution and cell-type specificity of human-specific genes preferentially expressed in progenitors of fetal neocortex</strong><br />
 Marta Florio, Michael Heide, Anneline Pinson, Holger Brandl, Mareike Albert, Sylke Winkler, Pauline Wimberger, Wieland B Huttner, Michael Hiller<br />
 <em>eLife</em> (2018-03-21) <a href="https://doi.org/gc678k">https://doi.org/gc678k</a><br />
 DOI: <a href="https://doi.org/10.7554/elife.32332">10.7554/elife.32332</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29561261">29561261</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5898914">PMC5898914</a></p>
 </div>
 <div id="ref-lJHQuvIH">
-<p>22. <strong>Taxon-restricted genes at the origin of a novel trait allowing access to a new environment</strong><br />
+<p>31. <strong>Taxon-restricted genes at the origin of a novel trait allowing access to a new environment</strong><br />
 M. Emília Santos, Augustin Le Bouquin, Antonin J. J. Crumière, Abderrahman Khila<br />
 <em>Science</em> (2017-10-19) <a href="https://doi.org/gcgjbs">https://doi.org/gcgjbs</a><br />
 DOI: <a href="https://doi.org/10.1126/science.aan2748">10.1126/science.aan2748</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29051384">29051384</a></p>
 </div>
 <div id="ref-FTv2KYrZ">
-<p>23. <strong>Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes</strong><br />
+<p>32. <strong>Pervasive Correlated Evolution in Gene Expression Shapes Cell and Tissue Type Transcriptomes</strong><br />
 Cong Liang, Jacob M Musser, Alison Cloutier, Richard O Prum, Günter P Wagner<br />
 <em>Genome Biology and Evolution</em> (2018-01-23) <a href="https://doi.org/gc69v9">https://doi.org/gc69v9</a><br />
 DOI: <a href="https://doi.org/10.1093/gbe/evy016">10.1093/gbe/evy016</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29373668">29373668</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5800078">PMC5800078</a></p>
 </div>
 <div id="ref-hdRo8a7z">
-<p>24. <strong>Deep homology in the age of next-generation sequencing</strong><br />
+<p>33. <strong>Deep homology in the age of next-generation sequencing</strong><br />
 Patrick Tschopp, Clifford J. Tabin<br />
 <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2017-02-05) <a href="https://doi.org/gfzpbg">https://doi.org/gfzpbg</a><br />
 DOI: <a href="https://doi.org/10.1098/rstb.2015.0475">10.1098/rstb.2015.0475</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27994118">27994118</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5182409">PMC5182409</a></p>
 </div>
 <div id="ref-1GRtpoh49">
-<p>25. <strong>Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution</strong><br />
+<p>34. <strong>Embracing the comparative approach: how robust phylogenies and broader developmental sampling impacts the understanding of nervous system evolution</strong><br />
 Andreas Hejnol, Christopher J. Lowe<br />
 <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em> (2015-12-19) <a href="https://doi.org/ggcd2m">https://doi.org/ggcd2m</a><br />
 DOI: <a href="https://doi.org/10.1098/rstb.2015.0045">10.1098/rstb.2015.0045</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26554039">26554039</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4650123">PMC4650123</a></p>
 </div>
 <div id="ref-8cGr6TE">
-<p>26. <strong>The mammalian decidual cell evolved from a cellular stress response</strong><br />
+<p>35. <strong>The mammalian decidual cell evolved from a cellular stress response</strong><br />
 Eric M. Erkenbrack, Jamie D. Maziarz, Oliver W. Griffith, Cong Liang, Arun R. Chavan, Mauris C. Nnamani, Günter P. Wagner<br />
 <em>PLOS Biology</em> (2018-08-24) <a href="https://doi.org/gd5b9s">https://doi.org/gd5b9s</a><br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005594">10.1371/journal.pbio.2005594</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30142145">30142145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6108454">PMC6108454</a></p>
 </div>
 <div id="ref-46R7aU4N">
-<p>27. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong><br />
+<p>36. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong><br />
 David M. Emms, Steven Kelly<br />
 <em>bioRxiv</em> (2019-04-24) <a href="https://www.biorxiv.org/content/10.1101/466201v2">https://www.biorxiv.org/content/10.1101/466201v2</a><br />
 DOI: <a href="https://doi.org/10.1101/466201">10.1101/466201</a></p>
