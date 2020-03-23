@@ -7,7 +7,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-05'
+date-meta: '2020-03-23'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
 
-  <meta name="dc.date" content="2020-03-05" />
+  <meta name="dc.date" content="2020-03-23" />
 
-  <meta name="citation_publication_date" content="2020-03-05" />
+  <meta name="citation_publication_date" content="2020-03-23" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -98,11 +98,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -136,10 +136,10 @@ title: 'INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from com
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/ebeff6422d8107cbad67bece878de507762ec344/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@ebeff64](https://github.com/czbiohub/de-novo-orthology-paper/tree/ebeff6422d8107cbad67bece878de507762ec344)
-on March 5, 2020.
+from [czbiohub/de-novo-orthology-paper@c49b752](https://github.com/czbiohub/de-novo-orthology-paper/tree/c49b752af277ff7efd80d6484c3a5dbb3cbfe026)
+on March 23, 2020.
 </em></small>
 
 ## Authors
