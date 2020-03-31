@@ -9,7 +9,7 @@
   <meta name="author" content="Phoenix Aja Logan" />
   <meta name="author" content="Saba Nafees" />
   <meta name="author" content="Jim Karkanias" />
-  <meta name="dcterms.date" content="2020-03-23" />
+  <meta name="dcterms.date" content="2020-03-31" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash" />
   <title>INCOMPLETE DRAFT: Identification of de novo orthologous genes from comparative single-cell RNA-seq transcriptomics</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
   <meta property="og:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
-  <meta name="dc.date" content="2020-03-23" />
-  <meta name="citation_publication_date" content="2020-03-23" />
+  <meta name="dc.date" content="2020-03-31" />
+  <meta name="citation_publication_date" content="2020-03-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -68,15 +68,22 @@
   <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
   <meta name="citation_pdf_url" content="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
+  
+  <!-- pandoc-eqnos: equation style -->
+  <style>
+    .eqnos { display: inline-block; position: relative; width: 100%; }
+    .eqnos br { display: none; }
+    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
+  </style>
 </head>
 <body>
 <header id="title-block-header">
@@ -84,10 +91,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/">permalink</a>)
+(<a href="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/czbiohub/de-novo-orthology-paper/tree/c49b752af277ff7efd80d6484c3a5dbb3cbfe026">czbiohub/de-novo-orthology-paper@c49b752</a>
-on March 23, 2020.
+from <a href="https://github.com/czbiohub/de-novo-orthology-paper/tree/57b6998651b7e98974be89f3b993de29fc503668">czbiohub/de-novo-orthology-paper@57b6998</a>
+on March 31, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -143,9 +150,12 @@ Data Sciences Platform, Chan Zuckerberg Biohub
 </small></p></li>
 </ul>
 <h2 id="abstract">Abstract</h2>
-<p>We introduce <code>kmermaid</code>, a novel computational method for identifying orthologous cell types discovering <em>de novo</em> orthologous genes across species.
-As <code>kmermaid</code> skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, b) predicts protein-coding sequences from raw RNA-seq reads, and c) identify putative functions of protein sequences contributing to shared cell types.
-By enabling analyses across divergent species’ transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, <code>kmermaid</code> illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.</p>
+<p>We introduce <code>sencha</code>, a novel computational method for translating RNA-seq reads to putative protein sequence.
+As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
+Thus, we can identify orthologous cell types while discovering <em>de novo</em> orthologous genes across species.
+For widespread accessibility and usage, we implemented <code>sencha</code> into two distinct Nextflow pipelines following software best practices such as testing and continuous integration: (1) <code>nf-core/kmermaid</code> to compare translated transcriptomes across divergent species, and (2) <code>czbiohub/nf-predictorthologs</code> to infer functions of translated sequences.
+Using these pipelines, we were able to align transcriptomes and discover <em>de novo</em> homologous genes across species from a variety of divergence times: bulk RNA-seq transcriptomes across Amniotes (divergence ~312 millions of years ago), mouse single-cell RNA-seq with <em>Botryllus schlosseri</em> bulk RNA-seq, an early chordate (divergence ~684 millions of years ago), and Bilateria developmental atlases (divergence ~824 millions of years ago).
+By enabling analyses across divergent species’ transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, <code>sencha</code> illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.</p>
 <p>Identifying orthologous genes across species remains an open problem.
 We show how orthologous genes can be identified directly from RNA-seq reads of tissue and cell types that are shared across species.</p>
 <p>Single-cell RNA-sequencing is a powerful technology for identifying cell types in a variety of species.
@@ -162,16 +172,10 @@ We show that the myeloid-like cells from <em>B. schlosseri</em> not only cluster
 We find that using <span class="math inline">\(k\)</span>-mers has the advantage of resolving … in comparison to using read counts from 1:1 gene orthologs.
 Using <span class="math inline">\(k\)</span>-mers, we were able to resolve cell types … , which was hidden using read counts alone.
 Thus, we have shown the reference-free method using the <span class="math inline">\(k\)</span>-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolutionary tree of life.</p>
-<!-- ## Figure 1 -- Overview of `kmermaid` pipeline -->
-<div id="fig:fig1" class="fignos">
-<figure>
-<img src="images/SVG/figure1.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>khtools extract_coding</code>, a k-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
-</figure>
-</div>
-<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">20</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">21</a>]</span> (Figure [<a href="#fig:fig1">1</a>]).
+<p>To determine whether short segments of sequences could detect gene orthologues, we <span class="math inline">\(k\)</span>-merized orthologous genes derived from the ENSEMBL version 97 <span class="citation" data-cites="lBlqrqAO">[<a href="#ref-lBlqrqAO" role="doc-biblioref">20</a>]</span> COMPARA database <span class="citation" data-cites="j0y6s0kf">[<a href="#ref-j0y6s0kf" role="doc-biblioref">21</a>]</span> (Figure [??]).
 We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span>.
 As a background, we randomly chose 10 non-orthologous genes relative to the human gene.
-In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span>, a nine-letter encoding <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>, and a two-letter hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs E2Kp7kA0">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">23</a>,<a href="#ref-E2Kp7kA0" role="doc-biblioref">24</a>]</span>, show in Table [<a href="#tbl:sequence-encodings">1</a>].</p>
+In addition to <span class="math inline">\(k\)</span>-merizing the protein-coding sequence, we also re-encoded the protein-coding sequence into a six-letter Dayhoff alphabet <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span>, a nine-letter encoding <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>, and a two-letter hydrophobic-polar encodings <span class="citation" data-cites="1GiMcbPLs E2Kp7kA0">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">23</a>,<a href="#ref-E2Kp7kA0" role="doc-biblioref">24</a>]</span>, show in Table [<a href="#tbl:sequence-encodings">2</a>].</p>
 <p>We found that, consistent with previous knowledge, that 1:1 orthologues had higher <span class="math inline">\(k\)</span>-mer similarities as determined by the Jaccard Index. This approach is similar to SwiftOrtho <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>, a k-mer based orthology relationship finder.</p>
 <p>Additionally, more recently diverged genes had higher <span class="math inline">\(k\)</span>-mer similarity as well.</p>
 <p>Across tissues of the same time from the Brawand 2011 <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span> dataset, we extracted protein-coding sequences, generated dayhoff signatures of k-mer size length 12, extracted hashes and thus k-mers shared by samples from the same tissue, went back to the original protein sequence, and searched NCBI RefSeq NR for potential proteins.
@@ -198,7 +202,7 @@ We removed genes that were already known to be orthol</p>
 <!-- ## Figure 2 -- $k$-mers from lossily-encoded putative protein-coding reads faithfully pull out reads from protein-coding genes within amniotes -->
 <div id="fig:fig2" class="fignos">
 <figure>
-<img src="images/figure2.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Figure 2.</figcaption>
+<img src="images/figure2.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> Figure 2.</figcaption>
 </figure>
 </div>
 <ul>
@@ -222,7 +226,7 @@ We removed genes that were already known to be orthol</p>
 <!-- ### Figure 3 -- $k$-mers can pull out only reads from transcription factors and Amniotes can be compared on the MinHashes of their protein-coding sequences -->
 <div id="fig:fig3" class="fignos">
 <figure>
-<img src="images/figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> Figure 3.</figcaption>
+<img src="images/figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Figure 3.</figcaption>
 </figure>
 </div>
 <ul>
@@ -267,44 +271,259 @@ Florio, M., Heide, M., Pinson, A., Brandl, H., Albert, M., Winkler, S., et al. 
 This method can be used to combine single-cell cell atlases from well-annotated, model organisms, with sequencing data from poorly annotated non-model organisms, to directly find homologous cell types and orthologous genes.
 By eliminating read alignment and orthologous gene mapping, <code>kmermaid</code> enables comparison of transcriptomes of the remaining 99.999% Eukaryotic species on Earth without submitted genome assemblies, with the cell atlases of a handful of model organisms to identify shared and novel cell types, and <em>de novo</em> identify orthologous genes.
 By identifying homologous cell types across a broad variety of species, we come closer to an understanding of the evolution of genes, cells, and thus life itself.</p>
-<h2 id="methods">Methods</h2>
+<h2 id="online-methods">Online Methods</h2>
+<!-- This is just a placeholder to separate the supplemental methods from the rest of the paper.
+All remaining supplemental sections should fall under this, meaning they need to be formatted
+with heading 3 with three hashes: `###` -->
+<h2 id="implementation">Implementation</h2>
+<h3 id="reduced-alphabets">Reduced alphabets</h3>
+<p>At the core of <code>kmerslay</code> is the ability to cheaply compare sequences using <span class="math inline">\(k\)</span>-mers.
+As <span class="math inline">\(k\)</span>-mers are very brittle to substitutions and thus to compare across species, one must allow for minor base substitutions that still maintain similar chemical or structural properties.
+A reduced alphabet can encode useful information into a smaller alphabet space, and enable sequence comparisons across a broader variety of species than the original alphabet alone.</p>
+<h4 id="reduced-amino-acid-alphabets">Reduced amino acid alphabets</h4>
+<p>Reduced amino acid alphabets have been useful for over 50 years <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span> in finding related protein sequences <span class="citation" data-cites="Aq7zYbOg 16Kv6RIe3 sZoryWIB f5u3dDtc QMYjnr6l">[<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">7</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">8</a>,<a href="#ref-16Kv6RIe3" role="doc-biblioref">10</a>,<a href="#ref-sZoryWIB" role="doc-biblioref">36</a>]</span>.
+Recently, a reduced amino acid alphabet (specifically, <code>aa9</code> below) combined with <span class="math inline">\(k\)</span>-mers were used to find homologous protein-coding sequences <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span>.
+We build on this concept by enabling prediction of protein-coding sequences from RNA-seq reads, and by enabling users to perform a parameter sweep in an all-by-all comparison to identify putative homologs using a variety of alphabet metrics.</p>
+<h5 id="dayhoff-and-hp-alphabets">Dayhoff and <code>HP</code> alphabets</h5>
+<div id="tbl:sequence-encodings" class="tablenos">
+<table>
+<caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid
+alphabet allowing for permissive cross-species sequence comparisons. For
+example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded
+to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>, as below. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Amino acid</th>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Dayhoff</th>
+<th style="text-align: left;">Hydrophobic-polar (HP)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>C</code></td>
+<td style="text-align: left;">Sulfur polymerization</td>
+<td style="text-align: left;"><code>a</code></td>
+<td style="text-align: left;"><code>p</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>A</code>, <code>G</code>, <code>P</code>, <code>S</code>, <code>T</code></td>
+<td style="text-align: left;">Small</td>
+<td style="text-align: left;"><code>b</code></td>
+<td style="text-align: left;"><code>AGP</code>: <code>h</code><br><code>ST</code>: <code>p</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>D</code>, <code>E</code>, <code>N</code>, <code>Q</code></td>
+<td style="text-align: left;">Acid and amide</td>
+<td style="text-align: left;"><code>c</code></td>
+<td style="text-align: left;"><code>p</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>H</code>, <code>K</code>, <code>R</code></td>
+<td style="text-align: left;">Basic</td>
+<td style="text-align: left;"><code>d</code></td>
+<td style="text-align: left;"><code>p</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>I</code>, <code>L</code>, <code>M</code>, <code>V</code></td>
+<td style="text-align: left;">Hydrophobic</td>
+<td style="text-align: left;"><code>e</code></td>
+<td style="text-align: left;"><code>h</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>F</code>, <code>W</code>, <code>Y</code></td>
+<td style="text-align: left;">Aromatic</td>
+<td style="text-align: left;"><code>f</code></td>
+<td style="text-align: left;"><code>h</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code>protein20: SASHAFIERCE
+dayhoff6:  bbbdbfecdac
+hp2:       phpphhhpppp</code></pre>
+<h5 id="all-implemented-alphabets-with-citations-not-as-nicely-organized">All implemented alphabets (with citations, not as nicely organized)</h5>
+<!-- Copied this google spreadsheet https://docs.google.com/spreadsheets/d/1RDuQD0aRyv-FnQJbjRosHEJV85_9BNrzmmvgFRQSgN8/edit#gid=0 into https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/, reformatted with https://atom.io/packages/markdown-table-formatter -->
+<p>[NOTE: maybe this should go into the supplementary? The main alphabets that have been successful for me are dayhoff and HP]</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 12%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Citation</th>
+<th style="text-align: left;">Alphabet</th>
+<th style="text-align: left;">Amino acid groups</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Phillips, R., <em>et al</em>. (2012). <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">23</a>]</span></td>
+<td style="text-align: left;">hp2</td>
+<td style="text-align: left;"><code>AFGILMPVWY</code> <code>CDEHKNQRST</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Peterson, E. L., <em>et al</em>. (2009) <span class="citation" data-cites="Aq7zYbOg">[<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>]</span></td>
+<td style="text-align: left;">gbmr4</td>
+<td style="text-align: left;"><code>G</code> <code>ADKERNTSQ</code> <code>YFLIVMCWH</code> <code>P</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span></td>
+<td style="text-align: left;">dayhoff6</td>
+<td style="text-align: left;"><code>AGPST</code> <code>HRK</code> <code>DENQ</code> <code>FWY</code> <code>ILMV</code> <code>C</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">This paper</td>
+<td style="text-align: left;">botvinnik8</td>
+<td style="text-align: left;"><code>AG</code> <code>DE</code> <code>RK</code> <code>NQ</code> <code>ST</code> <code>FY</code> <code>LIV</code> <code>CMWHP</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hu, X., &amp; Friedberg, I. (2019). <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">9</a>]</span></td>
+<td style="text-align: left;">aa9</td>
+<td style="text-align: left;"><code>G</code> <code>AST</code> <code>KR</code> <code>EQ</code> <code>DN</code> <code>CFILMVY</code> <code>W</code> <code>H</code> <code>P</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Peterson, E. L., <em>et al</em>. (2009) <span class="citation" data-cites="Aq7zYbOg">[<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>]</span></td>
+<td style="text-align: left;">sdm12</td>
+<td style="text-align: left;"><code>G</code> <code>A</code> <code>D</code> <code>KER</code> <code>N</code> <code>TSQ</code> <code>YF</code> <code>LIVM</code> <code>C</code> <code>W</code> <code>H</code> <code>P</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Peterson, E. L., <em>et al</em>. (2009) <span class="citation" data-cites="Aq7zYbOg">[<a href="#ref-Aq7zYbOg" role="doc-biblioref">6</a>]</span></td>
+<td style="text-align: left;">hsdm17</td>
+<td style="text-align: left;"><code>G</code> <code>A</code> <code>D</code> <code>KE</code> <code>R</code> <code>N</code> <code>T</code> <code>S</code> <code>Q</code> <code>Y</code> <code>F</code> <code>LIV</code> <code>M</code> <code>C</code> <code>W</code> <code>H</code> <code>P</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">22</a>]</span></td>
+<td style="text-align: left;">protein20</td>
+<td style="text-align: left;"><code>G</code> <code>A</code> <code>D</code> <code>E</code> <code>K</code> <code>R</code> <code>N</code> <code>T</code> <code>S</code> <code>Q</code> <code>Y</code> <code>F</code> <code>L</code> <code>I</code> <code>V</code> <code>M</code> <code>C</code> <code>W</code> <code>H</code> <code>P</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="reduced-nucleotide-alphabets">Reduced nucleotide alphabets</h4>
+<p>The IUPAC degenerate nucleotide code <span class="citation" data-cites="11LSoLYLW">[<a href="#ref-11LSoLYLW" role="doc-biblioref">37</a>]</span> includes several two-letter codes for the original 4-letter nucleobase alphabet.
+The first, Weak/Strong, indicates the strength of the hydrogen bond across the double strand.
+The bond of adenine to thymine has two hydrogen bonds, making it weak; and the bond of guanine to cytosine has three hydrogen bonds, making it 50% stronger.
+The second, Purine/Pyrimidine, encodes the ring size of the nucleobase, where Adenine and Guanine both have larger Purine double rings, while Cytosine and Thymine/Uracil have smaller Pyrimidine rings.
+The third, Amino/Keto, designates the main functional group of the ring, where Adenine and Cytosine both have an Amino group, while Guanine and Thymine/Uracil both have a Keto group.</p>
+<!-- This spreadsheet:https://docs.google.com/spreadsheets/d/1RDuQD0aRyv-FnQJbjRosHEJV85_9BNrzmmvgFRQSgN8/edit#gid=104831627 was copied into this formatter: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/ -->
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 13%" />
+<col style="width: 19%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Nucleotide</th>
+<th style="text-align: left;">Hydrogen Bonding</th>
+<th style="text-align: left;">Ring type</th>
+<th style="text-align: left;">Ring functional group</th>
+<th style="text-align: left;">Nucleobase chemical structure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">Weak (W)</td>
+<td style="text-align: left;">Purine (R)</td>
+<td style="text-align: left;">Amino (M)</td>
+<td style="text-align: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Adenine.svg/120px-Adenine.svg.png" title="fig:" alt="Adenine chemical structure" /></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">Strong (S)</td>
+<td style="text-align: left;">Pyrimidine (Y)</td>
+<td style="text-align: left;">Amino (M)</td>
+<td style="text-align: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cytosine_chemical_structure.png/120px-Cytosine_chemical_structure.png" title="fig:" alt="Cytosine chemical structure" /></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G</td>
+<td style="text-align: left;">Strong (S)</td>
+<td style="text-align: left;">Purine (R)</td>
+<td style="text-align: left;">Keto (K)</td>
+<td style="text-align: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Guanin.svg/150px-Guanin.svg.png" title="fig:" alt="Guanine chemical structure" /></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">Weak (W)</td>
+<td style="text-align: left;">Pyrimidine (Y)</td>
+<td style="text-align: left;">Keto (K)</td>
+<td style="text-align: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Thymine_skeletal.svg/120px-Thymine_skeletal.svg.png" title="fig:" alt="Thymine chemical structure" /></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U</td>
+<td style="text-align: left;">Weak (W)</td>
+<td style="text-align: left;">Pyrimidine (Y)</td>
+<td style="text-align: left;">Keto (K)</td>
+<td style="text-align: left;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Uracil.svg/120px-Uracil.svg.png" title="fig:" alt="Uracil chemical structure" /></td>
+</tr>
+</tbody>
+</table>
+<p>Thus, the nucleotide string <code>GATTACA</code> would be re-encoded into the following:</p>
+<pre><code>Nucleotide:        GATTACA
+Weak/Strong:       SWWWWSW
+Purine/Pyrimidine: RRYYRYR
+Functional group:  KMKKMMM</code></pre>
+<h3 id="kmerslay-extract-coding"><code>kmerslay extract-coding</code></h3>
+<figure>
+<img src="images/SVG/figure1.svg" id="sfig:figure1" data-tag="figure1" style="width:100.0%" alt="" /><figcaption>Overview of <code>kmerslay extract-coding</code> <strong>A.</strong> First, each read is translated into all six possible protein-coding translation frames. Next, reading frames with stop codons are eliminated. Each protein-coding frame is <span class="math inline">\(k\)</span>-merized, then the fraction of <span class="math inline">\(k\)</span>-mers which appear in the known protein-coding database is computed. Frames which contain a fraction of coding frames exceeding the threshold are inferred to be putatively protein-coding. <strong>B.</strong> Worked example of an RNA-seq read with a single putatitive reading frame. <strong>C.</strong> Worked example of an RNA-seq read with multiple reading frames, and a <code>UCSC</code> genome browser shot of the read showing that both reading frames are present in the annotation.</figcaption>
+</figure>
+<h4 id="set-jaccard-threshold-of-extract-coding-by-controlling-false-positive-rate-of-protein-coding-prediction">Set Jaccard threshold of <code>extract-coding</code> by controlling false positive rate of protein-coding prediction</h4>
+<p>To set a threshold of the minimum Jaccard overlap between a translated read’s frame and the reference proteome, the most statistically principled way is to control the false positive rate of predicing a protein-coding read.</p>
+<h5 id="probability-of-random-k-mers-from-a-read">Probability of random <span class="math inline">\(k\)</span>-mers from a read</h5>
+<p>If <span class="math inline">\(k\)</span>-mers from reads were independent, identically distributed (i.i.d.) variables, then a translated read of length <span class="math inline">\(L_{\mathrm{translated}}\)</span> drawing letters from the alphabet <span class="math inline">\(\Sigma\)</span>, whose size is <span class="math inline">\(|\Sigma|\)</span>, would contain</p>
+<p><span id="eq:n_kmers_per_read_iid" class="eqnos"><span class="math display">\[\left( \frac{1}{\left| \Sigma \right|^k} \right)^{L_{\mathrm{translated}} - k + 1}\]</span><span class="eqnos-number">(1)</span></span> </p>
+<p>However, <span class="math inline">\(k\)</span>-mers drawn from reads are not i.i.d.
+Let’s take a simple example.
+If we have a two-letter alphabet, <span class="math inline">\(\Sigma = \\{a, b\\},\)</span>, thus <span class="math inline">\(|\Sigma| = 2\)</span>.
+Let us use an example sequence <span class="math inline">\(S = abbabba\)</span>.
+If <span class="math inline">\(k = 4\)</span>, then the first <span class="math inline">\(k\)</span>-mer is <span class="math inline">\(abba\)</span>.
+The second <span class="math inline">\(k\)</span>-mer is thus either <span class="math inline">\(bbaa\)</span> or <span class="math inline">\(bbab\)</span>, with equal probability.
+We can generalize this: Given the first <span class="math inline">\(k\)</span>-mer, the first <span class="math inline">\(k-1\)</span> letters from the second <span class="math inline">\(k\)</span>-mer are known, and thus the probability of guessing the next <span class="math inline">\(k\)</span>-mer is <span class="math inline">\(\frac{1}{\left|\Sigma\right|}\)</span>.</p>
+<figure>
+<img src="images/abba_sequence_prob_future_kmers.png" id="sfig:prob_kmers_in_read" data-tag="prob_kmers_in_read" style="width:50.0%" alt="" /><figcaption>Probability of future <span class="math inline">\(k\)</span>-mers is influenced by the existence of previous <span class="math inline">\(k\)</span>-mers.</figcaption>
+</figure>
+<p>Thus, the probability of a random <span class="math inline">\(k\)</span>-mer from a sequencing read is completely dependent on the alphabet size <span class="math inline">\(|\Sigma|\)</span> and its translated sequence length, <span class="math inline">\(L_{\mathrm{translated}}\)</span>:</p>
+<p><span id="eq:prob_kmers_in_read" class="eqnos"><span class="math display">\[
+\begin{align}
+\mathrm{Pr}(\mathrm{FPR}) &amp;= \left(\frac{1}{|\Sigma|}\right)^k \times \left( \frac{1}{|\Sigma|} \right)^{L_{\mathrm{translated}} - k }\\
+&amp;=\frac{1}{| \Sigma |^k  \times |\Sigma|^{L_{\mathrm{translated} - k} }}\\
+&amp;= \frac{1}{| \Sigma|^{L_{\mathrm{translated}}}}
+\end{align}
+\]</span><span class="eqnos-number">(2)</span></span> </p>
+<h5 id="bloom-filter-collision-probability">Bloom filter collision probability</h5>
+<p>The probability of error of the <code>khmer</code> bloom filter implementation <span class="citation" data-cites="1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">38</a>]</span> used in <code>kmerslay</code>, given <span class="math inline">\(N\)</span> distinct <span class="math inline">\(k\)</span>-mers counted, a hash table size of <span class="math inline">\(H\)</span>, and <span class="math inline">\(Z\)</span> total number of hash tables, is</p>
+<p><span id="eq:bloom_filter_fpr" class="eqnos"><span class="math display">\[\mathrm{Pr}(\mathrm{FPR}_{\mathrm{bloom}}) = \left( 1 - \exp^{N/H}\right)^Z.\]</span><span class="eqnos-number">(3)</span></span> </p>
+<p>Theoretically, the total number of <span class="math inline">\(k\)</span>-mers is limited by the alphabet size and choice of <span class="math inline">\(k\)</span>.
+Empirically, the number of possible <span class="math inline">\(k\)</span>-mers is limited by the <span class="math inline">\(k\)</span>-mers which are compatible with life, and by <span class="math inline">\(k=5\)</span>, the number of theoretical protein <span class="math inline">\(k\)</span>-mers exceeds the number of observed protein <span class="math inline">\(k\)</span>-mers.
+Additionally, the mass of all possible <span class="math inline">\(k\)</span>-mers of a certain size, exceeds the mass of the planet earth by <span class="math inline">\(k = X\)</span> [get the data for this].
+The UniProtKB Opisthokonta manually reviewed dataset contains <span class="math inline">\(4.8 \times 10^7\)</span> <span class="math inline">\(7\)</span>-mers in the protein alphabet.
+Thus, we can give an upper bound to the number of theoretical <span class="math inline">\(k\)</span>-mers to be <span class="math inline">\(10^8\)</span>.
+Therefore, the total number of <span class="math inline">\(k\)</span>-mers in the bloom filter is,</p>
+<p><span id="eq:n_proteome_kmers" class="eqnos"><span class="math display">\[N = \min\left( 10^8, |\Sigma|^k \right).\]</span><span class="eqnos-number">(4)</span></span> </p>
+<figure>
+<img src="images/ksize_vs_n_kmers_theoretical_observed.png" alt="" /><figcaption>Number of theoretical <span class="math inline">\(k\)</span>-mers given alphabet size, compared to observed <span class="math inline">\(k\)</span>-mers in ENSEMBL human translated proteome. The number of observed <span class="math inline">\(k\)</span>-mers is distinct from the number of theoretical <span class="math inline">\(k\)</span>-mers, as the total number of observed <span class="math inline">\(k\)</span>-mers is limted by <span class="math inline">\(k\)</span>-mers compatible with life. Rerun this with uniprot uniref data.</figcaption>
+</figure>
+<h5 id="false-positive-rate-of-protein-coding-prediction">False positive rate of protein-coding prediction</h5>
+<p>Combining Equations <a href="#eq:prob_kmers_in_read">2</a>, <a href="#eq:n_proteome_kmers">4</a>, and <a href="#eq:bloom_filter_fpr">3</a>, for an RNA-seq read of length <span class="math inline">\(L\)</span> where its translated length <span class="math inline">\(L_{\mathrm{translated}} = \lfloor \frac{L}{3} \rfloor\)</span>, containing a possible six frames of translation, then the false-positive rate (FPR) protein-coding read is,</p>
+<p><span id="eq:fpr_protein_coding" class="eqnos"><span class="math display">\[
+\begin{align}
+\mathrm{Pr}\left(\mathrm{FPR}\right) &amp;=
+6 \times \left( 1 - \exp^{\min\left( 10^8, |\Sigma|^k \right)} \right)^Z \times \frac{1}{\left| \Sigma \right|^{L_{\mathrm{translated}}}}.
+\end{align}
+\]</span><span class="eqnos-number">(5)</span></span> </p>
+<h4 id="similarity-thresholds-for-percentage-of-matching-k-mers">Similarity thresholds for percentage of matching <span class="math inline">\(k\)</span>-mers</h4>
+<p>A single SNP in a read affects <span class="math inline">\(k\)</span> <span class="math inline">\(k\)</span>-mers.</p>
+<h3 id="kmerslay-compare-kmer-content-performs-all-by-all-or-pairwise-k-mer-similarity-of-protein-or-nucleotide-sequences-using-reduced-alphabets"><code>kmerslay compare-kmer-content</code> performs all-by-all or pairwise k-mer similarity of protein or nucleotide sequences using reduced alphabets</h3>
+<figure>
+<img src="images/SVG/figure3.svg" id="sfig:figure3" data-tag="figure3" style="width:100.0%" alt="" /><figcaption>Overview of <code>kmerslay compare-kmer-content</code> <strong>A.</strong> Protein sequences are <span class="math inline">\(k\)</span>-merized by converting into a bag of words using a sliding window of size <span class="math inline">\(k\)</span>, potentially re-encoded to a lossy alphabet, and then their fraction of overlapping <span class="math inline">\(k\)</span>-mers is computed into a Jaccard similarity. <strong>B.</strong> One option for <code>kmerslay compare-kmer-content</code> is to specify a pair of sequence files, and compute a background of <span class="math inline">\(k\)</span>-mer similarty using randomly shuffled pairs. <strong>C.</strong> Another option for <code>kmerslay compare-kmer-content</code> is to do an all-by-all <span class="math inline">\(k\)</span>-mer similarity comparison.</figcaption>
+</figure>
+<h3 id="benchmarking">Benchmarking</h3>
 <p>Methods go here.</p>
-<h3 id="experimental">Experimental</h3>
-<h4 id="primate-brain-organoid-protocols">Primate brain organoid protocols</h4>
-<p>We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
-<h4 id="single-cell-capture-of-primate-brain-organoids">Single-cell capture of primate brain organoids</h4>
-<p>We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
-<h4 id="long-read-library-prep">Long read library prep</h4>
-<p>We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
-<h4 id="short-read-library-prep">Short read library prep</h4>
-<p>We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
-<h4 id="sequencing">Sequencing</h4>
-<p>We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
 <h3 id="computational">Computational</h3>
 <figure>
 <img src="images/SVG/supplemental_figure1.svg" id="sfig:sfig1" data-tag="sfig1" style="width:100.0%" alt="" /><figcaption><strong>A.</strong> Overview of <code>nf-core/kmermaid</code> pipeline. 1. If input is bam, extract per-cell sequences. 2. Predict amino acid sequence of each RNA-seq read using <code>khtools extract-coding</code>. 3. Randomly subsample amino acid k-mers via MinHash using <code>sourmash sketch</code>. 4. Compare all k-mer sketches to one another using <code>sourmash compare</code> to compute cell-cell Jaccard similarities. 5. Build sequence bloom tree using <code>sourmash index</code>. 6. Build k-nearest neighbor graph using sequence bloom tree. 7. Build UMAP off of KNN. <strong>B.</strong> Overview of <code>czbiohub/nf-predictorthologs</code> pipeline for prediction of homologous genes from sequences. 1. If input is bam, must also have a convert bam reads to raw fastq files using the <code>samtools fastq</code> subcommand (samtools version 1.9). If input is fastqs, go directly to second step. 2. Trim adapters, poly-A, polyG using the <code>fastp</code> tool. 3. Predict protein-coding sequence using khtools extract_coding, using conservative UniProt/SwissProt manually curated database as examples of known protein-coding sequences, for most stringent definition of protein-coding. 4. Query predicted protein in permissive NCBI RefSeq non-redundant protein database for most complete search query. <strong>C.</strong> Example of predicting protein-coding sequence using Brawand2011 RNA-seq data, and human proteome as the reference. x-axis, percentage of reads falling into that category, y-axis, the species which the reads are from.</figcaption>
@@ -315,19 +534,19 @@ We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
 DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">39</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">39</a>]</span>.</p>
 <h4 id="extraction-of-putative-coding-reads-from-rna-seq">Extraction of putative coding reads from RNA-seq</h4>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
 DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">36</a>]</span>.</p>
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">39</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">25</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">39</a>]</span>.</p>
 <h2 id="supplemental-methods">Supplemental Methods</h2>
 <div id="tbl:sequence-encodings" class="tablenos">
 <table>
-<caption><span>Table 1:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid
+<caption><span>Table 2:</span> Dayhoff and hydrophobic-polar encodings are a reduced amino acid
 alphabet allowing for permissive cross-species sequence comparisons. For
 example, the amino acid sequence <code>SASHAFIERCE</code> would be Dayhoff-encoded
 to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </caption>
@@ -384,6 +603,55 @@ to <code>bbbdbfecdac</code>, and HP-encoded to <code>phpphhhpppp</code>. </capti
 </tr>
 </tbody>
 </table>
+</div>
+<h2 id="applications">Applications</h2>
+<h3 id="installation">Installation</h3>
+<p><code>kmerslay</code> can be installed with the Anaconda package manager, <code>conda</code> (preferred),</p>
+<pre><code># Note: not actually on bioconda yet ... this is aspirational
+conda install --channel bioconda kmerslay</code></pre>
+<p>or from the Python Package Index (PyPI) with the Python package manager, <code>pip</code>,</p>
+<pre><code># Note: not actually on PyPI yet ... this is aspirational
+pip install kmerslay</code></pre>
+<h3 id="prediction-of-protein-coding-sequences-across-a-variety-of-species">Prediction of protein-coding sequences across a variety of species</h3>
+<p>We used <code>kmerslay extract-coding</code> to obtain putative protein-coding sequences from a comaparative transcriptomic dataset spanning nine species and six tissues <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">11</a>]</span>.</p>
+<h3 id="read-preprocessing">Read preprocessing</h3>
+<p>As the protein-coding score is assessed on the entire read, we recommend RNA-seq reads be removed of library artifacts to the best of the user’s ability.
+This means, the adapters should be trimmed, and if there was a negative insert size such that the R1 and R2 reads overlap, then the read pairs should be merged.</p>
+<h4 id="creation-of-amino-acid-k-mer-database-with-kmerslay-bloom-filter">Creation of amino acid <span class="math inline">\(k\)</span>-mer database with <code>kmerslay bloom-filter</code></h4>
+<p>Before predicting protein-coding sequences, <code>kmerslay</code> must create a database of known amino acid <span class="math inline">\(k\)</span>-mers, which is stored in the form of a probabilistic set membership data structure known as a bloom filter.
+<code>kmerslay</code> uses the bloom filter implementation in <code>khmer</code>/<code>oxli</code> <span class="citation" data-cites="G2CzfHHF 1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">38</a>,<a href="#ref-G2CzfHHF" role="doc-biblioref">40</a>]</span>, called a NodeGraph.
+We created a dataset of known amino acid <span class="math inline">\(k\)</span>-mers from the manually annotated UniProtKB/Swiss-Prot databases <span class="citation" data-cites="1ZE22clL 1BBNQZrBs">[<a href="#ref-1ZE22clL" role="doc-biblioref">41</a>,<a href="#ref-1BBNQZrBs" role="doc-biblioref">42</a>]</span>.
+We used only protein sequences observed in <em>Opisthokont</em> species <span class="citation" data-cites="Ty6517L8">[<a href="#ref-Ty6517L8" role="doc-biblioref">43</a>]</span>, previously known as a “Fungi/Metazoa” group that encompasseses “Fungus-like” <em>Holomycota</em> and “Animal-like” <em>Holozoa</em>. [NOTE: Does this need a figure/phylogenetic timetree?]</p>
+<pre><code>kmerslay bloom-filter \
+  --tablesize 100000000 \
+  --molecule protein \
+  --peptide-ksize 7 \
+  --save-as uniprot-reviewed_yes+taxonomy_2759__molecule-protein_ksize-7.bloomfilter \
+  uniprot-reviewed_yes+taxonomy_2759.fasta.gz</code></pre>
+<h4 id="prediction-of-protein-coding-sequences-with-kmerslay-extract-coding">Prediction of protein-coding sequences with <code>kmerslay extract-coding</code></h4>
+<p>We then predicted protein coding reads using the created bloom filter using <code>kmerslay extract-coding</code>.</p>
+<pre><code>kmerslay extract-coding \
+  --molecule protein \
+  --coding-nucleotide-fasta SRR306800_GSM752653_ggo_br_F_1__coding_reads_nucleotides.fasta \
+  --csv SRR306800_GSM752653_ggo_br_F_1__coding_scores.csv \
+  --json-summary SRR306800_GSM752653_ggo_br_F_1__coding_summary.json \
+  --jaccard-threshold 0.8 \
+  --peptides-are-bloom-filter \
+  uniprot-reviewed_yes+taxonomy_2759__molecule-protein_ksize-7.bloomfilter \
+  SRR306800_GSM752653_ggo_br_F_1_trimmed.fq.gz &gt; SRR306800_GSM752653_ggo_br_F_1__coding_reads_peptides.fasta</code></pre>
+<figure>
+<img src="images/SVG/figure2.svg" id="sfig:figure2" data-tag="figure2" style="width:100.0%" alt="" /><figcaption>Applications of <code>kmerslay extract-coding</code>. <strong>A.</strong> We simulated RNA-seq data using Opisthokonta species from the Quest for Orthologs dataset for true positive protein-coding RNAs, reads completely contained within intergenic, intronic, and UTR sequences as true positive noncoding RNAs, and reads partially overlapping a coding and noncoding region as an adversarial test set. We then predicted protein-coding sequences and computed false positive and false negative rates. False Positive coding reads were found to be … False negative noncoding reads were found to be … <strong>B.</strong> Number of putative protein-coding sequences per read. <strong>C.</strong> This method could also be used to extract only reads whose putative protein-coding sequences are transcription factors. <strong>D.</strong> We ran <code>kmerslay extract-coding</code> on the five tissues and nine species from the Brawand 2011 dataset.</figcaption>
+</figure>
+<h3 id="kmerslay-compare-kmer-content-is-a-simple-method-to-identify-homologs"><code>kmerslay compare-kmer-content</code> is a simple method to identify homologs</h3>
+<figure>
+<img src="images/SVG/figure4.svg" id="sfig:figure4" data-tag="figure4" style="width:100.0%" alt="" /><figcaption>Applications of <code>kmerslay compare-kmer-content</code>. <strong>A.</strong> We used <code>kmerslay compare-kmer-content</code> on pairs of orthologous protein sequences between humans and the remaining Opisthokonta species in the Quest for Orthologs dataset. x-axis, <span class="math inline">\(k\)</span>-mer size, y-axis, mean difference. <strong>B.</strong> False positive calls by <code>kmerslay compare-kmer-content</code> are either paralogs or read-through protein products. <strong>C.</strong> We applied <code>kmerslay compare-kmer-content</code> to … to find putative orthologs. We found … the accuracy was …</figcaption>
+</figure>
+<h3 id="pipelines">Pipelines</h3>
+<!-- ## Figure 3 -- Overview of `kmermaid` and `predictorthologs` pipelines -->
+<div id="fig:sfig3" class="fignos">
+<figure>
+<img src="images/SVG/supplementary_figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>khtools extract_coding</code>, a k-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
+</figure>
 </div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -587,11 +855,47 @@ Eric M. Erkenbrack, Jamie D. Maziarz, Oliver W. Griffith, Cong Liang, Arun R. Ch
 <em>PLOS Biology</em> (2018-08-24) <a href="https://doi.org/gd5b9s">https://doi.org/gd5b9s</a><br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005594">10.1371/journal.pbio.2005594</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30142145">30142145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6108454">PMC6108454</a></p>
 </div>
+<div id="ref-sZoryWIB">
+<p>36. <strong>RAPSearch: a fast protein similarity search tool for short reads</strong><br />
+Yuzhen Ye, Jeong-Hyeon Choi, Haixu Tang<br />
+<em>BMC Bioinformatics</em> (2011-05-15) <a href="https://doi.org/dgt5rt">https://doi.org/dgt5rt</a><br />
+DOI: <a href="https://doi.org/10.1186/1471-2105-12-159">10.1186/1471-2105-12-159</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21575167">21575167</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3113943">PMC3113943</a></p>
+</div>
+<div id="ref-11LSoLYLW">
+<p>37. <strong>Incomplete nucleic acid sequences</strong><a href="https://www.qmul.ac.uk/sbcs/iubmb/misc/naseq.html">https://www.qmul.ac.uk/sbcs/iubmb/misc/naseq.html</a></p>
+</div>
+<div id="ref-1DpHWPZC9">
+<p>38. <strong>These Are Not the K-mers You Are Looking For: Efficient Online K-mer Counting Using a Probabilistic Data Structure</strong><br />
+Qingpeng Zhang, Jason Pell, Rosangela Canino-Koning, Adina Chuang Howe, C. Titus Brown<br />
+<em>PLoS ONE</em> (2014-07-25) <a href="https://doi.org/f6kb9b">https://doi.org/f6kb9b</a><br />
+DOI: <a href="https://doi.org/10.1371/journal.pone.0101271">10.1371/journal.pone.0101271</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25062443">25062443</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4111482">PMC4111482</a></p>
+</div>
 <div id="ref-46R7aU4N">
-<p>36. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong><br />
+<p>39. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong><br />
 David M. Emms, Steven Kelly<br />
 <em>bioRxiv</em> (2019-04-24) <a href="https://www.biorxiv.org/content/10.1101/466201v2">https://www.biorxiv.org/content/10.1101/466201v2</a><br />
 DOI: <a href="https://doi.org/10.1101/466201">10.1101/466201</a></p>
+</div>
+<div id="ref-G2CzfHHF">
+<p>40. <strong>The khmer software package: enabling efficient nucleotide sequence analysis</strong><br />
+Michael R. Crusoe, Hussien F. Alameldin, Sherine Awad, Elmar Boucher, Adam Caldwell, Reed Cartwright, Amanda Charbonneau, Bede Constantinides, Greg Edvenson, Scott Fay, … C. Titus Brown<br />
+<em>F1000Research</em> (2015-09-25) <a href="https://doi.org/9qp">https://doi.org/9qp</a><br />
+DOI: <a href="https://doi.org/10.12688/f1000research.6924.1">10.12688/f1000research.6924.1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26535114">26535114</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4608353">PMC4608353</a></p>
+</div>
+<div id="ref-1ZE22clL">
+<p>41. <strong>UniProt: a worldwide hub of protein knowledge</strong><em>Nucleic Acids Research</em> (2018-11-05) <a href="https://doi.org/gfwqck">https://doi.org/gfwqck</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gky1049">10.1093/nar/gky1049</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30395287">30395287</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323992">PMC6323992</a></p>
+</div>
+<div id="ref-1BBNQZrBs">
+<p>42. <strong>UniProtKB/Swiss-Prot, the Manually Annotated Section of the UniProt KnowledgeBase: How to Use the Entry View</strong><br />
+Emmanuel Boutet, Damien Lieberherr, Michael Tognolli, Michel Schneider, Parit Bansal, Alan J. Bridge, Sylvain Poux, Lydie Bougueleret, Ioannis Xenarios<br />
+<em>Plant Bioinformatics</em> (2016) <a href="https://doi.org/f79kbb">https://doi.org/f79kbb</a><br />
+DOI: <a href="https://doi.org/10.1007/978-1-4939-3167-5_2">10.1007/978-1-4939-3167-5_2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26519399">26519399</a></p>
+</div>
+<div id="ref-Ty6517L8">
+<p>43. <strong>Opisthokont</strong><br />
+Wikipedia<br />
+(2020-03-26) <a href="https://en.wikipedia.org/w/index.php?title=Opisthokont&amp;oldid=947511780">https://en.wikipedia.org/w/index.php?title=Opisthokont&amp;oldid=947511780</a></p>
 </div>
 </div>
 <!-- default theme -->

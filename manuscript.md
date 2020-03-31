@@ -7,7 +7,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-23'
+date-meta: '2020-03-31'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
 
-  <meta name="dc.date" content="2020-03-23" />
+  <meta name="dc.date" content="2020-03-31" />
 
-  <meta name="citation_publication_date" content="2020-03-23" />
+  <meta name="citation_publication_date" content="2020-03-31" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -98,11 +98,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -136,10 +136,10 @@ title: 'INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from com
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/c49b752af277ff7efd80d6484c3a5dbb3cbfe026/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@c49b752](https://github.com/czbiohub/de-novo-orthology-paper/tree/c49b752af277ff7efd80d6484c3a5dbb3cbfe026)
-on March 23, 2020.
+from [czbiohub/de-novo-orthology-paper@57b6998](https://github.com/czbiohub/de-novo-orthology-paper/tree/57b6998651b7e98974be89f3b993de29fc503668)
+on March 31, 2020.
 </em></small>
 
 ## Authors
@@ -205,9 +205,12 @@ on March 23, 2020.
 
 ## Abstract
 
-We introduce `kmermaid`, a novel computational method for identifying orthologous cell types discovering *de novo* orthologous genes across species.
-As `kmermaid` skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, b) predicts protein-coding sequences from raw RNA-seq reads, and c) identify putative functions of protein sequences contributing to shared cell types.
-By enabling analyses across divergent species' transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, `kmermaid` illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.
+We introduce `sencha`, a novel computational method for translating RNA-seq reads to putative protein sequence.
+As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
+Thus, we can identify orthologous cell types while discovering *de novo* orthologous genes across species.
+For widespread accessibility and usage, we implemented `sencha` into two distinct Nextflow pipelines following software best practices such as testing and continuous integration: (1) `nf-core/kmermaid` to compare translated transcriptomes across divergent species, and (2) `czbiohub/nf-predictorthologs` to infer functions of translated sequences.
+Using these pipelines, we were able to align transcriptomes and discover *de novo* homologous genes across species from a variety of divergence times: bulk RNA-seq transcriptomes across Amniotes (divergence ~312 millions of years ago), mouse single-cell RNA-seq with *Botryllus schlosseri* bulk RNA-seq, an early chordate (divergence ~684 millions of years ago), and Bilateria developmental atlases (divergence ~824 millions of years ago).
+By enabling analyses across divergent species' transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, `sencha` illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.
 
 
 
@@ -234,10 +237,6 @@ We find that using $k$-mers has the advantage of resolving ... in comparison to 
 Using $k$-mers, we were able to resolve cell types ... , which was hidden using read counts alone.
 Thus, we have shown the reference-free method using the $k$-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolutionary tree of life.
 
-
-<!-- ## Figure 1 -- Overview of `kmermaid` pipeline -->
-
-![**A.** Overview of the `kmermaid` pipeline. (**a**, **b**, **c**) `kmermaid` consists of a protein-coding prediction phase (**a**) that is invoked by the command `khtools extract_coding`, a k-mer sketch computation phase (**b**) invoked by the command `sourmash sketch`, a signature similarity comparison phase (**c**) invoked by the command `sourmash compare`, and an optional database-creation phase (**d**) invoked by the command `sourmash index`. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent $k$-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide $k$-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide $k$-mers between all pairs of samples.](images/SVG/figure1.svg){#fig:fig1 width="100%"}
 
 To determine whether short segments of sequences could detect gene orthologues, we $k$-merized orthologous genes derived from the ENSEMBL version 97 [@doi:10.1093/nar/gkx1098] COMPARA database [@doi:10.1093/database/bav096] (Figure [@fig:fig1]).
 We compared human protein sequences to orthologous chimpanzee, mouse, (orangutan, bonobo, gorilla, macaque, opossum, platypus, chicken) protein sequences, as these are species used in [@doi:10.1038/nature10532].
@@ -337,57 +336,178 @@ By eliminating read alignment and orthologous gene mapping, `kmermaid` enables c
 By identifying homologous cell types across a broad variety of species, we come closer to an understanding of the evolution of genes, cells, and thus life itself.
 
 
-## Methods
+## Online Methods
+
+<!-- This is just a placeholder to separate the supplemental methods from the rest of the paper.
+All remaining supplemental sections should fall under this, meaning they need to be formatted
+with heading 3 with three hashes: `###` -->
+
+
+
+
+## Implementation
+
+### Reduced alphabets
+
+At the core of `kmerslay` is the ability to cheaply compare sequences using $k$-mers.
+As $k$-mers are very brittle to substitutions and thus to compare across species, one must allow for minor base substitutions that still maintain similar chemical or structural properties.
+A reduced alphabet can encode useful information into a smaller alphabet space, and enable sequence comparisons across a broader variety of species than the original alphabet alone.
+
+
+#### Reduced amino acid alphabets
+
+Reduced amino acid alphabets have been useful for over 50 years [@raw:dayhoff1969atlas] in finding related protein sequences [@doi:10.1093/bioinformatics/btp164; @doi:10.1093/bioinformatics/10.4.453; @doi:10.1186/1471-2105-12-159; @doi:10.1093/protein/13.3.149; @doi:10.1093/nar/gkh180].
+Recently, a reduced amino acid alphabet (specifically, `aa9` below) combined with $k$-mers were used to find homologous protein-coding sequences [@doi:10.1093/gigascience/giz118].
+We build on this concept by enabling prediction of protein-coding sequences from RNA-seq reads, and by enabling users to perform a parameter sweep in an all-by-all comparison to identify putative homologs using a variety of alphabet metrics.
+
+
+##### Dayhoff and `HP` alphabets
+
+| Amino acid              | Property              | Dayhoff | Hydrophobic-polar (HP)  |
+|:------------------------|:----------------------|:--------|:------------------------|
+| `C`                     | Sulfur polymerization | `a`     | `p`                     |
+| `A`, `G`, `P`, `S`, `T` | Small                 | `b`     | `AGP`: `h`<br>`ST`: `p` |
+| `D`, `E`, `N`, `Q`      | Acid and amide        | `c`     | `p`                     |
+| `H`, `K`, `R`           | Basic                 | `d`     | `p`                     |
+| `I`, `L`, `M`, `V`      | Hydrophobic           | `e`     | `h`                     |
+| `F`, `W`, `Y`           | Aromatic              | `f`     | `h`                     |
+
+
+
+Table: Dayhoff and hydrophobic-polar encodings are a reduced amino acid
+alphabet allowing for permissive cross-species sequence comparisons. For
+example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
+to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`, as below. {#tbl:sequence-encodings}
+
+
+```
+protein20: SASHAFIERCE
+dayhoff6:  bbbdbfecdac
+hp2:       phpphhhpppp
+```
+
+
+##### All implemented alphabets (with citations, not as nicely organized)
+<!-- Copied this google spreadsheet https://docs.google.com/spreadsheets/d/1RDuQD0aRyv-FnQJbjRosHEJV85_9BNrzmmvgFRQSgN8/edit#gid=0 into https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/, reformatted with https://atom.io/packages/markdown-table-formatter -->
+
+[NOTE: maybe this should go into the supplementary? The main alphabets that have been successful for me are dayhoff and HP]
+
+| Citation                                                              | Alphabet   | Amino acid groups                                                               |
+|:-----------------------------------------------------|:-------------------|:-----------------------------------------------------------------------------------------|
+| Phillips, R., *et al*. (2012). [@raw:phillips2012physical]            | hp2        | `AFGILMPVWY` `CDEHKNQRST`                                                       |
+| Peterson, E. L., *et al*. (2009) [@doi:10.1093/bioinformatics/btp164] | gbmr4      | `G` `ADKERNTSQ` `YFLIVMCWH` `P`                                                 |
+| Dayhoff, M. O., & Eck, R. V. (1968). [@raw:dayhoff1969atlas]          | dayhoff6   | `AGPST` `HRK` `DENQ` `FWY` `ILMV` `C`                                           |
+| This paper                                                            | botvinnik8 | `AG` `DE` `RK` `NQ` `ST` `FY` `LIV` `CMWHP`                                     |
+| Hu, X., & Friedberg, I. (2019). [@doi:10.1093/gigascience/giz118]     | aa9        | `G` `AST` `KR` `EQ` `DN` `CFILMVY` `W` `H` `P`                                  |
+| Peterson, E. L., *et al*. (2009) [@doi:10.1093/bioinformatics/btp164] | sdm12      | `G` `A` `D` `KER` `N` `TSQ` `YF` `LIVM` `C` `W` `H` `P`                         |
+| Peterson, E. L., *et al*. (2009) [@doi:10.1093/bioinformatics/btp164] | hsdm17     | `G` `A` `D` `KE` `R` `N` `T` `S` `Q` `Y` `F` `LIV` `M` `C` `W` `H` `P`          |
+| Dayhoff, M. O., & Eck, R. V. (1968). [@raw:dayhoff1969atlas]          | protein20  | `G` `A` `D` `E` `K` `R` `N` `T` `S` `Q` `Y` `F` `L` `I` `V` `M` `C` `W` `H` `P` |
+
+
+
+#### Reduced nucleotide alphabets
+
+The IUPAC degenerate nucleotide code [@url:https://www.qmul.ac.uk/sbcs/iubmb/misc/naseq.html] includes several two-letter codes for the original 4-letter nucleobase alphabet.
+The first, Weak/Strong, indicates the strength of the hydrogen bond across the double strand.
+The bond of adenine to thymine has two hydrogen bonds, making it weak; and the bond of guanine to cytosine has three hydrogen bonds, making it 50% stronger.
+The second, Purine/Pyrimidine, encodes the ring size of the nucleobase, where Adenine and Guanine both have larger Purine double rings, while Cytosine and Thymine/Uracil have smaller Pyrimidine rings.
+The third, Amino/Keto, designates the main functional group of the ring, where Adenine and Cytosine both have an Amino group, while Guanine and Thymine/Uracil both have a Keto group.
+
+<!-- This spreadsheet:https://docs.google.com/spreadsheets/d/1RDuQD0aRyv-FnQJbjRosHEJV85_9BNrzmmvgFRQSgN8/edit#gid=104831627 was copied into this formatter: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/ -->
+
+| Nucleotide | Hydrogen Bonding | Ring type      | Ring functional group | Nucleobase chemical structure                                                                                                                                   |
+|:-----------|:-----------------|:---------------|:----------------------|:------------------------------------------------|
+| A          | Weak (W)         | Purine (R)     | Amino (M)             | ![Adenine chemical structure](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Adenine.svg/120px-Adenine.svg.png)                                      |
+| C          | Strong (S)       | Pyrimidine (Y) | Amino (M)             | ![Cytosine chemical structure](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cytosine_chemical_structure.png/120px-Cytosine_chemical_structure.png) |
+| G          | Strong (S)       | Purine (R)     | Keto (K)              | ![Guanine chemical structure](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Guanin.svg/150px-Guanin.svg.png)                                        |
+| T          | Weak (W)         | Pyrimidine (Y) | Keto (K)              | ![Thymine chemical structure](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Thymine_skeletal.svg/120px-Thymine_skeletal.svg.png)                    |
+| U          | Weak (W)         | Pyrimidine (Y) | Keto (K)              | ![Uracil chemical structure](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Uracil.svg/120px-Uracil.svg.png)                                         |
+Thus, the nucleotide string `GATTACA` would be re-encoded into the following:
+
+```
+Nucleotide:        GATTACA
+Weak/Strong:       SWWWWSW
+Purine/Pyrimidine: RRYYRYR
+Functional group:  KMKKMMM
+```
+
+### `kmerslay extract-coding`
+
+
+![Overview of `kmerslay extract-coding` **A.** First, each read is translated into all six possible protein-coding translation frames. Next, reading frames with stop codons are eliminated. Each protein-coding frame is $k$-merized, then the fraction of $k$-mers which appear in the known protein-coding database is computed. Frames which contain a fraction of coding frames exceeding the threshold are inferred to be putatively protein-coding. **B.** Worked example of an RNA-seq read with a single putatitive reading frame. **C.** Worked example of an RNA-seq read with multiple reading frames, and a `UCSC` genome browser shot of the read showing that both reading frames are present in the annotation.](images/SVG/figure1.svg){#sfig:figure1 tag="figure1" width="100%"}
+
+
+#### Set Jaccard threshold of `extract-coding` by controlling false positive rate of protein-coding prediction
+
+To set a threshold of the minimum Jaccard overlap between a translated read's frame and the reference proteome, the most statistically principled way is to control the false positive rate of predicing a protein-coding read.
+
+##### Probability of random $k$-mers from a read
+
+If $k$-mers from reads were independent, identically distributed (i.i.d.) variables, then a translated read of length $L_{\mathrm{translated}}$ drawing letters from the alphabet $\Sigma$, whose size is $|\Sigma|$, would contain
+
+$$\left( \frac{1}{\left| \Sigma \right|^k} \right)^{L_{\mathrm{translated}} - k + 1}$$ {#eq:n_kmers_per_read_iid}
+
+However, $k$-mers drawn from reads are not i.i.d.
+Let's take a simple example.
+If we have a two-letter alphabet, $\Sigma = \\{a, b\\},$, thus $|\Sigma| = 2$.
+Let us use an example sequence $S = abbabba$.
+If $k = 4$, then the first $k$-mer is $abba$.
+The second $k$-mer is thus either $bbaa$ or $bbab$, with equal probability.
+We can generalize this: Given the first $k$-mer, the first $k-1$ letters from the second $k$-mer are known, and thus the probability of guessing the next $k$-mer is $\frac{1}{\left|\Sigma\right|}$.
+
+![Probability of future $k$-mers is influenced by the existence of previous $k$-mers.](images/abba_sequence_prob_future_kmers.png){#sfig:prob_kmers_in_read tag="prob_kmers_in_read" width="50%"}
+
+Thus, the probability of a random $k$-mer from a sequencing read is completely dependent on the alphabet size $|\Sigma|$ and its translated sequence length, $L_{\mathrm{translated}}$:
+
+$$
+\begin{align}
+\mathrm{Pr}(\mathrm{FPR}) &= \left(\frac{1}{|\Sigma|}\right)^k \times \left( \frac{1}{|\Sigma|} \right)^{L_{\mathrm{translated}} - k }\\
+&=\frac{1}{| \Sigma |^k  \times |\Sigma|^{L_{\mathrm{translated} - k} }}\\
+&= \frac{1}{| \Sigma|^{L_{\mathrm{translated}}}}
+\end{align}
+$$ {#eq:prob_kmers_in_read}
+
+##### Bloom filter collision probability
+
+The probability of error of the `khmer` bloom filter implementation [@doi:10.1371/journal.pone.0101271] used in `kmerslay`, given $N$ distinct $k$-mers counted, a hash table size of $H$, and $Z$ total number of hash tables, is
+
+$$\mathrm{Pr}(\mathrm{FPR}_{\mathrm{bloom}}) = \left( 1 - \exp^{N/H}\right)^Z.$$ {#eq:bloom_filter_fpr}
+
+Theoretically, the total number of $k$-mers is limited by the alphabet size and choice of $k$.
+Empirically, the number of possible $k$-mers is limited by the $k$-mers which are compatible with life, and by $k=5$, the number of theoretical protein $k$-mers exceeds the number of observed protein $k$-mers.
+Additionally, the mass of all possible $k$-mers of a certain size, exceeds the mass of the planet earth by $k = X$ [get the data for this].
+The UniProtKB Opisthokonta manually reviewed dataset contains $4.8 \times 10^7$ $7$-mers in the protein alphabet.
+Thus, we can give an upper bound to the number of theoretical $k$-mers to be $10^8$.
+Therefore, the total number of $k$-mers in the bloom filter is,
+
+$$N = \min\left( 10^8, |\Sigma|^k \right).$$ {#eq:n_proteome_kmers}
+
+![Number of theoretical $k$-mers given alphabet size, compared to observed $k$-mers in ENSEMBL human translated proteome. The number of observed $k$-mers is distinct from the number of theoretical $k$-mers, as the total number of observed $k$-mers is limted by $k$-mers compatible with life. Rerun this with uniprot uniref data.](images/ksize_vs_n_kmers_theoretical_observed.png)
+
+##### False positive rate of protein-coding prediction
+
+Combining Equations @eq:prob_kmers_in_read, @eq:n_proteome_kmers, and @eq:bloom_filter_fpr, for an RNA-seq read of length $L$ where its translated length $L_{\mathrm{translated}} = \lfloor \frac{L}{3} \rfloor$, containing a possible six frames of translation, then the false-positive rate (FPR) protein-coding read is,
+
+$$
+\begin{align}
+\mathrm{Pr}\left(\mathrm{FPR}\right) &=
+6 \times \left( 1 - \exp^{\min\left( 10^8, |\Sigma|^k \right)} \right)^Z \times \frac{1}{\left| \Sigma \right|^{L_{\mathrm{translated}}}}.
+\end{align}
+$$  {#eq:fpr_protein_coding}
+
+#### Similarity thresholds for percentage of matching $k$-mers
+
+A single SNP in a read affects $k$ $k$-mers.
+
+### `kmerslay compare-kmer-content` performs all-by-all or pairwise k-mer similarity of protein or nucleotide sequences using reduced alphabets
+
+![Overview of `kmerslay compare-kmer-content` **A.** Protein sequences are $k$-merized by converting into a bag of words using a sliding window of size $k$, potentially re-encoded to a lossy alphabet, and then their fraction of overlapping $k$-mers is computed into a Jaccard similarity. **B.** One option for `kmerslay compare-kmer-content` is to specify a pair of sequence files, and compute a background of $k$-mer similarty using randomly shuffled pairs. **C.** Another option for `kmerslay compare-kmer-content` is to do an all-by-all $k$-mer similarity comparison.](images/SVG/figure3.svg){#sfig:figure3 tag="figure3" width="100%"}
+
+
+### Benchmarking
 
 Methods go here.
 
-### Experimental
-
-#### Primate brain organoid protocols
-
-We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@doi:10.1038/nmeth.3830].
-Biorxiv example: [@url:https://doi.org/10.1101/466201].
-Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
-
-#### Single-cell capture of primate brain organoids
-
-We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@doi:10.1038/nmeth.3830].
-Biorxiv example: [@url:https://doi.org/10.1101/466201].
-Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
-
-#### Long read library prep
-
-We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@doi:10.1038/nmeth.3830].
-Biorxiv example: [@url:https://doi.org/10.1101/466201].
-Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
-
-
-#### Short read library prep
-
-We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@doi:10.1038/nmeth.3830].
-Biorxiv example: [@url:https://doi.org/10.1101/466201].
-Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
-
-#### Sequencing
-
-We did things.
-One sentence per line.
-Prefer DOI for references, but for Biorxiv use the URL.
-DOI example: [@doi:10.1038/nmeth.3830].
-Biorxiv example: [@url:https://doi.org/10.1101/466201].
-Multiple citations per line example: [@doi:10.1038/nmeth.3830; @url:https://doi.org/10.1101/466201].
 
 ### Computational
 
@@ -429,6 +549,83 @@ Table: Dayhoff and hydrophobic-polar encodings are a reduced amino acid
 alphabet allowing for permissive cross-species sequence comparisons. For
 example, the amino acid sequence `SASHAFIERCE` would be Dayhoff-encoded
 to `bbbdbfecdac`, and HP-encoded to `phpphhhpppp`. {#tbl:sequence-encodings}
+
+
+
+
+## Applications
+
+### Installation
+
+`kmerslay` can be installed with the Anaconda package manager, `conda` (preferred),
+
+```
+# Note: not actually on bioconda yet ... this is aspirational
+conda install --channel bioconda kmerslay
+```
+
+or from the Python Package Index (PyPI) with the Python package manager, `pip`,
+
+```
+# Note: not actually on PyPI yet ... this is aspirational
+pip install kmerslay
+```
+
+### Prediction of protein-coding sequences across a variety of species
+
+We used `kmerslay extract-coding` to obtain putative protein-coding sequences from a comaparative transcriptomic dataset spanning nine species and six tissues [@doi:10.1038/nature10532].
+
+### Read preprocessing
+
+As the protein-coding score is assessed on the entire read, we recommend RNA-seq reads be removed of library artifacts to the best of the user's ability.
+This means, the adapters should be trimmed, and if there was a negative insert size such that the R1 and R2 reads overlap, then the read pairs should be merged.
+
+
+#### Creation of amino acid $k$-mer database with `kmerslay bloom-filter`
+
+Before predicting protein-coding sequences, `kmerslay` must create a database of known amino acid $k$-mers, which is stored in the form of a probabilistic set membership data structure known as a bloom filter.
+`kmerslay` uses the bloom filter implementation in `khmer`/`oxli` [@doi:10.12688/f1000research.6924.1; @doi:10.1371/journal.pone.0101271], called a NodeGraph.
+We created a dataset of known amino acid $k$-mers from the manually annotated UniProtKB/Swiss-Prot databases [@doi:10.1093/nar/gky1049; @doi:10.1007/978-1-4939-3167-5_2].
+We used only protein sequences observed in *Opisthokont* species [@url:https://en.wikipedia.org/wiki/Opisthokont], previously known as a "Fungi/Metazoa" group that encompasseses "Fungus-like" *Holomycota* and "Animal-like" *Holozoa*. [NOTE: Does this need a figure/phylogenetic timetree?]
+
+```
+kmerslay bloom-filter \
+  --tablesize 100000000 \
+  --molecule protein \
+  --peptide-ksize 7 \
+  --save-as uniprot-reviewed_yes+taxonomy_2759__molecule-protein_ksize-7.bloomfilter \
+  uniprot-reviewed_yes+taxonomy_2759.fasta.gz
+```
+
+#### Prediction of protein-coding sequences with `kmerslay extract-coding`
+
+We then predicted protein coding reads using the created bloom filter using `kmerslay extract-coding`.
+
+```
+kmerslay extract-coding \
+  --molecule protein \
+  --coding-nucleotide-fasta SRR306800_GSM752653_ggo_br_F_1__coding_reads_nucleotides.fasta \
+  --csv SRR306800_GSM752653_ggo_br_F_1__coding_scores.csv \
+  --json-summary SRR306800_GSM752653_ggo_br_F_1__coding_summary.json \
+  --jaccard-threshold 0.8 \
+  --peptides-are-bloom-filter \
+  uniprot-reviewed_yes+taxonomy_2759__molecule-protein_ksize-7.bloomfilter \
+  SRR306800_GSM752653_ggo_br_F_1_trimmed.fq.gz > SRR306800_GSM752653_ggo_br_F_1__coding_reads_peptides.fasta
+```
+
+![Applications of `kmerslay extract-coding`. **A.** We simulated RNA-seq data using Opisthokonta species from the Quest for Orthologs dataset for true positive protein-coding RNAs, reads completely contained within intergenic, intronic, and UTR sequences as true positive noncoding RNAs, and reads partially overlapping a coding and noncoding region as an adversarial test set. We then predicted protein-coding sequences and computed false positive and false negative rates. False Positive coding reads were found to be ... False negative noncoding reads were found to be ... **B.** Number of putative protein-coding sequences per read. **C.** This method could also be used to extract only reads whose putative protein-coding sequences are transcription factors. **D.** We ran `kmerslay extract-coding` on the five tissues and nine species from the Brawand 2011 dataset.](images/SVG/figure2.svg){#sfig:figure2 tag="figure2" width="100%"}
+
+
+### `kmerslay compare-kmer-content` is a simple method to identify homologs
+
+![Applications of `kmerslay compare-kmer-content`. **A.** We used `kmerslay compare-kmer-content` on pairs of orthologous protein sequences between humans and the remaining Opisthokonta species in the Quest for Orthologs dataset. x-axis, $k$-mer size, y-axis, mean difference. **B.** False positive calls by `kmerslay compare-kmer-content` are either paralogs or read-through protein products. **C.** We applied `kmerslay compare-kmer-content` to ... to find putative orthologs. We found ... the accuracy was ...](images/SVG/figure4.svg){#sfig:figure4 tag="figure4" width="100%"}
+
+
+### Pipelines
+
+<!-- ## Figure 3 -- Overview of `kmermaid` and `predictorthologs` pipelines -->
+
+![**A.** Overview of the `kmermaid` pipeline. (**a**, **b**, **c**) `kmermaid` consists of a protein-coding prediction phase (**a**) that is invoked by the command `khtools extract_coding`, a k-mer sketch computation phase (**b**) invoked by the command `sourmash sketch`, a signature similarity comparison phase (**c**) invoked by the command `sourmash compare`, and an optional database-creation phase (**d**) invoked by the command `sourmash index`. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent $k$-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide $k$-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide $k$-mers between all pairs of samples.](images/SVG/supplementary_figure3.svg){#fig:sfig3 width="100%"}
 
 
 ## References {.page_break_before}
