@@ -2,12 +2,13 @@
 author-meta:
 - Olga Borisovna Botvinnik
 - Venkata Naga Pranathi Vemuri
+- N. Tessa Pierce
 - Phoenix Aja Logan
 - Saba Nafees
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-31'
+date-meta: '2020-04-09'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
 
-  <meta name="dc.date" content="2020-03-31" />
+  <meta name="dc.date" content="2020-04-09" />
 
-  <meta name="citation_publication_date" content="2020-03-31" />
+  <meta name="citation_publication_date" content="2020-04-09" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -57,6 +58,14 @@ header-includes: '<!--
   <meta name="citation_author_orcid" content="0000-0002-5748-9594" />
 
   <meta name="twitter:creator" content="@pranuvemuri" />
+
+  <meta name="citation_author" content="N. Tessa Pierce" />
+
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0002-2942-5331" />
+
+  <meta name="twitter:creator" content="@saltyscientist" />
 
   <meta name="citation_author" content="Phoenix Aja Logan" />
 
@@ -98,11 +107,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/f2c4c7e1737b58616399b4c4a7a4d494a2e59c68/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/f2c4c7e1737b58616399b4c4a7a4d494a2e59c68/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/f2c4c7e1737b58616399b4c4a7a4d494a2e59c68/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -136,10 +145,10 @@ title: 'INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from com
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/57b6998651b7e98974be89f3b993de29fc503668/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/f2c4c7e1737b58616399b4c4a7a4d494a2e59c68/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@57b6998](https://github.com/czbiohub/de-novo-orthology-paper/tree/57b6998651b7e98974be89f3b993de29fc503668)
-on March 31, 2020.
+from [czbiohub/de-novo-orthology-paper@f2c4c7e](https://github.com/czbiohub/de-novo-orthology-paper/tree/f2c4c7e1737b58616399b4c4a7a4d494a2e59c68)
+on April 9, 2020.
 </em></small>
 
 ## Authors
@@ -166,6 +175,18 @@ on March 31, 2020.
     [pranuvemuri](https://twitter.com/pranuvemuri)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub
+  </small>
+
++ **N. Tessa Pierce** <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-2942-5331](https://orcid.org/0000-0002-2942-5331)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [bluegenes](https://github.com/bluegenes)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [saltyscientist](https://twitter.com/saltyscientist)<br>
+  <small>
+     Department of Population Health and Reproduction, University of California, Davis
+     · Funded by NSF 1711984
   </small>
 
 + **Phoenix Aja Logan** <br>
