@@ -28,6 +28,16 @@ authors:
     affiliations:
       - Data Sciences Platform, Chan Zuckerberg Biohub
   -
+   github: bluegenes
+   name: N. Tessa Pierce
+   initials: NTP
+   orcid: 0000-0002-2942-5331
+   twitter: saltyscientist
+   email: ntpierce@ucdavis.edu
+   affiliations:
+    - Department of Population Health and Reproduction, University of California, Davis
+   funders: NSF 1711984
+  -
     github: phoenixAja
     name: Phoenix Aja Logan
     initials: PAL
