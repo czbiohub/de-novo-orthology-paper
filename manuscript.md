@@ -19,13 +19,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta name="dc.title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="citation_title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta name="citation_title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta property="og:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta property="og:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta property="twitter:title" content="INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics" />
+  <meta property="twitter:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
   <meta name="dc.date" content="2020-04-10" />
 
@@ -107,11 +107,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/b2fb17459a1242218c6a64de81fad411b9a60ae5/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/b2fb17459a1242218c6a64de81fad411b9a60ae5/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/b2fb17459a1242218c6a64de81fad411b9a60ae5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -135,7 +135,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: 'INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from comparative single-cell RNA-seq transcriptomics'
+title: Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic 'dark matter' across species
 ...
 
 
@@ -145,11 +145,13 @@ title: 'INCOMPLETE DRAFT: Identification of *de novo* orthologous genes from com
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/b2fb17459a1242218c6a64de81fad411b9a60ae5/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@b2fb174](https://github.com/czbiohub/de-novo-orthology-paper/tree/b2fb17459a1242218c6a64de81fad411b9a60ae5)
+from [czbiohub/de-novo-orthology-paper@bdcd426](https://github.com/czbiohub/de-novo-orthology-paper/tree/bdcd42657d6996e90e7c7d20c45efbc5f0157314)
 on April 10, 2020.
 </em></small>
+
+[ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
 
 ## Authors
 
