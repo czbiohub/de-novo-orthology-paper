@@ -2,10 +2,10 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/de-novo-orthology-paper/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/de-novo-orthology-paper/manuscript.pdf)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://czbiohub.github.io/de-novo-orthology-paper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/czbiohub/de-novo-orthology-paper/workflows/Manubot/badge.svg)](https://github.com/czbiohub/de-novo-orthology-paper/actions)
-[![Travis Build Status](https://travis-ci.com/czbiohub/rootstock.svg?branch=master)](https://travis-ci.com/czbiohub/rootstock)
+[![Travis Build Status](https://travis-ci.com/czbiohub/de-novo-orthology-paper.svg?branch=master)](https://travis-ci.com/czbiohub/rootstock)
 [![Build status](https://ci.appveyor.com/api/projects/status/1bdhbuwg2v3s8bwi?svg=true)](https://ci.appveyor.com/project/olgabot/de-novo-orthology-paper)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
