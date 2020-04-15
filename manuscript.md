@@ -3,6 +3,7 @@ author-meta:
 - Olga Borisovna Botvinnik
 - Venkata Naga Pranathi Vemuri
 - N. Tessa Pierce
+- C. Titus Brown
 - Phoenix Aja Logan
 - Saba Nafees
 - Jim Karkanias
@@ -67,6 +68,14 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@saltyscientist" />
 
+  <meta name="citation_author" content="C. Titus Brown" />
+
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
+
+  <meta name="twitter:creator" content="@ctitusbrown" />
+
   <meta name="citation_author" content="Phoenix Aja Logan" />
 
   <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
@@ -107,11 +116,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -145,9 +154,9 @@ title: Sencha directly translates RNA-seq reads to enable functional prediction 
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@cfe1586](https://github.com/czbiohub/de-novo-orthology-paper/tree/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65)
+from [czbiohub/de-novo-orthology-paper@7919b6a](https://github.com/czbiohub/de-novo-orthology-paper/tree/7919b6a1075de924a423f7cfde1d69bd912734f3)
 on April 15, 2020.
 </em></small>
 
@@ -189,6 +198,18 @@ on April 15, 2020.
   <small>
      Department of Population Health and Reproduction, University of California, Davis
      · Funded by NSF 1711984
+  </small>
+
++ **C. Titus Brown** <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-6001-2677](https://orcid.org/0000-0001-6001-2677)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [ctb](https://github.com/ctb)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [ctitusbrown](https://twitter.com/ctitusbrown)<br>
+  <small>
+     Department of Population Health and Reproduction, University of California, Davis
+     · Funded by Moore Foundation GBMF4551
   </small>
 
 + **Phoenix Aja Logan** <br>
