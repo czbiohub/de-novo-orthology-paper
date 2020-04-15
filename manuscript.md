@@ -8,7 +8,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-04-10'
+date-meta: '2020-04-15'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-04-10" />
+  <meta name="dc.date" content="2020-04-15" />
 
-  <meta name="citation_publication_date" content="2020-04-10" />
+  <meta name="citation_publication_date" content="2020-04-15" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -107,11 +107,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -145,10 +145,10 @@ title: Sencha directly translates RNA-seq reads to enable functional prediction 
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/bdcd42657d6996e90e7c7d20c45efbc5f0157314/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@bdcd426](https://github.com/czbiohub/de-novo-orthology-paper/tree/bdcd42657d6996e90e7c7d20c45efbc5f0157314)
-on April 10, 2020.
+from [czbiohub/de-novo-orthology-paper@cfe1586](https://github.com/czbiohub/de-novo-orthology-paper/tree/cfe1586cae6dcfc6c25260f7f3b3ea624eaaba65)
+on April 15, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
