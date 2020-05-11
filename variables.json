@@ -9,17 +9,17 @@
       "MinHash"
     ],
     "lang": "en-US",
-    "date-meta": "2020-04-15",
+    "date-meta": "2020-05-11",
     "author-meta": [
       "Olga Borisovna Botvinnik",
       "Venkata Naga Pranathi Vemuri",
       "N. Tessa Pierce",
-      "C. Titus Brown",
       "Phoenix Aja Logan",
       "Saba Nafees",
+      "C. Titus Brown",
       "Jim Karkanias"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta name=\"citation_title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta property=\"og:title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta property=\"twitter:title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta name=\"dc.date\" content=\"2020-04-15\" />\n<meta name=\"citation_publication_date\" content=\"2020-04-15\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Olga Borisovna Botvinnik\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4412-7970\" />\n<meta name=\"twitter:creator\" content=\"@olgabot\" />\n<meta name=\"citation_author\" content=\"Venkata Naga Pranathi Vemuri\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5748-9594\" />\n<meta name=\"twitter:creator\" content=\"@pranuvemuri\" />\n<meta name=\"citation_author\" content=\"N. Tessa Pierce\" />\n<meta name=\"citation_author_institution\" content=\"Department of Population Health and Reproduction, University of California, Davis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2942-5331\" />\n<meta name=\"twitter:creator\" content=\"@saltyscientist\" />\n<meta name=\"citation_author\" content=\"C. Titus Brown\" />\n<meta name=\"citation_author_institution\" content=\"Department of Population Health and Reproduction, University of California, Davis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6001-2677\" />\n<meta name=\"twitter:creator\" content=\"@ctitusbrown\" />\n<meta name=\"citation_author\" content=\"Phoenix Aja Logan\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4581-0552\" />\n<meta name=\"twitter:creator\" content=\"@phoenixlogan\" />\n<meta name=\"citation_author\" content=\"Saba Nafees\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biological Sciences, Texas Tech University\" />\n<meta name=\"citation_author_institution\" content=\"Department of Mathematics &amp; Statistics, Texas Tech University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3292-7703\" />\n<meta name=\"twitter:creator\" content=\"@sabanafeesTTU\" />\n<meta name=\"citation_author\" content=\"Jim Karkanias\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8057-6055\" />\n<meta name=\"twitter:creator\" content=\"@jkarkanias\" />\n<link rel=\"canonical\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta property=\"og:url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta property=\"twitter:url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta name=\"citation_title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta property=\"og:title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta property=\"twitter:title\" content=\"Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species\" />\n<meta name=\"dc.date\" content=\"2020-05-11\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-11\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Olga Borisovna Botvinnik\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4412-7970\" />\n<meta name=\"twitter:creator\" content=\"@olgabot\" />\n<meta name=\"citation_author\" content=\"Venkata Naga Pranathi Vemuri\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5748-9594\" />\n<meta name=\"twitter:creator\" content=\"@pranuvemuri\" />\n<meta name=\"citation_author\" content=\"N. Tessa Pierce\" />\n<meta name=\"citation_author_institution\" content=\"Department of Population Health and Reproduction, University of California, Davis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2942-5331\" />\n<meta name=\"twitter:creator\" content=\"@saltyscientist\" />\n<meta name=\"citation_author\" content=\"Phoenix Aja Logan\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4581-0552\" />\n<meta name=\"twitter:creator\" content=\"@phoenixlogan\" />\n<meta name=\"citation_author\" content=\"Saba Nafees\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biological Sciences, Texas Tech University\" />\n<meta name=\"citation_author_institution\" content=\"Department of Mathematics &amp; Statistics, Texas Tech University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3292-7703\" />\n<meta name=\"twitter:creator\" content=\"@sabanafeesTTU\" />\n<meta name=\"citation_author\" content=\"C. Titus Brown\" />\n<meta name=\"citation_author_institution\" content=\"Department of Population Health and Reproduction, University of California, Davis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6001-2677\" />\n<meta name=\"twitter:creator\" content=\"@ctitusbrown\" />\n<meta name=\"citation_author\" content=\"Jim Karkanias\" />\n<meta name=\"citation_author_institution\" content=\"Data Sciences Platform, Chan Zuckerberg Biohub\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8057-6055\" />\n<meta name=\"twitter:creator\" content=\"@jkarkanias\" />\n<link rel=\"canonical\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta property=\"og:url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta property=\"twitter:url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -29,7 +29,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "April 15, 2020",
+    "date": "May 11, 2020",
     "authors": [
       {
         "github": "olgabot",
@@ -76,21 +76,6 @@
         ]
       },
       {
-        "github": "ctb",
-        "name": "C. Titus Brown",
-        "initials": "CTB",
-        "orcid": "0000-0001-6001-2677",
-        "twitter": "ctitusbrown",
-        "email": "ctbrown@ucdavis.edu",
-        "affiliations": [
-          "Department of Population Health and Reproduction, University of California, Davis"
-        ],
-        "funders": "Moore Foundation GBMF4551",
-        "affiliation_numbers": [
-          2
-        ]
-      },
-      {
         "github": "phoenixAja",
         "name": "Phoenix Aja Logan",
         "initials": "PAL",
@@ -120,6 +105,21 @@
           1,
           3,
           4
+        ]
+      },
+      {
+        "github": "ctb",
+        "name": "C. Titus Brown",
+        "initials": "CTB",
+        "orcid": "0000-0001-6001-2677",
+        "twitter": "ctitusbrown",
+        "email": "ctbrown@ucdavis.edu",
+        "affiliations": [
+          "Department of Population Health and Reproduction, University of California, Davis"
+        ],
+        "funders": "Moore Foundation GBMF4551",
+        "affiliation_numbers": [
+          2
         ]
       },
       {
@@ -160,15 +160,15 @@
       "repo_slug": "czbiohub/de-novo-orthology-paper",
       "repo_owner": "czbiohub",
       "repo_name": "de-novo-orthology-paper",
-      "commit": "7919b6a1075de924a423f7cfde1d69bd912734f3",
-      "triggering_commit": "7919b6a1075de924a423f7cfde1d69bd912734f3",
-      "build_url": "https://github.com/czbiohub/de-novo-orthology-paper/commit/7919b6a1075de924a423f7cfde1d69bd912734f3/checks",
+      "commit": "e5fa90befbce3022e233c17934683646f37ecb42",
+      "triggering_commit": "e5fa90befbce3022e233c17934683646f37ecb42",
+      "build_url": "https://github.com/czbiohub/de-novo-orthology-paper/commit/e5fa90befbce3022e233c17934683646f37ecb42/checks",
       "job_url": "https://github.com/czbiohub/de-novo-orthology-paper/runs/run1"
     },
     "html_url": "https://czbiohub.github.io/de-novo-orthology-paper/",
     "pdf_url": "https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf",
-    "html_url_versioned": "https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/",
-    "pdf_url_versioned": "https://czbiohub.github.io/de-novo-orthology-paper/v/7919b6a1075de924a423f7cfde1d69bd912734f3/manuscript.pdf",
+    "html_url_versioned": "https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/",
+    "pdf_url_versioned": "https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/manuscript.pdf",
     "manubot_version": "0.3.0",
     "rootstock_commit": null,
     "manuscript_stats": {
