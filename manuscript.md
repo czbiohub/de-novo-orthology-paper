@@ -9,7 +9,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-11'
+date-meta: '2020-07-28'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,9 +28,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-05-11" />
+  <meta name="dc.date" content="2020-07-28" />
 
-  <meta name="citation_publication_date" content="2020-05-11" />
+  <meta name="citation_publication_date" content="2020-07-28" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -116,11 +116,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -154,10 +154,10 @@ title: Sencha directly translates RNA-seq reads to enable functional prediction 
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/e5fa90befbce3022e233c17934683646f37ecb42/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@e5fa90b](https://github.com/czbiohub/de-novo-orthology-paper/tree/e5fa90befbce3022e233c17934683646f37ecb42)
-on May 11, 2020.
+from [czbiohub/de-novo-orthology-paper@97fe7f9](https://github.com/czbiohub/de-novo-orthology-paper/tree/97fe7f991f918996a671ed34b6e58efd521490b4)
+on July 28, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
@@ -253,8 +253,12 @@ We introduce `sencha`, a novel computational method for translating RNA-seq read
 As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
 Thus, we can identify orthologous cell types while discovering *de novo* orthologous genes across species.
 For widespread accessibility and usage, we implemented `sencha` into two distinct Nextflow pipelines following software best practices such as testing and continuous integration: (1) `nf-core/kmermaid` to compare translated transcriptomes across divergent species, and (2) `czbiohub/nf-predictorthologs` to infer functions of translated sequences.
-Using these pipelines, we were able to align transcriptomes and discover *de novo* homologous genes across species from a variety of divergence times: bulk RNA-seq transcriptomes across Amniotes (divergence ~312 millions of years ago), mouse single-cell RNA-seq with *Botryllus schlosseri* bulk RNA-seq, an early chordate (divergence ~684 millions of years ago), and Bilateria developmental atlases (divergence ~824 millions of years ago).
-By enabling analyses across divergent species' transcriptomes in an orthology-, genome- and gene annotation-agnostic manner, `sencha` illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.
+We applied these methods to the problem of understanding the unique ability of bats to harbor zoonotic diseases, especially coronaviruses such as SARS, MERS, SARS-CoV-2, an issue of fundamental importance to human health.
+However, important immunological genes such as Interferons have not been adequately identified in the bat genome and thus that aspect of bat biology could not be identified.
+With our methods, we were able to detect widespread expression of interferon genes in immune tissues of the SARS reservoir species, and the purported SARS-COV-2 species *Rhinolophus sinicus* (Chinese horseshoe bat) single-cell RNA-seq transcriptomes, as compared to human tissues.
+The *R. sinicus* interferon genes were slightly different from human interferon genes [...]
+Additionally, we were able to identify a lymphoid-like cell population in the early chordate *Botryllus schlosseri* bulk RNA-seq, an early chordate (divergence ~684 millions of years ago), and validate the expression of the lymphoid genes using [qRT-PCR].
+By enabling analyses across divergent species' transcriptomes in a genome-, gene annotation-, and orthology-agnostic manner, `sencha` illustrates the potential of non-model organisms in building the cell type evolutionary tree of life.
 
 
 ## Introduction
@@ -271,29 +275,22 @@ Using human amino acid sequences, we show that one can extract putative protein-
 We first apply this method on a bulk comparative transcriptomic dataset consisting of nine amniote species and six tissues [@doi:10.1038/nature10532], showing that we achieve similar clustering results as using only reads mapping to 1:1 orthologs or Hierarchical Orthologous Groups (HOGs) [@doi:10.1371/journal.pone.0053786; @doi:10.1093/bib/bbr034; @doi:10.1093/bioinformatics/btu492] of protein-coding genes, but are able to resolve ... which can only be seen by using the $k$-mer method.
 We further demonstrate the utility of this method by comparing transcriptomes from organisms diverged by approximately 676 million years [@url:http://timetree.org/]:  a single-cell atlas of a model organism, mouse from *Tabula Muris Senis* [@url:https://www.biorxiv.org/content/10.1101/661728v2], and bulk RNA-seq from *Botryllus schlosseri* [@doi:10.1038/s41586-018-0783-x], a colonial tunicate which exhibits cell populations similar to the myeloid immune lineage.
 Across this evolutionary distance, only XX 1:1 orthologous genes exist as found by ... and XX HOGs via orthologous matrix (OMA) [@doi:10.7717/peerj.6231; @doi:10.1093/bioinformatics/btx229]
-We show that the myeloid-like cells from *B. schlosseri* not only cluster with the myeloid immune cells from *Tabula Muris Senis*, we also find *de novo* orthologous genes, such as ...
+We show that the myeloid-like cells from *B. schlosseri* not only cluster with the myeloid immune cells from *Tabula Muris Senis* [@doi:10.1038/s41586-020-2496-1], we also find *de novo* orthologous genes, such as ...
 We find that using $k$-mers has the advantage of resolving ... in comparison to using read counts from 1:1 gene orthologs.
 Using $k$-mers, we were able to resolve cell types ... , which was hidden using read counts alone.
 Thus, we have shown the reference-free method using the $k$-mers from single cells is a novel, annotation-agnostic method for comparing cells across species that is capable of identifying cell states unique to a particular organism, helping to build the cell type evolutionary tree of life.
 
+Similar to $k$-mer based approaches for transcript quantification [@doi:10.1038/nbt.2862; @doi:10.1038/nbt.3519; @doi:10.1038/nmeth.4197], we implemented $k$-mer based gene expression analyses across species, but instead of using DNA $k$-mers, our critical innovation was using translated protein $k$-mers.
+We utilized sequence bloom trees (SBTs) [@doi:10.1038/nbt.3442] using a bottom-up approach to build them similar to previous work [@doi:10.1089/cmb.2017.0265; @doi:10.1089/cmb.2017.0258] to ensure localization of new datasets, meaning, if two leaves share a parent, they are guaranteed to be more similar than two leaves that do not share a parent.
 
 ## Results
 
 ![
 Figure 1.
-**A.** Overview of `nf-core/kmermaid` pipeline to compare DNA/RNA/protein sequences on k-mer content.
-1. If input is bam, extract per-cell sequences using `bam2fasta percell`.
-2. Predict amino acid sequence of each RNA-seq read using `sencha translate`.
-3. Randomly subsample amino acid k-mers via MinHash using `sourmash sketch`.
-4. Compare all k-mer sketches to one another using `sourmash compare` to compute cell-cell Jaccard similarities.
-5. Build sequence bloom tree using `sourmash index`.
-6. Build k-nearest neighbor graph using sequence bloom tree.
-7. Build UMAP off of KNN.
-**B.** Overview of `czbiohub/nf-predictorthologs` pipeline to query putative function of protein sequences.
-1. If input is bam, must also have a convert bam reads to raw fastq files using the `samtools fastq` subcommand (samtools version 1.9). If input is fastqs, go directly to second step.
-2. Trim adapters, poly-A, polyG using the `fastp` tool.
-3. Predict protein-coding sequence using khtools extract_coding, using conservative UniProt/SwissProt manually curated database as examples of known protein-coding sequences, for most stringent definition of protein-coding.
-4. Query predicted protein in permissive NCBI RefSeq non-redundant protein database for most complete search query.
+**A.** Overview of transcriptomic datasets from three species: *Homo sapiens* (human), *Rhinolophus sinicus* (Chinese horseshoe bat), and the early chordate *Botryllus schlosseri*. For *B. schlosseri*, we have FACS-purified bulk RNA-seq populations, including circulating cell types similar to mammalian hematopoietic stem cells (HCS), lymphoid, and myeloid populations. For *H. sapiens* and *R. sinicus*, we have droplet-based single-cell RNA-seq data for bone marrow, lung, intestine, spleen, thymus, and whole blood tissues.
+**B.** Overview of computational method. First, in the `kmermaid` pipeline, RNA-seq reads are translated to protein via the Sencha tool, then converted to a reduced amino acid alphabet, decomposed into $k$-mers, and then those $k$-mers are subsampled. Next, the `nf-predictorthologs` pipeline performs differential $k$-mer expression, much like differential gene expression, to find $k$-mers that are enriched in a population, and queries for those differential $k$-mers in databases to identify them.
+**C.** Reduced amino acid alphabets allow for flexibility in sequence $k$-mers. The Dayhoff 6-letter and hydrophobic-polar 2-letter encodings are reduced alphabets that retain biochemical properties of amino acids that have been conserved over many years. The single amino acid change of isoleucine (`I`) to leucine (`L`) in the protein sequence `PRTEINSEQ` to `PRTELNSEQ`, but has no effect in the Dayhoff or hydrophobic-polar encodings.
+**D.** Given a $k$-mer of interest, we can categorize the $k$-mer into several bins: (1) $k$-mer not present in genome assembly; (2) $k$-mer in genome assembly, but in a repetitive or multi-mapped sequence which are often ignored in downstream analyses; (3) $k$-mer uniquely mapped, but not in a gene; (4) $k$-mer in a gene, but not in a known ortholog; and (5) $k$-mer in a known ortholog.
 ](images/SVG/figure1.svg){#fig:fig1 width="100%"}
 
 
@@ -314,7 +311,15 @@ For each sample, we observed that shared k-mers appeared in 1:1 orthologous gene
 Overall, we observed XX de novo orthologs in each tissue.
 We removed genes that were already known to be orthologous. -->
 
-![Figure 2.](images/SVG/figure2.svg){#fig:fig2 width="100%"}
+![
+Figure 2.
+**A.** UMAP of human, bat, and *Botryllus* immune transcriptomes.
+**B.** Barplot of fraction of differntially expressed $k$-mers found in aligned or unaligned reads.
+**C.** UMAP of human, bat, and *Botryllus* immune transcriptomes, colored by interferon-like gene expression.
+**C.** Alignment of assembled Bat interferon protein sequences compared to known human interferon protein sequences.
+**E.** UMAP of human, bat, and *Botryllus* immune transcriptomes, colored by lymphoid gene marker expression.
+**F.** Experimental validation of lymphoid gene expression in Botryllus.
+](images/SVG/figure2.svg){#fig:fig2 width="100%"}
 
 
 To identify novel orthologs among annotated species related by ~300 million years, we first applied these methods on a seminal comparative transcriptomics dataset of human,  chimpanzee, mouse, orangutan, bonobo, gorilla, macaque, opossum, platypus, and chicken [@doi:10.1038/nature10532]. We found ..
@@ -502,7 +507,9 @@ Functional group:  KMKKMMM
 #### `sencha translate`
 
 
-![Overview of `sencha translate` **A.** First, each read is translated into all six possible protein-coding translation frames. Next, reading frames with stop codons are eliminated. Each protein-coding frame is $k$-merized, then the fraction of $k$-mers which appear in the known protein-coding database is computed. Frames which contain a fraction of coding frames exceeding the threshold are inferred to be putatively protein-coding. **B.** Worked example of an RNA-seq read with a single putatitive reading frame. **C.** Worked example of an RNA-seq read with multiple reading frames, and a `UCSC` genome browser shot of the read showing that both reading frames are present in the annotation.](images/SVG/supplemental_figure1.svg){#sfig1:supplemental_figure1 tag="supplemental_figure1" width="100%"}
+![
+Supplemental Figure 1: Overview of `sencha translate` **B.** First, each read is translated into all six possible protein-coding translation frames. Next, reading frames with stop codons are eliminated. Each protein-coding frame is $k$-merized, then the fraction of $k$-mers which appear in the known protein-coding database is computed. Frames which contain a fraction of coding frames exceeding the threshold are inferred to be putatively protein-coding. **B.** Worked example of an RNA-seq read with a single putatitive reading frame. **C.** Worked example of an RNA-seq read with multiple reading frames, and a `UCSC` genome browser shot of the read showing that both reading frames are present in the annotation.
+](images/SVG/supplemental_figure1.svg){#sfig1:supplemental_figure1 tag="supplemental_figure1" width="100%"}
 
 
 ##### Set Jaccard threshold of `translate` by controlling false positive rate of protein-coding prediction
@@ -563,6 +570,28 @@ $$
 \end{align}
 $$  {#eq:fpr_protein_coding}
 
+
+Probability of a random $k$-mer being present in a perfect protein index
+$$
+\frac{N}{\left| \Sigma \right| ^k}
+$$  {#eq:prob_kmer_in_index}
+
+Probability of *all* $L - k + 1$ $k$-mers of a read being present in a perfect protein index
+$$
+\left( \frac{N}{\left| \Sigma \right| ^k} \right) ^ { L - k + 1 }
+$$  {#eq:prob_kmer_in_index}
+
+Probability of a random $k$-mer being present in an *imperfect* protein bloom filter with false positive rate or "collision rate" $p_{\mathrm{collision}}$
+$$
+\frac{N}{p_{\mathrm{collision}} * \left| \Sigma \right| ^k}
+$$  {#eq:prob_kmer_in_index}
+
+Probability of *all* $L - k + 1$ $k$-mers of a read being present in an *imperfect* protein bloom filter with false positive rate or "collision rate" $p_{\mathrm{collision}}$
+$$
+\left( \frac{N}{p_{\mathrm{collision}} * \left| \Sigma \right| ^k} \right) ^ { L - k + 1 }
+$$  {#eq:prob_kmer_in_index}
+
+
 ##### Similarity thresholds for percentage of matching $k$-mers
 
 A single SNP in a read affects $k$ $k$-mers.
@@ -614,7 +643,31 @@ This means, the adapters should be trimmed, and if there was a negative insert s
 
 <!-- ## Figure 3 -- Overview of `kmermaid` and `predictorthologs` pipelines -->
 
-![**A.** Overview of the `kmermaid` pipeline. (**a**, **b**, **c**) `kmermaid` consists of a protein-coding prediction phase (**a**) that is invoked by the command `khtools extract_coding`, a k-mer sketch computation phase (**b**) invoked by the command `sourmash sketch`, a signature similarity comparison phase (**c**) invoked by the command `sourmash compare`, and an optional database-creation phase (**d**) invoked by the command `sourmash index`. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent $k$-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide $k$-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide $k$-mers between all pairs of samples.](images/SVG/supplementary_figure3.svg){#fig:sfig3 width="100%"}
+![**A.** Overview of the `kmermaid` pipeline. (**a**, **b**, **c**) `kmermaid` consists of a protein-coding prediction phase (**a**) that is invoked by the command `sencha translate`, a k-mer sketch computation phase (**b**) invoked by the command `sourmash sketch`, a signature similarity comparison phase (**c**) invoked by the command `sourmash compare`, and an optional database-creation phase (**d**) invoked by the command `sourmash index`. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent $k$-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide $k$-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide $k$-mers between all pairs of samples.](images/SVG/supplementary_figure3.svg){#fig:sfig3 width="100%"}
+
+
+![
+Supplemental Figure X.
+**A.** Overview of `nf-core/kmermaid` pipeline to compare DNA/RNA/protein sequences on k-mer content.
+1. If input is bam, extract per-cell sequences using `bam2fasta percell`.
+2. Predict amino acid sequence of each RNA-seq read using `sencha translate`.
+3. Randomly subsample amino acid k-mers via MinHash using `sourmash sketch`.
+4. Compare all k-mer sketches to one another using `sourmash compare` to compute cell-cell Jaccard similarities.
+5. Build sequence bloom tree using `sourmash index`.
+6. Build k-nearest neighbor graph using sequence bloom tree.
+7. Build UMAP off of KNN.
+](images/SVG/kmermaid_workflow.svg){#fig:kmermaid width="100%"}
+
+
+
+![
+Supplemental Figure X.
+**B.** Overview of `czbiohub/nf-predictorthologs` pipeline to query putative function of protein sequences.
+1. If input is bam, must also have a convert bam reads to raw fastq files using the `samtools fastq` subcommand (samtools version 1.9). If input is fastqs, go directly to second step.
+2. Trim adapters, poly-A, polyG using the `fastp` tool.
+3. Predict protein-coding sequence using khtools extract_coding, using conservative UniProt/SwissProt manually curated database as examples of known protein-coding sequences, for most stringent definition of protein-coding.
+4. Query predicted protein in permissive NCBI RefSeq non-redundant protein database for most complete search query.
+](images/SVG/predictorthologs_workflow.svg){#fig:predictorthologs width="100%"}
 
 
 
