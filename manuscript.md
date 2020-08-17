@@ -9,7 +9,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-07-28'
+date-meta: '2020-08-17'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,9 +28,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-07-28" />
+  <meta name="dc.date" content="2020-08-17" />
 
-  <meta name="citation_publication_date" content="2020-07-28" />
+  <meta name="citation_publication_date" content="2020-08-17" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -116,11 +116,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/acc67cf34fd7e206387eef9fd1c1cf7a31b14c45/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/acc67cf34fd7e206387eef9fd1c1cf7a31b14c45/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/acc67cf34fd7e206387eef9fd1c1cf7a31b14c45/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -154,10 +154,10 @@ title: Sencha directly translates RNA-seq reads to enable functional prediction 
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/97fe7f991f918996a671ed34b6e58efd521490b4/))
+([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/acc67cf34fd7e206387eef9fd1c1cf7a31b14c45/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@97fe7f9](https://github.com/czbiohub/de-novo-orthology-paper/tree/97fe7f991f918996a671ed34b6e58efd521490b4)
-on July 28, 2020.
+from [czbiohub/de-novo-orthology-paper@acc67cf](https://github.com/czbiohub/de-novo-orthology-paper/tree/acc67cf34fd7e206387eef9fd1c1cf7a31b14c45)
+on August 17, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
@@ -249,10 +249,19 @@ on July 28, 2020.
 
 ## Abstract
 
-We introduce `sencha`, a novel computational method for translating RNA-seq reads to putative protein sequence.
+We introduce `sencha`, a novel computational method for extracting high-confidence protein-coding sequences from RNA-seq data into non-coding reads and protein-coding reads which can then be manipulated to reduced amino acid alphabets which are directly comparable across large evolutionary distances.
 As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
-Thus, we can identify orthologous cell types while discovering *de novo* orthologous genes across species.
-For widespread accessibility and usage, we implemented `sencha` into two distinct Nextflow pipelines following software best practices such as testing and continuous integration: (1) `nf-core/kmermaid` to compare translated transcriptomes across divergent species, and (2) `czbiohub/nf-predictorthologs` to infer functions of translated sequences.
+<!-- Thus, we can identify orthologous cell types while discovering *de novo* orthologous genes across species. -->
+Thus, we first leverage short 15-20-long amino acid words in reduced amino acid alphabets to identify homologous cell types across organisms without the need for a reference genome.
+Second, we use the homologous cell types from before to find *de novo* homologous genes across all species, within similar cell types.
+<!-- this is actually really cool but a fairly complex concept. maybe split it up?
+
+1 very cool idea is that you can, in an automated fashion, leverage the idea of a reduced AA code in K-mers to ID similar cell types across organisms w/o reference genomes
+
+a second cool feature, resulting from the first, is that you can do this discovery piece.
+
+i feel like impact of each gets lost by having such an efficient sentence.. -->
+
 We applied these methods to the problem of understanding the unique ability of bats to harbor zoonotic diseases, especially coronaviruses such as SARS, MERS, SARS-CoV-2, an issue of fundamental importance to human health.
 However, important immunological genes such as Interferons have not been adequately identified in the bat genome and thus that aspect of bat biology could not be identified.
 With our methods, we were able to detect widespread expression of interferon genes in immune tissues of the SARS reservoir species, and the purported SARS-COV-2 species *Rhinolophus sinicus* (Chinese horseshoe bat) single-cell RNA-seq transcriptomes, as compared to human tissues.
@@ -263,11 +272,28 @@ By enabling analyses across divergent species' transcriptomes in a genome-, gene
 
 ## Introduction
 
-Single-cell RNA-sequencing is a powerful technology for identifying cell types in a variety of species.
-However, the task of identifying even known cell types in species with poorly annotated genomes is nontrivial, as 99.999% of the predicted 8.7 million Eukaryotic species on Earth have no submitted genome assembly [@doi:10.1371/journal.pbio.1001127; @url:https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/] and identifying orthologous genes, which remains an open problem [@doi:10.1038/nrg.2016.127; @doi:10.1146/annurev-cellbio-100616-060818].
+
+
+
+<!-- Maybe what I'm looking for here is like (1) Why do we care about ID'ing different cell populations (2) how is it normally done? (3) what are the limitations (4) what are new enabling technologies that are untapped to fix the limitations (5) what is your hypothesis (that you can use K-mers to translate scRNAseq from non-ref organisms (6) a brief outline of what you did.
+
+the rest of this could then be blended into the results section to better explain (closer to the data) why you did what you did (then show the results right after the "intro" like text)
+-->
+
+
+
+<!-- so you're like (1) ID'ing cell types is an important thing (2) scRNA seq is super helpful for this (3) BUT #2 is only true really if you have a reference genome (4) there is a ton of shit we'd want to have cell type IDs for buy dont have ref. genomes. BUT we do have scRNA from them (5) therefore, there is an outstanding need to develop strategies to learn cell types in species w/o first generating genomes (6) #leaftea -->
+
+Identifying cell types in multicellular animals (metazoans) enables studying the broad array of cell types available to living creatures, and can help understand human disease by seeing cell types that are adjacent to human "normal" cell types, but resemble human disease cell types.
+Current methods for identifying cell types use single-cell RNA-sequencing, however, these methods require three things: (1) high-quality genome assembly, (2) high-quality predicted gene annotations and (3) high-quality orthologous gene mappings across species.
+However, the task of identifying even known cell types in species with poorly annotated genomes is nontrivial, as 99.999% of the predicted 8.7 million Eukaryotic species on Earth have no submitted genome assembly [@doi:10.1371/journal.pbio.1001127; @url:https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/] and even fewer have gene predictions and orthologous gene mappings to human, which remains an open problem [@doi:10.1038/nrg.2016.127; @doi:10.1146/annurev-cellbio-100616-060818].
+But, we can nontheless generate single-cell RNA-seq data from these species with poorly annotated genomes, and if we can leverage the annotations from existing organisms, we can
 Thus, there is an unmet need to quantitatively compare single-cell transcriptomes across species, without the need for orthologous gene mapping, gene annotations, or a reference genome.
 Short, $k$-long sequence substrings, or $k$-mers, have been proposed for clustering single cells [@url:https://doi.org/10.1101/723833] and here we implemented $k$-mers from putatitvely translated RNA-seq reads with reduced amino acid alphabets [@doi:10.1093/bioinformatics/btp164 @doi:10.1093/gigascience/giz118 @doi:10.1093/bioinformatics/10.4.453; @10.1186/1471-2105-12-159; @doi:10.1093/protein/13.3.149; @doi:10.1093/bioinformatics/btp164; @doi:10.1093/nar/gkh180], to find shared cell types across species, and further identify *de novo* orthologous genes by querying the predicted protein sequences to a reference database.
 This method relies solely on divergence time between species, which we show can be estimated from RNA-seq nucleotide $k$-mers (Supplemental Figure [@sfig:sfig1]).
+As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
+
+As the direct assignment of protein-coding sequence skips both traditional alignment and gene orthology assignment it can a) be applied to transcriptomes from organisms with no or poorly annotated genomes, and b) identify putative functions of protein sequences contributing to shared cell types.
 
 We benchmark the genome-agnostic method on the Quest for Orthologs Opisthokonta dataset, showing that $k$-mers from reduced amino acid alphabets are sufficient to estimate orthology.
 Using human amino acid sequences, we show that one can extract putative protein-coding reads from 35 Opisthokonta species in Quest for Orthologs, and present the best $k$-mer size and alphabet for different divergence times.
@@ -282,6 +308,8 @@ Thus, we have shown the reference-free method using the $k$-mers from single cel
 
 Similar to $k$-mer based approaches for transcript quantification [@doi:10.1038/nbt.2862; @doi:10.1038/nbt.3519; @doi:10.1038/nmeth.4197], we implemented $k$-mer based gene expression analyses across species, but instead of using DNA $k$-mers, our critical innovation was using translated protein $k$-mers.
 We utilized sequence bloom trees (SBTs) [@doi:10.1038/nbt.3442] using a bottom-up approach to build them similar to previous work [@doi:10.1089/cmb.2017.0265; @doi:10.1089/cmb.2017.0258] to ensure localization of new datasets, meaning, if two leaves share a parent, they are guaranteed to be more similar than two leaves that do not share a parent.
+
+For widespread accessibility and usage, we implemented `sencha` into two distinct Nextflow pipelines following software best practices such as testing and continuous integration: (1) `nf-core/kmermaid` to compare translated transcriptomes across divergent species, and (2) `czbiohub/nf-predictorthologs` to infer functions of translated sequences.
 
 ## Results
 
@@ -311,22 +339,33 @@ For each sample, we observed that shared k-mers appeared in 1:1 orthologous gene
 Overall, we observed XX de novo orthologs in each tissue.
 We removed genes that were already known to be orthologous. -->
 
+To recapitulate known biology demonstrated by multi-tissue, whole-organism cell atlases related within the mammalian suborder Euarchontoglires, whose most recent common ancestor is between 85 to 95 million years ago, we applied these methods to a mouse single-cell RNA-seq atlas, *Tabula Muris Senis* [@url:https://www.biorxiv.org/content/10.1101/661728v2], a mouse lemur single-cell RNA-seq atlas, *Tabula Microcebus* [@https://www.nature.com/articles/d41586-019-01789-0], and a multi-tissue human cell atlas.
+
 ![
 Figure 2.
-**A.** UMAP of human, bat, and *Botryllus* immune transcriptomes.
-**B.** Barplot of fraction of differntially expressed $k$-mers found in aligned or unaligned reads.
-**C.** UMAP of human, bat, and *Botryllus* immune transcriptomes, colored by interferon-like gene expression.
-**C.** Alignment of assembled Bat interferon protein sequences compared to known human interferon protein sequences.
-**E.** UMAP of human, bat, and *Botryllus* immune transcriptomes, colored by lymphoid gene marker expression.
-**F.** Experimental validation of lymphoid gene expression in Botryllus.
+**A.** Left, UMAP of human, mouse lemur, and mouse transcriptomes using $k$-mers similarity in reduced amino acid space, BBKNN-corrected for species. Right, UMAP of human, mouse lemur, and mouse transcriptomes using counts, BBKNN-corrected for species.
+**B.** Silhouette plot of Leiden clustering on $k$-mers, relative to known cell ontology classes.
+**C.** Comparison of gene lists from differential $k$-mer expression, as compared to differential gene expression.
+**D.** Barplot showing whether differentially expressed k-mers were found in the genome assembly, and whether they were in a gene annotated as an ortholog, or not.
 ](images/SVG/figure2.svg){#fig:fig2 width="100%"}
 
 
-To identify novel orthologs among annotated species related by ~300 million years, we first applied these methods on a seminal comparative transcriptomics dataset of human,  chimpanzee, mouse, orangutan, bonobo, gorilla, macaque, opossum, platypus, and chicken [@doi:10.1038/nature10532]. We found ..
+<!-- To identify novel orthologs among annotated species related by ~300 million years, we first applied these methods on a seminal comparative transcriptomics dataset of human,  chimpanzee, mouse, orangutan, bonobo, gorilla, macaque, opossum, platypus, and chicken [@doi:10.1038/nature10532]. We found .. -->
 
-To identify common cell types from a known cell atlas to a less well-annotated species related by ~700 million years, we applied these methods to a mouse single-cell RNA-seq atlas, *Tabula Muris Senis* [@url:https://www.biorxiv.org/content/10.1101/661728v2], and bulk RNA-seq from *Botryllus schlosseri* [@doi:10.1038/s41586-018-0783-x]. We found that the signal for myeloid cell types is strongly conserved when using a protein k-mer size of XX and a XX amino acid encoding. We also find ..
+To identify molecular cell types unique to the Chinese horseshoe bat within mammals, we added a multi-organ, whole organism single-cell RNA-seq atlas of *Rhinolophus sinicus*. We found expression of interferon genes, which have not been identified in the bat genome, but we were able to detect them in the transcriptome. In the bat scrnaseq paper, they performed qPCR to show expression of interferon genes, even though they weren't identified in the genome, to show those genes do truly exist.
 
-To identify common developmental trajectories across >1000 million years of divergence, we merged transcriptomes from *Hydra* [@doi:10.1126/science.aav9314], zebrafish [@doi:10.1126/science.aar4362], and mouse [@doi:10.1038/s41586-019-0969-x]. We demonstrate that the transcriptional signal from ectoderm, mesoderm, and endoderm are conserved when using a protein k-mer size of XX and an XX amino acid encoding.
+<!-- To identify common developmental trajectories across >1000 million years of divergence, we merged transcriptomes from *Hydra* [@doi:10.1126/science.aav9314], zebrafish [@doi:10.1126/science.aar4362], and mouse [@doi:10.1038/s41586-019-0969-x]. We demonstrate that the transcriptional signal from ectoderm, mesoderm, and endoderm are conserved when using a protein k-mer size of XX and an XX amino acid encoding. -->
+
+![
+Figure 3.
+**A.** Left, UMAP of human, mouse lemur, mouse, and *Rhinolophus sinicus* (Chinese horseshoe bat) transcriptomes using $k$-mers similarity in reduced amino acid space, BBKNN-corrected for species. Colored by cell compartment.
+**B.** Barplot showing whether differentially expressed k-mers were found in the genome assembly, and whether they were in a gene annotated as an ortholog, or not.
+**C.** UMAP of human, mouse lemur, mouse and bat immune transcriptomes, colored by interferon-like gene expression.
+**D.** Alignment of assembled Bat interferon protein sequences with known human sequences.
+](images/SVG/figure3.svg){#fig:fig3 width="100%"}
+
+
+
 
 
 
