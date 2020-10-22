@@ -1578,6 +1578,7 @@
   {
     "publisher": "The Royal Society",
     "issue": "1684",
+    "abstract": "<jats:p>Molecular biology has provided a rich dataset to develop hypotheses of nervous system evolution. The startling patterning similarities between distantly related animals during the development of their central nervous system (CNS) have resulted in the hypothesis that a CNS with a single centralized medullary cord and a partitioned brain is homologous across bilaterians. However, the ability to precisely reconstruct ancestral neural architectures from molecular genetic information requires that these gene networks specifically map with particular neural anatomies. A growing body of literature representing the development of a wider range of metazoan neural architectures demonstrates that patterning gene network complexity is maintained in animals with more modest levels of neural complexity. Furthermore, a robust phylogenetic framework that provides the basis for testing the congruence of these homology hypotheses has been lacking since the advent of the field of ‘evo-devo’. Recent progress in molecular phylogenetics is refining the necessary framework to test previous homology statements that span large evolutionary distances. In this review, we describe recent advances in animal phylogeny and exemplify for two neural characters—the partitioned brain of arthropods and the ventral centralized nerve cords of annelids—a test for congruence using this framework. The sequential sister taxa at the base of Ecdysozoa and Spiralia comprise small, interstitial groups. This topology is not consistent with the hypothesis of homology of tripartitioned brain of arthropods and vertebrates as well as the ventral arthropod and rope-like ladder nervous system of annelids. There can be exquisite conservation of gene regulatory networks between distantly related groups with contrasting levels of nervous system centralization and complexity. Consequently, the utility of molecular characters to reconstruct ancestral neural organization in deep time is limited.</jats:p>",
     "DOI": "10.1098/rstb.2015.0045",
     "type": "article-journal",
     "page": "20150045",
@@ -1615,6 +1616,7 @@
   {
     "publisher": "The Royal Society",
     "issue": "1713",
+    "abstract": "<jats:p>The principle of homology is central to conceptualizing the comparative aspects of morphological evolution. The distinctions between homologous or non-homologous structures have become blurred, however, as modern evolutionary developmental biology (evo-devo) has shown that novel features often result from modification of pre-existing developmental modules, rather than arising completely de novo. With this realization in mind, the term ‘deep homology’ was coined, in recognition of the remarkably conserved gene expression during the development of certain animal structures that would not be considered homologous by previous strict definitions. At its core, it can help to formulate an understanding of deeper layers of ontogenetic conservation for anatomical features that lack any clear phylogenetic continuity. Here, we review deep homology and related concepts in the context of a gene expression-based homology discussion. We then focus on how these conceptual frameworks have profited from the recent rise of high-throughput next-generation sequencing. These techniques have greatly expanded the range of organisms amenable to such studies. Moreover, they helped to elevate the traditional gene-by-gene comparison to a transcriptome-wide level. We will end with an outlook on the next challenges in the field and how technological advances might provide exciting new strategies to tackle these questions.</jats:p>\n          <jats:p>This article is part of the themed issue ‘Evo-devo in the genomics era, and the origins of morphological diversity’.</jats:p>",
     "DOI": "10.1098/rstb.2015.0475",
     "type": "article-journal",
     "page": "20150475",
@@ -2500,8 +2502,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2542,8 +2544,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2583,8 +2585,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2597,15 +2599,15 @@
     "container-title": "Wikipedia",
     "source": "Wikipedia",
     "abstract": "The opisthokonts (Greek: ὀπίσθιος (opísthios) = \"rear, posterior\" + κοντός (kontós) = \"pole\" i.e. \"flagellum\") are a broad group of eukaryotes, including both the animal and fungus kingdoms. The opisthokonts, previously called the \"Fungi/Metazoa group\", are generally recognized as a clade.  Opisthokonts together with Apusomonadida and Breviata comprise the larger clade Obazoa.",
-    "URL": "https://en.wikipedia.org/w/index.php?title=Opisthokont&oldid=959328343",
-    "note": "Page Version ID: 959328343\nThis CSL JSON Item was automatically generated by Manubot v0.3.0 using citation-by-identifier.\nstandard_id: url:https://en.wikipedia.org/wiki/Opisthokont",
+    "URL": "https://en.wikipedia.org/w/index.php?title=Opisthokont&oldid=984839245",
+    "note": "Page Version ID: 984839245\nThis CSL JSON Item was automatically generated by Manubot v0.3.0 using citation-by-identifier.\nstandard_id: url:https://en.wikipedia.org/wiki/Opisthokont",
     "language": "en",
     "issued": {
       "date-parts": [
         [
           "2020",
-          5,
-          28
+          10,
+          22
         ]
       ]
     },
@@ -2613,8 +2615,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     }
@@ -2681,8 +2683,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2697,8 +2699,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2713,8 +2715,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },
@@ -2730,8 +2732,8 @@
       "date-parts": [
         [
           "2020",
-          8,
-          19
+          10,
+          22
         ]
       ]
     },

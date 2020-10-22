@@ -9,7 +9,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-19'
+date-meta: '2020-10-22'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,9 +28,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-08-19" />
+  <meta name="dc.date" content="2020-10-22" />
 
-  <meta name="citation_publication_date" content="2020-08-19" />
+  <meta name="citation_publication_date" content="2020-10-22" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -104,23 +104,23 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@jkarkanias" />
 
-  <link rel="canonical" href="https://czbiohub.github.io/de-novo-orthology-paper/" />
+  <link rel="canonical" href="https://czbiohub.github.io/kmer-homology-paper/" />
 
-  <meta property="og:url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
+  <meta property="og:url" content="https://czbiohub.github.io/kmer-homology-paper/" />
 
-  <meta property="twitter:url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
+  <meta property="twitter:url" content="https://czbiohub.github.io/kmer-homology-paper/" />
 
-  <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/de-novo-orthology-paper/" />
+  <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/kmer-homology-paper/" />
 
-  <meta name="citation_pdf_url" content="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
+  <meta name="citation_pdf_url" content="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/de-novo-orthology-paper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/de-novo-orthology-paper/v/de03029d26c1274ef8d61874c114abd0dc7b19f0/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/cb27e72cb28bdc201a6693f8f3463072313fdf4f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/de03029d26c1274ef8d61874c114abd0dc7b19f0/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/cb27e72cb28bdc201a6693f8f3463072313fdf4f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/de-novo-orthology-paper/v/de03029d26c1274ef8d61874c114abd0dc7b19f0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/cb27e72cb28bdc201a6693f8f3463072313fdf4f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -154,10 +154,10 @@ title: Sencha directly translates RNA-seq reads to enable functional prediction 
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/de-novo-orthology-paper/v/de03029d26c1274ef8d61874c114abd0dc7b19f0/))
+([permalink](https://czbiohub.github.io/kmer-homology-paper/v/cb27e72cb28bdc201a6693f8f3463072313fdf4f/))
 was automatically generated
-from [czbiohub/de-novo-orthology-paper@de03029](https://github.com/czbiohub/de-novo-orthology-paper/tree/de03029d26c1274ef8d61874c114abd0dc7b19f0)
-on August 19, 2020.
+from [czbiohub/kmer-homology-paper@cb27e72](https://github.com/czbiohub/kmer-homology-paper/tree/cb27e72cb28bdc201a6693f8f3463072313fdf4f)
+on October 22, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
