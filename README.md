@@ -1,8 +1,8 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com//tree/gh-pages) branch hosts the contents of this directory at <https://czbiohub.github.io/de-novo-orthology-paper/>.
-The permalink for this webpage version is <https://czbiohub.github.io/de-novo-orthology-paper/v//>.
-To redirect to the permalink for the latest manuscript version at anytime, use the link <https://czbiohub.github.io/de-novo-orthology-paper/v/freeze/>.
+The [`gh-pages`](https://github.com//tree/gh-pages) branch hosts the contents of this directory at <https://czbiohub.github.io/kmer-homology-paper/>.
+The permalink for this webpage version is <https://czbiohub.github.io/kmer-homology-paper/v//>.
+To redirect to the permalink for the latest manuscript version at anytime, use the link <https://czbiohub.github.io/kmer-homology-paper/v/freeze/>.
 
 ## Files
 
