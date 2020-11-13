@@ -1,11 +1,15 @@
 ---
-title: "Sencha directly translates RNA-seq reads to enable functional prediction of transcriptomic 'dark matter' across species"
+title: "$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic 'dark matter' across species"
 keywords:
   - comparative transcriptomics
   - single-cell RNA-seq
   - k-mer
   - hashing
   - MinHash
+  - gene orthology
+  - orthologous genes
+  - reduced amino acid alphabet
+  - degenerate amino acid alphabet
 lang: en-US
 authors:
   -
