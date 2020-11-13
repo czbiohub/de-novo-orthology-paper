@@ -4,6 +4,7 @@ aliqua
 aliquip
 alloowed
 amet
+Amino
 anim
 aute
 bam
@@ -15,6 +16,7 @@ bioinformatics
 Biorxiv
 BLOSUM
 bluegenes
+bonobo
 Borisovna
 Botryllus
 botvinnik
@@ -26,6 +28,8 @@ cillum
 clade
 clades
 codings
+codon
+codons
 comaparative
 commodo
 consectetur
@@ -41,7 +45,7 @@ culpa
 cupidatat
 dataset
 datasets
-dayhoff
+Dayhoff
 deserunt
 differentially
 dignificance
@@ -67,7 +71,7 @@ extradct
 FACS
 fastq
 fastqs
-FPR
+fpr
 Friedberg
 fugiat
 GBMF
@@ -128,6 +132,7 @@ misclassifications
 mollit
 monocytes
 mujltiple
+multi
 Muris
 myeloid
 Nafees
@@ -140,8 +145,9 @@ Noncoding
 nostrud
 novo
 nucleobase
+Nucleotide
 nulla
-Nullomers
+nullomers
 occaecat
 officia
 olgabot
@@ -158,6 +164,8 @@ Pandoc’s
 paramteres
 pariatur
 pariwise
+peptide
+peptides
 perfolrmed
 phoenixAja
 phoenixlogan
@@ -196,6 +204,7 @@ Saba
 sabanafeesTTU
 saltyscientist
 samtools
+sapiens
 SBT
 SBTs
 scalable
@@ -213,7 +222,7 @@ sinicus
 sint
 snafees
 SNP
-Sourmash
+sourmash
 subcommand
 subsample
 subsampled
@@ -240,7 +249,7 @@ ue
 ullamco
 UMAP
 unannotated
-UniProt
+uniprot
 UniProtKB
 uniref
 UTR
@@ -250,5 +259,6 @@ veniam
 Venkata
 voluptate
 widespreadly
+workflow
 zoonotic
 Zuckerberg
