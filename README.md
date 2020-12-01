@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/czbiohub/kmer-homology-paper/tree/gh-pages) branch hosts the contents of this directory at <https://czbiohub.github.io/kmer-homology-paper/>.
-The permalink for this webpage version is <https://czbiohub.github.io/kmer-homology-paper/v/c5c040aedf50447eeb61fa8fbfb79819d3222a70/>.
+The permalink for this webpage version is <https://czbiohub.github.io/kmer-homology-paper/v/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://czbiohub.github.io/kmer-homology-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c5c040aedf50447eeb61fa8fbfb79819d3222a70`](https://github.com/czbiohub/kmer-homology-paper/commit/c5c040aedf50447eeb61fa8fbfb79819d3222a70).
+[`12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b`](https://github.com/czbiohub/kmer-homology-paper/commit/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b).
