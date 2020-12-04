@@ -164,14 +164,14 @@
       }
     ],
     "ci_source": {
-      "provider": "github",
+      "provider": "travis",
       "repo_slug": "czbiohub/kmer-homology-paper",
       "repo_owner": "czbiohub",
       "repo_name": "kmer-homology-paper",
       "commit": "b98d97ab7215da70ce7c9dc863eb0b62daf5194f",
       "triggering_commit": "b98d97ab7215da70ce7c9dc863eb0b62daf5194f",
-      "build_url": "https://github.com/czbiohub/kmer-homology-paper/commit/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/checks",
-      "job_url": "https://github.com/czbiohub/kmer-homology-paper/runs/run3"
+      "build_url": "https://travis-ci.com/czbiohub/kmer-homology-paper/builds/206654170",
+      "job_url": "https://travis-ci.com/czbiohub/kmer-homology-paper/jobs/454564369"
     },
     "html_url": "https://czbiohub.github.io/kmer-homology-paper/",
     "pdf_url": "https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf",
