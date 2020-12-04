@@ -1,0 +1,18 @@
+Homo sapiens
+Mus musculus
+Nannospalax gaili
+Lipotes vexillifer
+Peromyscus Maniculatus bairdii
+Tupaia chinensis
+Rhinolophus sinicus
+Oryctolagus cuniculus
+Erinaceus europaeus
+Sorex araneus
+Ornithorhynchus anatinus
+Aotus nancymaae
+Ceratotherium simum simum
+Chinchilla lanigera
+Phascolarctos cinereus
+Macaca mulatta
+Camelus bactrianus
+Capra hircus
