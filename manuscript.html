@@ -11,7 +11,7 @@
   <meta name="author" content="Saba Nafees" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="Jim Karkanias" />
-  <meta name="dcterms.date" content="2020-12-01" />
+  <meta name="dcterms.date" content="2020-12-04" />
   <meta name="keywords" content="comparative transcriptomics, single-cell RNA-seq, k-mer, hashing, MinHash, gene orthology, orthologous genes, reduced amino acid alphabet, degenerate amino acid alphabet" />
   <title>k-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic ‘dark matter’ across species</title>
   <style>
@@ -34,8 +34,8 @@
   <meta name="citation_title" content="$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic &#39;dark matter&#39; across species" />
   <meta property="og:title" content="$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic &#39;dark matter&#39; across species" />
   <meta property="twitter:title" content="$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic &#39;dark matter&#39; across species" />
-  <meta name="dc.date" content="2020-12-01" />
-  <meta name="citation_publication_date" content="2020-12-01" />
+  <meta name="dc.date" content="2020-12-04" />
+  <meta name="citation_publication_date" content="2020-12-04" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -78,9 +78,9 @@
   <meta name="citation_fulltext_html_url" content="https://czbiohub.github.io/kmer-homology-paper/" />
   <meta name="citation_pdf_url" content="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b/" />
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -101,10 +101,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://czbiohub.github.io/kmer-homology-paper/v/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b/">permalink</a>)
+(<a href="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/czbiohub/kmer-homology-paper/tree/12e6c10a2ed2ec12fcd64e8cb52c5de0e58b1c5b">czbiohub/kmer-homology-paper@12e6c10</a>
-on December 1, 2020.
+from <a href="https://github.com/czbiohub/kmer-homology-paper/tree/b98d97ab7215da70ce7c9dc863eb0b62daf5194f">czbiohub/kmer-homology-paper@b98d97a</a>
+on December 4, 2020.
 </em></small></p>
 <p><span class="banner lightred"><span class="fas fa-info-circle fa-lg"></span> <strong>This is an in progress manuscript.</strong></span></p>
 <h2 id="authors">Authors</h2>
@@ -242,24 +242,24 @@ Specifically, it is possible to use a fractional subsampling of the original dat
 <h3 id="key-protein-sequence-can-be-inferred-from-rna-seq-due-to-nullomers.">key: Protein sequence can be inferred from RNA-seq due to nullomers.</h3>
 <p>Nullomers are sequences that are not present in the genome annotation or protein sequences <span class="citation" data-cites="g2gs9fUL IpiEdhou hMQyspqZ 9kcdMNpl">[<a href="#ref-g2gs9fUL" role="doc-biblioref">23</a>,<a href="#ref-IpiEdhou" role="doc-biblioref">24</a>,<a href="#ref-hMQyspqZ" role="doc-biblioref">25</a>,<a href="#ref-9kcdMNpl" role="doc-biblioref">26</a>]</span> of a species.
 While this seems like there are a contradiction between wanting to use all the data, and then only using the data that is present in the database annotation, we show we are able to predict protein coding reads using simulated data.
-The signal of a non-protein coding sequence is very obvious – the true coding frames have k-mers in common with the known database, and the non-true coding frames do not have k-mers in common.
-There are only so many k-mers that are compatible with eukaryotic, or mammalian life.
+The signal of a non-protein coding sequence is very obvious – the true coding frames have <span class="math inline">\(k\)</span>-mers in common with the known database, and the non-true coding frames do not have <span class="math inline">\(k\)</span>-mers in common.
+There are only so many <span class="math inline">\(k\)</span>-mers that are compatible with eukaryotic, or mammalian life.
 There are amino acid combinations that are not seen in the natural world.
 Whether nullomers are not present due to natural selection or due to CpG hypermutability <span class="citation" data-cites="17wsdE0b1">[<a href="#ref-17wsdE0b1" role="doc-biblioref">27</a>]</span> remains under debate, there are this phenomena is real and can be exploited to identify putative protein-coding sequences.
 By using the “negative space” of unobserved protein sequences, we can identify reading frames of RNA to protein-coding sequences that are unlikely.
 Non-productive Reading frames of RNA-seq can be found in the nullomers.
-Protein sequences that have been observed are inferred in the k-mers.</p>
+Protein sequences that have been observed are inferred in the <span class="math inline">\(k\)</span>-mers.</p>
 <h3 id="key-gene-annotations-can-be-inferred-from-rna-sequencing-data-which-is-easily-obtained-with-commodity-tools">key: Gene annotations can be inferred from RNA-sequencing data, which is easily obtained with commodity tools</h3>
 <p>What we can do with <span class="math inline">\(k\)</span>-mers is use a peripherally related genome to align to, and then extract the protein-coding reads and <span class="math inline">\(k\)</span>-mers that are present, then directly compare them.</p>
 <p>Transcribed seqeunces in the form of RNA-seq data can be inferred to be transcribed genes for now.</p>
 <h3 id="key-reduced-amino-acid-alphabets-provide-a-lightweight-method-of-identifying-matching-genes-across-species.">key: Reduced amino acid alphabets provide a lightweight method of identifying matching genes across species.</h3>
-<p>Not only do we use protein k-mers, but we use reduced amino acid alphabet k-mers.</p>
+<p>Not only do we use protein <span class="math inline">\(k\)</span>-mers, but we use reduced amino acid alphabet <span class="math inline">\(k\)</span>-mers.</p>
 <p>Amino acids can be categorized into their biochemical properites.
 Many times,a protein can retain its same phsyical structure and function even with amino acid changes.
 These amino acid changes may be retaining the phyiochemical properites of the amino acid.
 The space of amino acid substituion was explored back in the 90s to find similarity searches for proteins.
 The BLOSUM62, PAM substituion matrices were a method of assigning higher penalties for amino acids that changed their biochemical type.
-Reduced amino acid alphabets are a method of reducing blame in changing of amino acid sequences, which is especially compatible with k-mers as if a single letter in a k-mer changes, then the whole k-mer no longer matches.</p>
+Reduced amino acid alphabets are a method of reducing blame in changing of amino acid sequences, which is especially compatible with <span class="math inline">\(k\)</span>-mers as if a single letter in a <span class="math inline">\(k\)</span>-mer changes, then the whole <span class="math inline">\(k\)</span>-mer no longer matches.</p>
 <p>A method of quickly identifying potential orthologs is using reduced amino acid alphabets <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">28</a>]</span>.
 Reduced amino acid alphabets have been used for database searches of related protein sequences <span class="citation" data-cites="sZoryWIB">[<a href="#ref-sZoryWIB" role="doc-biblioref">29</a>]</span> and for protein structure prediction
 <span class="citation" data-cites="Aq7zYbOg 16Kv6RIe3 sZoryWIB f5u3dDtc Aq7zYbOg QMYjnr6l">[<a href="#ref-sZoryWIB" role="doc-biblioref">29</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">30</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">30</a>,<a href="#ref-16Kv6RIe3" role="doc-biblioref">31</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">32</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">33</a>]</span></p>
@@ -275,7 +275,7 @@ As the direct assignment of protein-coding sequence skips both traditional align
 <p>We benchmark the prediction of protein-coding sequence using simulated human RNA-seq data from single-copy genes present across all clades of mammals <span class="citation" data-cites="S53q1T30">[<a href="#ref-S53q1T30" role="doc-biblioref">34</a>]</span>.
 We show that one can extract putative protein-coding reads from — mammalian species in BUSCO, and present the best parameters for different divergence times.</p>
 <!-- We first apply this method on a bulk comparative transcriptomic dataset consisting of nine amniote species and six tissues [@doi:10.1038/nature10532], showing that we achieve similar clustering results as using only reads mapping to 1:1 orthologs or Hierarchical Orthologous Groups (HOGs) [@doi:10.1371/journal.pone.0053786; @doi:10.1093/bib/bbr034; @doi:10.1093/bioinformatics/btu492] of protein-coding genes, but are able to resolve ... which can only be seen by using the $k$-mer method. -->
-<p>We first demonstrate the utility of this method by comparing lung tissue transcriptomes from organisms diverged by approximately 100 million years <span class="citation" data-cites="1A6CqUMhm">[<a href="#ref-1A6CqUMhm" role="doc-biblioref">35</a>]</span>: mouse from <em>Tabula Muris Senis</em> <span class="citation" data-cites="rSyxV4O8">[<a href="#ref-rSyxV4O8" role="doc-biblioref">36</a>]</span>,
+<p>We first demonstrate the utility of this method by comparing lung tissue transcriptomes from organisms diverged by approximately 100 million years ago (MYA) <span class="citation" data-cites="1A6CqUMhm">[<a href="#ref-1A6CqUMhm" role="doc-biblioref">35</a>]</span>: mouse from <em>Tabula Muris Senis</em> <span class="citation" data-cites="rSyxV4O8">[<a href="#ref-rSyxV4O8" role="doc-biblioref">36</a>]</span>,
 Across this evolutionary distance, only — 1:1 orthologous genes exist as found by …
 <!-- and XX HOGs via orthologous matrix (OMA) [@doi:10.7717/peerj.6231; @doi:10.1093/bioinformatics/btx229] -->
 We then add single-cell lung data from <em>Rhinolophus sinicus</em>, Chinese greater horseshoe bat, whose single-cell transcriptome was recently published <span class="citation" data-cites="1AkeHrvKP">[<a href="#ref-1AkeHrvKP" role="doc-biblioref">37</a>]</span>..
@@ -289,7 +289,7 @@ We utilized sequence bloom trees (SBTs) <span class="citation" data-cites="DfZvK
 <div id="fig:fig1" class="fignos">
 <figure>
 <img src="images/SVG/figure1.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> Overview of single-cell RNA-seq lung tissue datasets from three species: <em>Homo sapiens</em> (human), <em>Rhinolophus sinicus</em> (Chinese horseshoe bat), and <em>Mus musculus</em>.
-<strong>B.</strong> Overview of k-mer homology method. First, RNA-seq reads are translated to protein via the leaftea tool, then a cell type database is built from k-mers from the putative protein-coding sequence, given a query cell of a new species, the best matching cell from the model organism database is found, and the cell label is returned.
+<strong>B.</strong> Overview of <span class="math inline">\(k\)</span>-mer homology method. First, RNA-seq reads are translated to protein via the leaftea tool, then a cell type database is built from <span class="math inline">\(k\)</span>-mers from the putative protein-coding sequence, given a query cell of a new species, the best matching cell from the model organism database is found, and the cell label is returned.
 <!-- **B.** Overview of computational method. First, in the `kmermaid` pipeline, RNA-seq reads are translated to protein via the leaftea tool, then converted to a reduced amino acid alphabet, decomposed into $k$-mers, and then those $k$-mers are subsampled. Next, the `nf-predictorthologs` pipeline performs differential $k$-mer expression, much like differential gene expression, to find $k$-mers that are enriched in a population, and queries for those differential $k$-mers in databases to identify them. --></figcaption>
 </figure>
 </div>
@@ -341,69 +341,67 @@ We utilized sequence bloom trees (SBTs) <span class="citation" data-cites="DfZvK
 </div>
 <div id="fig:fig2" class="fignos">
 <figure>
-<img src="images/SVG/figure2.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Application of k-mer homology to mammalian lung cell type identification recapitulates known biology and identifies enriched genes not present in reference genome assembly.
+<img src="images/SVG/figure2.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Application of <span class="math inline">\(k\)</span>-mer homology to mammalian lung cell type identification recapitulates known biology and identifies enriched genes not present in reference genome assembly.
 <strong>A.</strong> Overview of <code>leaftea translate</code> method. First, each read is translated into all six possible protein-coding translation frames. Next, reading frames with stop codons are eliminated. Each protein-coding frame is <span class="math inline">\(k\)</span>-merized, then the fraction of <span class="math inline">\(k\)</span>-mers which appear in the known protein-coding database is computed. Reading frames containing 5% or more <span class="math inline">\(k\)</span>-mers matching the reference proteome are inferred to be putatively protein-coding.
-<strong>B.</strong> Experimental set up to identify best k-mer sizes for translating protein-coding sequence, given a reference proteome of divergent organism. First, human RNA-seq reads were simulated from genes present in all extant mammals. Next, we used highly curated reference proteomes from BUSCO Mammalia, representing almost 200 million years of evolution, across a wide range of mammalian species. Using <code>leaftea</code>, we partition the reads into protein-coding and noncoding using a variety of amino acid alphabets and k-mer sizes, and then compute classification metrics.
-<strong>C.</strong> Predictive power of detecting protein-coding sequence across ~200 million years of evolution, using simulated human RNA-seq reads and mammalian reference proteomes. x-axis, k-mer size used to translate the RNA sequence; y-axis, receiver operating characteristic area under the curve (ROC AUC) of protein-coding prediction at that k-mer size. Dotted vertical lines indicate k-mer size producing maximum ROC AUC for each divergence time.
-<strong>D.</strong> Classification metrics of protein-coding prediction with both protein and Dayhoff alphabets, using best-performing k-mer sizes for each alphabet from (<strong>C</strong>). Left, precision; middle, recall; right, <span class="math inline">\(F_{1/2}\)</span> score. x-axis, Estimated divergence time of reference proteome relative to human, from timetree.org; y-axis, value of classification metric.</figcaption>
+<strong>B.</strong> Experimental set up to identify best <span class="math inline">\(k\)</span>-mer sizes for translating protein-coding sequence, given a reference proteome of divergent organism. First, human RNA-seq reads were simulated from genes present in all extant mammals. Next, we used highly curated reference proteomes from BUSCO Mammalia, representing almost 200 million years of evolution, across a wide range of mammalian species. Using <code>leaftea</code>, we partition the reads into protein-coding and noncoding using a variety of amino acid alphabets and <span class="math inline">\(k\)</span>-mer sizes, and then compute classification metrics.
+<strong>C.</strong> Predictive power of detecting protein-coding sequence across ~200 million years of evolution, using simulated human RNA-seq reads and mammalian reference proteomes. x-axis, <span class="math inline">\(k\)</span>-mer size used to translate the RNA sequence; y-axis, receiver operating characteristic area under the curve (ROC AUC) of protein-coding prediction at that <span class="math inline">\(k\)</span>-mer size. Dotted vertical lines indicate <span class="math inline">\(k\)</span>-mer size producing maximum ROC AUC for each divergence time.
+<strong>D.</strong> Classification metrics of protein-coding prediction with both protein and Dayhoff alphabets, using best-performing <span class="math inline">\(k\)</span>-mer sizes for each alphabet from (<strong>C</strong>). Left, precision; middle, recall; right, <span class="math inline">\(F_{1/2}\)</span> score. x-axis, Estimated divergence time of reference proteome relative to human, from timetree.org; y-axis, value of classification metric.</figcaption>
 </figure>
 </div>
 <p>To extract putative protein coding sequences from RNA-seq reads, we first established whether we could predict protein-coding sequences from simulated human RNA-seq data.
 We reliably identified putative protein-coding reads using our tool, <code>leaftea</code>.
 <code>leaftea</code> works by performing six frame translation of RNAs, discarding reading frames with stop codons, and decomposing each frame into amino acid <span class="math inline">\(k\)</span>-mers, and checking for the <span class="math inline">\(k\)</span>-mer present in the reference proteome (Fig. <a href="#fig:fig1">1</a>A).
-In detecting putative protein coding sequence, there many be small amino acid changes that do not change the overall function of the protein, and to accomodate this, we offer the option to translate using either the original 20-letter amino acid alphabet, or a six-letter reduced amino acid alphabet, the Dayhoff encoding [<a href="#tbl:dayhoff-alphabet">1</a>].
-As many organisms of interest are not annotated, but a different organism with a related ancestor is, we wanted to understand the limits of protein-coding detection when the best-annoated organism in the database is divergent with up to approximately 200 million years.
-To test this, we simulated human RNA-seq data from genes present in all extant mammals as determined by BUSCO <span class="citation" data-cites="1VJMkE5Z">[<a href="#ref-1VJMkE5Z" role="doc-biblioref">45</a>]</span>, and used reference proteomes from eighteen mammals, ranging in divergence from 0 to almost 200 million years <span class="citation" data-cites="W97RNFXd">[<a href="#ref-W97RNFXd" role="doc-biblioref">46</a>]</span> (Fig. <a href="#fig:fig1">1</a>B).
-We found that we were able maximize classification power, measured via receiver operating characteristic area under the curve (ROC AUC), for most divergence times for a protein alphabet with a <span class="math inline">\(k\)</span>-mer size of 8, and 17 for a Dayhoff encoding (Fig. <a href="#fig:fig1">1</a>C, left and middle).
-We found that a protein alphabet with a <span class="math inline">\(k\)</span>-mer size of 8 was most productive in translating the sequences for closely related species, within Boroeutheria, a mangnorder of mammals related within approximately 100 million years of one another <span class="citation" data-cites="W97RNFXd">[<a href="#ref-W97RNFXd" role="doc-biblioref">46</a>]</span>, containing the superorders Euarchontoglires (includes rodents and primates) and Laurasiatheria (includes bat, hedgehog, hooved animals, cats, and dogs), with a mean ROC AUC of 0.873898 among well-annotated reference proteomes.
-For more distantly related species such as platypus, a the Dayhoff alphabet had a ROC AUC of 0.547203, however, the precision of rejecting non-coding reads remained quite high across distantly related species (Fig. <a href="#fig:fig1">1</a>D, left).
+In detecting putative protein coding sequence, there many be small amino acid changes that do not change the overall function of the protein, and to accommodate this, we offer the option to translate using either the original 20-letter amino acid alphabet, or a six-letter reduced amino acid alphabet, the Dayhoff encoding [<a href="#tbl:dayhoff-alphabet">1</a>].
+As many organisms of interest are not annotated, but a different organism with a related ancestor is, we wanted to understand the limits of protein-coding detection when the best-annotated organism in the database is divergent with up to approximately 200 million years.
+To test this, we simulated human RNA-seq data from genes present in all extant mammals as determined by BUSCO <span class="citation" data-cites="1VJMkE5Z">[<a href="#ref-1VJMkE5Z" role="doc-biblioref">45</a>]</span>, and used reference proteomes from eighteen mammals, ranging in divergence from 0 to almost 200 MYA <span class="citation" data-cites="W97RNFXd">[<a href="#ref-W97RNFXd" role="doc-biblioref">46</a>]</span> (Fig. <a href="#fig:fig1">1</a>B).
+We found that we were able maximize classification power, measured via receiver operating characteristic area under the curve (ROC AUC), for most divergence times for a protein alphabet with a <span class="math inline">\(k\)</span>-mer size of 8, and a <span class="math inline">\(k\)</span>-mer size of 17 for a Dayhoff encoding (Fig. <a href="#fig:fig1">1</a>C, left and middle).
+Across all mammals tested, it was clear that some were better annotated than others based on the ROC AUC curves (Supplemental Fig. ??).
+For example, hedgehog (<em>Erinaceus europaeus</em>) had more successful protein-prediction than species with similar divergence times from human such as rhino (<em>Ceratotherium simum simum</em>), even though both are members of Boroeutheria, a mangnorder of mammals with a most recent common ancestor at an estimated 96 MYA of one another <span class="citation" data-cites="W97RNFXd">[<a href="#ref-W97RNFXd" role="doc-biblioref">46</a>]</span>, containing the superorders Euarchontoglires (includes rodents and primates) and Laurasiatheria (includes bat, hedgehog, hooved animals, cats, and dogs).
+We found that a protein alphabet with a <span class="math inline">\(k\)</span>-mer size of 8 was most productive in translating the sequences for closely related species, within Boroeutheria, with a mean ROC AUC of 0.873898 among well-annotated reference proteomes.
+For more distantly related species such as platypus (<em>Ornithorhynchus anatinus</em>), a the Dayhoff alphabet had a ROC AUC of 0.547203.
+<!-- , however, the precision of rejecting non-coding reads remained quite high across distantly related species (Fig. {@fig:fig1}D, left). -->
 Interested in understanding whether <code>leaftea</code>’s strength lies in detecting true protein-coding reads, or eliminating non-coding reads, we computed the precision and recall of protein-coding classification (Fig. ??, left and middle).
-Our sensitivity to remove non-coding reads is quite high.
+Our precision to remove non-coding reads is quite high, especially with the Dayhoff alphabet, which retains a high precision even for the platypus proteome, which is approximately 177 MYA diverged from human.
 As this metric performs better in precision, we used an <span class="math inline">\(F_{\beta}\)</span> score, where <span class="math inline">\(\beta = 1/2\)</span>, to indicate a 2x preference for precision over recall (Fig. <a href="#fig:fig1">1</a>D, right).
 <!-- Interested in understanding whether `leaftea`'s strength lies in detecting true protein-coding reads, or eliminating non-coding reads, we computed the precision and recall of protein-coding classification (Fig. {@fig:fig1D}).
 We found that
 Using the reference proteomes from different animals represents extracting protein-coding reads from an organisms whose closely related species in the reference database is 10, 50, etc million years diverged.
 Using the reference proteomes, we found that a small fraction of overlapping $k$-mers in the putative protein-coding read were required to identify the read as putatively protein-coding. Our sensitivity to remove non-coding reads is quite high.
 We chose a minimum containment threshold of 0.05 as this maximized the number of putative protein coding reads while successfully discarding non-coding reads. -->
-This shows that while it is possible to detect putative protein-coding sequence even when the best annotated organism in the database almost 200 million years diverged from the organism in question.</p>
+This shows that while it is possible to detect putative protein-coding sequence, reliably rejecting non-coding sequences, even when the best annotated organism in the database almost 200 million years diverged from the query organism.</p>
 <!-- Putative protein-coding reads from simulated Human RNA-seq data can be identified across the mammalian lineage -->
 <h3 id="degenerate-amino-acid-alphabet-k-mers-identify-common-cell-types-across-species-and-finds-genes-absent-from-even-well-annotated-genomes">Degenerate amino acid alphabet <span class="math inline">\(k\)</span>-mers identify common cell types across species and finds genes absent from even well-annotated genomes</h3>
 <div id="fig:fig3" class="fignos">
 <figure>
 <img src="images/SVG/figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>A.</strong> Experimental set up to validate effectiveness of building a cell type database from one species, to label cells from another species. First, we build a cell type database using sequence bloom trees (SBTs) from mouse cells, then search using a human cell for the best matching mouse cell.
-<strong>B.</strong> Mean of classification metrics across mouse:human cell type lookup experiments, highlighting the k-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, k-mer size in DNA space, i.e. a k-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
-<strong>C.</strong> Molecules and k-mer sizes maximizing classification metrics from (<strong>E</strong>).
-<strong>D.</strong> Confusion matrices of classification using Dayhoff encoding and k-mer size of —, the best performing metrics from (<strong>E</strong>). x-axis, predicted cell label; y-axis, ground truth cell label.</figcaption>
+<strong>B.</strong> Mean of classification metrics across mouse:human cell type lookup experiments, highlighting the <span class="math inline">\(k\)</span>-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, <span class="math inline">\(k\)</span>-mer size in DNA space, i.e. a <span class="math inline">\(k\)</span>-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
+<strong>C.</strong> Molecules and <span class="math inline">\(k\)</span>-mer sizes maximizing classification metrics from (<strong>E</strong>).
+<strong>D.</strong> Confusion matrices of classification using Dayhoff encoding and <span class="math inline">\(k\)</span>-mer size of —, the best performing metrics from (<strong>E</strong>). x-axis, predicted cell label; y-axis, ground truth cell label.</figcaption>
 </figure>
 </div>
-<h4 id="key-dayhoff-encoded-k-mers-can-be-used-to-predict-cell-types-within-species">key: Dayhoff-encoded k-mers can be used to predict cell types within species</h4>
-<p>To recapitulate known biology in the mammalian lung, we compared lung cell atlases from species related within the mammalian suborder Euarchontoglires, whose most recent common ancestor is between 85 to 95 million years ago, we applied these methods to a mouse single-cell RNA-seq atlas, <em>Tabula Muris Senis</em> <span class="citation" data-cites="rSyxV4O8">[<a href="#ref-rSyxV4O8" role="doc-biblioref">36</a>]</span>, to a human
-lung cell atlas <span class="citation" data-cites="oWw3q9FU">[<a href="#ref-oWw3q9FU" role="doc-biblioref">47</a>]</span>.
-Previous work has used k-mers from protein-coding genes of single-cell RNA-seq data within one individual of a species to distinguish cell types <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">18</a>]</span>, and we are interested in first comparing effectiveness of k-mers to identify cell types across individuals of different species.
-To test this, we built cell type databases from k-mer signatures using sequence bloom trees (SBTs) <span class="citation" data-cites="DfZvKOpG">[<a href="#ref-DfZvKOpG" role="doc-biblioref">41</a>]</span> using the <code>sourmash</code> software tool <span class="citation" data-cites="ART4gJKs ExvjTLL3">[<a href="#ref-ExvjTLL3" role="doc-biblioref">20</a>,<a href="#ref-ART4gJKs" role="doc-biblioref">21</a>]</span>.
+<h4 id="key-dayhoff-encoded-k-mers-reliably-predict-cell-types-within-species">key: Dayhoff-encoded <span class="math inline">\(k\)</span>-mers reliably predict cell types within species</h4>
+<p>To test identification of cell types using <span class="math inline">\(k\)</span>-mers, we first tested the method within species, with three main questions: Do the parameters change when the cell type lookup is within the same individual, across individual of the same sex, and across individuals of different sex?
+<!-- Previous work has used $k$-mers from protein-coding genes of single-cell RNA-seq data within one individual of a species to distinguish cell types [@https://doi.org/10.1101/723833], and we are interested in first comparing effectiveness of $k$-mers to identify cell types across individuals of different species. -->
+To test this, we built cell type databases from <span class="math inline">\(k\)</span>-mer signatures using sequence bloom trees (SBTs) <span class="citation" data-cites="DfZvKOpG">[<a href="#ref-DfZvKOpG" role="doc-biblioref">41</a>]</span> using the <code>sourmash</code> software tool <span class="citation" data-cites="ART4gJKs ExvjTLL3">[<a href="#ref-ExvjTLL3" role="doc-biblioref">20</a>,<a href="#ref-ART4gJKs" role="doc-biblioref">21</a>]</span>.
 Using the Tabula Muris Senis data, we built a cell type database from one mouse, and queried its own cells (Supplementary Fig. ??A).
 We first manually unified cell ontology class names into broader groups to encompass larger cell type labels.
-We then created k-mer signatures at many k-mer sizes, from 21 to 90, using the raw nucleotide sequence from the RNA-seq reads, the <code>leaftea</code>-translated protein sequence, or a Dayhoff-encoded version of the <code>leaftea</code> translated sequences.
-To reduce batch effects, we removed k-mers from technical artifact genes, such as ribosomal and mitochondrial genes, and genes associated with single-cell dissociation <span class="citation" data-cites="9DeI91qq IVhllwbX 5nByhjEz qtN0W5fQ s4hwSsAX">[<a href="#ref-9DeI91qq" role="doc-biblioref">48</a>,<a href="#ref-IVhllwbX" role="doc-biblioref">49</a>,<a href="#ref-5nByhjEz" role="doc-biblioref">50</a>,<a href="#ref-qtN0W5fQ" role="doc-biblioref">51</a>,<a href="#ref-s4hwSsAX" role="doc-biblioref">52</a>]</span>.
+We then created <span class="math inline">\(k\)</span>-mer signatures at many <span class="math inline">\(k\)</span>-mer sizes, from 21 to 90, using the raw nucleotide sequence from the RNA-seq reads, the <code>leaftea</code>-translated protein sequence, or a Dayhoff-encoded version of the <code>leaftea</code> translated sequences.
+To reduce batch effects, we removed <span class="math inline">\(k\)</span>-mers from technical artifact genes, such as ribosomal and mitochondrial genes, and genes associated with single-cell dissociation <span class="citation" data-cites="9DeI91qq IVhllwbX 5nByhjEz qtN0W5fQ s4hwSsAX">[<a href="#ref-9DeI91qq" role="doc-biblioref">47</a>,<a href="#ref-IVhllwbX" role="doc-biblioref">48</a>,<a href="#ref-5nByhjEz" role="doc-biblioref">49</a>,<a href="#ref-qtN0W5fQ" role="doc-biblioref">50</a>,<a href="#ref-s4hwSsAX" role="doc-biblioref">51</a>]</span>.
 Similar to previous work <span class="citation" data-cites="wtk13QGK">[<a href="#ref-wtk13QGK" role="doc-biblioref">18</a>]</span>, we find that using DNA from coding nucleotides successfully distinguishes cell types within individuals of the same species.
 However, we see that even within an individual using the <code>leaftea</code>-translated protein sequences re-encoded into the Dayhoff alphabet outperforms using the DNA alphabet (Supplementary Fig. ??D,E), suggesting that there are enough differences in amplification or sequencing errors to warrant a degenerate protein alphabet, even within individuals of the same species.
-<!-- We found that a k-mer size of --- with DNA had the best [F1 score / Adjusted Rand Index (ARI)] of --- cell type classification within one male mouse. -->
-Interested in how the genomic differences across individuals affect DNA-based cell type classification, we built a cell type database from one male mouse, and queried a cell and returned its most similar matching cell (Supplementary Fig. ??B), and again the protein and Dayhoff alphabets outperformed the DNA alphabets (Supplementary Fig. ??D-F).<!-- We found that across mice, the DNA was still able to identify cell types, but the protein k-mers had a higher F1 score of ---. -->
+<!-- We found that a $k$-mer size of --- with DNA had the best [F1 score / Adjusted Rand Index (ARI)] of --- cell type classification within one male mouse. -->
+Interested in how the genomic differences across individuals affect DNA-based cell type classification, we built a cell type database from one male mouse, and queried a cell and returned its most similar matching cell (Supplementary Fig. ??B), and again the protein and Dayhoff alphabets outperformed the DNA alphabets (Supplementary Fig. ??D-F).<!-- We found that across mice, the DNA was still able to identify cell types, but the protein $k$-mers had a higher F1 score of ---. -->
 Finally, we also tested a male-female comparison (Supplementary Fig. ??C), where the cell database was built from male cells, and the query was female cells, and found again that the Dayhoff alphabet outperformed all other alphabets (Supplementary Fig. ??D,G).
-To compare across the three experiments, we averaged the adjusted rand and F1 scores (Supplementary Fig. ??H) and found that a Dayhoff encoding with a k-mer size of 39, corresponding to a peptide length of 13, maximized the F1 scores to 0.799 (Supplementary Fig. ??I).<!-- We were able to identify cell types across mice by using DNA $k$-mers of size --- and protein $k$-mers of size --- and Dayhoff $k$-mers of size ---. -->
-Curious which cell types were most commonly miscategorized, we created confusion matrices (Supplementary Fig. ??J-L) and found that the most often misclassified cell type was Natural Killer T cells, which were classified to T cells by our method.
-As these cell types are often difficult to distinguish, we felt this was sufficient to show the utility of Dayhoff-encoded amino acid k-mers to identify cell types within a species.
-Thus, we find that Dayhoff-encoded <code>leaftea</code>-translated k-mers with a DNA k-mer size of 39 works well to “soften the rough edges” introduced by individual genomic variation for cell types and can be used to identify similar cell types within and across individuals of the same species.</p>
-<!-- However, even within an individual, the protein and Dayhoff alphabets performed with higher F1 and adjusted Rand scores.
-<!-- This suggests that there are small changes due to sequencing errors and potentially single cell capture that enable -->
-<!-- Interested in three comparisons, we set up experiments to test a self-self lookup for cells from the same individual (Supplementary Fig. {@fig:sfig2}A), across individuals within the same sex (Supplementary Fig. {@fig:sfig2}B), and across individuals of different sexes (Supplementary Fig. {@fig:sfig2}C). -->
-<!-- We then  and computed classification metrics such as Adjusted Rand score and F1 scores (Supplementary Fig. {@fig:sfig2}D). -->
-<!-- However, we find that even within species, the self-lookup of cell types is hindered by technical artifact genes. -->
-<!-- We find that a DNA k-mer size of --- works well to distinguish cell types across species.
-However, across species, then there is an obvious "batch effect" present as a result of individual DNA differences in the genome. -->
-<h4 id="key-human-cell-types-can-be-predicted-from-mouse-cells-using-k-mers-from-reduced-amino-acid-alphabets">key: Human cell types can be predicted from mouse cells using k-mers from reduced amino acid alphabets</h4>
+To compare across the three experiments, we averaged the adjusted rand and F1 scores (Supplementary Fig. ??H) and found that a Dayhoff encoding with a <span class="math inline">\(k\)</span>-mer size of 39, corresponding to a peptide length of 13, maximized the F1 scores to 0.799 (Supplementary Fig. ??I).<!-- We were able to identify cell types across mice by using DNA $k$-mers of size --- and protein $k$-mers of size --- and Dayhoff $k$-mers of size ---. -->
+Curious which cell types were most commonly mis-categorized, we created confusion matrices (Supplementary Fig. ??J-L) and found that the most often misclassified cell type was Natural Killer T cells, which were classified to T cells by our method.
+Within cell compartments of epithelial, endothelial, myeloid and lymphoid, we had the fewest misclassifications with a — alphabet and k-mer size of —.
+As these cell types are often difficult to distinguish, we felt this was sufficient to show the utility of Dayhoff-encoded amino acid <span class="math inline">\(k\)</span>-mers to identify cell types within a species.
+Thus, we find that Dayhoff-encoded <code>leaftea</code>-translated <span class="math inline">\(k\)</span>-mers with a DNA <span class="math inline">\(k\)</span>-mer size of 39 works well to “soften the rough edges” introduced by individual genomic variation for cell types and can be used to identify similar cell types within and across individuals of the same species.</p>
+<h4 id="key-human-cell-types-can-be-predicted-from-mouse-cells-using-k-mers-from-reduced-amino-acid-alphabets">key: Human cell types can be predicted from mouse cells using <span class="math inline">\(k\)</span>-mers from reduced amino acid alphabets</h4>
 <!-- Given putative protein-coding sequences from RNA-seq reads, we now use reduced amino acid alphabets as a lightweight substitute for homology across species. -->
-<p>Next, we show that we can identify cell types in human RNA-seq data from mouse cell type databases.
+<p>To recapitulate known biology in the mammalian lung, we compared lung cell atlases from species related within the mammalian suborder Euarchontoglires, whose most recent common ancestor is between 85 to 95 million years ago, we applied these methods to a mouse single-cell RNA-seq atlas, <em>Tabula Muris Senis</em> <span class="citation" data-cites="rSyxV4O8">[<a href="#ref-rSyxV4O8" role="doc-biblioref">36</a>]</span>, to a human
+lung cell atlas <span class="citation" data-cites="oWw3q9FU">[<a href="#ref-oWw3q9FU" role="doc-biblioref">52</a>]</span>.
+Next, we show that we can identify cell types in human RNA-seq data from mouse cell type databases.
 We built a cell type database from the 18-month old mouse Lung tissue in Tabula Muris Senis, and queried with human lung cells (Fig. <a href="#fig:fig2">2</a>A).
 <!-- Maybe this is for the supplemental text? -->
 <!-- Across human-to-mouse, we found that DNA $k$-mers which vary quite greatly across species, were too variable to use to identify cell types. -->
@@ -415,39 +413,22 @@ Curious what the common misclassifications were, we plotted confusion matrices o
 <p>To compare the performance of <span class="math inline">\(k\)</span>-mer homology to traditional cross-species methods, we used — tools to compare label propagation across species using 1:1 orthologous gene datasets.
 We found that using 1:1 orthologs was not good and resulted in a classification adjusted rand index score of — which was not good.
 This enables finding expression of genes that may not be defined in the genome, and certainly genes that do not appear, are excluded by, subsetting to 1:1 orthologs, which is a common strategy for cross-species transcriptome comparisons.</p>
-<!-- #### key: Reduced amino acid alphabet k-mers enable identifying cell type enriched sequences that may not be present in gene annotation or genome assembly, or orthologous gene mappings
-
-
-We used a reduced amino acid alphabet of Dayhoff to categorize the amino acids into biochemical properties (Fig. {@fig:fig2}A).
-
-As a control, we first built SBTs on one mouse, and queried with cells from a different mouse.
-We found that --- k-size and --- alphabet was appropriate to identify cell types across individuals with a very similar genomic background.
-We were able to identify the correct cell type ---% of the time.
-Next, we built SBTs across humans, querying with a different individual and built an SBT on a different individual.
-Similarly, we found  that --- k-size and --- alphabets were successful at identifying cell types across individuals.
-We were able to identify the correct cell type ---% of the time.
-
-
-
-We built a sequence bloom tree database of cells from *Tabula Muris Senis* and applied the cell type annotations to the human data.
-We found that by searching for the number of k-mers overlapping the query cell, using a containment search [@url:https://github.com/dib-lab/2020-paper-sourmash-gather], we were able to correctly identify the cell type ---% of the time (Fig. {@fig:fig2}B).
-There were minimal misclassifications and most misclassifications occur as a result of ---.
-Curious whether these cell types had any enriched sequences that weren't present in the annotated genomes, we then performed differential k-mer expression to identify enriched sequences in the cell types. -->
-<h4 id="key-reduced-amino-acid-alphabet-k-mers-enable-identifying-cell-type-enriched-sequences-that-may-not-be-present-in-gene-annotation-genome-assembly-or-orthologous-gene-mappings">key: Reduced amino acid alphabet k-mers enable identifying cell type enriched sequences that may not be present in gene annotation, genome assembly, or orthologous gene mappings</h4>
+<h4 id="key-reduced-amino-acid-alphabet-k-mers-enable-identifying-cell-type-enriched-sequences-that-may-not-be-present-in-gene-annotation-genome-assembly-or-orthologous-gene-mappings">key: Reduced amino acid alphabet <span class="math inline">\(k\)</span>-mers enable identifying cell type enriched sequences that may not be present in gene annotation, genome assembly, or orthologous gene mappings</h4>
 <p>Once we identified common cell types across species, we then dug into genes that are enriched in the cell types that may not be present even in the annotated genome, or present in the orthologous gene mapping (Fig. <a href="#fig:fig2">2</a>E).
 To find expression of genes that many not be in the genome, we took two approaches.
-First, we used differential k-mer expression to enrich for particular sequences that were highly expressed in a cell type.
-We found that the overlap between differential gene expression 1:1 orthologs, and the differential k-mer expression and orthogroup expression, we found — % overlap between al three, which had a — p-value of significance using a chi-squared or hypergeometric test of enrichment.
+First, we used differential <span class="math inline">\(k\)</span>-mer expression to enrich for particular sequences that were highly expressed in a cell type.
+We found that the overlap between differential gene expression 1:1 orthologs, and the differential <span class="math inline">\(k\)</span>-mer expression and orthogroup expression, we found — % overlap between al three, which had a — p-value of significance using a chi-squared or hypergeometric test of enrichment.
 Additionally, we identified — genes that were enriched in molecular cell types that are not present in the genomes of human and mouse.
+Specifically, we found an unannotated <em>pulmonary surfactant-associated protein A</em> gene in the Alveolar Type 2 cells, which makes sense since they express many surfactants.
 We found that compared to gene expression, we had a —% overlap with the genes that are known to be enriched by gene expression of 1:1 orthologs, and we found — genes that were enriched in the cell types but were not 1:1 orthologs, and thus would have been missed by traditional methods.
-Second, we used <span class="math inline">\(k\)</span>-mers from orthogroups, orthologous groups of genes, defined at the mammalian clade, of genes with common function across species [cite orthogroups paper], computed signatures for the last 100aa of each amino acid sequence of orthogroups to get a relative gene expression (Fig. <a href="#fig:fig2">2</a>F).
-However, with the k-mers, we were able to find genes such as —, — and — which are enriched in the cell type —, but are not a 1:1 ortholog, and are instead a — ortholog.
+Second, we used <span class="math inline">\(k\)</span>-mers from orthogroups, orthologous groups of genes, defined at the mammalian clade, of genes with common function across species [cite orthogroups paper], computed signatures for the last 100aa of each amino acid sequence of orthogroups to get a relative gene expression (Fig. <a href="#fig:fig2">2</a>F) using containment search <span class="citation" data-cites="5KVVBsT6">[<a href="#ref-5KVVBsT6" role="doc-biblioref">53</a>]</span>.
+However, with the <span class="math inline">\(k\)</span>-mers, we were able to find genes such as —, — and — which are enriched in the cell type —, but are not a 1:1 ortholog, and are instead a — ortholog.
 Some of these were even not present in the genome assembly, for example — is present in the human genome assembly but not in the mouse assembly.
-Thus, using k-mers, we are able to identify genes that are enriched in cell types but are not present in the genome assembly, in unannotated genes, or not 1:1 orthologs.</p>
+Thus, using <span class="math inline">\(k\)</span>-mers, we are able to identify genes that are enriched in cell types but are not present in the genome assembly, in unannotated genes, or not 1:1 orthologs.</p>
 <h3 id="reduced-amino-acid-k-mers-from-transcriptomes-enabled-identification-of-unannotated-immune-genes-in-chinese-horseshoe-bat-suggesting-immune-adaptations">Reduced amino acid <span class="math inline">\(k\)</span>-mers from transcriptomes enabled identification of unannotated immune genes in Chinese horseshoe bat suggesting immune adaptations</h3>
 <p>We refined the lung cell type annotation from the Chinese horseshoe bat using our <span class="math inline">\(k\)</span>-mer based cell type label propagation method. Using these refined labels, we found that — in the bat cell types were more similar to — classical monocytes — in mouse and human than they tended to be to their original cell types (Fig. <a href="#fig:fig3">3</a>A).
 This led us to then perform differential expression to find the genes that may be enriched in the bat cell types overall.
-Using both logistic regression on the <span class="math inline">\(k\)</span>-mer abundances, and expression of orthogroups containment in the cells, we found — genes were widespreadly expressed in the bat, as compared to mouse and human (Fig. <a href="#fig:fig3">3</a>B).
+Using both logistic regression on the <span class="math inline">\(k\)</span>-mer abundances, and expression of orthogroups containment in the cells, we found — genes were broadly expressed in the bat, as compared to mouse and human (Fig. <a href="#fig:fig3">3</a>B).
 We then dug into the genes that are expressed, but not found in the aligned genome or the gene annotation, and found that — gene was a key contributor to — natural killer cell — type identity.</p>
 <ul>
 <li>Mouse:bat
@@ -466,45 +447,55 @@ We then dug into the genes that are expressed, but not found in the aligned geno
 <!-- The increasing accessibility of single-cell RNA-seq data  provides a  -->
 <p>The availability of single-cell whole organism atlases [cite: tabula muris, tabula muris senis, MCA, HCA papers] enables rapid cell type identification in new datasets.
 However, this cell type identification is not readily accessible to the 99.99% of animal species without a reference genome [cite vertebrate genome paper].
-However, 99.99% of the planet’s rapidly decreasing number of animal species [cite climate change, extinction papers] are unable to directly benefit from the cell typing efforts due to a combination of both lack of a reference genome, and understudied organisms that do not readily have gene mappings across species annotated.
+Indeed, 99.99% of the planet’s rapidly decreasing number of animal species [cite climate change, extinction papers] are unable to directly benefit from the cell typing efforts due to a combination of both lack of a reference genome, and understudied organisms that do not readily have gene mappings across species annotated.
+Thus, there is an urgent need for methods that leverage model organism cell atlases for understudied animals.
 It’s not just about the genome. The annotation and the orthology of gene annotations mapping across species is the really critical thing for cross-species analyses.
 We developed a method to address the gap between model organisms cell atlases and the understudied organisms that may provide with novel cures for disease.</p>
 <h3 id="key-putative-protein-coding-sequence-can-be-detected-across-150-million-years-of-evolution">key: Putative protein-coding sequence can be detected across ~150 million years of evolution</h3>
-<p>First, we demonstrated the ability to discard unlikely protein-coding frames from RNA-seq data using our tool, <code>leaftea</code>.
+<p>First, we extracted putative protein-coding sequence from an understudied animal, the Chinese horseshoe bat, <em>R. sinicus</em>.
+First, we demonstrated the ability to discard unlikely protein-coding frames from RNA-seq data using our tool, <code>leaftea</code>.
 Our precision is high, meaning we are able to discard true non-coding frames very easily.
 Even for species that are distantly related, ~150 million years between human and the distantly related platypus species, we were able to reject —% of the known non-coding frames from the simulated human data.
-The most distantly related organism, platypus, with an estimated divergence time from human ranging from 167-192 million years (<span class="citation" data-cites="W97RNFXd"><a href="#ref-W97RNFXd" role="doc-biblioref">46</a></span>), was able to identify true protein-coding sequence in human —% of the time.
-Thus, we are able to recover the putative protein coding sequences, even when the most recent ancestor of the closest related organism in the database is within ~150 million years, meaning we can study any mammal.
-This indicates that even if the organism is — million years diverged from the most closely related organism in the database, it is still possible to recover putative protein-coding.
-Thus, this opens up the possibility of studying nearly —% of organisms on the planet, as most are related within 150 million years of annotated organisms. [Olga: Ask Erich Schwarz for help on how to compute this]</p>
+The most distantly related organism, platypus, with an estimated divergence time from human ranging from 167-192 MYA (<span class="citation" data-cites="W97RNFXd"><a href="#ref-W97RNFXd" role="doc-biblioref">46</a></span>), was able to identify true protein-coding sequence in human —% of the time.
+<!-- This indicates that even if the organism is approximately 200 MYA from the most closely related organism in the database, it is still possible to recover putative protein-coding. -->
+Thus, we are able to recover the putative protein coding sequences, even when the most recent ancestor of the closest related organism in the database is within ~150 million years, meaning this method can open up the possibilities for annotating cell types in single-cell RNA-seq atlases for any mammal.
+<!-- Thus, this opens up the possibility of studying nearly ---% of organisms on the planet, as most are related within 150 million years of annotated organisms. [Olga: Ask Erich Schwarz for help on how to compute this] --></p>
 <!-- With the increasing accessibility of single-cell RNA-seq, it is more and more challenging to organize existing data.
  but the analysis of said data is more and more difficult if the organism is not well anotated in the databses. -->
 <!-- [What iss the average distance between unknown/unannotated organisms and annotated organisms? Can this be quantified?]
 We used RNA-seq data directly due to the fact that we can extract putative protein-coding sequences from the RNA-seq data. -->
-<h3 id="key-cell-type-databases-built-on-protein-k-mers-can-assign-cell-types-across-individuals-within-species">key: Cell type databases built on protein k-mers can assign cell types across individuals within species</h3>
-<h3 id="key-reduced-amino-acid-alphabet-k-mers-enable-lighweight-orthology-assignment">key: Reduced amino acid alphabet k-mers enable lighweight orthology assignment</h3>
-<h3 id="key-cell-type-databases-built-on-reduced-amino-acid-alphabet-protein-k-mers-can-assign-cell-types-across-species">key: Cell type databases built on reduced amino acid alphabet protein k-mers can assign cell types across species</h3>
+<h3 id="key-cell-type-databases-built-on-protein-k-mers-can-assign-cell-types-across-individuals-within-species">key: Cell type databases built on protein <span class="math inline">\(k\)</span>-mers can assign cell types across individuals within species</h3>
+<p>We showed that we can identify cell types across individuals, within species.
+Interestingly, we found that even within species and within an individual, re-encoding the predicted protein sequenced found by <code>leaftea</code> into the Dayhoff degenerate amino acid alphabet with an amino acid <span class="math inline">\(k\)</span>-mer length of 13 was most successful in detecting cell types.
+Importantly, we also needed to remove genes associated with single-cell dissociation to enable cell:cell type labeling.
+This suggests that due to differences in single-cell capture, molecular amplification, and sequencing errors, the nucleotide sequences are different enough that using nucleotide <span class="math inline">\(k\)</span>-mers alone misses some cell types.</p>
+<h3 id="key-reduced-amino-acid-alphabet-k-mers-enable-lighweight-orthology-assignment">key: Reduced amino acid alphabet <span class="math inline">\(k\)</span>-mers enable lighweight orthology assignment</h3>
+<p>We showed that we can identify cell types across species using <span class="math inline">\(k\)</span>-mers from a degenerate amino acid alphabet.
+Across species, the Dayhoff alphabet was again the most successful in identifying cell types across species, specifically at an amino acid <span class="math inline">\(k\)</span>-mer size of 12.
+We then looked into the genes that were enriched in cells across species.</p>
+<h3 id="key-cell-type-databases-built-on-reduced-amino-acid-alphabet-protein-k-mers-can-assign-cell-types-across-species">key: Cell type databases built on reduced amino acid alphabet protein <span class="math inline">\(k\)</span>-mers can assign cell types across species</h3>
 <h3 id="key-lightweight-orthology-assignment-using-k-mers-enabled-reference-independent-cross-species-rna-seq-analyses-and-achieved-insight-into-unannotated-genes-and-genes-absent-from-the-genome-assembly.">key: Lightweight orthology assignment using <span class="math inline">\(k\)</span>-mers enabled reference-independent cross-species RNA-seq analyses and achieved insight into unannotated genes and genes absent from the genome assembly.</h3>
 <p>We implemented the concept of lightweight orthology assignment using <span class="math inline">\(k\)</span>-mers to the problem of cross-species RNA-seq analyses and achieved insight into unannotated genes and genes absent from the genome assembly.
 By removing the orthology inference step, <code>kmermaid</code> opens up the possibility of finding shared and divergent tissue and cell types across a broad range of species, paving the way for evolutionary analyses of cell types across species.
 <code>kmermaid</code> can be used in <em>de novo</em> setting for non-model organisms, finding similar cell types within an organism, or finding similar cell types relative to a reference organism, without the need for a reference genome or transcriptome.
-The memory usage of <code>kmermaid</code> is quite low, using only —MB for extracting coding sequences and 50MB for assigning protein <span class="math inline">\(k\)</span>-mer signatures.
+The memory usage of <code>kmermaid</code> is quite low, using only — MB for extracting coding sequences and 50MB for assigning protein <span class="math inline">\(k\)</span>-mer signatures.
 As the number of RNA-seq datasets, especially single-cell RNA-seq datasets continues to grow, we expect <code>kmermaid</code> to be widely used for identifying cell types in non-model organisms.</p>
-<h3 id="key-reduced-amino-acid-alphabet-k-mer-enrichment-allowed-for-inserting-identifying-genes-that-were-not-present-in-the-genome-assembly-or-gene-annotation-or-gene-orthology">key: Reduced amino acid alphabet k-mer enrichment allowed for inserting /identifying genes that were not present in the genome assembly or gene annotation, or gene orthology</h3>
+<h3 id="key-reduced-amino-acid-alphabet-k-mer-enrichment-allowed-for-inserting-identifying-genes-that-were-not-present-in-the-genome-assembly-or-gene-annotation-or-gene-orthology">key: Reduced amino acid alphabet <span class="math inline">\(k\)</span>-mer enrichment allowed for inserting /identifying genes that were not present in the genome assembly or gene annotation, or gene orthology</h3>
 <p>We were able to identify putative homologs across species by finding genes that were enriched in common cell types</p>
 <h3 id="key-we-built-an-orthologous-gene-tree-and-were-able-to-identify-genes-in-cells-across-all-species">key: We built an orthologous gene tree and were able to identify genes in cells across all species</h3>
 <!-- Is this a separate paper? -->
-<p>Using orthogroups, we buitl a signature tree database of orthologous genes.
-We then were able to quantify gene expresion
-We were able to detect genes that were not present in the genome, but were present in the orthologous genees databases.
-We were thus able ot directly compare cell types across species with a common set of orthologous genes.
-We used sourmash gather to identify genes that were expressed across mujltiple cell types</p>
+<p>Using orthogroups, we built a signature tree database of orthologous genes.
+We then were able to quantify gene expression
+We were able to detect genes that were not present in the genome, but were present in the orthologous genes databases.
+We were thus able to directly compare cell types across species with a common set of orthologous genes.
+We used sourmash gather to identify genes that were expressed across multiple cell types</p>
 <h3 id="in-summary-we-developed-a-method-to-identify-cell-types-in-a-non-model-organism-using-a-reference-atlas-from-another-organism-without-the-need-for-a-genome-or-gene-annotation-from-the-non-model-organism.">In summary, we developed a method to identify cell types in a non-model organism using a reference atlas from another organism, without the need for a genome or gene annotation from the non-model organism.</h3>
 <p>In summary, we developed a method to identify both known cell types in a non-model organism using a reference atlas from another organism, without the need for a genome or gene annotation from the non-model organism.
 This method can be used to combine single-cell cell atlases from well-annotated, model organisms, with sequencing data from poorly annotated non-model organisms, to directly find homologous cell types and orthologous genes.
 By eliminating read alignment and orthologous gene mapping, <code>kmermaid</code> enables comparison of transcriptomes of the remaining 99.999% Eukaryotic species on Earth without submitted genome assemblies, with the cell atlases of a handful of model organisms to identify shared and novel cell types, and <em>de novo</em> identify orthologous genes.
 By identifying homologous cell types across a broad variety of species, we come closer to an understanding of the evolution of genes, cells, and thus life itself.</p>
 <p><code>kmermaid</code> is free and open-source software and is available as Supplementary Data and at http://github.com/czbiohub/kmermaid and as a scalable Nextflow workflow at http://github.com/nf-core/nf-kmermaid.</p>
+<p>We have provided pre-built cell type databases of <em>Tabula Muris Senis</em> at —.</p>
 <h2 id="online-methods">Online Methods</h2>
 <!-- This is just a placeholder to separate the supplemental methods from the rest of the paper.
 All remaining supplemental sections should fall under this, meaning they need to be formatted
@@ -515,7 +506,7 @@ with heading 3 with three hashes: `###` -->
 As <span class="math inline">\(k\)</span>-mers are very brittle to substitutions and thus to compare across species, one must allow for minor base substitutions that still maintain similar chemical or structural properties.
 A reduced alphabet can encode useful information into a smaller alphabet space, and enable sequence comparisons across a broader variety of species than the original alphabet alone.</p>
 <h5 id="reduced-amino-acid-alphabets">Reduced amino acid alphabets</h5>
-<p>Reduced amino acid alphabets have been useful for over 50 years <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">53</a>]</span> in finding related protein sequences <span class="citation" data-cites="Aq7zYbOg 16Kv6RIe3 sZoryWIB f5u3dDtc QMYjnr6l">[<a href="#ref-sZoryWIB" role="doc-biblioref">29</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">30</a>,<a href="#ref-16Kv6RIe3" role="doc-biblioref">31</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">32</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">33</a>]</span>.
+<p>Reduced amino acid alphabets have been useful for over 50 years <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">54</a>]</span> in finding related protein sequences <span class="citation" data-cites="Aq7zYbOg 16Kv6RIe3 sZoryWIB f5u3dDtc QMYjnr6l">[<a href="#ref-sZoryWIB" role="doc-biblioref">29</a>,<a href="#ref-Aq7zYbOg" role="doc-biblioref">30</a>,<a href="#ref-16Kv6RIe3" role="doc-biblioref">31</a>,<a href="#ref-f5u3dDtc" role="doc-biblioref">32</a>,<a href="#ref-QMYjnr6l" role="doc-biblioref">33</a>]</span>.
 Recently, a reduced amino acid alphabet (specifically, <code>aa9</code> below) combined with <span class="math inline">\(k\)</span>-mers were used to find homologous protein-coding sequences <span class="citation" data-cites="Rqlso7kk">[<a href="#ref-Rqlso7kk" role="doc-biblioref">28</a>]</span>.
 We build on this concept by enabling prediction of protein-coding sequences from RNA-seq reads, and by enabling users to perform a parameter sweep in an all-by-all comparison to identify putative homologs using a variety of alphabet metrics.</p>
 <h6 id="dayhoff-and-hp-alphabets">Dayhoff and <code>HP</code> alphabets</h6>
@@ -595,7 +586,7 @@ hp2:       phpphhhpppp</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Phillips, R., <em>et al</em>. (2012). <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">54</a>]</span></td>
+<td style="text-align: left;">Phillips, R., <em>et al</em>. (2012). <span class="citation" data-cites="1GiMcbPLs">[<a href="#ref-1GiMcbPLs" role="doc-biblioref">55</a>]</span></td>
 <td style="text-align: left;">hp2</td>
 <td style="text-align: left;"><code>AFGILMPVWY</code> <code>CDEHKNQRST</code></td>
 </tr>
@@ -605,7 +596,7 @@ hp2:       phpphhhpppp</code></pre>
 <td style="text-align: left;"><code>G</code> <code>ADKERNTSQ</code> <code>YFLIVMCWH</code> <code>P</code></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">53</a>]</span></td>
+<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">54</a>]</span></td>
 <td style="text-align: left;">dayhoff6</td>
 <td style="text-align: left;"><code>AGPST</code> <code>HRK</code> <code>DENQ</code> <code>FWY</code> <code>ILMV</code> <code>C</code></td>
 </tr>
@@ -630,7 +621,7 @@ hp2:       phpphhhpppp</code></pre>
 <td style="text-align: left;"><code>G</code> <code>A</code> <code>D</code> <code>KE</code> <code>R</code> <code>N</code> <code>T</code> <code>S</code> <code>Q</code> <code>Y</code> <code>F</code> <code>LIV</code> <code>M</code> <code>C</code> <code>W</code> <code>H</code> <code>P</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">53</a>]</span></td>
+<td style="text-align: left;">Dayhoff, M. O., &amp; Eck, R. V. (1968). <span class="citation" data-cites="66KDHtpG">[<a href="#ref-66KDHtpG" role="doc-biblioref">54</a>]</span></td>
 <td style="text-align: left;">protein20</td>
 <td style="text-align: left;"><code>G</code> <code>A</code> <code>D</code> <code>E</code> <code>K</code> <code>R</code> <code>N</code> <code>T</code> <code>S</code> <code>Q</code> <code>Y</code> <code>F</code> <code>L</code> <code>I</code> <code>V</code> <code>M</code> <code>C</code> <code>W</code> <code>H</code> <code>P</code></td>
 </tr>
@@ -691,7 +682,7 @@ We can generalize this: Given the first <span class="math inline">\(k\)</span>-m
 \end{align}
 \]</span><span class="eqnos-number">(2)</span></span> </p>
 <h6 id="bloom-filter-collision-probability">Bloom filter collision probability</h6>
-<p>The probability of error of the <code>khmer</code> bloom filter implementation <span class="citation" data-cites="1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">55</a>]</span> used in <code>sencha</code>, given <span class="math inline">\(N\)</span> distinct <span class="math inline">\(k\)</span>-mers counted, a hash table size of <span class="math inline">\(H\)</span>, and <span class="math inline">\(Z\)</span> total number of hash tables, is</p>
+<p>The probability of error of the <code>khmer</code> bloom filter implementation <span class="citation" data-cites="1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">56</a>]</span> used in <code>sencha</code>, given <span class="math inline">\(N\)</span> distinct <span class="math inline">\(k\)</span>-mers counted, a hash table size of <span class="math inline">\(H\)</span>, and <span class="math inline">\(Z\)</span> total number of hash tables, is</p>
 <p><span id="eq:bloom_filter_fpr" class="eqnos"><span class="math display">\[\mathrm{Pr}(\mathrm{FPR}_{\mathrm{bloom}}) = \left( 1 - \exp^{N/H}\right)^Z.\]</span><span class="eqnos-number">(3)</span></span> </p>
 <p>Theoretically, the total number of <span class="math inline">\(k\)</span>-mers is limited by the alphabet size and choice of <span class="math inline">\(k\)</span>.
 Empirically, the number of possible <span class="math inline">\(k\)</span>-mers is limited by the <span class="math inline">\(k\)</span>-mers which are compatible with life, and by <span class="math inline">\(k=5\)</span>, the number of theoretical protein <span class="math inline">\(k\)</span>-mers exceeds the number of observed protein <span class="math inline">\(k\)</span>-mers.
@@ -729,34 +720,34 @@ Therefore, the total number of <span class="math inline">\(k\)</span>-mers in th
 \]</span><span class="eqnos-number">(9)</span></span> </p>
 <h5 id="similarity-thresholds-for-percentage-of-matching-k-mers">Similarity thresholds for percentage of matching <span class="math inline">\(k\)</span>-mers</h5>
 <p>A single SNP in a read affects <span class="math inline">\(k\)</span> <span class="math inline">\(k\)</span>-mers.</p>
-<h4 id="sencha-compare-kmer-content-performs-all-by-all-or-pairwise-k-mer-similarity-of-protein-or-nucleotide-sequences-using-reduced-alphabets"><code>sencha compare-kmer-content</code> performs all-by-all or pairwise k-mer similarity of protein or nucleotide sequences using reduced alphabets</h4>
+<h4 id="sencha-compare-kmer-content-performs-all-by-all-or-pairwise-k-mer-similarity-of-protein-or-nucleotide-sequences-using-reduced-alphabets"><code>sencha compare-kmer-content</code> performs all-by-all or pairwise <span class="math inline">\(k\)</span>-mer similarity of protein or nucleotide sequences using reduced alphabets</h4>
 <figure>
 <img src="images/SVG/figure3.svg" id="sfig:figure3" data-tag="figure3" style="width:100.0%" alt="" /><figcaption>Overview of <code>sencha compare-kmer-content</code> <strong>A.</strong> Protein sequences are <span class="math inline">\(k\)</span>-merized by converting into a bag of words using a sliding window of size <span class="math inline">\(k\)</span>, potentially re-encoded to a lossy alphabet, and then their fraction of overlapping <span class="math inline">\(k\)</span>-mers is computed into a Jaccard similarity. <strong>B.</strong> One option for <code>sencha compare-kmer-content</code> is to specify a pair of sequence files, and compute a background of <span class="math inline">\(k\)</span>-mer similarty using randomly shuffled pairs. <strong>C.</strong> Another option for <code>sencha compare-kmer-content</code> is to do an all-by-all <span class="math inline">\(k\)</span>-mer similarity comparison.</figcaption>
 </figure>
 <h3 id="cell-type-predictions">Cell type predictions</h3>
 <figure>
-<img src="images/SVG/supplemental_figure2.svg" id="sfig2:sfig2" data-tag="supplemental_figure2" style="width:100.0%" alt="" /><figcaption>Supplemental Figure 2: Cell databases built from degenerate protein alphabet k-mers can reliably identify cell types within species, across individuals.
+<img src="images/SVG/supplemental_figure2.svg" id="sfig2:sfig2" data-tag="supplemental_figure2" style="width:100.0%" alt="" /><figcaption>Supplemental Figure 2: Cell databases built from degenerate protein alphabet <span class="math inline">\(k\)</span>-mers can reliably identify cell types within species, across individuals.
 <strong>A.</strong> Experimental set up of testing self:self lookup of cell types within the same organism. Build a cell type sequence bloom tree (SBT) database from a male mouse, then query with cells from the same male mouse, and return the top non-identical hit cell.
 <strong>B.</strong> Experimental set up of testing male:male lookup of cell types within the same species, different individuals and same sex. Build a cell type (SBT) database from a male mouse, then query with cells from a different male mouse, and return the most similar cell.
 <strong>C.</strong> Experimental set up of testing male:female lookup of cell types within the same species, different individuals and different sex. Build a cell type (SBT) database from a male mouse, then query with cells from a female mouse, and return the most similar cell.
-<strong>D.</strong> Mean of dlassification metrics for self:self (left column), male:male (middle column), male:female (right column) cell type lookup, using different molecule types and k-mer sizes, highlighting the k-mer size that maximizes the mean for each metric and alphabet. x-axis, k-mer size in DNA space, i.e. a k-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Top row, adjusted rand score; bottom row, F1 score.
-<strong>E-G.</strong> Heatmap of classification metrics for alphabets and k-mer sizes maximizing classification ability from (<strong>D</strong>), for each mouse:mouse experiment.
-<strong>H.</strong> Mean of classification metrics across all three mouse:mouse experiments, highlighting the k-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, k-mer size in DNA space. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
-<strong>I.</strong> Heatmap of classification metrics for alphabets and k-mer sizes maximizing classification ability from (<strong>H</strong>).
+<strong>D.</strong> Mean of dlassification metrics for self:self (left column), male:male (middle column), male:female (right column) cell type lookup, using different molecule types and <span class="math inline">\(k\)</span>-mer sizes, highlighting the <span class="math inline">\(k\)</span>-mer size that maximizes the mean for each metric and alphabet. x-axis, <span class="math inline">\(k\)</span>-mer size in DNA space, i.e. a <span class="math inline">\(k\)</span>-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Top row, adjusted rand score; bottom row, F1 score.
+<strong>E-G.</strong> Heatmap of classification metrics for alphabets and <span class="math inline">\(k\)</span>-mer sizes maximizing classification ability from (<strong>D</strong>), for each mouse:mouse experiment.
+<strong>H.</strong> Mean of classification metrics across all three mouse:mouse experiments, highlighting the <span class="math inline">\(k\)</span>-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, <span class="math inline">\(k\)</span>-mer size in DNA space. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
+<strong>I.</strong> Heatmap of classification metrics for alphabets and <span class="math inline">\(k\)</span>-mer sizes maximizing classification ability from (<strong>H</strong>).
 <strong>J-L.</strong> Confusion matrices of classification with best performing parameters from (<strong>I</strong>). x-axis, predicted cell label; y-axis, ground truth cell label.
-<strong>J.</strong> DNA alphabet with k-mer size of 42.
-<strong>K.</strong> Protein 20-letter alphabet with k-mer size of 27.
-<strong>L.</strong> Dayhoff 6-letter amino acid encoding with k-mer size of 39.</figcaption>
+<strong>J.</strong> DNA alphabet with <span class="math inline">\(k\)</span>-mer size of 42.
+<strong>K.</strong> Protein 20-letter alphabet with <span class="math inline">\(k\)</span>-mer size of 27.
+<strong>L.</strong> Dayhoff 6-letter amino acid encoding with <span class="math inline">\(k\)</span>-mer size of 39.</figcaption>
 </figure>
 <figure>
-<img src="images/SVG/supplemental_figure3.svg" id="sfig3:sfig3" data-tag="supplemental_figure3" style="width:100.0%" alt="" /><figcaption>Supplemental Figure 3: Cell databases built from degenerate protein alphabet k-mers can reliably identify cell types within species, across individuals.
+<img src="images/SVG/supplemental_figure3.svg" id="sfig3:sfig3" data-tag="supplemental_figure3" style="width:100.0%" alt="" /><figcaption>Supplemental Figure 3: Cell databases built from degenerate protein alphabet <span class="math inline">\(k\)</span>-mers can reliably identify cell types within species, across individuals.
 <strong>A.</strong> Experimental set up of testing human:human lookup of cell types within species, across individuals. Build a cell type (SBT) database from one patient mouse, then query with cells from a different patient, and return the most similar cell.
-<strong>B.</strong> Mean of classification metrics across human:human experiments, highlighting the k-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, k-mer size in DNA space, i.e. a k-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
-<strong>C.</strong> Molecules and k-mer sizes maximizing classification metrics from (<strong>K</strong>).
+<strong>B.</strong> Mean of classification metrics across human:human experiments, highlighting the <span class="math inline">\(k\)</span>-mer size that maximizes the mean for each metric and alphabet. Vertical lines, standard deviation of the mean. x-axis, <span class="math inline">\(k\)</span>-mer size in DNA space, i.e. a <span class="math inline">\(k\)</span>-mer size of 21 corresponds to a an amino acid length of 7. y-axis, value of classification metric. Left, adjusted rand score; right, F1 score.
+<strong>C.</strong> Molecules and <span class="math inline">\(k\)</span>-mer sizes maximizing classification metrics from (<strong>K</strong>).
 <strong>D-F.</strong> Confusion matrices of classification with best performing parameters from <strong>E</strong>. x-axis, predicted cell label; y-axis, ground truth cell label.
-<strong>D.</strong> DNA alphabet with k-mer size of —.
-<strong>E.</strong> Protein 20-letter alphabet with k-mer size of —.
-<strong>F.</strong> Dayhoff 6-letter amino acid encoding with k-mer size of —.</figcaption>
+<strong>D.</strong> DNA alphabet with <span class="math inline">\(k\)</span>-mer size of —.
+<strong>E.</strong> Protein 20-letter alphabet with <span class="math inline">\(k\)</span>-mer size of —.
+<strong>F.</strong> Dayhoff 6-letter amino acid encoding with <span class="math inline">\(k\)</span>-mer size of —.</figcaption>
 </figure>
 <h3 id="benchmarking">Benchmarking</h3>
 <p>Methods go here.</p>
@@ -767,17 +758,17 @@ We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
 DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">56</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">56</a>]</span>.</p>
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">57</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">57</a>]</span>.</p>
 <h5 id="extraction-of-putative-coding-reads-from-rna-seq">Extraction of putative coding reads from RNA-seq</h5>
 <p>We did things.
 One sentence per line.
 Prefer DOI for references, but for Biorxiv use the URL.
 DOI example: <span class="citation" data-cites="LkrS4xXB">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>]</span>.
-Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">56</a>]</span>.
-Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">56</a>]</span>.</p>
+Biorxiv example: <span class="citation" data-cites="46R7aU4N">[<a href="#ref-46R7aU4N" role="doc-biblioref">57</a>]</span>.
+Multiple citations per line example: <span class="citation" data-cites="LkrS4xXB 46R7aU4N">[<a href="#ref-LkrS4xXB" role="doc-biblioref">7</a>,<a href="#ref-46R7aU4N" role="doc-biblioref">57</a>]</span>.</p>
 <h4 id="prediction-of-protein-coding-sequences-across-a-variety-of-species">Prediction of protein-coding sequences across a variety of species</h4>
-<p>We used <code>sencha translate</code> to obtain putative protein-coding sequences from a comaparative transcriptomic dataset spanning nine species and six tissues <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">57</a>]</span>.</p>
+<p>We used <code>sencha translate</code> to obtain putative protein-coding sequences from a comaparative transcriptomic dataset spanning nine species and six tissues <span class="citation" data-cites="fBCZ87Cf">[<a href="#ref-fBCZ87Cf" role="doc-biblioref">58</a>]</span>.</p>
 <h4 id="read-preprocessing">Read preprocessing</h4>
 <p>As the protein-coding score is assessed on the entire read, we recommend RNA-seq reads be removed of library artifacts to the best of the user’s ability.
 This means, the adapters should be trimmed, and if there was a negative insert size such that the R1 and R2 reads overlap, then the read pairs should be merged.</p>
@@ -785,17 +776,17 @@ This means, the adapters should be trimmed, and if there was a negative insert s
 <!-- ## Figure 3 -- Overview of `kmermaid` and `predictorthologs` pipelines -->
 <div id="fig:sfig3" class="fignos">
 <figure>
-<img src="images/SVG/supplementary_figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 4:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>sencha translate</code>, a k-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
+<img src="images/SVG/supplementary_figure3.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 4:</span> <strong>A.</strong> Overview of the <code>kmermaid</code> pipeline. (<strong>a</strong>, <strong>b</strong>, <strong>c</strong>) <code>kmermaid</code> consists of a protein-coding prediction phase (<strong>a</strong>) that is invoked by the command <code>sencha translate</code>, a <span class="math inline">\(k\)</span>-mer sketch computation phase (<strong>b</strong>) invoked by the command <code>sourmash sketch</code>, a signature similarity comparison phase (<strong>c</strong>) invoked by the command <code>sourmash compare</code>, and an optional database-creation phase (<strong>d</strong>) invoked by the command <code>sourmash index</code>. The coding prediction phase has three components: (1) six-frame translation, removal of stop-codon frames, and subsequent <span class="math inline">\(k\)</span>-merization of RNA-sequencing reads; (2) a degenerate protein alphabet which allows for protein-coding detection from a wide variety of species; (3) a bloom filter containing known protein-coding sequences from a well annotated organism; and (4) computation of the Jaccard index of translated RNA-seq reading frames. The sketch computation phase involves randomly subsetting the degenerate peptide <span class="math inline">\(k\)</span>-mers using a MinHash algorithm. The sketch comparison phase consists of computing the Jaccard intersection of MinHashed degenerate peptide <span class="math inline">\(k\)</span>-mers between all pairs of samples.</figcaption>
 </figure>
 </div>
 <div id="fig:kmermaid" class="fignos">
 <figure>
 <img src="images/SVG/kmermaid_workflow.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 5:</span> Supplemental Figure X.
-<strong>A.</strong> Overview of <code>nf-core/kmermaid</code> pipeline to compare DNA/RNA/protein sequences on k-mer content.
+<strong>A.</strong> Overview of <code>nf-core/kmermaid</code> pipeline to compare DNA/RNA/protein sequences on <span class="math inline">\(k\)</span>-mer content.
 1. If input is bam, extract per-cell sequences using <code>bam2fasta percell</code>.
 2. Predict amino acid sequence of each RNA-seq read using <code>sencha translate</code>.
-3. Randomly subsample amino acid k-mers via MinHash using <code>sourmash sketch</code>.
-4. Compare all k-mer sketches to one another using <code>sourmash compare</code> to compute cell-cell Jaccard similarities.
+3. Randomly subsample amino acid <span class="math inline">\(k\)</span>-mers via MinHash using <code>sourmash sketch</code>.
+4. Compare all <span class="math inline">\(k\)</span>-mer sketches to one another using <code>sourmash compare</code> to compute cell-cell Jaccard similarities.
 5. Build sequence bloom tree using <code>sourmash index</code>.
 6. Build k-nearest neighbor graph using sequence bloom tree.
 7. Build UMAP off of KNN.</figcaption>
@@ -821,9 +812,9 @@ pip install sencha</code></pre>
 <h3 id="usage">Usage</h3>
 <h4 id="creation-of-amino-acid-k-mer-database-with-sencha-index">Creation of amino acid <span class="math inline">\(k\)</span>-mer database with <code>sencha index</code></h4>
 <p>Before predicting protein-coding sequences, <code>sencha</code> must create a database of known amino acid <span class="math inline">\(k\)</span>-mers, which is stored in the form of a probabilistic set membership data structure known as a bloom filter.
-<code>sencha</code> uses the bloom filter implementation in <code>khmer</code>/<code>oxli</code> <span class="citation" data-cites="G2CzfHHF 1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">55</a>,<a href="#ref-G2CzfHHF" role="doc-biblioref">58</a>]</span>, called a NodeGraph.
-We created a dataset of known amino acid <span class="math inline">\(k\)</span>-mers from the manually annotated UniProtKB/Swiss-Prot databases <span class="citation" data-cites="1ZE22clL 1BBNQZrBs">[<a href="#ref-1ZE22clL" role="doc-biblioref">59</a>,<a href="#ref-1BBNQZrBs" role="doc-biblioref">60</a>]</span>.
-We used only protein sequences observed in <em>Opisthokont</em> species <span class="citation" data-cites="Ty6517L8">[<a href="#ref-Ty6517L8" role="doc-biblioref">61</a>]</span>, previously known as a “Fungi/Metazoa” group that encompasseses “Fungus-like” <em>Holomycota</em> and “Animal-like” <em>Holozoa</em>. [NOTE: Does this need a figure/phylogenetic timetree?]</p>
+<code>sencha</code> uses the bloom filter implementation in <code>khmer</code>/<code>oxli</code> <span class="citation" data-cites="G2CzfHHF 1DpHWPZC9">[<a href="#ref-1DpHWPZC9" role="doc-biblioref">56</a>,<a href="#ref-G2CzfHHF" role="doc-biblioref">59</a>]</span>, called a NodeGraph.
+We created a dataset of known amino acid <span class="math inline">\(k\)</span>-mers from the manually annotated UniProtKB/Swiss-Prot databases <span class="citation" data-cites="1ZE22clL 1BBNQZrBs">[<a href="#ref-1ZE22clL" role="doc-biblioref">60</a>,<a href="#ref-1BBNQZrBs" role="doc-biblioref">61</a>]</span>.
+We used only protein sequences observed in <em>Opisthokont</em> species <span class="citation" data-cites="Ty6517L8">[<a href="#ref-Ty6517L8" role="doc-biblioref">62</a>]</span>, previously known as a “Fungi/Metazoa” group that encompasseses “Fungus-like” <em>Holomycota</em> and “Animal-like” <em>Holozoa</em>. [NOTE: Does this need a figure/phylogenetic timetree?]</p>
 <pre><code>sencha index \
   --tablesize 100000000 \
   --molecule protein \
@@ -1117,90 +1108,95 @@ DOI: <a href="https://doi.org/10.1007/978-1-4939-9173-0_14">10.1007/978-1-4939-9
 <div id="ref-W97RNFXd">
 <p>46. <strong>TimeTree :: The Timescale of Life</strong> <a href="http://timetree.org/">http://timetree.org/</a></p>
 </div>
-<div id="ref-oWw3q9FU">
-<p>47. <strong>A molecular cell atlas of the human lung from single-cell RNA sequencing</strong> <br />
-Kyle J. Travaglini, Ahmad N. Nabhan, Lolita Penland, Rahul Sinha, Astrid Gillich, Rene V. Sit, Stephen Chang, Stephanie D. Conley, Yasuo Mori, Jun Seita, … Mark A. Krasnow<br />
-<em>Nature</em> (2020-11-18) <a href="https://doi.org/ghk5bp">https://doi.org/ghk5bp</a> <br />
-DOI: <a href="https://doi.org/10.1038/s41586-020-2922-4">10.1038/s41586-020-2922-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33208946">33208946</a></p>
-</div>
 <div id="ref-9DeI91qq">
-<p>48. <strong>The effects of death and post-mortem cold ischemia on human tissue transcriptomes</strong> <br />
+<p>47. <strong>The effects of death and post-mortem cold ischemia on human tissue transcriptomes</strong> <br />
 Pedro G. Ferreira, Manuel Muñoz-Aguirre, Ferran Reverter, Caio P. Sá Godinho, Abel Sousa, Alicia Amadoz, Reza Sodaei, Marta R. Hidalgo, Dmitri Pervouchine, Jose Carbonell-Caballero, … Roderic Guigó<br />
 <em>Nature Communications</em> (2018-02-13) <a href="https://doi.org/gc2xd8">https://doi.org/gc2xd8</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41467-017-02772-x">10.1038/s41467-017-02772-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29440659">29440659</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5811508">PMC5811508</a></p>
 </div>
 <div id="ref-IVhllwbX">
-<p>49. <strong>Transcriptional Profiling of Quiescent Muscle Stem Cells In Vivo</strong> <br />
+<p>48. <strong>Transcriptional Profiling of Quiescent Muscle Stem Cells In Vivo</strong> <br />
 Cindy T. J. van Velthoven, Antoine de Morree, Ingrid M. Egner, Jamie O. Brett, Thomas A. Rando<br />
 <em>Cell Reports</em> (2017-11) <a href="https://doi.org/gdxwmg">https://doi.org/gdxwmg</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.celrep.2017.10.037">10.1016/j.celrep.2017.10.037</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29141228">29141228</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5711481">PMC5711481</a></p>
 </div>
 <div id="ref-5nByhjEz">
-<p>50. <strong>Single-cell sequencing reveals dissociation-induced gene expression in tissue subpopulations</strong> <br />
+<p>49. <strong>Single-cell sequencing reveals dissociation-induced gene expression in tissue subpopulations</strong> <br />
 Susanne C van den Brink, Fanny Sage, Ábel Vértesy, Bastiaan Spanjaard, Josi Peterson-Maduro, Chloé S Baron, Catherine Robin, Alexander van Oudenaarden<br />
 <em>Nature Methods</em> (2017-09-29) <a href="https://doi.org/gf3hwq">https://doi.org/gf3hwq</a> <br />
 DOI: <a href="https://doi.org/10.1038/nmeth.4437">10.1038/nmeth.4437</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28960196">28960196</a></p>
 </div>
 <div id="ref-qtN0W5fQ">
-<p>51. <strong>Sampling time-dependent artifacts in single-cell genomics studies</strong> <br />
+<p>50. <strong>Sampling time-dependent artifacts in single-cell genomics studies</strong> <br />
 Ramon Massoni-Badosa, Giovanni Iacono, Catia Moutinho, Marta Kulis, Núria Palau, Domenica Marchese, Javier Rodríguez-Ubreva, Esteban Ballestar, Gustavo Rodriguez-Esteban, Sara Marsal, … Holger Heyn<br />
 <em>Genome Biology</em> (2020-05-11) <a href="https://doi.org/ggzqfj">https://doi.org/ggzqfj</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-020-02032-0">10.1186/s13059-020-02032-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32393363">32393363</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7212672">PMC7212672</a></p>
 </div>
 <div id="ref-s4hwSsAX">
-<p>52. <strong>Streamlining Data-Intensive Biology With Workflow Systems</strong> <br />
+<p>51. <strong>Streamlining Data-Intensive Biology With Workflow Systems</strong> <br />
 Taylor Reiter, Phillip T. Brooks, Luiz Irber, Shannon E. K. Joslin, Charles M. Reid, Camille Scott, C. Titus Brown, N. Tessa Pierce<br />
 <em>bioRxiv</em> (2020-11-16) <a href="https://www.biorxiv.org/content/10.1101/2020.06.30.178673v3">https://www.biorxiv.org/content/10.1101/2020.06.30.178673v3</a> <br />
 DOI: <a href="https://doi.org/10.1101/2020.06.30.178673">10.1101/2020.06.30.178673</a></p>
 </div>
+<div id="ref-oWw3q9FU">
+<p>52. <strong>A molecular cell atlas of the human lung from single-cell RNA sequencing</strong> <br />
+Kyle J. Travaglini, Ahmad N. Nabhan, Lolita Penland, Rahul Sinha, Astrid Gillich, Rene V. Sit, Stephen Chang, Stephanie D. Conley, Yasuo Mori, Jun Seita, … Mark A. Krasnow<br />
+<em>Nature</em> (2020-11-18) <a href="https://doi.org/ghk5bp">https://doi.org/ghk5bp</a> <br />
+DOI: <a href="https://doi.org/10.1038/s41586-020-2922-4">10.1038/s41586-020-2922-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33208946">33208946</a></p>
+</div>
+<div id="ref-5KVVBsT6">
+<p>53. <strong>dib-lab/2020-paper-sourmash-gather</strong> <br />
+The Lab for Data Intensive Biology<br />
+(2020-12-02) <a href="https://github.com/dib-lab/2020-paper-sourmash-gather">https://github.com/dib-lab/2020-paper-sourmash-gather</a></p>
+</div>
 <div id="ref-66KDHtpG">
-<p>53. <strong>Atlas of protein sequence and structure</strong> <br />
+<p>54. <strong>Atlas of protein sequence and structure</strong> <br />
 Margaret O Dayhoff<br />
 <em>National Biomedical Research Foundation.</em> (1969)</p>
 </div>
 <div id="ref-1GiMcbPLs">
-<p>54. <strong>Physical biology of the cell</strong> <br />
+<p>55. <strong>Physical biology of the cell</strong> <br />
 Rob Phillips, Julie Theriot, Jane Kondev, Hernan Garcia<br />
 <em>Garland Science</em> (2012)</p>
 </div>
 <div id="ref-1DpHWPZC9">
-<p>55. <strong>These Are Not the K-mers You Are Looking For: Efficient Online K-mer Counting Using a Probabilistic Data Structure</strong> <br />
+<p>56. <strong>These Are Not the K-mers You Are Looking For: Efficient Online K-mer Counting Using a Probabilistic Data Structure</strong> <br />
 Qingpeng Zhang, Jason Pell, Rosangela Canino-Koning, Adina Chuang Howe, C. Titus Brown<br />
 <em>PLoS ONE</em> (2014-07-25) <a href="https://doi.org/f6kb9b">https://doi.org/f6kb9b</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pone.0101271">10.1371/journal.pone.0101271</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25062443">25062443</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4111482">PMC4111482</a></p>
 </div>
 <div id="ref-46R7aU4N">
-<p>56. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong> <br />
+<p>57. <strong>OrthoFinder: phylogenetic orthology inference for comparative genomics</strong> <br />
 David M. Emms, Steven Kelly<br />
 <em>bioRxiv</em> (2019-04-24) <a href="https://www.biorxiv.org/content/10.1101/466201v2">https://www.biorxiv.org/content/10.1101/466201v2</a> <br />
 DOI: <a href="https://doi.org/10.1101/466201">10.1101/466201</a></p>
 </div>
 <div id="ref-fBCZ87Cf">
-<p>57. <strong>The evolution of gene expression levels in mammalian organs</strong> <br />
+<p>58. <strong>The evolution of gene expression levels in mammalian organs</strong> <br />
 David Brawand, Magali Soumillon, Anamaria Necsulea, Philippe Julien, Gábor Csárdi, Patrick Harrigan, Manuela Weier, Angélica Liechti, Ayinuer Aximu-Petri, Martin Kircher, … Henrik Kaessmann<br />
 <em>Nature</em> (2011-10-19) <a href="https://doi.org/fcvk54">https://doi.org/fcvk54</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature10532">10.1038/nature10532</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22012392">22012392</a></p>
 </div>
 <div id="ref-G2CzfHHF">
-<p>58. <strong>The khmer software package: enabling efficient nucleotide sequence analysis</strong> <br />
+<p>59. <strong>The khmer software package: enabling efficient nucleotide sequence analysis</strong> <br />
 Michael R. Crusoe, Hussien F. Alameldin, Sherine Awad, Elmar Boucher, Adam Caldwell, Reed Cartwright, Amanda Charbonneau, Bede Constantinides, Greg Edvenson, Scott Fay, … C. Titus Brown<br />
 <em>F1000Research</em> (2015-09-25) <a href="https://doi.org/9qp">https://doi.org/9qp</a> <br />
 DOI: <a href="https://doi.org/10.12688/f1000research.6924.1">10.12688/f1000research.6924.1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26535114">26535114</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4608353">PMC4608353</a></p>
 </div>
 <div id="ref-1ZE22clL">
-<p>59. <strong>UniProt: a worldwide hub of protein knowledge</strong> <br />
+<p>60. <strong>UniProt: a worldwide hub of protein knowledge</strong> <br />
 The UniProt Consortium<br />
 <em>Nucleic Acids Research</em> (2019-01-08) <a href="https://doi.org/gfwqck">https://doi.org/gfwqck</a> <br />
 DOI: <a href="https://doi.org/10.1093/nar/gky1049">10.1093/nar/gky1049</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30395287">30395287</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323992">PMC6323992</a></p>
 </div>
 <div id="ref-1BBNQZrBs">
-<p>60. <strong>UniProtKB/Swiss-Prot, the Manually Annotated Section of the UniProt KnowledgeBase: How to Use the Entry View</strong> <br />
+<p>61. <strong>UniProtKB/Swiss-Prot, the Manually Annotated Section of the UniProt KnowledgeBase: How to Use the Entry View</strong> <br />
 Emmanuel Boutet, Damien Lieberherr, Michael Tognolli, Michel Schneider, Parit Bansal, Alan J. Bridge, Sylvain Poux, Lydie Bougueleret, Ioannis Xenarios<br />
 <em>Methods in Molecular Biology</em> (2016) <a href="https://doi.org/f79kbb">https://doi.org/f79kbb</a> <br />
 DOI: <a href="https://doi.org/10.1007/978-1-4939-3167-5_2">10.1007/978-1-4939-3167-5_2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26519399">26519399</a></p>
 </div>
 <div id="ref-Ty6517L8">
-<p>61. <strong>Opisthokont</strong> <br />
+<p>62. <strong>Opisthokont</strong> <br />
 Wikipedia<br />
 (2020-11-27) <a href="https://en.wikipedia.org/w/index.php?title=Opisthokont&amp;oldid=990958852">https://en.wikipedia.org/w/index.php?title=Opisthokont&amp;oldid=990958852</a></p>
 </div>
