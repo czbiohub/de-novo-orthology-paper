@@ -116,11 +116,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -158,9 +158,9 @@ title: $k$-mer homology is a transcriptome-first method enabling functional pred
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/))
+([permalink](https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/))
 was automatically generated
-from [czbiohub/kmer-homology-paper@629460e](https://github.com/czbiohub/kmer-homology-paper/tree/629460e0379746b5d38ee3428bcb0e3af169abe3)
+from [czbiohub/kmer-homology-paper@625e5f3](https://github.com/czbiohub/kmer-homology-paper/tree/625e5f3ce55eccfec223f86bd34c0e430c55d6e8)
 on December 7, 2020.
 </em></small>
 

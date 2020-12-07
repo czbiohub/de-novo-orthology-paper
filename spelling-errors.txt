@@ -10,7 +10,7 @@ encodings
 encompasseses
 Erinaceus
 europaeus
-FPR
+fpr
 GBMF
 gbmr
 HCA
