@@ -9,7 +9,7 @@ author-meta:
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-04'
+date-meta: '2020-12-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,9 +28,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-12-04" />
+  <meta name="dc.date" content="2020-12-07" />
 
-  <meta name="citation_publication_date" content="2020-12-04" />
+  <meta name="citation_publication_date" content="2020-12-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -116,11 +116,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -158,10 +158,10 @@ title: $k$-mer homology is a transcriptome-first method enabling functional pred
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/kmer-homology-paper/v/b98d97ab7215da70ce7c9dc863eb0b62daf5194f/))
+([permalink](https://czbiohub.github.io/kmer-homology-paper/v/629460e0379746b5d38ee3428bcb0e3af169abe3/))
 was automatically generated
-from [czbiohub/kmer-homology-paper@b98d97a](https://github.com/czbiohub/kmer-homology-paper/tree/b98d97ab7215da70ce7c9dc863eb0b62daf5194f)
-on December 4, 2020.
+from [czbiohub/kmer-homology-paper@629460e](https://github.com/czbiohub/kmer-homology-paper/tree/629460e0379746b5d38ee3428bcb0e3af169abe3)
+on December 7, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
