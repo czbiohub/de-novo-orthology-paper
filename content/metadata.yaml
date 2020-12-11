@@ -62,6 +62,14 @@ authors:
     - Department of Biological Sciences, Texas Tech University
     - Department of Mathematics & Statistics, Texas Tech University
   -
+    github: lekhakaranam
+    name: Lekha Sree Karanam
+    initials: LSK
+    orcid: 0000-0003-3000-1584
+    email: lekha.karanam@czbiohub.org
+    affiliations:
+      - Data Sciences Platform, Chan Zuckerberg Biohub
+  -
    github: ctb
    name: C. Titus Brown
    initials: CTB
