@@ -5,11 +5,12 @@ author-meta:
 - N. Tessa Pierce
 - Phoenix Aja Logan
 - Saba Nafees
+- Lekha Sree Karanam
 - C. Titus Brown
 - Jim Karkanias
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-07'
+date-meta: '2020-12-11'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="$k$-mer homology is a transcriptome-first method enabling functional prediction of transcriptomic &#39;dark matter&#39; across species" />
 
-  <meta name="dc.date" content="2020-12-07" />
+  <meta name="dc.date" content="2020-12-11" />
 
-  <meta name="citation_publication_date" content="2020-12-07" />
+  <meta name="citation_publication_date" content="2020-12-11" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -88,6 +89,12 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@sabanafeesTTU" />
 
+  <meta name="citation_author" content="Lekha Sree Karanam" />
+
+  <meta name="citation_author_institution" content="Data Sciences Platform, Chan Zuckerberg Biohub" />
+
+  <meta name="citation_author_orcid" content="0000-0003-3000-1584" />
+
   <meta name="citation_author" content="C. Titus Brown" />
 
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
@@ -116,11 +123,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://czbiohub.github.io/kmer-homology-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/" />
+  <link rel="alternate" type="text/html" href="https://czbiohub.github.io/kmer-homology-paper/v/7224e5ecd248b7f62a5166f9854891158644ea00/" />
 
-  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/" />
+  <meta name="manubot_html_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/7224e5ecd248b7f62a5166f9854891158644ea00/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://czbiohub.github.io/kmer-homology-paper/v/7224e5ecd248b7f62a5166f9854891158644ea00/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -158,10 +165,10 @@ title: $k$-mer homology is a transcriptome-first method enabling functional pred
 
 <small><em>
 This manuscript
-([permalink](https://czbiohub.github.io/kmer-homology-paper/v/625e5f3ce55eccfec223f86bd34c0e430c55d6e8/))
+([permalink](https://czbiohub.github.io/kmer-homology-paper/v/7224e5ecd248b7f62a5166f9854891158644ea00/))
 was automatically generated
-from [czbiohub/kmer-homology-paper@625e5f3](https://github.com/czbiohub/kmer-homology-paper/tree/625e5f3ce55eccfec223f86bd34c0e430c55d6e8)
-on December 7, 2020.
+from [czbiohub/kmer-homology-paper@7224e5e](https://github.com/czbiohub/kmer-homology-paper/tree/7224e5ecd248b7f62a5166f9854891158644ea00)
+on December 11, 2020.
 </em></small>
 
 [ []{.fas .fa-info-circle .fa-lg} **This is an in progress manuscript.**]{.banner .lightred}
@@ -224,6 +231,15 @@ on December 7, 2020.
     [sabanafeesTTU](https://twitter.com/sabanafeesTTU)<br>
   <small>
      Data Sciences Platform, Chan Zuckerberg Biohub; Department of Biological Sciences, Texas Tech University; Department of Mathematics & Statistics, Texas Tech University
+  </small>
+
++ **Lekha Sree Karanam** <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-3000-1584](https://orcid.org/0000-0003-3000-1584)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [lekhakaranam](https://github.com/lekhakaranam)<br>
+  <small>
+     Data Sciences Platform, Chan Zuckerberg Biohub
   </small>
 
 + **C. Titus Brown** <br>

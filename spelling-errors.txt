@@ -16,7 +16,10 @@ gbmr
 HCA
 Hu
 informationa
+Karanam
 khtools
+Lekha
+lekhakaranam
 lighweight
 limted
 Mammalia
@@ -45,6 +48,7 @@ seuqnece
 sfig
 similarty
 simum
+Sree
 substituion
 surfactant
 surfactants
